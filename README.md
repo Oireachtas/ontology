@@ -34,7 +34,7 @@ As the Houses of the Oireachtas can be understand as different things depending 
 - A ``chamber`` refers to either a House (ie, the Dáil or Seanad) or a committee of one or both of the Houses
 - A ``Member`` is an elected Member of the Oireachtas, a ``Deputy`` is a Member of the Dáil and a ``Senator`` is a Member of the Seanad.
 
-#### [OWL and RDF syntax](syntax)
+#### [OWL and RDF syntax](#syntax)
 
 OWL uses the [resource description framework (RDF)](http://www.w3.org/RDF/) syntax. The RDF syntax describes data as a series of three-part statements linking things to other things.
 
@@ -82,7 +82,7 @@ A Bill is a proposed law which, after a formal process of deliberation by the Oi
 
 #### [Bills as legislative documents](#bill-legislative-document)
 
-##### [Bill document URIs]#(bill-doc-uris)
+##### [Bill document URIs](#bill-doc-uris)
 
 URIs for Bills as legislative documents have the following pattern:
 
@@ -110,7 +110,7 @@ The following table provides example applications of the pattern:
 
 #### [Bills as journal events](#bill-journal-event)
 
-##### [Bill event URIs]#(bill-event-uris)
+##### [Bill event URIs](#bill-event-uris)
 
 The URI pattern for Bill events is as follows:
 
