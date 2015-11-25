@@ -1,0 +1,1221 @@
+@prefix : <http://www.oireachtas.ie/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://www.oireachtas.ie/ontology> .
+
+<http://www.oireachtas.ie/ontology> rdf:type owl:Ontology ;
+                                    
+                                    rdfs:comment """The Oireachtas ontology comprises four related areas:
+1. Legislative documents
+2. Journal Events
+3. Debates
+4. Agents"""@en ;
+                                    
+                                    owl:imports <http://data.europa.eu/eli/ontology#> ,
+                                                <http://www.metalex.eu/metalex/2008-05-02> .
+
+
+#################################################################
+#
+#    Object Properties
+#
+#################################################################
+
+
+###  http://data.europa.eu/eli/ontology#passed_by
+
+<http://data.europa.eu/eli/ontology#passed_by> rdfs:range :Oireachtas .
+
+
+
+###  http://www.oireachtas.ie/ontology#InChamber
+
+:InChamber rdf:type owl:ObjectProperty ;
+           
+           rdfs:comment "The Chamber in which a Bill event occurs"@en ;
+           
+           rdfs:domain :BillEvent ;
+           
+           rdfs:range :Chamber .
+
+
+
+
+
+#################################################################
+#
+#    Data properties
+#
+#################################################################
+
+
+###  http://www.oireachtas.ie/ontology#OriginalTitle
+
+:OriginalTitle rdf:type owl:DatatypeProperty ;
+               
+               rdfs:label "Original title" ;
+               
+               rdfs:comment "The title of a LegalResource when first published" ;
+               
+               rdfs:subPropertyOf <http://purl.org/dc/terms/alternative> .
+
+
+
+
+
+#################################################################
+#
+#    Classes
+#
+#################################################################
+
+
+###  http://www.oireachtas.ie/ontology#AmendingStage
+
+:AmendingStage rdf:type owl:Class ;
+               
+               rdfs:subClassOf <http://www.metalex.eu/metalex/2008-05-02#LegislativeModification> ,
+                               :BillStage ;
+               
+               rdfs:comment "A stage on which it is possible to make amendments which modify a Bill (ie, result in a new version)"@en ;
+               
+               <http://www.w3.org/2004/02/skos/core#prefLabel> "Amending Stage"@en .
+
+
+
+###  http://www.oireachtas.ie/ontology#AmendmentList
+
+:AmendmentList rdf:type owl:Class ;
+               
+               rdfs:subClassOf <http://data.europa.eu/eli/ontology#LegalResource> .
+
+
+
+###  http://www.oireachtas.ie/ontology#BillAmendment
+
+:BillAmendment rdf:type owl:Class ;
+               
+               rdfs:subClassOf <http://data.europa.eu/eli/ontology#LegalExpression> ,
+                               :AmendingStage ;
+               
+               rdfs:comment "An amendment is both an expression (or perhaps a work) and a modifying event"@en ;
+               
+               <http://www.w3.org/2004/02/skos/core#prefLabel> "Bill Amendment"@en .
+
+
+
+###  http://www.oireachtas.ie/ontology#BillDelivery
+
+:BillDelivery rdf:type owl:Class ;
+              
+              rdfs:subClassOf <http://www.metalex.eu/metalex/2008-05-02#LegislativeDelivery> ;
+              
+              <http://www.w3.org/2004/02/skos/core#prefLabel> "Bill Delivery"@en ;
+              
+              rdfs:comment "The means by which the Bill was initiated in the Houses of the Oireachtas"@en .
+
+
+
+###  http://www.oireachtas.ie/ontology#BillDeliveryOutcome
+
+:BillDeliveryOutcome rdf:type owl:Class ;
+                     
+                     rdfs:subClassOf <http://www.metalex.eu/metalex/2008-05-02#Result> ;
+                     
+                     <http://www.w3.org/2004/02/skos/core#prefLabel> "Bill Delivery Outcome"@en ;
+                     
+                     rdfs:comment "The means by which the Bill was initiated in the Houses of the Oireachtas"@en .
+
+
+
+###  http://www.oireachtas.ie/ontology#BillEvent
+
+:BillEvent rdf:type owl:Class ;
+           
+           rdfs:subClassOf :JournalEvent ;
+           
+           rdfs:comment "A procedural event that occurs during the lifecycle of a Bill"@en ;
+           
+           <http://www.w3.org/2004/02/skos/core#prefLabel> "Bill Event"@en .
+
+
+
+###  http://www.oireachtas.ie/ontology#BillEventOutcome
+
+:BillEventOutcome rdf:type owl:Class ;
+                  
+                  rdfs:subClassOf <http://www.metalex.eu/metalex/2008-05-02#Result> ;
+                  
+                  <http://www.w3.org/2004/02/skos/core#prefLabel> "Bill Event Outcome"@en ;
+                  
+                  rdfs:comment "The outcome of a motion, question or amendment put to a House pertaining to a Bill"@en .
+
+
+
+###  http://www.oireachtas.ie/ontology#BillExpression
+
+:BillExpression rdf:type owl:Class ;
+                
+                rdfs:subClassOf <http://data.europa.eu/eli/ontology#LegalExpression> ,
+                                <http://www.metalex.eu/metalex/2008-05-02#BibliographicExpression> .
+
+
+
+###  http://www.oireachtas.ie/ontology#BillFormat
+
+:BillFormat rdf:type owl:Class ;
+            
+            rdfs:subClassOf <http://data.europa.eu/eli/ontology#Format> ,
+                            <http://www.metalex.eu/metalex/2008-05-02#BibliographicManifestation> .
+
+
+
+###  http://www.oireachtas.ie/ontology#BillResource
+
+:BillResource rdf:type owl:Class ;
+              
+              rdfs:subClassOf <http://data.europa.eu/eli/ontology#LegalResource> ,
+                              <http://www.metalex.eu/metalex/2008-05-02#BibliographicWork> .
+
+
+
+###  http://www.oireachtas.ie/ontology#BillSource
+
+:BillSource rdf:type owl:Class ;
+            
+            rdfs:subClassOf <http://www.metalex.eu/metalex/2008-05-02#Legislator> ;
+            
+            <http://www.w3.org/2004/02/skos/core#prefLabel> "Source of Bill"@en ;
+            
+            rdfs:comment "The type of Bill, described as an agent, ie Government, Private Member or Private Sponsor"@en .
+
+
+
+###  http://www.oireachtas.ie/ontology#BillStage
+
+:BillStage rdf:type owl:Class ;
+           
+           rdfs:subClassOf :JournalEvent ;
+           
+           <http://www.w3.org/2004/02/skos/core#prefLabel> "Stage of Bill"@en .
+
+
+
+###  http://www.oireachtas.ie/ontology#BillStatus
+
+:BillStatus rdf:type owl:Class ;
+            
+            <http://www.w3.org/2004/02/skos/core#prefLabel> "Bill Status"@en ;
+            
+            rdfs:comment "The current or most recent status of a Bill"@en .
+
+
+
+###  http://www.oireachtas.ie/ontology#BillVersion
+
+:BillVersion rdf:type owl:Class ;
+             
+             rdfs:subClassOf <http://data.europa.eu/eli/ontology#Version> .
+
+
+
+###  http://www.oireachtas.ie/ontology#BillsBook
+
+:BillsBook rdf:type owl:Class ;
+           
+           rdfs:subClassOf <http://www.w3.org/2004/02/skos/core#OrderedCollection> ;
+           
+           <http://www.w3.org/2004/02/skos/core#prefLabel> "Bills Book"@en ;
+           
+           <http://www.w3.org/2004/02/skos/core#altLabel> "Legislative Observatory"@en .
+
+
+
+###  http://www.oireachtas.ie/ontology#Chamber
+
+:Chamber rdf:type owl:Class ;
+         
+         rdfs:subClassOf :Oireachtas ;
+         
+         rdfs:comment "The Dáil, the Seanad or a committee chamber"@en .
+
+
+
+###  http://www.oireachtas.ie/ontology#Government
+
+:Government rdf:type owl:Class ;
+            
+            rdfs:subClassOf <http://www.metalex.eu/metalex/2008-05-02#Legislator> ,
+                            :BillSource ,
+                            :Oireachtas ;
+            
+            <http://www.w3.org/2004/02/skos/core#prefLabel> "The Government"@en ;
+            
+            rdfs:comment "The Government, as defined by the Constitution."@en .
+
+
+
+###  http://www.oireachtas.ie/ontology#JournalEvent
+
+:JournalEvent rdf:type owl:Class ;
+              
+              rdfs:subClassOf <http://www.metalex.eu/metalex/2008-05-02#LegislativeCreation> ;
+              
+              rdfs:comment "An event which takes place in a Chamber or a committee, which is scheduled in the Order Paper and/or recorded in the Journal and Official Report, that is part of the process of enacting legislation (or moving motions)"@en .
+
+
+
+###  http://www.oireachtas.ie/ontology#Member
+
+:Member rdf:type owl:Class ;
+        
+        rdfs:subClassOf <http://rdaregistry.info/Elements/c/C10004> ,
+                        <http://www.metalex.eu/metalex/2008-05-02#Legislator> ;
+        
+        owl:disjointWith :PrivateSponsor ;
+        
+        rdfs:comment "A Member of one of the Houses of the Oireachtas"@en ;
+        
+        <http://www.w3.org/2004/02/skos/core#prefLabel> "Member"@en .
+
+
+
+###  http://www.oireachtas.ie/ontology#Minister
+
+:Minister rdf:type owl:Class ;
+          
+          rdfs:subClassOf :Member ;
+          
+          <http://www.w3.org/2004/02/skos/core#prefLabel> "Minister"@en .
+
+
+
+###  http://www.oireachtas.ie/ontology#Mover
+
+:Mover rdf:type owl:Class ;
+       
+       rdfs:subClassOf :Minister ,
+                       :PrivateMember .
+
+
+
+###  http://www.oireachtas.ie/ontology#Oireachtas
+
+:Oireachtas rdf:type owl:Class ;
+            
+            rdfs:subClassOf <http://rdaregistry.info/Elements/c/C10005> ;
+            
+            owl:disjointWith :PrivateSponsor ;
+            
+            <http://purl.org/dc/elements/1.1/title> "Houses of the Oireachtas"@en ;
+            
+            rdfs:comment "Houses of the Oireachtas as a legislative and parliamentary body, does not include the Houses of the Oireachtas Service."@ga ;
+            
+            <http://purl.org/dc/elements/1.1/title> "Tithe an Oireachtas"@ga .
+
+
+
+###  http://www.oireachtas.ie/ontology#PrivateMember
+
+:PrivateMember rdf:type owl:Class ;
+               
+               rdfs:subClassOf <http://www.metalex.eu/metalex/2008-05-02#Legislator> ,
+                               :BillSource ,
+                               :Member ;
+               
+               rdfs:comment "A Member of the Oireachtas who is not also a Member of Government"@en ;
+               
+               <http://www.w3.org/2004/02/skos/core#prefLabel> "Private Member"@en .
+
+
+
+###  http://www.oireachtas.ie/ontology#PrivateSponsor
+
+:PrivateSponsor rdf:type owl:Class ;
+                
+                rdfs:subClassOf <http://rdaregistry.info/Elements/c/C10004> ,
+                                <http://rdaregistry.info/Elements/c/C10005> ,
+                                :BillSource ;
+                
+                rdfs:comment "A person or collective entity which introduces legislation to the Oireachtas"@en ;
+                
+                <http://www.w3.org/2004/02/skos/core#prefLabel> "Private Sponsor"@en .
+
+
+
+
+
+#################################################################
+#
+#    Individuals
+#
+#################################################################
+
+
+###  http://www.oireachtas.ie/ontology#Act
+
+:Act rdf:type <http://data.europa.eu/eli/ontology#ResourceType> ,
+              owl:NamedIndividual ;
+     
+     <http://www.w3.org/2004/02/skos/core#prefLabel> "Act"@en ;
+     
+     <http://www.w3.org/2004/02/skos/core#topConceptOf> <http://data.europa.eu/eli/ontology#ResourceTypeTable> ;
+     
+     <http://www.w3.org/2004/02/skos/core#inScheme> <http://data.europa.eu/eli/ontology#ResourceTypeTable> .
+
+
+
+###  http://www.oireachtas.ie/ontology#Agreed
+
+:Agreed rdf:type :BillEventOutcome ,
+                 owl:NamedIndividual ;
+        
+        <http://www.w3.org/2004/02/skos/core#prefLabel> "Agreed to"@en ;
+        
+        <http://www.w3.org/2004/02/skos/core#inScheme> :BillEventResultTable ;
+        
+        <http://www.w3.org/2004/02/skos/core#topConceptOf> :BillEventResultTable .
+
+
+
+###  http://www.oireachtas.ie/ontology#AllStages
+
+:AllStages rdf:type :BillEvent ,
+                    :BillStage ,
+                    owl:NamedIndividual ;
+           
+           <http://www.w3.org/2004/02/skos/core#prefLabel> "All stages"@en ;
+           
+           <http://www.w3.org/2004/02/skos/core#topConceptOf> :BillEventTable ;
+           
+           <http://www.w3.org/2004/02/skos/core#inScheme> :BillEventTable .
+
+
+
+###  http://www.oireachtas.ie/ontology#Application
+
+:Application rdf:type :BillDelivery ,
+                      owl:NamedIndividual ;
+             
+             <http://www.w3.org/2004/02/skos/core#topConceptOf> :BillDeliveryTable ;
+             
+             <http://www.w3.org/2004/02/skos/core#inScheme> :BillDeliveryTable .
+
+
+
+###  http://www.oireachtas.ie/ontology#AsInitiated
+
+:AsInitiated rdf:type :BillVersion ,
+                      owl:NamedIndividual ;
+             
+             <http://www.w3.org/2004/02/skos/core#prefLabel> "As Initiated"@en ;
+             
+             <http://www.w3.org/2004/02/skos/core#topConceptOf> <http://data.europa.eu/eli/ontology#VersionTable> ;
+             
+             <http://www.w3.org/2004/02/skos/core#inScheme> <http://data.europa.eu/eli/ontology#VersionTable> .
+[ rdf:type owl:Axiom ;
+  <http://www.w3.org/2004/02/skos/core#prefLabel> "Bill as initiated"@en ;
+  owl:annotatedSource :AsInitiated ;
+  owl:annotatedTarget :BillVersion ;
+  owl:annotatedProperty rdf:type
+] .
+
+
+
+###  http://www.oireachtas.ie/ontology#AwaitingSignatureBill
+
+:AwaitingSignatureBill rdf:type :BillStatus ,
+                                owl:NamedIndividual ;
+                       
+                       <http://www.w3.org/2004/02/skos/core#prefLabel> "Passed, awaiting President's signature"@en ;
+                       
+                       <http://www.w3.org/2004/02/skos/core#topConceptOf> :BillStatusTable ;
+                       
+                       <http://www.w3.org/2004/02/skos/core#inScheme> :BillStatusTable .
+
+
+
+###  http://www.oireachtas.ie/ontology#BallotOrder
+
+:BallotOrder rdf:type :BillEvent ,
+                      owl:NamedIndividual ;
+             
+             <http://www.w3.org/2004/02/skos/core#prefLabel> "Ballot paper motion"@en ;
+             
+             <http://www.w3.org/2004/02/skos/core#topConceptOf> :BillEventTable ;
+             
+             <http://www.w3.org/2004/02/skos/core#inScheme> :BillEventTable .
+
+
+
+###  http://www.oireachtas.ie/ontology#Bill
+
+:Bill rdf:type <http://data.europa.eu/eli/ontology#ResourceType> ,
+               owl:NamedIndividual ;
+      
+      <http://www.w3.org/2004/02/skos/core#prefLabel> "Bill"@en ;
+      
+      <http://www.w3.org/2004/02/skos/core#inScheme> <http://data.europa.eu/eli/ontology#ResourceTypeTable> ;
+      
+      <http://www.w3.org/2004/02/skos/core#topConceptOf> <http://data.europa.eu/eli/ontology#ResourceTypeTable> .
+
+
+
+###  http://www.oireachtas.ie/ontology#BillAmend
+
+:BillAmend rdf:type :BillEvent ,
+                    owl:NamedIndividual ;
+           
+           <http://www.w3.org/2004/02/skos/core#prefLabel> "Bill amendment"@en ;
+           
+           <http://www.w3.org/2004/02/skos/core#topConceptOf> :BillEventTable ;
+           
+           <http://www.w3.org/2004/02/skos/core#inScheme> :BillEventTable .
+
+
+
+###  http://www.oireachtas.ie/ontology#BillAmend2Amend
+
+:BillAmend2Amend rdf:type :BillEvent ,
+                          owl:NamedIndividual ;
+                 
+                 <http://www.w3.org/2004/02/skos/core#prefLabel> "Amendment to Bill amendment"@en ;
+                 
+                 <http://www.w3.org/2004/02/skos/core#topConceptOf> :BillEventTable ;
+                 
+                 <http://www.w3.org/2004/02/skos/core#inScheme> :BillEventTable .
+
+
+
+###  http://www.oireachtas.ie/ontology#BillDeliveryOutcomeTable
+
+:BillDeliveryOutcomeTable rdf:type owl:NamedIndividual ,
+                                   <http://www.w3.org/2004/02/skos/core#ConceptScheme> ;
+                          
+                          <http://www.w3.org/2004/02/skos/core#prefLabel> "Bill delivery outcome table"@en .
+
+
+
+###  http://www.oireachtas.ie/ontology#BillDeliveryTable
+
+:BillDeliveryTable rdf:type owl:NamedIndividual ,
+                            <http://www.w3.org/2004/02/skos/core#ConceptScheme> ;
+                   
+                   <http://www.w3.org/2004/02/skos/core#prefLabel> "Bill delivery table"@en .
+
+
+
+###  http://www.oireachtas.ie/ontology#BillEventResultTable
+
+:BillEventResultTable rdf:type owl:NamedIndividual ,
+                               <http://www.w3.org/2004/02/skos/core#ConceptScheme> ;
+                      
+                      <http://www.w3.org/2004/02/skos/core#prefLabel> "Bill event outcome table"@en .
+
+
+
+###  http://www.oireachtas.ie/ontology#BillEventTable
+
+:BillEventTable rdf:type owl:NamedIndividual ,
+                         <http://www.w3.org/2004/02/skos/core#ConceptScheme> ;
+                
+                <http://www.w3.org/2004/02/skos/core#prefLabel> "Bill event table"@en ;
+                
+                rdfs:comment "The procedural events that occur during a Bill's lifecycle."@en .
+
+
+
+###  http://www.oireachtas.ie/ontology#BillRecommendation
+
+:BillRecommendation rdf:type :BillEvent ,
+                             owl:NamedIndividual ;
+                    
+                    <http://www.w3.org/2004/02/skos/core#prefLabel> "Bill recommendation"@en ;
+                    
+                    <http://www.w3.org/2004/02/skos/core#topConceptOf> :BillEventTable ;
+                    
+                    <http://www.w3.org/2004/02/skos/core#inScheme> :BillEventTable .
+
+
+
+###  http://www.oireachtas.ie/ontology#BillStatusTable
+
+:BillStatusTable rdf:type owl:NamedIndividual ,
+                          <http://www.w3.org/2004/02/skos/core#ConceptScheme> ;
+                 
+                 <http://www.w3.org/2004/02/skos/core#prefLabel> "Bill status table"@en .
+
+
+
+###  http://www.oireachtas.ie/ontology#CommitteeStage
+
+:CommitteeStage rdf:type :AmendingStage ,
+                         :BillEvent ,
+                         :BillStage ,
+                         owl:NamedIndividual ;
+                
+                <http://www.w3.org/2004/02/skos/core#prefLabel> "Committee stage"@en ;
+                
+                <http://www.w3.org/2004/02/skos/core#topConceptOf> :BillEventTable ;
+                
+                <http://www.w3.org/2004/02/skos/core#inScheme> :BillEventTable .
+
+
+
+###  http://www.oireachtas.ie/ontology#CommitteeSubStages
+
+:CommitteeSubStages rdf:type :AmendingStage ,
+                             :BillEvent ,
+                             :BillStage ,
+                             owl:NamedIndividual ;
+                    
+                    <http://www.w3.org/2004/02/skos/core#prefLabel> "Committee and remaining stages"@en ;
+                    
+                    <http://www.w3.org/2004/02/skos/core#topConceptOf> :BillEventTable ;
+                    
+                    <http://www.w3.org/2004/02/skos/core#inScheme> :BillEventTable .
+
+
+
+###  http://www.oireachtas.ie/ontology#CurrentBill
+
+:CurrentBill rdf:type :BillStatus ,
+                      owl:NamedIndividual ;
+             
+             <http://www.w3.org/2004/02/skos/core#prefLabel> "Current"@en ;
+             
+             <http://www.w3.org/2004/02/skos/core#inScheme> :BillStatusTable ;
+             
+             <http://www.w3.org/2004/02/skos/core#topConceptOf> :BillStatusTable .
+
+
+
+###  http://www.oireachtas.ie/ontology#DailAmdSeanad
+
+:DailAmdSeanad rdf:type :BillEvent ,
+                        owl:NamedIndividual ;
+               
+               <http://www.w3.org/2004/02/skos/core#prefLabel> "Dáil amendments in the Seanad"@en ;
+               
+               <http://www.w3.org/2004/02/skos/core#topConceptOf> :BillEventTable ;
+               
+               <http://www.w3.org/2004/02/skos/core#inScheme> :BillEventTable .
+
+
+
+###  http://www.oireachtas.ie/ontology#DeclaredCarried
+
+:DeclaredCarried rdf:type :BillEventOutcome ,
+                          owl:NamedIndividual ;
+                 
+                 <http://www.w3.org/2004/02/skos/core#prefLabel> "Declared carried"@en ;
+                 
+                 <http://www.w3.org/2004/02/skos/core#inScheme> :BillEventResultTable ;
+                 
+                 <http://www.w3.org/2004/02/skos/core#topConceptOf> :BillEventResultTable .
+
+
+
+###  http://www.oireachtas.ie/ontology#DeclaredLost
+
+:DeclaredLost rdf:type :BillEventOutcome ,
+                       owl:NamedIndividual ;
+              
+              <http://www.w3.org/2004/02/skos/core#prefLabel> "Declared lost"@en ;
+              
+              <http://www.w3.org/2004/02/skos/core#topConceptOf> :BillEventResultTable ;
+              
+              <http://www.w3.org/2004/02/skos/core#inScheme> :BillEventResultTable .
+
+
+
+###  http://www.oireachtas.ie/ontology#DefeatedBill
+
+:DefeatedBill rdf:type :BillStatus ,
+                       owl:NamedIndividual ;
+              
+              <http://www.w3.org/2004/02/skos/core#prefLabel> "Defeated"@en ;
+              
+              <http://www.w3.org/2004/02/skos/core#topConceptOf> :BillStatusTable ;
+              
+              <http://www.w3.org/2004/02/skos/core#inScheme> :BillStatusTable .
+
+
+
+###  http://www.oireachtas.ie/ontology#DischargeOrderSecondStage
+
+:DischargeOrderSecondStage rdf:type :BillEvent ,
+                                    owl:NamedIndividual ;
+                           
+                           <http://www.w3.org/2004/02/skos/core#prefLabel> "Motion for discharge order for second stage"@en ;
+                           
+                           <http://www.w3.org/2004/02/skos/core#inScheme> :BillEventTable ;
+                           
+                           <http://www.w3.org/2004/02/skos/core#topConceptOf> :BillEventTable .
+
+
+
+###  http://www.oireachtas.ie/ontology#DischargeSecondStage
+
+:DischargeSecondStage rdf:type :BillEvent ,
+                               owl:NamedIndividual ;
+                      
+                      <http://www.w3.org/2004/02/skos/core#prefLabel> "Motion for discharge order for second stage"@en ;
+                      
+                      <http://www.w3.org/2004/02/skos/core#inScheme> :BillEventTable ;
+                      
+                      <http://www.w3.org/2004/02/skos/core#topConceptOf> :BillEventTable .
+
+
+
+###  http://www.oireachtas.ie/ontology#DraftBill
+
+:DraftBill rdf:type <http://data.europa.eu/eli/ontology#ResourceType> ,
+                    owl:NamedIndividual ;
+           
+           <http://www.w3.org/2004/02/skos/core#prefLabel> "Heads of Bill"@en ;
+           
+           <http://www.w3.org/2004/02/skos/core#inScheme> <http://data.europa.eu/eli/ontology#ResourceTypeTable> ;
+           
+           <http://www.w3.org/2004/02/skos/core#topConceptOf> <http://data.europa.eu/eli/ontology#ResourceTypeTable> .
+
+
+
+###  http://www.oireachtas.ie/ontology#DraftHeadsOfBill
+
+:DraftHeadsOfBill rdf:type :BillStatus ,
+                           owl:NamedIndividual ;
+                  
+                  <http://www.w3.org/2004/02/skos/core#prefLabel> "Heads drafted"@en ;
+                  
+                  <http://www.w3.org/2004/02/skos/core#topConceptOf> :BillStatusTable ;
+                  
+                  <http://www.w3.org/2004/02/skos/core#inScheme> :BillStatusTable .
+
+
+
+###  http://www.oireachtas.ie/ontology#EarlySign
+
+:EarlySign rdf:type :BillEvent ,
+                    owl:NamedIndividual ;
+           
+           <http://www.w3.org/2004/02/skos/core#prefLabel> "Motion for early signature"@en ;
+           
+           <http://www.w3.org/2004/02/skos/core#inScheme> :BillEventTable ;
+           
+           <http://www.w3.org/2004/02/skos/core#topConceptOf> :BillEventTable .
+
+
+
+###  http://www.oireachtas.ie/ontology#EnactedBill
+
+:EnactedBill rdf:type :BillStatus ,
+                      owl:NamedIndividual ;
+             
+             <http://www.w3.org/2004/02/skos/core#prefLabel> "Enacted"@en ;
+             
+             <http://www.w3.org/2004/02/skos/core#inScheme> :BillStatusTable ;
+             
+             <http://www.w3.org/2004/02/skos/core#topConceptOf> :BillStatusTable .
+
+
+
+###  http://www.oireachtas.ie/ontology#Examiner
+
+:Examiner rdf:type :BillDeliveryOutcome ,
+                   owl:NamedIndividual ;
+          
+          <http://www.w3.org/2004/02/skos/core#prefLabel> "Report of the Examiner of Private Bills"@en .
+
+
+
+###  http://www.oireachtas.ie/ontology#ExplanatoryMemo
+
+:ExplanatoryMemo rdf:type <http://data.europa.eu/eli/ontology#ResourceType> ,
+                          owl:NamedIndividual ;
+                 
+                 <http://www.w3.org/2004/02/skos/core#prefLabel> "Explanatory Memorandum"@en ;
+                 
+                 <http://www.w3.org/2004/02/skos/core#topConceptOf> <http://data.europa.eu/eli/ontology#ResourceTypeTable> ;
+                 
+                 <http://www.w3.org/2004/02/skos/core#inScheme> <http://data.europa.eu/eli/ontology#ResourceTypeTable> .
+
+
+
+###  http://www.oireachtas.ie/ontology#FifthStage
+
+:FifthStage rdf:type :BillEvent ,
+                     :BillStage ,
+                     owl:NamedIndividual ;
+            
+            <http://www.w3.org/2004/02/skos/core#prefLabel> "Fifth stage"@en ;
+            
+            <http://www.w3.org/2004/02/skos/core#inScheme> :BillEventTable ;
+            
+            <http://www.w3.org/2004/02/skos/core#topConceptOf> :BillEventTable .
+
+
+
+###  http://www.oireachtas.ie/ontology#FinancialResolution
+
+:FinancialResolution rdf:type :BillEvent ,
+                              owl:NamedIndividual ;
+                     
+                     <http://www.w3.org/2004/02/skos/core#prefLabel> "Financial resolution"@en .
+
+
+
+###  http://www.oireachtas.ie/ontology#FirstStage
+
+:FirstStage rdf:type :BillEvent ,
+                     :BillStage ,
+                     owl:NamedIndividual ;
+            
+            <http://www.w3.org/2004/02/skos/core#prefLabel> "First stage"@en ;
+            
+            <http://www.w3.org/2004/02/skos/core#topConceptOf> :BillEventTable ;
+            
+            <http://www.w3.org/2004/02/skos/core#inScheme> :BillEventTable .
+
+
+
+###  http://www.oireachtas.ie/ontology#InstrCommittee
+
+:InstrCommittee rdf:type :BillEvent ,
+                         owl:NamedIndividual ;
+                
+                <http://www.w3.org/2004/02/skos/core#prefLabel> "Instruction to committee"@en ;
+                
+                <http://www.w3.org/2004/02/skos/core#inScheme> :BillEventTable ;
+                
+                <http://www.w3.org/2004/02/skos/core#topConceptOf> :BillEventTable .
+
+
+
+###  http://www.oireachtas.ie/ontology#Introduced
+
+:Introduced rdf:type :BillDeliveryOutcome ,
+                     owl:NamedIndividual ;
+            
+            <http://www.w3.org/2004/02/skos/core#prefLabel> "Introduced"@en .
+
+
+
+###  http://www.oireachtas.ie/ontology#Introduction
+
+:Introduction rdf:type :BillDelivery ,
+                       owl:NamedIndividual ;
+              
+              <http://www.w3.org/2004/02/skos/core#topConceptOf> :BillDeliveryTable ;
+              
+              <http://www.w3.org/2004/02/skos/core#inScheme> :BillDeliveryTable .
+
+
+
+###  http://www.oireachtas.ie/ontology#LapsedBill
+
+:LapsedBill rdf:type :BillStatus ,
+                     owl:NamedIndividual ;
+            
+            <http://www.w3.org/2004/02/skos/core#prefLabel> "Lapsed"@en ;
+            
+            <http://www.w3.org/2004/02/skos/core#topConceptOf> :BillStatusTable ;
+            
+            <http://www.w3.org/2004/02/skos/core#inScheme> :BillStatusTable .
+
+
+
+###  http://www.oireachtas.ie/ontology#LeaveToWithdraw
+
+:LeaveToWithdraw rdf:type :BillEvent ,
+                          owl:NamedIndividual ;
+                 
+                 <http://www.w3.org/2004/02/skos/core#prefLabel> "Leave to withdraw"@en ;
+                 
+                 <http://www.w3.org/2004/02/skos/core#topConceptOf> :BillEventTable ;
+                 
+                 <http://www.w3.org/2004/02/skos/core#inScheme> :BillEventTable .
+
+
+
+###  http://www.oireachtas.ie/ontology#NotMoved
+
+:NotMoved rdf:type :BillEventOutcome ,
+                   owl:NamedIndividual ;
+          
+          <http://www.w3.org/2004/02/skos/core#prefLabel> "Not moved"@en ;
+          
+          <http://www.w3.org/2004/02/skos/core#inScheme> :BillEventResultTable ;
+          
+          <http://www.w3.org/2004/02/skos/core#topConceptOf> :BillEventResultTable .
+
+
+
+###  http://www.oireachtas.ie/ontology#OrderCommitteeStage
+
+:OrderCommitteeStage rdf:type :BillEvent ,
+                              :BillStage ,
+                              owl:NamedIndividual ;
+                     
+                     <http://www.w3.org/2004/02/skos/core#prefLabel> "Order for committee stage"@en ;
+                     
+                     <http://www.w3.org/2004/02/skos/core#inScheme> :BillEventTable ;
+                     
+                     <http://www.w3.org/2004/02/skos/core#topConceptOf> :BillEventTable .
+
+
+
+###  http://www.oireachtas.ie/ontology#OrderReportStage
+
+:OrderReportStage rdf:type :BillEvent ,
+                           :BillStage ,
+                           owl:NamedIndividual ;
+                  
+                  <http://www.w3.org/2004/02/skos/core#prefLabel> "Order for report stage"@en ;
+                  
+                  <http://www.w3.org/2004/02/skos/core#topConceptOf> :BillEventTable ;
+                  
+                  <http://www.w3.org/2004/02/skos/core#inScheme> :BillEventTable .
+
+
+
+###  http://www.oireachtas.ie/ontology#OrderSecondStage
+
+:OrderSecondStage rdf:type :BillEvent ,
+                           :BillStage ,
+                           owl:NamedIndividual ;
+                  
+                  <http://www.w3.org/2004/02/skos/core#prefLabel> "Order for second stage"@en ;
+                  
+                  <http://www.w3.org/2004/02/skos/core#topConceptOf> :BillEventTable ;
+                  
+                  <http://www.w3.org/2004/02/skos/core#inScheme> :BillEventTable .
+
+
+
+###  http://www.oireachtas.ie/ontology#Presentation
+
+:Presentation rdf:type :BillDelivery ,
+                       owl:NamedIndividual ;
+              
+              <http://www.w3.org/2004/02/skos/core#inScheme> :BillDeliveryTable ;
+              
+              <http://www.w3.org/2004/02/skos/core#topConceptOf> :BillDeliveryTable .
+
+
+
+###  http://www.oireachtas.ie/ontology#Presented
+
+:Presented rdf:type :BillDeliveryOutcome ,
+                    owl:NamedIndividual ;
+           
+           <http://www.w3.org/2004/02/skos/core#prefLabel> "Presented"@en .
+
+
+
+###  http://www.oireachtas.ie/ontology#RecommitBill
+
+:RecommitBill rdf:type :BillEvent ,
+                       owl:NamedIndividual ;
+              
+              <http://www.w3.org/2004/02/skos/core#prefLabel> "Motion to recommit"@en ;
+              
+              <http://www.w3.org/2004/02/skos/core#topConceptOf> :BillEventTable ;
+              
+              <http://www.w3.org/2004/02/skos/core#inScheme> :BillEventTable .
+
+
+
+###  http://www.oireachtas.ie/ontology#RefCommittee
+
+:RefCommittee rdf:type :BillEvent ,
+                       owl:NamedIndividual ;
+              
+              <http://www.w3.org/2004/02/skos/core#prefLabel> "Referral to select committee"@en ;
+              
+              <http://www.w3.org/2004/02/skos/core#topConceptOf> :BillEventTable ;
+              
+              <http://www.w3.org/2004/02/skos/core#inScheme> :BillEventTable .
+
+
+
+###  http://www.oireachtas.ie/ontology#Refused
+
+:Refused rdf:type :BillDeliveryOutcome ,
+                  owl:NamedIndividual ;
+         
+         <http://www.w3.org/2004/02/skos/core#prefLabel> "Refused Introduction"@en .
+
+
+
+###  http://www.oireachtas.ie/ontology#RejectedAtReferendumBill
+
+:RejectedAtReferendumBill rdf:type :BillStatus ,
+                                   owl:NamedIndividual ;
+                          
+                          <http://www.w3.org/2004/02/skos/core#prefLabel> "Rejected at referendum"@en ;
+                          
+                          <http://www.w3.org/2004/02/skos/core#topConceptOf> :BillStatusTable ;
+                          
+                          <http://www.w3.org/2004/02/skos/core#inScheme> :BillStatusTable .
+
+
+
+###  http://www.oireachtas.ie/ontology#ReportStage
+
+:ReportStage rdf:type :AmendingStage ,
+                      :BillEvent ,
+                      :BillStage ,
+                      owl:NamedIndividual ;
+             
+             <http://www.w3.org/2004/02/skos/core#prefLabel> "Report stage"@en ;
+             
+             <http://www.w3.org/2004/02/skos/core#topConceptOf> :BillEventTable ;
+             
+             <http://www.w3.org/2004/02/skos/core#inScheme> :BillEventTable .
+
+
+
+###  http://www.oireachtas.ie/ontology#ReportSubStages
+
+:ReportSubStages rdf:type :AmendingStage ,
+                          :BillEvent ,
+                          :BillStage ,
+                          owl:NamedIndividual ;
+                 
+                 <http://www.w3.org/2004/02/skos/core#prefLabel> "Report and final stages"@en ;
+                 
+                 <http://www.w3.org/2004/02/skos/core#inScheme> :BillEventTable ;
+                 
+                 <http://www.w3.org/2004/02/skos/core#topConceptOf> :BillEventTable .
+
+
+
+###  http://www.oireachtas.ie/ontology#RestoreBill
+
+:RestoreBill rdf:type :BillEvent ,
+                      owl:NamedIndividual ;
+             
+             <http://www.w3.org/2004/02/skos/core#prefLabel> "Restoration of Bill"@en ;
+             
+             <http://www.w3.org/2004/02/skos/core#topConceptOf> :BillEventTable ;
+             
+             <http://www.w3.org/2004/02/skos/core#inScheme> :BillEventTable .
+
+
+
+###  http://www.oireachtas.ie/ontology#SeanadAmdDail
+
+:SeanadAmdDail rdf:type :BillEvent ,
+                        owl:NamedIndividual ;
+               
+               <http://www.w3.org/2004/02/skos/core#prefLabel> "Seanad amendments in the Dáil"@en ;
+               
+               <http://www.w3.org/2004/02/skos/core#topConceptOf> :BillEventTable ;
+               
+               <http://www.w3.org/2004/02/skos/core#inScheme> :BillEventTable .
+
+
+
+###  http://www.oireachtas.ie/ontology#SecondStage
+
+:SecondStage rdf:type :BillEvent ,
+                      :BillStage ,
+                      owl:NamedIndividual ;
+             
+             <http://www.w3.org/2004/02/skos/core#prefLabel> "Second stage"@en ;
+             
+             <http://www.w3.org/2004/02/skos/core#inScheme> :BillEventTable ;
+             
+             <http://www.w3.org/2004/02/skos/core#topConceptOf> :BillEventTable .
+
+
+
+###  http://www.oireachtas.ie/ontology#SecondSubStages
+
+:SecondSubStages rdf:type :BillEvent ,
+                          :BillStage ,
+                          owl:NamedIndividual ;
+                 
+                 <http://www.w3.org/2004/02/skos/core#prefLabel> "Second and subsequent stages"@en ;
+                 
+                 <http://www.w3.org/2004/02/skos/core#inScheme> :BillEventTable ;
+                 
+                 <http://www.w3.org/2004/02/skos/core#topConceptOf> :BillEventTable .
+
+
+
+###  http://www.oireachtas.ie/ontology#SubjectToReferendumBill
+
+:SubjectToReferendumBill rdf:type :BillStatus ,
+                                  owl:NamedIndividual ;
+                         
+                         <http://www.w3.org/2004/02/skos/core#prefLabel> "Passed, subject to referendum"@en ;
+                         
+                         <http://www.w3.org/2004/02/skos/core#topConceptOf> :BillStatusTable ;
+                         
+                         <http://www.w3.org/2004/02/skos/core#inScheme> :BillStatusTable .
+
+
+
+###  http://www.oireachtas.ie/ontology#VersionA
+
+:VersionA rdf:type :BillVersion ,
+                   owl:NamedIndividual ;
+          
+          <http://www.w3.org/2004/02/skos/core#prefLabel> "Second Printing"@en ;
+          
+          <http://www.w3.org/2004/02/skos/core#inScheme> <http://data.europa.eu/eli/ontology#VersionTable> ;
+          
+          <http://www.w3.org/2004/02/skos/core#topConceptOf> <http://data.europa.eu/eli/ontology#VersionTable> .
+[ rdf:type owl:Axiom ;
+  <http://www.w3.org/2004/02/skos/core#prefLabel> "Second printing"@en ;
+  rdfs:comment "The second version of a Bill after being amended for the first time."@en ;
+  owl:annotatedTarget :BillVersion ;
+  owl:annotatedSource :VersionA ;
+  owl:annotatedProperty rdf:type
+] .
+
+
+
+###  http://www.oireachtas.ie/ontology#VersionB
+
+:VersionB rdf:type :BillVersion ,
+                   owl:NamedIndividual ;
+          
+          <http://www.w3.org/2004/02/skos/core#prefLabel> "Third Printing"@en ;
+          
+          <http://www.w3.org/2004/02/skos/core#topConceptOf> <http://data.europa.eu/eli/ontology#VersionTable> ;
+          
+          <http://www.w3.org/2004/02/skos/core#inScheme> <http://data.europa.eu/eli/ontology#VersionTable> .
+[ rdf:type owl:Axiom ;
+  <http://www.w3.org/2004/02/skos/core#prefLabel> "Third Printing"@en ;
+  rdfs:comment "Third version of Bill, having been amended for the second time."@en ;
+  owl:annotatedTarget :BillVersion ;
+  owl:annotatedSource :VersionB ;
+  owl:annotatedProperty rdf:type
+] .
+
+
+
+###  http://www.oireachtas.ie/ontology#VersionC
+
+:VersionC rdf:type :BillVersion ,
+                   owl:NamedIndividual ;
+          
+          <http://www.w3.org/2004/02/skos/core#prefLabel> "Fourth Printing"@en ;
+          
+          <http://www.w3.org/2004/02/skos/core#inScheme> <http://data.europa.eu/eli/ontology#VersionTable> ;
+          
+          <http://www.w3.org/2004/02/skos/core#topConceptOf> <http://data.europa.eu/eli/ontology#VersionTable> .
+[ rdf:type owl:Axiom ;
+  rdfs:comment "Fourth Printing"@en ,
+               "Fourth version of Bill, having been amended for the third time."@en ;
+  owl:annotatedTarget :BillVersion ;
+  owl:annotatedSource :VersionC ;
+  owl:annotatedProperty rdf:type
+] .
+
+
+
+###  http://www.oireachtas.ie/ontology#VersionD
+
+:VersionD rdf:type :BillVersion ,
+                   owl:NamedIndividual ;
+          
+          <http://www.w3.org/2004/02/skos/core#prefLabel> "Fifth Printing"@en ;
+          
+          <http://www.w3.org/2004/02/skos/core#topConceptOf> <http://data.europa.eu/eli/ontology#VersionTable> ;
+          
+          <http://www.w3.org/2004/02/skos/core#inScheme> <http://data.europa.eu/eli/ontology#VersionTable> .
+
+
+
+###  http://www.oireachtas.ie/ontology#VoterInfo
+
+:VoterInfo rdf:type :BillEvent ,
+                    owl:NamedIndividual ;
+           
+           <http://www.w3.org/2004/02/skos/core#prefLabel> "Motion on statement of information for voters"@en ;
+           
+           <http://www.w3.org/2004/02/skos/core#topConceptOf> :BillEventTable ;
+           
+           <http://www.w3.org/2004/02/skos/core#inScheme> :BillEventTable .
+
+
+
+###  http://www.oireachtas.ie/ontology#Withdrawn
+
+:Withdrawn rdf:type :BillEventOutcome ,
+                    owl:NamedIndividual ;
+           
+           <http://www.w3.org/2004/02/skos/core#prefLabel> "Withdrawn"@en ;
+           
+           <http://www.w3.org/2004/02/skos/core#topConceptOf> :BillEventResultTable ;
+           
+           <http://www.w3.org/2004/02/skos/core#inScheme> :BillEventResultTable .
+
+
+
+###  http://www.oireachtas.ie/ontology#WithdrawnBill
+
+:WithdrawnBill rdf:type :BillStatus ,
+                        owl:NamedIndividual ;
+               
+               <http://www.w3.org/2004/02/skos/core#prefLabel> "Withdrawn"@en ;
+               
+               <http://www.w3.org/2004/02/skos/core#topConceptOf> :BillStatusTable ;
+               
+               <http://www.w3.org/2004/02/skos/core#inScheme> :BillStatusTable .
+
+
+
+###  http://www.oireachtas.ie/ontology/chamber#Dail
+
+<http://www.oireachtas.ie/ontology/chamber#Dail> rdf:type :Chamber ,
+                                                          owl:NamedIndividual ;
+                                                 
+                                                 <http://www.w3.org/2004/02/skos/core#prefLabel> "The Dáil"@en ;
+                                                 
+                                                 <http://purl.org/dc/terms/title> "Dáil Éireann"@ga .
+
+
+
+###  http://www.oireachtas.ie/ontology/chamber#Seanad
+
+<http://www.oireachtas.ie/ontology/chamber#Seanad> rdf:type :Chamber ,
+                                                            owl:NamedIndividual ;
+                                                   
+                                                   <http://www.w3.org/2004/02/skos/core#prefLabel> "The Seanad"@en ;
+                                                   
+                                                   <http://purl.org/dc/elements/1.1/title> "Seanad Éireann"@ga .
+
+
+
+
+
+#################################################################
+#
+#    Annotations
+#
+#################################################################
+
+
+<http://data.europa.eu/eli/ontology#title_alternative> rdfs:label "Long title of a Bill"@en .
+
+
+
+<http://data.europa.eu/eli/ontology#title> rdfs:label "Short title of a Bill" .
+
+
+
+<http://data.europa.eu/eli/ontology#basis_for> rdfs:comment "A Bill is the basis for an Act" .
+
+
+
+
+###  Generated by the OWL API (version 3.5.1) http://owlapi.sourceforge.net
+
