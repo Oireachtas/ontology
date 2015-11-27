@@ -3,12 +3,13 @@
 
 *This is a work in progress*
 
-1. [Introduction](introduction)
+1. [Introduction](#Introduction)
 1. [Bills Ontology](bills/README.md)
 1. [Departments](departments/README.md)
+2. [Namespaces](#Namespaces)
 
 
-### [Introduction](#introduction)
+### Introduction
 
 The Houses of the Oireachtas ontology attempts to describe the business processes and publications produced by the Houses of the Oireachtas within a formal vocabulary that allows documents, legislative events and entities to be linked programmatically.
 
@@ -30,7 +31,7 @@ This document deals only with the aspects of the ontology relating to Bills. Thi
 One of the core functions of any Parliament is to decide on the legal basis for the creation and dissolution of State bodies, and to set the scope of their functions. Where relevant (and feasible) the descriptions of Departments, roles and offices in this ontology will include a link to the decision of the Oireachtas on their creation, modification or dissolution, thereby allowing the Oireachtas dataset to be used as an authority vocabulary for Departments and Ministerial roles.
 
 
-#### [Terms used](#terms-used)
+#### Terms used
 
 As the Houses of the Oireachtas can be understand as different things depending on the context, it is useful to clarify at the outset to define how certain terms are being used in this document, as follows:
 - A ``thing`` refers to the top level category in the ontology. Every object in the ontology is a thing. A thing might also refer to entities existing outside of the Oireachtas ontology, purely for convenience.
@@ -42,7 +43,7 @@ As the Houses of the Oireachtas can be understand as different things depending 
 - A ``chamber`` refers to either a House (ie, the Dáil or Seanad) or a committee of one or both of the Houses
 - A ``Member`` is an elected Member of the Oireachtas, a ``Deputy`` is a Member of the Dáil and a ``Senator`` is a Member of the Seanad.
 
-#### [OWL and RDF syntax](#syntax)
+#### OWL and RDF syntax
 
 OWL uses the [resource description framework (RDF)](http://www.w3.org/RDF/) syntax. The RDF syntax describes data as a series of three-part statements linking things to other things.
 
@@ -62,13 +63,13 @@ To describe categories and taxonomies of things, including controlled vocabulari
 
 Elements of the [Data Catalog vocabulary (DCAT)](www.w3.org/TR/vocab-dcat/) will also be reused.
 
-#### [URIs](#uris)
+#### URIs
 
 The namespace for the Oireachtas ontology is ``http://oireachtas.ie/ontology#``. The string ``oir:`` denotes that the following term is in the Oireachtas namespace. Class names are in camel case with all first letters of words capitalised: ``oir:BillFormat``. Property names are camel case with the very first letter in lower case: ``oir:amendedBy``
 
 The namespace for URLs of instances of classes is ``http://oireachtas.ie`` and the patterns will be further described in the relevant sections.
 
-#### [Schema Overview](#schema-overview)
+#### Schema Overview
 
 The ontology is divided into four main areas:
 
@@ -86,12 +87,12 @@ These are the elements of the Official Report, or the transcribed record of deba
 - **Oireachtas Agents**  
 These are the entities who author, produce or modify legislative documents, journal events or debates. They include human individuals and the roles they occupy, such as Members, and collective entities, such as committees or houses. These roles and entities may be defined by legislation or be more informally defined, such as political parties.
 
-#### [Hybrid Entities](#hybrid-entities)
+#### Hybrid Entities
 Some things within the ontology cannot be categorised neatly in to one category. For example, an amendment to a Bill is both a legislative document in its own right and a journal event in that it effects a modification of the Bill. For this reason, a thing in question might be classified under multiple classes.
 
 
 
-### [Namespaces](#referenced-schema)
+### Namespaces
 
 | prefix  | namespace                                                 |
 |---------|-----------------------------------------------------------|
