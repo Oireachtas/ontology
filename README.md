@@ -3,10 +3,10 @@
 
 *This is a work in progress*
 
-1. [Introduction](#Introduction)
+1. [Introduction](#introduction)
 1. [Bills Ontology](bills/README.md)
 1. [Departments](departments/README.md)
-2. [Namespaces](#Namespaces)
+2. [Namespaces](#namespaces)
 
 
 ### Introduction
