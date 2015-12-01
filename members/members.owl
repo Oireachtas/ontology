@@ -1,0 +1,888 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY org "http://www.w3.org/ns/org#" >
+    <!ENTITY foaf2 "http://xmlns.com/foaf/0.1/" >
+    <!ENTITY foaf "http://xmlns.com/foaf/spec/" >
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY xml "http://www.w3.org/XML/1998/namespace" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY oir "http://oireachtas.ie/ontology/oireachtas#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+]>
+
+
+<rdf:RDF xmlns="http://oireachtas.ie/ontology/oireachtas#"
+     xml:base="http://oireachtas.ie/ontology/oireachtas"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:org="http://www.w3.org/ns/org#"
+     xmlns:foaf2="http://xmlns.com/foaf/0.1/"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:oir="http://oireachtas.ie/ontology/oireachtas#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:foaf="http://xmlns.com/foaf/spec/">
+    <owl:Ontology rdf:about="http://oireachtas.ie/ontology/oireachtas">
+        <owl:imports rdf:resource="http://www.w3.org/ns/org#"/>
+        <owl:imports rdf:resource="http://xmlns.com/foaf/0.1/"/>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://oireachtas.ie/ontology/oireachtas#hasCabinetRole -->
+
+    <owl:ObjectProperty rdf:about="&oir;hasCabinetRole">
+        <rdfs:range rdf:resource="&oir;CabinetMember"/>
+        <rdfs:domain rdf:resource="&oir;CabinetMembership"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://oireachtas.ie/ontology/oireachtas#hasCommitteeMember -->
+
+    <owl:ObjectProperty rdf:about="&oir;hasCommitteeMember"/>
+    
+
+
+    <!-- http://oireachtas.ie/ontology/oireachtas#hasMembers -->
+
+    <owl:ObjectProperty rdf:about="&oir;hasMembers">
+        <rdfs:domain rdf:resource="&oir;HousesOfTheOireachtas"/>
+        <rdfs:range rdf:resource="&oir;Member"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://oireachtas.ie/ontology/oireachtas#hasMembersMembership -->
+
+    <owl:ObjectProperty rdf:about="&oir;hasMembersMembership">
+        <rdfs:domain rdf:resource="&oir;Member"/>
+        <rdfs:range rdf:resource="&oir;MembersMembership"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://oireachtas.ie/ontology/oireachtas#hasMembershipDateRange -->
+
+    <owl:ObjectProperty rdf:about="&oir;hasMembershipDateRange">
+        <rdfs:range rdf:resource="&oir;DateRange"/>
+        <rdfs:domain rdf:resource="&org;Membership"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://oireachtas.ie/ontology/oireachtas#hasOireachtasMemberRole -->
+
+    <owl:ObjectProperty rdf:about="&oir;hasOireachtasMemberRole">
+        <rdfs:range rdf:resource="&oir;OireachtasMember"/>
+        <rdfs:domain rdf:resource="&oir;OireachtasMembership"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://oireachtas.ie/ontology/oireachtas#hasOireachtasMembers -->
+
+    <owl:ObjectProperty rdf:about="&oir;hasOireachtasMembers"/>
+    
+
+
+    <!-- http://oireachtas.ie/ontology/oireachtas#hasPartiesMembership -->
+
+    <owl:ObjectProperty rdf:about="&oir;hasPartiesMembership">
+        <rdfs:range rdf:resource="&oir;PartiesMembership"/>
+        <rdfs:domain rdf:resource="&oir;Party"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://oireachtas.ie/ontology/oireachtas#isChairOf -->
+
+    <owl:ObjectProperty rdf:about="&oir;isChairOf">
+        <rdfs:domain rdf:resource="&oir;Chair"/>
+        <rdfs:range rdf:resource="&oir;Chamber"/>
+        <rdfs:range rdf:resource="&oir;Committee"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://oireachtas.ie/ontology/oireachtas#isCommitteeMembershipOf -->
+
+    <owl:ObjectProperty rdf:about="&oir;isCommitteeMembershipOf">
+        <rdfs:range rdf:resource="&oir;Committee"/>
+        <rdfs:domain rdf:resource="&oir;CommitteeMembership"/>
+        <rdfs:subPropertyOf rdf:resource="&owl;topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://oireachtas.ie/ontology/oireachtas#isDeputyHeadOf -->
+
+    <owl:ObjectProperty rdf:about="&oir;isDeputyHeadOf">
+        <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+        <rdfs:range rdf:resource="&oir;Government"/>
+        <rdfs:domain rdf:resource="&oir;Tanaiste"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://oireachtas.ie/ontology/oireachtas#isExOfficioMemberOf -->
+
+    <owl:ObjectProperty rdf:about="&oir;isExOfficioMemberOf">
+        <rdfs:range rdf:resource="&oir;DailSelectCommittee"/>
+        <rdfs:domain rdf:resource="&oir;Minister"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://oireachtas.ie/ontology/oireachtas#isHeadOf -->
+
+    <owl:ObjectProperty rdf:about="&oir;isHeadOf">
+        <rdfs:range rdf:resource="&oir;Government"/>
+        <rdfs:domain rdf:resource="&oir;Taoiseach"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://oireachtas.ie/ontology/oireachtas#isOireachtasMembershipOf -->
+
+    <owl:ObjectProperty rdf:about="&oir;isOireachtasMembershipOf">
+        <rdfs:range rdf:resource="&oir;Chamber"/>
+        <rdfs:domain rdf:resource="&oir;OireachtasMembership"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://oireachtas.ie/ontology/oireachtas#isPartyIn -->
+
+    <owl:ObjectProperty rdf:about="&oir;isPartyIn">
+        <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+        <rdfs:domain rdf:resource="&oir;PartiesMembership"/>
+        <rdfs:range rdf:resource="&oir;SidesOfHouse"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://oireachtas.ie/ontology/oireachtas#isPartyMembershipOf -->
+
+    <owl:ObjectProperty rdf:about="&oir;isPartyMembershipOf">
+        <rdfs:range rdf:resource="&oir;PartyGrouping"/>
+        <rdfs:domain rdf:resource="&oir;PartyMembership"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://oireachtas.ie/ontology/oireachtas#isRepresentativeFrom -->
+
+    <owl:ObjectProperty rdf:about="&oir;isRepresentativeFrom">
+        <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+        <rdfs:range rdf:resource="&oir;Constituencies"/>
+        <rdfs:domain rdf:resource="&oir;OireachtasMembership"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://oireachtas.ie/ontology/oireachtas#isWhipFor -->
+
+    <owl:ObjectProperty rdf:about="&oir;isWhipFor">
+        <rdfs:range rdf:resource="&oir;PartyGrouping"/>
+        <rdfs:domain rdf:resource="&oir;Whip"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://oireachtas.ie/ontology/oireachtas#DeputyTitle -->
+
+    <owl:DatatypeProperty rdf:about="&oir;DeputyTitle">
+        <foaf2:name rdf:datatype="&rdfs;Literal">Deputy</foaf2:name>
+        <rdfs:domain rdf:resource="&oir;Deputy"/>
+        <owl:propertyDisjointWith rdf:resource="&oir;SenatorTitle"/>
+        <rdfs:range rdf:resource="&rdfs;Literal"/>
+        <rdfs:subPropertyOf rdf:resource="&foaf2;title"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://oireachtas.ie/ontology/oireachtas#EndDate -->
+
+    <owl:DatatypeProperty rdf:about="&oir;EndDate">
+        <rdfs:domain rdf:resource="&oir;DateRange"/>
+        <owl:propertyDisjointWith rdf:resource="&oir;StartDate"/>
+        <rdfs:range rdf:resource="&xsd;dateTime"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://oireachtas.ie/ontology/oireachtas#MinisterialTitle -->
+
+    <owl:DatatypeProperty rdf:about="&oir;MinisterialTitle">
+        <rdfs:subPropertyOf rdf:resource="&foaf2;title"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://oireachtas.ie/ontology/oireachtas#SenatorTitle -->
+
+    <owl:DatatypeProperty rdf:about="&oir;SenatorTitle">
+        <foaf2:name rdf:datatype="&rdfs;Literal">Senator</foaf2:name>
+        <rdfs:domain rdf:resource="&oir;Senator"/>
+        <rdfs:range rdf:resource="&rdfs;Literal"/>
+        <rdfs:subPropertyOf rdf:resource="&foaf2;title"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://oireachtas.ie/ontology/oireachtas#StartDate -->
+
+    <owl:DatatypeProperty rdf:about="&oir;StartDate">
+        <rdfs:domain rdf:resource="&oir;DateRange"/>
+        <rdfs:range rdf:resource="&xsd;dateTime"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://oireachtas.ie/ontology/oireachtas#Cabinet -->
+
+    <owl:Class rdf:about="&oir;Cabinet">
+        <rdfs:subClassOf rdf:resource="&oir;Government"/>
+    </owl:Class>
+    
+
+
+    <!-- http://oireachtas.ie/ontology/oireachtas#CabinetMember -->
+
+    <owl:Class rdf:about="&oir;CabinetMember">
+        <rdfs:subClassOf rdf:resource="&org;Role"/>
+    </owl:Class>
+    
+
+
+    <!-- http://oireachtas.ie/ontology/oireachtas#CabinetMembership -->
+
+    <owl:Class rdf:about="&oir;CabinetMembership">
+        <rdfs:subClassOf rdf:resource="&oir;MembersMembership"/>
+    </owl:Class>
+    
+
+
+    <!-- http://oireachtas.ie/ontology/oireachtas#Chair -->
+
+    <owl:Class rdf:about="&oir;Chair">
+        <rdfs:subClassOf rdf:resource="&org;Role"/>
+    </owl:Class>
+    
+
+
+    <!-- http://oireachtas.ie/ontology/oireachtas#Chamber -->
+
+    <owl:Class rdf:about="&oir;Chamber">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="&oir;Dail"/>
+                    <rdf:Description rdf:about="&oir;Seanad"/>
+                </owl:unionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="&oir;HousesOfTheOireachtas"/>
+    </owl:Class>
+    
+
+
+    <!-- http://oireachtas.ie/ontology/oireachtas#ChiefWhip -->
+
+    <owl:Class rdf:about="&oir;ChiefWhip">
+        <rdfs:subClassOf rdf:resource="&oir;Whip"/>
+    </owl:Class>
+    
+
+
+    <!-- http://oireachtas.ie/ontology/oireachtas#Committee -->
+
+    <owl:Class rdf:about="&oir;Committee">
+        <rdfs:subClassOf rdf:resource="&oir;HousesOfTheOireachtas"/>
+    </owl:Class>
+    
+
+
+    <!-- http://oireachtas.ie/ontology/oireachtas#CommitteeMembership -->
+
+    <owl:Class rdf:about="&oir;CommitteeMembership">
+        <rdfs:subClassOf rdf:resource="&oir;MembersMembership"/>
+    </owl:Class>
+    
+
+
+    <!-- http://oireachtas.ie/ontology/oireachtas#Constituencies -->
+
+    <owl:Class rdf:about="&oir;Constituencies">
+        <rdfs:subClassOf rdf:resource="&oir;HousesOfTheOireachtas"/>
+    </owl:Class>
+    
+
+
+    <!-- http://oireachtas.ie/ontology/oireachtas#Dail -->
+
+    <owl:Class rdf:about="&oir;Dail">
+        <rdfs:subClassOf rdf:resource="&oir;Chamber"/>
+        <owl:disjointWith rdf:resource="&oir;Seanad"/>
+    </owl:Class>
+    
+
+
+    <!-- http://oireachtas.ie/ontology/oireachtas#DailConstituency -->
+
+    <owl:Class rdf:about="&oir;DailConstituency">
+        <rdfs:subClassOf rdf:resource="&oir;Constituencies"/>
+        <rdfs:subClassOf rdf:resource="&oir;Dail"/>
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://oireachtas.ie/ontology/oireachtas#DailSelectCommittee -->
+
+    <owl:Class rdf:about="&oir;DailSelectCommittee">
+        <rdfs:subClassOf rdf:resource="&oir;SelectCommittee"/>
+        <owl:disjointWith rdf:resource="&oir;SeanadSelectCommittee"/>
+    </owl:Class>
+    
+
+
+    <!-- http://oireachtas.ie/ontology/oireachtas#DailSelectCommitteeMembership -->
+
+    <owl:Class rdf:about="&oir;DailSelectCommitteeMembership">
+        <rdfs:subClassOf rdf:resource="&oir;CommitteeMembership"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&oir;hasCommitteeMember"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="&oir;Member"/>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="&oir;hasMembersMembership"/>
+                                <owl:someValuesFrom rdf:resource="&oir;OireachtasMembership"/>
+                            </owl:Restriction>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="&oir;isOireachtasMembershipOf"/>
+                                <owl:allValuesFrom rdf:resource="&oir;Dail"/>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&oir;isCommitteeMembershipOf"/>
+                <owl:allValuesFrom rdf:resource="&oir;DailSelectCommittee"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://oireachtas.ie/ontology/oireachtas#DateRange -->
+
+    <owl:Class rdf:about="&oir;DateRange">
+        <rdfs:subClassOf rdf:resource="&oir;Temporal"/>
+    </owl:Class>
+    
+
+
+    <!-- http://oireachtas.ie/ontology/oireachtas#Deputy -->
+
+    <owl:Class rdf:about="&oir;Deputy">
+        <rdfs:subClassOf rdf:resource="&oir;OireachtasMember"/>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="&oir;Member"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&oir;hasMembersMembership"/>
+                        <owl:someValuesFrom>
+                            <owl:Class>
+                                <owl:intersectionOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="&oir;OireachtasMembership"/>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="&oir;isOireachtasMembershipOf"/>
+                                        <owl:allValuesFrom rdf:resource="&oir;Dail"/>
+                                    </owl:Restriction>
+                                </owl:intersectionOf>
+                            </owl:Class>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+        <owl:disjointWith rdf:resource="&oir;Senator"/>
+    </owl:Class>
+    
+
+
+    <!-- http://oireachtas.ie/ontology/oireachtas#Government -->
+
+    <owl:Class rdf:about="&oir;Government">
+        <rdfs:subClassOf rdf:resource="&oir;SidesOfHouse"/>
+        <owl:disjointWith rdf:resource="&oir;Opposition"/>
+    </owl:Class>
+    
+
+
+    <!-- http://oireachtas.ie/ontology/oireachtas#HousesOfTheOireachtas -->
+
+    <owl:Class rdf:about="&oir;HousesOfTheOireachtas">
+        <rdfs:subClassOf rdf:resource="&org;FormalOrganization"/>
+    </owl:Class>
+    
+
+
+    <!-- http://oireachtas.ie/ontology/oireachtas#Independent -->
+
+    <owl:Class rdf:about="&oir;Independent">
+        <rdfs:subClassOf rdf:resource="&oir;PartyGrouping"/>
+        <owl:disjointWith rdf:resource="&oir;Party"/>
+    </owl:Class>
+    
+
+
+    <!-- http://oireachtas.ie/ontology/oireachtas#JointCommittee -->
+
+    <owl:Class rdf:about="&oir;JointCommittee">
+        <rdfs:subClassOf rdf:resource="&oir;Committee"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&oir;hasCommitteeMember"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="&oir;Member"/>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="&oir;hasMembersMembership"/>
+                                <owl:someValuesFrom rdf:resource="&oir;OireachtasMembership"/>
+                            </owl:Restriction>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="&oir;isOireachtasMembershipOf"/>
+                                <owl:allValuesFrom rdf:resource="&oir;Chamber"/>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://oireachtas.ie/ontology/oireachtas#Member -->
+
+    <owl:Class rdf:about="&oir;Member">
+        <rdfs:subClassOf rdf:resource="&foaf2;Person"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&oir;hasMembersMembership"/>
+                <owl:someValuesFrom rdf:resource="&oir;OireachtasMembership"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://oireachtas.ie/ontology/oireachtas#MembersMembership -->
+
+    <owl:Class rdf:about="&oir;MembersMembership">
+        <rdfs:subClassOf rdf:resource="&org;Membership"/>
+    </owl:Class>
+    
+
+
+    <!-- http://oireachtas.ie/ontology/oireachtas#Minister -->
+
+    <owl:Class rdf:about="&oir;Minister">
+        <rdfs:subClassOf rdf:resource="&oir;CabinetMember"/>
+    </owl:Class>
+    
+
+
+    <!-- http://oireachtas.ie/ontology/oireachtas#OireachtasMember -->
+
+    <owl:Class rdf:about="&oir;OireachtasMember">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="&oir;Member"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&oir;hasMembersMembership"/>
+                        <owl:someValuesFrom>
+                            <owl:Class>
+                                <owl:intersectionOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="&oir;OireachtasMembership"/>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="&oir;isOireachtasMembershipOf"/>
+                                        <owl:allValuesFrom rdf:resource="&oir;Chamber"/>
+                                    </owl:Restriction>
+                                </owl:intersectionOf>
+                            </owl:Class>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="&oir;Deputy"/>
+                    <rdf:Description rdf:about="&oir;Senator"/>
+                </owl:unionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="&org;Role"/>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="&oir;Member"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&oir;hasMembersMembership"/>
+                        <owl:someValuesFrom>
+                            <owl:Class>
+                                <owl:intersectionOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="&oir;OireachtasMembership"/>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="&oir;isOireachtasMembershipOf"/>
+                                        <owl:allValuesFrom rdf:resource="&oir;Seanad"/>
+                                    </owl:Restriction>
+                                </owl:intersectionOf>
+                            </owl:Class>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://oireachtas.ie/ontology/oireachtas#OireachtasMembership -->
+
+    <owl:Class rdf:about="&oir;OireachtasMembership">
+        <rdfs:subClassOf rdf:resource="&oir;MembersMembership"/>
+    </owl:Class>
+    
+
+
+    <!-- http://oireachtas.ie/ontology/oireachtas#Opposition -->
+
+    <owl:Class rdf:about="&oir;Opposition">
+        <rdfs:subClassOf rdf:resource="&oir;SidesOfHouse"/>
+    </owl:Class>
+    
+
+
+    <!-- http://oireachtas.ie/ontology/oireachtas#PartiesMembership -->
+
+    <owl:Class rdf:about="&oir;PartiesMembership">
+        <rdfs:subClassOf rdf:resource="&org;Membership"/>
+    </owl:Class>
+    
+
+
+    <!-- http://oireachtas.ie/ontology/oireachtas#Party -->
+
+    <owl:Class rdf:about="&oir;Party">
+        <rdfs:subClassOf rdf:resource="&oir;PartyGrouping"/>
+    </owl:Class>
+    
+
+
+    <!-- http://oireachtas.ie/ontology/oireachtas#PartyGrouping -->
+
+    <owl:Class rdf:about="&oir;PartyGrouping">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="&oir;Independent"/>
+                    <rdf:Description rdf:about="&oir;Party"/>
+                </owl:unionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="&foaf2;Group"/>
+    </owl:Class>
+    
+
+
+    <!-- http://oireachtas.ie/ontology/oireachtas#PartyInGovernment -->
+
+    <owl:Class rdf:about="&oir;PartyInGovernment">
+        <rdfs:subClassOf rdf:resource="&oir;PartiesMembership"/>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="&oir;Party"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&oir;hasPartiesMembership"/>
+                        <owl:someValuesFrom>
+                            <owl:Class>
+                                <owl:intersectionOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="&oir;PartiesMembership"/>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="&oir;isPartyIn"/>
+                                        <owl:allValuesFrom rdf:resource="&oir;Government"/>
+                                    </owl:Restriction>
+                                </owl:intersectionOf>
+                            </owl:Class>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://oireachtas.ie/ontology/oireachtas#PartyInOpposition -->
+
+    <owl:Class rdf:about="&oir;PartyInOpposition">
+        <rdfs:subClassOf rdf:resource="&oir;PartiesMembership"/>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="&oir;Party"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&oir;hasPartiesMembership"/>
+                        <owl:someValuesFrom>
+                            <owl:Class>
+                                <owl:intersectionOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="&oir;PartyInGovernment"/>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="&oir;isPartyIn"/>
+                                        <owl:allValuesFrom rdf:resource="&oir;Opposition"/>
+                                    </owl:Restriction>
+                                </owl:intersectionOf>
+                            </owl:Class>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://oireachtas.ie/ontology/oireachtas#PartyMembership -->
+
+    <owl:Class rdf:about="&oir;PartyMembership">
+        <rdfs:subClassOf rdf:resource="&oir;MembersMembership"/>
+    </owl:Class>
+    
+
+
+    <!-- http://oireachtas.ie/ontology/oireachtas#Seanad -->
+
+    <owl:Class rdf:about="&oir;Seanad">
+        <rdfs:subClassOf rdf:resource="&oir;Chamber"/>
+    </owl:Class>
+    
+
+
+    <!-- http://oireachtas.ie/ontology/oireachtas#SeanadPanel -->
+
+    <owl:Class rdf:about="&oir;SeanadPanel">
+        <rdfs:subClassOf rdf:resource="&oir;Constituencies"/>
+        <rdfs:subClassOf rdf:resource="&oir;Seanad"/>
+    </owl:Class>
+    
+
+
+    <!-- http://oireachtas.ie/ontology/oireachtas#SeanadSelectCommittee -->
+
+    <owl:Class rdf:about="&oir;SeanadSelectCommittee">
+        <rdfs:subClassOf rdf:resource="&oir;SelectCommittee"/>
+    </owl:Class>
+    
+
+
+    <!-- http://oireachtas.ie/ontology/oireachtas#SeanadSelectCommitteeMembership -->
+
+    <owl:Class rdf:about="&oir;SeanadSelectCommitteeMembership">
+        <rdfs:subClassOf rdf:resource="&oir;CommitteeMembership"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&oir;hasCommitteeMember"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="&oir;Member"/>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="&oir;hasMembersMembership"/>
+                                <owl:someValuesFrom rdf:resource="&oir;OireachtasMembership"/>
+                            </owl:Restriction>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="&oir;isOireachtasMembershipOf"/>
+                                <owl:allValuesFrom rdf:resource="&oir;Seanad"/>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&oir;isCommitteeMembershipOf"/>
+                <owl:allValuesFrom rdf:resource="&oir;SeanadSelectCommittee"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://oireachtas.ie/ontology/oireachtas#SelectCommittee -->
+
+    <owl:Class rdf:about="&oir;SelectCommittee">
+        <rdfs:subClassOf rdf:resource="&oir;Committee"/>
+    </owl:Class>
+    
+
+
+    <!-- http://oireachtas.ie/ontology/oireachtas#Senator -->
+
+    <owl:Class rdf:about="&oir;Senator">
+        <rdfs:subClassOf rdf:resource="&oir;OireachtasMember"/>
+    </owl:Class>
+    
+
+
+    <!-- http://oireachtas.ie/ontology/oireachtas#SidesOfHouse -->
+
+    <owl:Class rdf:about="&oir;SidesOfHouse">
+        <rdfs:subClassOf rdf:resource="&oir;HousesOfTheOireachtas"/>
+    </owl:Class>
+    
+
+
+    <!-- http://oireachtas.ie/ontology/oireachtas#SpecialCommittee -->
+
+    <owl:Class rdf:about="&oir;SpecialCommittee">
+        <rdfs:subClassOf rdf:resource="&oir;Committee"/>
+    </owl:Class>
+    
+
+
+    <!-- http://oireachtas.ie/ontology/oireachtas#StandingCommittee -->
+
+    <owl:Class rdf:about="&oir;StandingCommittee">
+        <rdfs:subClassOf rdf:resource="&oir;Committee"/>
+    </owl:Class>
+    
+
+
+    <!-- http://oireachtas.ie/ontology/oireachtas#Tanaiste -->
+
+    <owl:Class rdf:about="&oir;Tanaiste">
+        <rdfs:subClassOf rdf:resource="&oir;CabinetMember"/>
+        <owl:disjointWith rdf:resource="&oir;Taoiseach"/>
+    </owl:Class>
+    
+
+
+    <!-- http://oireachtas.ie/ontology/oireachtas#Taoiseach -->
+
+    <owl:Class rdf:about="&oir;Taoiseach">
+        <rdfs:subClassOf rdf:resource="&oir;CabinetMember"/>
+    </owl:Class>
+    
+
+
+    <!-- http://oireachtas.ie/ontology/oireachtas#Temporal -->
+
+    <owl:Class rdf:about="&oir;Temporal"/>
+    
+
+
+    <!-- http://oireachtas.ie/ontology/oireachtas#Whip -->
+
+    <owl:Class rdf:about="&oir;Whip">
+        <rdfs:subClassOf rdf:resource="&org;Role"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3.org/ns/org#Membership -->
+
+    <rdf:Description rdf:about="&org;Membership">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&oir;hasMembershipDateRange"/>
+                <owl:allValuesFrom rdf:resource="&oir;DateRange"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.w3.org/ns/org#Role -->
+
+    <rdf:Description rdf:about="&org;Role">
+        <rdfs:subClassOf rdf:resource="&oir;OireachtasMember"/>
+    </rdf:Description>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://oireachtas.ie/ontology/oireachtas#Dáil-31 -->
+
+    <owl:NamedIndividual rdf:about="&oir;Dáil-31">
+        <rdf:type rdf:resource="&oir;Dail"/>
+        <foaf2:name rdf:datatype="&rdfs;Literal">31st Dáil</foaf2:name>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 3.5.1) http://owlapi.sourceforge.net -->
+
