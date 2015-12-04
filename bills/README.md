@@ -64,15 +64,15 @@ The following table lists the label and skos:conceptScheme vocabulary for Bill i
 | Order for Report Stage                                    | ie/bill/2015/44/dail/2_ord                   |
 | Fifth Stage                                               | ie/bill/2015/44/dail/5                       |
 | Financial Resolution(s)                                   | ie/bill/2015/44/dail/motion/finance_res      |
-| Leave to Withdraw (I think always refers to 2nd Stage)    | ie/bill/2015/44/dail/motion/2/withdraw       |
-| Leave to Introduce                                        | ie/bill/2015/44/dail/motion/2/introduce      |
+| Leave to Withdraw (I think always refers to 2nd Stage)    | ie/bill/2015/44/dail/motion/withdraw       |
+| Leave to Introduce                                        | ie/bill/2015/44/dail/motion/introduce      |
 | Instruction to committee                                  | ie/bill/2015/44/dail/motion/instruction      |
 | Referral to Select Committee                              | ie/bill/2015/44/dail/motion/referral         |
 | From the Seanad                                           | ie/bill/2015/44/dail/seanad_amd              |
-| [Seanad Bill amended by the Dáil] Report and Final Stages | ie/bill/2015/44/seanad/4_sub/dail/amd        |
+| [Seanad Bill amended by the Dáil] Report and Final Stages | ie/bill/2015/44/seanad/dail_amd        |
 | Motion for Earlier Signature                              | ie/bill/2015/44/dail/motion/early            |
-| Motion to Discharge Order for Second Stage                | ie/bill/2015/44/dail/motion/2_order/withdraw |
-| Motion to Discharge Committee Stage                       | ie/bill/2015/44/dail/motion/3/withdraw       |
+| Motion to Discharge Order for Second Stage                | ie/bill/2015/44/dail/motion/2_ord_withdraw |
+| Motion to Discharge Committee Stage                       | ie/bill/2015/44/dail/motion/3_withdraw       |
 | Statement for Information of Voters: Motion               | ie/bill/2015/44/dail/motion/ref_info         |
 | Referendum (Ballot Paper) Order 1998: Motion              | ie/bill/2015/44/dail/motion/ref_ballot       |
 | Motion to Recommit (is this always on Report?)            | ie/bill/2015/44/dail/motion/recommit         |
