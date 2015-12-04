@@ -65,6 +65,7 @@ The following table lists the label and skos:conceptScheme vocabulary for Bill i
 | Fifth Stage                                               | ie/bill/2015/44/dail/5                       |
 | Financial Resolution(s)                                   | ie/bill/2015/44/dail/motion/finance_res      |
 | Leave to Withdraw (I think always refers to 2nd Stage)    | ie/bill/2015/44/dail/motion/2/withdraw       |
+| Leave to Introduce                                        | ie/bill/2015/44/dail/motion/2/introduce      |
 | Instruction to committee                                  | ie/bill/2015/44/dail/motion/instruction      |
 | Referral to Select Committee                              | ie/bill/2015/44/dail/motion/referral         |
 | From the Seanad                                           | ie/bill/2015/44/dail/seanad_amd              |
