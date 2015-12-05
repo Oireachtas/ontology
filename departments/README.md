@@ -14,20 +14,30 @@ A Minister without portfolio is a Member who has been appointed to the Cabinet b
 
 ###URLs
 
+Names for specific Department and Ministerial roles consist of their functions (with the words "Department of" removed) separated by double underscores:
+
+department/function1__function2_function3
+minister/trade__industry__commerce
+
+Where a function name is a phrase rather than a single word, the words in the phrase are separated by a single underscore:
+department/foreign_affairs__trade
+minister_state/social__protection
+
 For ministerial or Cabinet roles:
 
 http://oireachtas.ie/taoiseach
 http://oireachtas.ie/tanaiste
 
-http://oireachtas.ie/minister/{ministerial title w/o "minister for", underscored}
-http://oireachtas.ie/minister_of_state/{ministerial title w/o "minister of state at the department of", underscored}
+http://oireachtas.ie/minister/{specific title}
+http://oireachtas.ie/minister_state/{specific title}
 
 http://oireachtas.ie/minister_without_portfolio
 
+Where a Departmental function is a phrase rather than a single
 
 
-http://oireachtas.ie/department/{department title w/o "department of", underscored}
-http://oireachtas.ie/department/transport_tourism_sport
+http://oireachtas.ie/department/{department specific name}
+http://oireachtas.ie/department/transport__tourism__sport
 
 For departmental functions or areas:
 
