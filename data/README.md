@@ -25,7 +25,7 @@ This repository contains the following data:
 
   The periods which each Member (identified by ``eId``) served in the Dáil and Seanad, including election date, date of first entry to the relevant House and date of conclusion of that period, whether because of death, resignation or dissolution. A Member is elected for a constituency, identified by ``constURI`` - this is contained in an array because some Deputies in the first four Dáileanna were elected in multiple constituencies. The relevant House is identified by ``houseURI`` and each service also has a unique ``serviceURI`` comprising a combination of Member ``eId`` and ``houseURI``
 
-  Sets out the
+
 - ``ministers.json``, ``taoisigh.json`` and ``tanaiste.json``
 
   Cabinet roles since the first Dáil, including title of office as a string, holder (which is the same as ``eId`` in members.json) and start and end dates of the relevant individual's period in that office. Periods as Minister conclude (or should conclude) no later than the dissolution of the relevant Dáil, but Taoiseach and Tánaiste periods can span several Dáileanna.
