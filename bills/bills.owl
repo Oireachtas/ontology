@@ -90,7 +90,8 @@
 
 :AmendmentList rdf:type owl:Class ;
                
-               rdfs:subClassOf <http://data.europa.eu/eli/ontology#LegalResource> .
+               rdfs:subClassOf <http://data.europa.eu/eli/ontology#LegalResource> ,
+                               <http://www.metalex.eu/metalex/2008-05-02#BibliographicWork> .
 
 
 

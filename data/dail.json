@@ -1,0 +1,219 @@
+[
+  {
+    "end": "1921-05-01",
+    "houseName": "1st D\u00e1il",
+    "houseNum": "1",
+    "houseURI": "/house/dail/1",
+    "start": "1919-01-21"
+  },
+  {
+    "end": "1922-06-08",
+    "houseName": "2nd D\u00e1il",
+    "houseNum": "2",
+    "houseURI": "/house/dail/2",
+    "start": "1921-08-16"
+  },
+  {
+    "end": "1923-08-09",
+    "houseName": "3rd D\u00e1il",
+    "houseNum": "3",
+    "houseURI": "/house/dail/3",
+    "start": "1922-09-09"
+  },
+  {
+    "end": "1927-05-20",
+    "houseName": "4th D\u00e1il",
+    "houseNum": "4",
+    "houseURI": "/house/dail/4",
+    "start": "1923-09-19"
+  },
+  {
+    "end": "1927-08-16",
+    "houseName": "5th D\u00e1il",
+    "houseNum": "5",
+    "houseURI": "/house/dail/5",
+    "start": "1927-06-23"
+  },
+  {
+    "end": "1931-12-17",
+    "houseName": "6th D\u00e1il",
+    "houseNum": "6",
+    "houseURI": "/house/dail/6",
+    "start": "1927-10-11"
+  },
+  {
+    "end": "1932-12-22",
+    "houseName": "7th D\u00e1il",
+    "houseNum": "7",
+    "houseURI": "/house/dail/7",
+    "start": "1932-03-09"
+  },
+  {
+    "end": "1937-06-14",
+    "houseName": "8th D\u00e1il",
+    "houseNum": "8",
+    "houseURI": "/house/dail/8",
+    "start": "1933-02-08"
+  },
+  {
+    "end": "1938-05-25",
+    "houseName": "9th D\u00e1il",
+    "houseNum": "9",
+    "houseURI": "/house/dail/9",
+    "start": "1937-07-21"
+  },
+  {
+    "end": "1943-05-26",
+    "houseName": "10th D\u00e1il",
+    "houseNum": "10",
+    "houseURI": "/house/dail/10",
+    "start": "1938-06-30"
+  },
+  {
+    "end": "1944-05-10",
+    "houseName": "11th D\u00e1il",
+    "houseNum": "11",
+    "houseURI": "/house/dail/11",
+    "start": "1943-07-01"
+  },
+  {
+    "end": "1947-12-11",
+    "houseName": "12th D\u00e1il",
+    "houseNum": "12",
+    "houseURI": "/house/dail/12",
+    "start": "1944-06-09"
+  },
+  {
+    "end": "1951-05-02",
+    "houseName": "13th D\u00e1il",
+    "houseNum": "13",
+    "houseURI": "/house/dail/13",
+    "start": "1948-02-18"
+  },
+  {
+    "end": "1954-04-23",
+    "houseName": "14th D\u00e1il",
+    "houseNum": "14",
+    "houseURI": "/house/dail/14",
+    "start": "1951-06-13"
+  },
+  {
+    "end": "1956-12-13",
+    "houseName": "15th D\u00e1il",
+    "houseNum": "15",
+    "houseURI": "/house/dail/15",
+    "start": "1954-06-02"
+  },
+  {
+    "end": "1961-09-01",
+    "houseName": "16th D\u00e1il",
+    "houseNum": "16",
+    "houseURI": "/house/dail/16",
+    "start": "1957-03-20"
+  },
+  {
+    "end": "1965-03-18",
+    "houseName": "17th D\u00e1il",
+    "houseNum": "17",
+    "houseURI": "/house/dail/17",
+    "start": "1961-10-11"
+  },
+  {
+    "end": "1969-05-21",
+    "houseName": "18th D\u00e1il",
+    "houseNum": "18",
+    "houseURI": "/house/dail/18",
+    "start": "1965-04-21"
+  },
+  {
+    "end": "1973-02-05",
+    "houseName": "19th D\u00e1il",
+    "houseNum": "19",
+    "houseURI": "/house/dail/19",
+    "start": "1969-07-02"
+  },
+  {
+    "end": "1977-05-25",
+    "houseName": "20th D\u00e1il",
+    "houseNum": "20",
+    "houseURI": "/house/dail/20",
+    "start": "1973-03-14"
+  },
+  {
+    "end": "1981-05-21",
+    "houseName": "21st D\u00e1il",
+    "houseNum": "21",
+    "houseURI": "/house/dail/21",
+    "start": "1977-07-05"
+  },
+  {
+    "end": "1982-01-22",
+    "houseName": "22nd D\u00e1il",
+    "houseNum": "22",
+    "houseURI": "/house/dail/22",
+    "start": "1981-06-30"
+  },
+  {
+    "end": "1982-11-04",
+    "houseName": "23rd D\u00e1il",
+    "houseNum": "23",
+    "houseURI": "/house/dail/23",
+    "start": "1982-03-09"
+  },
+  {
+    "end": "1986-12-19",
+    "houseName": "24th D\u00e1il",
+    "houseNum": "24",
+    "houseURI": "/house/dail/24",
+    "start": "1982-12-14"
+  },
+  {
+    "end": "1989-05-21",
+    "houseName": "25th D\u00e1il",
+    "houseNum": "25",
+    "houseURI": "/house/dail/25",
+    "start": "1987-03-10"
+  },
+  {
+    "end": "1992-11-05",
+    "houseName": "26th D\u00e1il",
+    "houseNum": "26",
+    "houseURI": "/house/dail/26",
+    "start": "1989-06-29"
+  },
+  {
+    "end": "1997-05-15",
+    "houseName": "27th D\u00e1il",
+    "houseNum": "27",
+    "houseURI": "/house/dail/27",
+    "start": "1992-11-25"
+  },
+  {
+    "end": "2002-04-25",
+    "houseName": "28th D\u00e1il",
+    "houseNum": "28",
+    "houseURI": "/house/dail/28",
+    "start": "1997-06-06"
+  },
+  {
+    "end": "2007-05-24",
+    "houseName": "29th D\u00e1il",
+    "houseNum": "29",
+    "houseURI": "/house/dail/29",
+    "start": "2002-06-06"
+  },
+  {
+    "end": "2011-03-08",
+    "houseName": "30th D\u00e1il",
+    "houseNum": "30",
+    "houseURI": "/house/dail/30",
+    "start": "2007-05-25"
+  },
+  {
+    "end": NaN,
+    "houseName": "31st D\u00e1il",
+    "houseNum": "31",
+    "houseURI": "/house/dail/31",
+    "start": "2011-03-09"
+  }
+]

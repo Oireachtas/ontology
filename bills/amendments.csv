@@ -1,0 +1,20 @@
+oir:Amendment,
+I move amendment No. 1:,amd_1
+I move recommendation No. 1:,rec_1
+Government amendment No. 1:,amd_1
+Government recommendation No. 1:,rec_1
+Debate resumed on amendment No. 1:,amd_1
+Debate resumed on recommendation No. 1:,rec_1
+I move amendment No. 1 to amendment No. 1:,amd_1_1
+Debate resumed on amendment No. 1 to amendment No. 1:,amd_1_1
+Seanad amendment No. 1:,seanad_amd_1
+Dáil amendment No. 1:,dail_amd_1
+Debate resumed on Seanad amendment No. 1:,seanad_amd_1
+Debate resumed on Dáil amendment No. 1:,dail_amd_1
+,
+oir:Amendment oir:Result,
+Amendment No. 1 not moved.,amd_1/notMoved
+"Amendment No. 1, by leave, withdrawn.",amd_1/withdrawn
+Amendment No. 1 agreed to.,amd_1/agreed
+Amendment No. 1 put and declared carried.,amd_1/carried
+Amendment No. 1 put and declared lost.,amd_1/lost
