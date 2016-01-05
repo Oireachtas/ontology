@@ -13,7 +13,7 @@ This repository contains the following data:
 
 - ``members.json``
 
-  Basic biographical information about Members of the Oireachtas extracted from the [Oireachtas Members' database](http://www.oireachtas.ie/members-hist/), including name and, where available, birth-date, death-date, profession and additional details. The ``eId`` URI which allows Members to be cross-referenced with the other files in this repository. The eId string consists of Member fullName and the date of first entry/election to the Dáil or Seanad (denoted by ``D`` or ``S``, respectively).
+  Basic biographical information about Members of the Oireachtas extracted from the [Oireachtas Members' database](http://www.oireachtas.ie/members-hist/), including name and, where available, birth-date, death-date, profession and additional details. The ``eId`` URI which allows Members to be cross-referenced with the other files in this repository. The eId string consists of Member fullName and the date of first entry/election to the Dáil or Seanad (denoted by *D* or *S*, respectively).
 
   The ``memberid``, ``electionid`` (not complete) and ``wikiTitle`` fields contain cross-references to Member data contained in the [Oireachtas Members' database](http://www.oireachtas.ie/members-hist/), ElectionsIreland.org and Wikipedia page titles, respectively. The ``pId`` field is mainly an internal reference for the Oireachtas Debates authoring system but it also provides a unique identifier for all Members who have been recorded as contributing to a debate in the Dáil or Seanad.
 
@@ -31,3 +31,7 @@ This repository contains the following data:
   Cabinet roles since the first Dáil, including title of office as a string, holder (which is the same as ``eId`` in members.json) and start and end dates of the relevant individual's period in that office. Periods as Minister conclude (or should conclude) no later than the dissolution of the relevant Dáil, but Taoiseach and Tánaiste periods can span several Dáileanna.
 
   URIs for ministerial offices haven't yet been developed, so in the meantime the ``wikiOffice`` field offers a way of grouping offices by area (based on the most recent name of the office in most cases.)
+
+### Licence
+
+Reuse of the members.json file is permitted under the terms of the Houses of the [Oireachtas copyright and reuse policy and the Public Service Information (PSI) licence](http://www.oireachtas.ie/parliament/about/copyrightandre-use/). Otherwise the data is published with a CC-BY 4.0 licence, as explained in the Licence section of the repository.
