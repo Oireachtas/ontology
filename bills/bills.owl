@@ -1,4 +1,5 @@
 @prefix : <http://www.oireachtas.ie/ontology#> .
+@prefix org: <http://www.w3.org/ns/org#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
@@ -307,7 +308,8 @@
 
 :Oireachtas rdf:type owl:Class ;
             
-            rdfs:subClassOf <http://rdaregistry.info/Elements/c/C10005> ;
+            rdfs:subClassOf <http://rdaregistry.info/Elements/c/C10005> ,
+                            org:FormalOrganization ;
             
             owl:disjointWith :PrivateSponsor ;
             
@@ -344,6 +346,12 @@
                 rdfs:comment "A person or collective entity which introduces legislation to the Oireachtas"@en ;
                 
                 <http://www.w3.org/2004/02/skos/core#prefLabel> "Private Sponsor"@en .
+
+
+
+###  http://www.w3.org/ns/org#FormalOrganization
+
+org:FormalOrganization rdf:type owl:Class .
 
 
 

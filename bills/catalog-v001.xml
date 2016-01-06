@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <catalog prefer="public" xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
+    <uri id="Imports Wizard Entry" name="http://www.w3.org/ns/org#" uri="file:/C:/Users/rigneys/Documents/ontologies/org.rdf"/>
     <uri id="Imports Wizard Entry" name="http://rdaregistry.info/Elements/c/" uri="file:/C:/Users/rigneys/Documents/ontologies/rda.xml"/>
     <uri id="User Entered Import Resolution" name="http://www.metalex.eu/metalex/2008-05-02" uri="file:/C:/Users/rigneys/Documents/ontologies/metalex-cen.owl"/>
     <uri id="User Entered Import Resolution" name="http://www.w3.org/2004/02/skos/core" uri="file:/C:/Users/rigneys/Documents/ontologies/skos.rdf"/>
