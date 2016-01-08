@@ -1,0 +1,842 @@
+@prefix dbo: <http://dbpedia.org/ontology/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix eli: <http://data.europa.eu/eli/ontology#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix frbr: <http://purl.org/vocab/frbr/core#> .
+@prefix metalex: <http://www.metalex.eu/metalex/2008-05-02#> .
+@prefix oir: <http://oireachtas.ie/ontology#> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://oireachtas.ie/house/dail/1> a oir:house ;
+    oir:termOf <http://oireachtas.ie/dail> ;
+    skos:prefLabel "1st Dáil"@en .
+
+<http://oireachtas.ie/house/dail/1/term> a time:ProperInterval ;
+    oir:commenced <http://oireachtas.ie/house/dail/1/termCommencement> ;
+    oir:ended <http://oireachtas.ie/house/dail/1/termDissolution> .
+
+<http://oireachtas.ie/house/dail/10> a oir:house ;
+    oir:termOf <http://oireachtas.ie/dail> ;
+    skos:prefLabel "10th Dáil"@en .
+
+<http://oireachtas.ie/house/dail/10/term> a time:ProperInterval ;
+    oir:commenced <http://oireachtas.ie/house/dail/10/termCommencement> ;
+    oir:ended <http://oireachtas.ie/house/dail/10/termDissolution> .
+
+<http://oireachtas.ie/house/dail/11> a oir:house ;
+    oir:termOf <http://oireachtas.ie/dail> ;
+    skos:prefLabel "11th Dáil"@en .
+
+<http://oireachtas.ie/house/dail/11/term> a time:ProperInterval ;
+    oir:commenced <http://oireachtas.ie/house/dail/11/termCommencement> ;
+    oir:ended <http://oireachtas.ie/house/dail/11/termDissolution> .
+
+<http://oireachtas.ie/house/dail/12> a oir:house ;
+    oir:termOf <http://oireachtas.ie/dail> ;
+    skos:prefLabel "12th Dáil"@en .
+
+<http://oireachtas.ie/house/dail/12/term> a time:ProperInterval ;
+    oir:commenced <http://oireachtas.ie/house/dail/12/termCommencement> ;
+    oir:ended <http://oireachtas.ie/house/dail/12/termDissolution> .
+
+<http://oireachtas.ie/house/dail/13> a oir:house ;
+    oir:termOf <http://oireachtas.ie/dail> ;
+    skos:prefLabel "13th Dáil"@en .
+
+<http://oireachtas.ie/house/dail/13/term> a time:ProperInterval ;
+    oir:commenced <http://oireachtas.ie/house/dail/13/termCommencement> ;
+    oir:ended <http://oireachtas.ie/house/dail/13/termDissolution> .
+
+<http://oireachtas.ie/house/dail/14> a oir:house ;
+    oir:termOf <http://oireachtas.ie/dail> ;
+    skos:prefLabel "14th Dáil"@en .
+
+<http://oireachtas.ie/house/dail/14/term> a time:ProperInterval ;
+    oir:commenced <http://oireachtas.ie/house/dail/14/termCommencement> ;
+    oir:ended <http://oireachtas.ie/house/dail/14/termDissolution> .
+
+<http://oireachtas.ie/house/dail/15> a oir:house ;
+    oir:termOf <http://oireachtas.ie/dail> ;
+    skos:prefLabel "15th Dáil"@en .
+
+<http://oireachtas.ie/house/dail/15/term> a time:ProperInterval ;
+    oir:commenced <http://oireachtas.ie/house/dail/15/termCommencement> ;
+    oir:ended <http://oireachtas.ie/house/dail/15/termDissolution> .
+
+<http://oireachtas.ie/house/dail/16> a oir:house ;
+    oir:termOf <http://oireachtas.ie/dail> ;
+    skos:prefLabel "16th Dáil"@en .
+
+<http://oireachtas.ie/house/dail/16/term> a time:ProperInterval ;
+    oir:commenced <http://oireachtas.ie/house/dail/16/termCommencement> ;
+    oir:ended <http://oireachtas.ie/house/dail/16/termDissolution> .
+
+<http://oireachtas.ie/house/dail/17> a oir:house ;
+    oir:termOf <http://oireachtas.ie/dail> ;
+    skos:prefLabel "17th Dáil"@en .
+
+<http://oireachtas.ie/house/dail/17/term> a time:ProperInterval ;
+    oir:commenced <http://oireachtas.ie/house/dail/17/termCommencement> ;
+    oir:ended <http://oireachtas.ie/house/dail/17/termDissolution> .
+
+<http://oireachtas.ie/house/dail/18> a oir:house ;
+    oir:termOf <http://oireachtas.ie/dail> ;
+    skos:prefLabel "18th Dáil"@en .
+
+<http://oireachtas.ie/house/dail/18/term> a time:ProperInterval ;
+    oir:commenced <http://oireachtas.ie/house/dail/18/termCommencement> ;
+    oir:ended <http://oireachtas.ie/house/dail/18/termDissolution> .
+
+<http://oireachtas.ie/house/dail/19> a oir:house ;
+    oir:termOf <http://oireachtas.ie/dail> ;
+    skos:prefLabel "19th Dáil"@en .
+
+<http://oireachtas.ie/house/dail/19/term> a time:ProperInterval ;
+    oir:commenced <http://oireachtas.ie/house/dail/19/termCommencement> ;
+    oir:ended <http://oireachtas.ie/house/dail/19/termDissolution> .
+
+<http://oireachtas.ie/house/dail/2> a oir:house ;
+    oir:termOf <http://oireachtas.ie/dail> ;
+    skos:prefLabel "2nd Dáil"@en .
+
+<http://oireachtas.ie/house/dail/2/term> a time:ProperInterval ;
+    oir:commenced <http://oireachtas.ie/house/dail/2/termCommencement> ;
+    oir:ended <http://oireachtas.ie/house/dail/2/termDissolution> .
+
+<http://oireachtas.ie/house/dail/20> a oir:house ;
+    oir:termOf <http://oireachtas.ie/dail> ;
+    skos:prefLabel "20th Dáil"@en .
+
+<http://oireachtas.ie/house/dail/20/term> a time:ProperInterval ;
+    oir:commenced <http://oireachtas.ie/house/dail/20/termCommencement> ;
+    oir:ended <http://oireachtas.ie/house/dail/20/termDissolution> .
+
+<http://oireachtas.ie/house/dail/21> a oir:house ;
+    oir:termOf <http://oireachtas.ie/dail> ;
+    skos:prefLabel "21st Dáil"@en .
+
+<http://oireachtas.ie/house/dail/21/term> a time:ProperInterval ;
+    oir:commenced <http://oireachtas.ie/house/dail/21/termCommencement> ;
+    oir:ended <http://oireachtas.ie/house/dail/21/termDissolution> .
+
+<http://oireachtas.ie/house/dail/22> a oir:house ;
+    oir:termOf <http://oireachtas.ie/dail> ;
+    skos:prefLabel "22nd Dáil"@en .
+
+<http://oireachtas.ie/house/dail/22/term> a time:ProperInterval ;
+    oir:commenced <http://oireachtas.ie/house/dail/22/termCommencement> ;
+    oir:ended <http://oireachtas.ie/house/dail/22/termDissolution> .
+
+<http://oireachtas.ie/house/dail/23> a oir:house ;
+    oir:termOf <http://oireachtas.ie/dail> ;
+    skos:prefLabel "23rd Dáil"@en .
+
+<http://oireachtas.ie/house/dail/23/term> a time:ProperInterval ;
+    oir:commenced <http://oireachtas.ie/house/dail/23/termCommencement> ;
+    oir:ended <http://oireachtas.ie/house/dail/23/termDissolution> .
+
+<http://oireachtas.ie/house/dail/24> a oir:house ;
+    oir:termOf <http://oireachtas.ie/dail> ;
+    skos:prefLabel "24th Dáil"@en .
+
+<http://oireachtas.ie/house/dail/24/term> a time:ProperInterval ;
+    oir:commenced <http://oireachtas.ie/house/dail/24/termCommencement> ;
+    oir:ended <http://oireachtas.ie/house/dail/24/termDissolution> .
+
+<http://oireachtas.ie/house/dail/25> a oir:house ;
+    oir:termOf <http://oireachtas.ie/dail> ;
+    skos:prefLabel "25th Dáil"@en .
+
+<http://oireachtas.ie/house/dail/25/term> a time:ProperInterval ;
+    oir:commenced <http://oireachtas.ie/house/dail/25/termCommencement> ;
+    oir:ended <http://oireachtas.ie/house/dail/25/termDissolution> .
+
+<http://oireachtas.ie/house/dail/26> a oir:house ;
+    oir:termOf <http://oireachtas.ie/dail> ;
+    skos:prefLabel "26th Dáil"@en .
+
+<http://oireachtas.ie/house/dail/26/term> a time:ProperInterval ;
+    oir:commenced <http://oireachtas.ie/house/dail/26/termCommencement> ;
+    oir:ended <http://oireachtas.ie/house/dail/26/termDissolution> .
+
+<http://oireachtas.ie/house/dail/27> a oir:house ;
+    oir:termOf <http://oireachtas.ie/dail> ;
+    skos:prefLabel "27th Dáil"@en .
+
+<http://oireachtas.ie/house/dail/27/term> a time:ProperInterval ;
+    oir:commenced <http://oireachtas.ie/house/dail/27/termCommencement> ;
+    oir:ended <http://oireachtas.ie/house/dail/27/termDissolution> .
+
+<http://oireachtas.ie/house/dail/28> a oir:house ;
+    oir:termOf <http://oireachtas.ie/dail> ;
+    skos:prefLabel "28th Dáil"@en .
+
+<http://oireachtas.ie/house/dail/28/term> a time:ProperInterval ;
+    oir:commenced <http://oireachtas.ie/house/dail/28/termCommencement> ;
+    oir:ended <http://oireachtas.ie/house/dail/28/termDissolution> .
+
+<http://oireachtas.ie/house/dail/29> a oir:house ;
+    oir:termOf <http://oireachtas.ie/dail> ;
+    skos:prefLabel "29th Dáil"@en .
+
+<http://oireachtas.ie/house/dail/29/term> a time:ProperInterval ;
+    oir:commenced <http://oireachtas.ie/house/dail/29/termCommencement> ;
+    oir:ended <http://oireachtas.ie/house/dail/29/termDissolution> .
+
+<http://oireachtas.ie/house/dail/3> a oir:house ;
+    oir:termOf <http://oireachtas.ie/dail> ;
+    skos:prefLabel "3rd Dáil"@en .
+
+<http://oireachtas.ie/house/dail/3/term> a time:ProperInterval ;
+    oir:commenced <http://oireachtas.ie/house/dail/3/termCommencement> ;
+    oir:ended <http://oireachtas.ie/house/dail/3/termDissolution> .
+
+<http://oireachtas.ie/house/dail/30> a oir:house ;
+    oir:termOf <http://oireachtas.ie/dail> ;
+    skos:prefLabel "30th Dáil"@en .
+
+<http://oireachtas.ie/house/dail/30/term> a time:ProperInterval ;
+    oir:commenced <http://oireachtas.ie/house/dail/30/termCommencement> ;
+    oir:ended <http://oireachtas.ie/house/dail/30/termDissolution> .
+
+<http://oireachtas.ie/house/dail/31> a oir:house ;
+    oir:termOf <http://oireachtas.ie/dail> ;
+    skos:prefLabel "31st Dáil"@en .
+
+<http://oireachtas.ie/house/dail/31/term> a time:ProperInterval ;
+    oir:commenced <http://oireachtas.ie/house/dail/31/termCommencement> ;
+    oir:ended <http://oireachtas.ie/house/dail/31/termDissolution> .
+
+<http://oireachtas.ie/house/dail/4> a oir:house ;
+    oir:termOf <http://oireachtas.ie/dail> ;
+    skos:prefLabel "4th Dáil"@en .
+
+<http://oireachtas.ie/house/dail/4/term> a time:ProperInterval ;
+    oir:commenced <http://oireachtas.ie/house/dail/4/termCommencement> ;
+    oir:ended <http://oireachtas.ie/house/dail/4/termDissolution> .
+
+<http://oireachtas.ie/house/dail/5> a oir:house ;
+    oir:termOf <http://oireachtas.ie/dail> ;
+    skos:prefLabel "5th Dáil"@en .
+
+<http://oireachtas.ie/house/dail/5/term> a time:ProperInterval ;
+    oir:commenced <http://oireachtas.ie/house/dail/5/termCommencement> ;
+    oir:ended <http://oireachtas.ie/house/dail/5/termDissolution> .
+
+<http://oireachtas.ie/house/dail/6> a oir:house ;
+    oir:termOf <http://oireachtas.ie/dail> ;
+    skos:prefLabel "6th Dáil"@en .
+
+<http://oireachtas.ie/house/dail/6/term> a time:ProperInterval ;
+    oir:commenced <http://oireachtas.ie/house/dail/6/termCommencement> ;
+    oir:ended <http://oireachtas.ie/house/dail/6/termDissolution> .
+
+<http://oireachtas.ie/house/dail/7> a oir:house ;
+    oir:termOf <http://oireachtas.ie/dail> ;
+    skos:prefLabel "7th Dáil"@en .
+
+<http://oireachtas.ie/house/dail/7/term> a time:ProperInterval ;
+    oir:commenced <http://oireachtas.ie/house/dail/7/termCommencement> ;
+    oir:ended <http://oireachtas.ie/house/dail/7/termDissolution> .
+
+<http://oireachtas.ie/house/dail/8> a oir:house ;
+    oir:termOf <http://oireachtas.ie/dail> ;
+    skos:prefLabel "8th Dáil"@en .
+
+<http://oireachtas.ie/house/dail/8/term> a time:ProperInterval ;
+    oir:commenced <http://oireachtas.ie/house/dail/8/termCommencement> ;
+    oir:ended <http://oireachtas.ie/house/dail/8/termDissolution> .
+
+<http://oireachtas.ie/house/dail/9> a oir:house ;
+    oir:termOf <http://oireachtas.ie/dail> ;
+    skos:prefLabel "9th Dáil"@en .
+
+<http://oireachtas.ie/house/dail/9/term> a time:ProperInterval ;
+    oir:commenced <http://oireachtas.ie/house/dail/9/termCommencement> ;
+    oir:ended <http://oireachtas.ie/house/dail/9/termDissolution> .
+
+<http://oireachtas.ie/house/seanad/10> a oir:house ;
+    oir:termOf <http://oireachtas.ie/seanad> ;
+    skos:prefLabel "10th Seanad"@en .
+
+<http://oireachtas.ie/house/seanad/10/term> a time:ProperInterval ;
+    oir:commenced <http://oireachtas.ie/house/seanad/10/termCommencement> ;
+    oir:ended <http://oireachtas.ie/house/seanad/10/termDissolution> .
+
+<http://oireachtas.ie/house/seanad/11> a oir:house ;
+    oir:termOf <http://oireachtas.ie/seanad> ;
+    skos:prefLabel "11th Seanad"@en .
+
+<http://oireachtas.ie/house/seanad/11/term> a time:ProperInterval ;
+    oir:commenced <http://oireachtas.ie/house/seanad/11/termCommencement> ;
+    oir:ended <http://oireachtas.ie/house/seanad/11/termDissolution> .
+
+<http://oireachtas.ie/house/seanad/12> a oir:house ;
+    oir:termOf <http://oireachtas.ie/seanad> ;
+    skos:prefLabel "12th Seanad"@en .
+
+<http://oireachtas.ie/house/seanad/12/term> a time:ProperInterval ;
+    oir:commenced <http://oireachtas.ie/house/seanad/12/termCommencement> ;
+    oir:ended <http://oireachtas.ie/house/seanad/12/termDissolution> .
+
+<http://oireachtas.ie/house/seanad/13> a oir:house ;
+    oir:termOf <http://oireachtas.ie/seanad> ;
+    skos:prefLabel "13th Seanad"@en .
+
+<http://oireachtas.ie/house/seanad/13/term> a time:ProperInterval ;
+    oir:commenced <http://oireachtas.ie/house/seanad/13/termCommencement> ;
+    oir:ended <http://oireachtas.ie/house/seanad/13/termDissolution> .
+
+<http://oireachtas.ie/house/seanad/14> a oir:house ;
+    oir:termOf <http://oireachtas.ie/seanad> ;
+    skos:prefLabel "14th Seanad"@en .
+
+<http://oireachtas.ie/house/seanad/14/term> a time:ProperInterval ;
+    oir:commenced <http://oireachtas.ie/house/seanad/14/termCommencement> ;
+    oir:ended <http://oireachtas.ie/house/seanad/14/termDissolution> .
+
+<http://oireachtas.ie/house/seanad/15> a oir:house ;
+    oir:termOf <http://oireachtas.ie/seanad> ;
+    skos:prefLabel "15th Seanad"@en .
+
+<http://oireachtas.ie/house/seanad/15/term> a time:ProperInterval ;
+    oir:commenced <http://oireachtas.ie/house/seanad/15/termCommencement> ;
+    oir:ended <http://oireachtas.ie/house/seanad/15/termDissolution> .
+
+<http://oireachtas.ie/house/seanad/16> a oir:house ;
+    oir:termOf <http://oireachtas.ie/seanad> ;
+    skos:prefLabel "16th Seanad"@en .
+
+<http://oireachtas.ie/house/seanad/16/term> a time:ProperInterval ;
+    oir:commenced <http://oireachtas.ie/house/seanad/16/termCommencement> ;
+    oir:ended <http://oireachtas.ie/house/seanad/16/termDissolution> .
+
+<http://oireachtas.ie/house/seanad/17> a oir:house ;
+    oir:termOf <http://oireachtas.ie/seanad> ;
+    skos:prefLabel "17th Seanad"@en .
+
+<http://oireachtas.ie/house/seanad/17/term> a time:ProperInterval ;
+    oir:commenced <http://oireachtas.ie/house/seanad/17/termCommencement> ;
+    oir:ended <http://oireachtas.ie/house/seanad/17/termDissolution> .
+
+<http://oireachtas.ie/house/seanad/18> a oir:house ;
+    oir:termOf <http://oireachtas.ie/seanad> ;
+    skos:prefLabel "18th Seanad"@en .
+
+<http://oireachtas.ie/house/seanad/18/term> a time:ProperInterval ;
+    oir:commenced <http://oireachtas.ie/house/seanad/18/termCommencement> ;
+    oir:ended <http://oireachtas.ie/house/seanad/18/termDissolution> .
+
+<http://oireachtas.ie/house/seanad/19> a oir:house ;
+    oir:termOf <http://oireachtas.ie/seanad> ;
+    skos:prefLabel "19th Seanad"@en .
+
+<http://oireachtas.ie/house/seanad/19/term> a time:ProperInterval ;
+    oir:commenced <http://oireachtas.ie/house/seanad/19/termCommencement> ;
+    oir:ended <http://oireachtas.ie/house/seanad/19/termDissolution> .
+
+<http://oireachtas.ie/house/seanad/1922> a oir:house ;
+    oir:termOf <http://oireachtas.ie/seanad> ;
+    skos:prefLabel "1922 Seanad"@en .
+
+<http://oireachtas.ie/house/seanad/1922/term> a time:ProperInterval ;
+    oir:commenced <http://oireachtas.ie/house/seanad/1922/termCommencement> ;
+    oir:ended <http://oireachtas.ie/house/seanad/1922/termDissolution> .
+
+<http://oireachtas.ie/house/seanad/1925> a oir:house ;
+    oir:termOf <http://oireachtas.ie/seanad> ;
+    skos:prefLabel "1925 Seanad"@en .
+
+<http://oireachtas.ie/house/seanad/1925/term> a time:ProperInterval ;
+    oir:commenced <http://oireachtas.ie/house/seanad/1925/termCommencement> ;
+    oir:ended <http://oireachtas.ie/house/seanad/1925/termDissolution> .
+
+<http://oireachtas.ie/house/seanad/1928> a oir:house ;
+    oir:termOf <http://oireachtas.ie/seanad> ;
+    skos:prefLabel "1928 Seanad"@en .
+
+<http://oireachtas.ie/house/seanad/1928/term> a time:ProperInterval ;
+    oir:commenced <http://oireachtas.ie/house/seanad/1928/termCommencement> ;
+    oir:ended <http://oireachtas.ie/house/seanad/1928/termDissolution> .
+
+<http://oireachtas.ie/house/seanad/1931> a oir:house ;
+    oir:termOf <http://oireachtas.ie/seanad> ;
+    skos:prefLabel "1931 Seanad"@en .
+
+<http://oireachtas.ie/house/seanad/1931/term> a time:ProperInterval ;
+    oir:commenced <http://oireachtas.ie/house/seanad/1931/termCommencement> ;
+    oir:ended <http://oireachtas.ie/house/seanad/1931/termDissolution> .
+
+<http://oireachtas.ie/house/seanad/1934> a oir:house ;
+    oir:termOf <http://oireachtas.ie/seanad> ;
+    skos:prefLabel "1934 Seanad"@en .
+
+<http://oireachtas.ie/house/seanad/1934/term> a time:ProperInterval ;
+    oir:commenced <http://oireachtas.ie/house/seanad/1934/termCommencement> ;
+    oir:ended <http://oireachtas.ie/house/seanad/1934/termDissolution> .
+
+<http://oireachtas.ie/house/seanad/2> a oir:house ;
+    oir:termOf <http://oireachtas.ie/seanad> ;
+    skos:prefLabel "2nd Seanad"@en .
+
+<http://oireachtas.ie/house/seanad/2/term> a time:ProperInterval ;
+    oir:commenced <http://oireachtas.ie/house/seanad/2/termCommencement> ;
+    oir:ended <http://oireachtas.ie/house/seanad/2/termDissolution> .
+
+<http://oireachtas.ie/house/seanad/20> a oir:house ;
+    oir:termOf <http://oireachtas.ie/seanad> ;
+    skos:prefLabel "20th Seanad"@en .
+
+<http://oireachtas.ie/house/seanad/20/term> a time:ProperInterval ;
+    oir:commenced <http://oireachtas.ie/house/seanad/20/termCommencement> ;
+    oir:ended <http://oireachtas.ie/house/seanad/20/termDissolution> .
+
+<http://oireachtas.ie/house/seanad/21> a oir:house ;
+    oir:termOf <http://oireachtas.ie/seanad> ;
+    skos:prefLabel "21st Seanad"@en .
+
+<http://oireachtas.ie/house/seanad/21/term> a time:ProperInterval ;
+    oir:commenced <http://oireachtas.ie/house/seanad/21/termCommencement> ;
+    oir:ended <http://oireachtas.ie/house/seanad/21/termDissolution> .
+
+<http://oireachtas.ie/house/seanad/22> a oir:house ;
+    oir:termOf <http://oireachtas.ie/seanad> ;
+    skos:prefLabel "22nd Seanad"@en .
+
+<http://oireachtas.ie/house/seanad/22/term> a time:ProperInterval ;
+    oir:commenced <http://oireachtas.ie/house/seanad/22/termCommencement> ;
+    oir:ended <http://oireachtas.ie/house/seanad/22/termDissolution> .
+
+<http://oireachtas.ie/house/seanad/23> a oir:house ;
+    oir:termOf <http://oireachtas.ie/seanad> ;
+    skos:prefLabel "23rd Seanad"@en .
+
+<http://oireachtas.ie/house/seanad/23/term> a time:ProperInterval ;
+    oir:commenced <http://oireachtas.ie/house/seanad/23/termCommencement> ;
+    oir:ended <http://oireachtas.ie/house/seanad/23/termDissolution> .
+
+<http://oireachtas.ie/house/seanad/24> a oir:house ;
+    oir:termOf <http://oireachtas.ie/seanad> ;
+    skos:prefLabel "24th Seanad"@en .
+
+<http://oireachtas.ie/house/seanad/24/term> a time:ProperInterval ;
+    oir:commenced <http://oireachtas.ie/house/seanad/24/termCommencement> ;
+    oir:ended <http://oireachtas.ie/house/seanad/24/termDissolution> .
+
+<http://oireachtas.ie/house/seanad/3> a oir:house ;
+    oir:termOf <http://oireachtas.ie/seanad> ;
+    skos:prefLabel "3rd Seanad"@en .
+
+<http://oireachtas.ie/house/seanad/3/term> a time:ProperInterval ;
+    oir:commenced <http://oireachtas.ie/house/seanad/3/termCommencement> ;
+    oir:ended <http://oireachtas.ie/house/seanad/3/termDissolution> .
+
+<http://oireachtas.ie/house/seanad/4> a oir:house ;
+    oir:termOf <http://oireachtas.ie/seanad> ;
+    skos:prefLabel "4th Seanad"@en .
+
+<http://oireachtas.ie/house/seanad/4/term> a time:ProperInterval ;
+    oir:commenced <http://oireachtas.ie/house/seanad/4/termCommencement> ;
+    oir:ended <http://oireachtas.ie/house/seanad/4/termDissolution> .
+
+<http://oireachtas.ie/house/seanad/5> a oir:house ;
+    oir:termOf <http://oireachtas.ie/seanad> ;
+    skos:prefLabel "5th Seanad"@en .
+
+<http://oireachtas.ie/house/seanad/5/term> a time:ProperInterval ;
+    oir:commenced <http://oireachtas.ie/house/seanad/5/termCommencement> ;
+    oir:ended <http://oireachtas.ie/house/seanad/5/termDissolution> .
+
+<http://oireachtas.ie/house/seanad/6> a oir:house ;
+    oir:termOf <http://oireachtas.ie/seanad> ;
+    skos:prefLabel "6th Seanad"@en .
+
+<http://oireachtas.ie/house/seanad/6/term> a time:ProperInterval ;
+    oir:commenced <http://oireachtas.ie/house/seanad/6/termCommencement> ;
+    oir:ended <http://oireachtas.ie/house/seanad/6/termDissolution> .
+
+<http://oireachtas.ie/house/seanad/7> a oir:house ;
+    oir:termOf <http://oireachtas.ie/seanad> ;
+    skos:prefLabel "7th Seanad"@en .
+
+<http://oireachtas.ie/house/seanad/7/term> a time:ProperInterval ;
+    oir:commenced <http://oireachtas.ie/house/seanad/7/termCommencement> ;
+    oir:ended <http://oireachtas.ie/house/seanad/7/termDissolution> .
+
+<http://oireachtas.ie/house/seanad/8> a oir:house ;
+    oir:termOf <http://oireachtas.ie/seanad> ;
+    skos:prefLabel "8th Seanad"@en .
+
+<http://oireachtas.ie/house/seanad/8/term> a time:ProperInterval ;
+    oir:commenced <http://oireachtas.ie/house/seanad/8/termCommencement> ;
+    oir:ended <http://oireachtas.ie/house/seanad/8/termDissolution> .
+
+<http://oireachtas.ie/house/seanad/9> a oir:house ;
+    oir:termOf <http://oireachtas.ie/seanad> ;
+    skos:prefLabel "9th Seanad"@en .
+
+<http://oireachtas.ie/house/seanad/9/term> a time:ProperInterval ;
+    oir:commenced <http://oireachtas.ie/house/seanad/9/termCommencement> ;
+    oir:ended <http://oireachtas.ie/house/seanad/9/termDissolution> .
+
+<http://oireachtas.ie/house/dail/1/termCommencement> a oir:EventDate ;
+    dcterms:date "1919-01-21"^^xsd:date .
+
+<http://oireachtas.ie/house/dail/1/termDissolution> a oir:EventDate ;
+    dcterms:date "1921-05-01"^^xsd:date .
+
+<http://oireachtas.ie/house/dail/10/termCommencement> a oir:EventDate ;
+    dcterms:date "1938-06-30"^^xsd:date .
+
+<http://oireachtas.ie/house/dail/10/termDissolution> a oir:EventDate ;
+    dcterms:date "1943-05-26"^^xsd:date .
+
+<http://oireachtas.ie/house/dail/11/termCommencement> a oir:EventDate ;
+    dcterms:date "1943-07-01"^^xsd:date .
+
+<http://oireachtas.ie/house/dail/11/termDissolution> a oir:EventDate ;
+    dcterms:date "1944-05-10"^^xsd:date .
+
+<http://oireachtas.ie/house/dail/12/termCommencement> a oir:EventDate ;
+    dcterms:date "1944-06-09"^^xsd:date .
+
+<http://oireachtas.ie/house/dail/12/termDissolution> a oir:EventDate ;
+    dcterms:date "1947-12-11"^^xsd:date .
+
+<http://oireachtas.ie/house/dail/13/termCommencement> a oir:EventDate ;
+    dcterms:date "1948-02-18"^^xsd:date .
+
+<http://oireachtas.ie/house/dail/13/termDissolution> a oir:EventDate ;
+    dcterms:date "1951-05-02"^^xsd:date .
+
+<http://oireachtas.ie/house/dail/14/termCommencement> a oir:EventDate ;
+    dcterms:date "1951-06-13"^^xsd:date .
+
+<http://oireachtas.ie/house/dail/14/termDissolution> a oir:EventDate ;
+    dcterms:date "1954-04-23"^^xsd:date .
+
+<http://oireachtas.ie/house/dail/15/termCommencement> a oir:EventDate ;
+    dcterms:date "1954-06-02"^^xsd:date .
+
+<http://oireachtas.ie/house/dail/15/termDissolution> a oir:EventDate ;
+    dcterms:date "1956-12-13"^^xsd:date .
+
+<http://oireachtas.ie/house/dail/16/termCommencement> a oir:EventDate ;
+    dcterms:date "1957-03-20"^^xsd:date .
+
+<http://oireachtas.ie/house/dail/16/termDissolution> a oir:EventDate ;
+    dcterms:date "1961-09-01"^^xsd:date .
+
+<http://oireachtas.ie/house/dail/17/termCommencement> a oir:EventDate ;
+    dcterms:date "1961-10-11"^^xsd:date .
+
+<http://oireachtas.ie/house/dail/17/termDissolution> a oir:EventDate ;
+    dcterms:date "1965-03-18"^^xsd:date .
+
+<http://oireachtas.ie/house/dail/18/termCommencement> a oir:EventDate ;
+    dcterms:date "1965-04-21"^^xsd:date .
+
+<http://oireachtas.ie/house/dail/18/termDissolution> a oir:EventDate ;
+    dcterms:date "1969-05-21"^^xsd:date .
+
+<http://oireachtas.ie/house/dail/19/termCommencement> a oir:EventDate ;
+    dcterms:date "1969-07-02"^^xsd:date .
+
+<http://oireachtas.ie/house/dail/19/termDissolution> a oir:EventDate ;
+    dcterms:date "1973-02-05"^^xsd:date .
+
+<http://oireachtas.ie/house/dail/2/termCommencement> a oir:EventDate ;
+    dcterms:date "1921-08-16"^^xsd:date .
+
+<http://oireachtas.ie/house/dail/2/termDissolution> a oir:EventDate ;
+    dcterms:date "1922-06-08"^^xsd:date .
+
+<http://oireachtas.ie/house/dail/20/termCommencement> a oir:EventDate ;
+    dcterms:date "1973-03-14"^^xsd:date .
+
+<http://oireachtas.ie/house/dail/20/termDissolution> a oir:EventDate ;
+    dcterms:date "1977-05-25"^^xsd:date .
+
+<http://oireachtas.ie/house/dail/21/termCommencement> a oir:EventDate ;
+    dcterms:date "1977-07-05"^^xsd:date .
+
+<http://oireachtas.ie/house/dail/21/termDissolution> a oir:EventDate ;
+    dcterms:date "1981-05-21"^^xsd:date .
+
+<http://oireachtas.ie/house/dail/22/termCommencement> a oir:EventDate ;
+    dcterms:date "1981-06-30"^^xsd:date .
+
+<http://oireachtas.ie/house/dail/22/termDissolution> a oir:EventDate ;
+    dcterms:date "1982-01-22"^^xsd:date .
+
+<http://oireachtas.ie/house/dail/23/termCommencement> a oir:EventDate ;
+    dcterms:date "1982-03-09"^^xsd:date .
+
+<http://oireachtas.ie/house/dail/23/termDissolution> a oir:EventDate ;
+    dcterms:date "1982-11-04"^^xsd:date .
+
+<http://oireachtas.ie/house/dail/24/termCommencement> a oir:EventDate ;
+    dcterms:date "1982-12-14"^^xsd:date .
+
+<http://oireachtas.ie/house/dail/24/termDissolution> a oir:EventDate ;
+    dcterms:date "1986-12-19"^^xsd:date .
+
+<http://oireachtas.ie/house/dail/25/termCommencement> a oir:EventDate ;
+    dcterms:date "1987-03-10"^^xsd:date .
+
+<http://oireachtas.ie/house/dail/25/termDissolution> a oir:EventDate ;
+    dcterms:date "1989-05-21"^^xsd:date .
+
+<http://oireachtas.ie/house/dail/26/termCommencement> a oir:EventDate ;
+    dcterms:date "1989-06-29"^^xsd:date .
+
+<http://oireachtas.ie/house/dail/26/termDissolution> a oir:EventDate ;
+    dcterms:date "1992-11-05"^^xsd:date .
+
+<http://oireachtas.ie/house/dail/27/termCommencement> a oir:EventDate ;
+    dcterms:date "1992-11-25"^^xsd:date .
+
+<http://oireachtas.ie/house/dail/27/termDissolution> a oir:EventDate ;
+    dcterms:date "1997-05-15"^^xsd:date .
+
+<http://oireachtas.ie/house/dail/28/termCommencement> a oir:EventDate ;
+    dcterms:date "1997-06-06"^^xsd:date .
+
+<http://oireachtas.ie/house/dail/28/termDissolution> a oir:EventDate ;
+    dcterms:date "2002-04-25"^^xsd:date .
+
+<http://oireachtas.ie/house/dail/29/termCommencement> a oir:EventDate ;
+    dcterms:date "2002-06-06"^^xsd:date .
+
+<http://oireachtas.ie/house/dail/29/termDissolution> a oir:EventDate ;
+    dcterms:date "2007-05-24"^^xsd:date .
+
+<http://oireachtas.ie/house/dail/3/termCommencement> a oir:EventDate ;
+    dcterms:date "1922-09-09"^^xsd:date .
+
+<http://oireachtas.ie/house/dail/3/termDissolution> a oir:EventDate ;
+    dcterms:date "1923-08-09"^^xsd:date .
+
+<http://oireachtas.ie/house/dail/30/termCommencement> a oir:EventDate ;
+    dcterms:date "2007-05-25"^^xsd:date .
+
+<http://oireachtas.ie/house/dail/30/termDissolution> a oir:EventDate ;
+    dcterms:date "2011-03-08"^^xsd:date .
+
+<http://oireachtas.ie/house/dail/31/termCommencement> a oir:EventDate ;
+    dcterms:date "2011-03-09"^^xsd:date .
+
+<http://oireachtas.ie/house/dail/31/termDissolution> a oir:EventDate ;
+    dcterms:date "nan"^^xsd:date .
+
+<http://oireachtas.ie/house/dail/4/termCommencement> a oir:EventDate ;
+    dcterms:date "1923-09-19"^^xsd:date .
+
+<http://oireachtas.ie/house/dail/4/termDissolution> a oir:EventDate ;
+    dcterms:date "1927-05-20"^^xsd:date .
+
+<http://oireachtas.ie/house/dail/5/termCommencement> a oir:EventDate ;
+    dcterms:date "1927-06-23"^^xsd:date .
+
+<http://oireachtas.ie/house/dail/5/termDissolution> a oir:EventDate ;
+    dcterms:date "1927-08-16"^^xsd:date .
+
+<http://oireachtas.ie/house/dail/6/termCommencement> a oir:EventDate ;
+    dcterms:date "1927-10-11"^^xsd:date .
+
+<http://oireachtas.ie/house/dail/6/termDissolution> a oir:EventDate ;
+    dcterms:date "1931-12-17"^^xsd:date .
+
+<http://oireachtas.ie/house/dail/7/termCommencement> a oir:EventDate ;
+    dcterms:date "1932-03-09"^^xsd:date .
+
+<http://oireachtas.ie/house/dail/7/termDissolution> a oir:EventDate ;
+    dcterms:date "1932-12-22"^^xsd:date .
+
+<http://oireachtas.ie/house/dail/8/termCommencement> a oir:EventDate ;
+    dcterms:date "1933-02-08"^^xsd:date .
+
+<http://oireachtas.ie/house/dail/8/termDissolution> a oir:EventDate ;
+    dcterms:date "1937-06-14"^^xsd:date .
+
+<http://oireachtas.ie/house/dail/9/termCommencement> a oir:EventDate ;
+    dcterms:date "1937-07-21"^^xsd:date .
+
+<http://oireachtas.ie/house/dail/9/termDissolution> a oir:EventDate ;
+    dcterms:date "1938-05-25"^^xsd:date .
+
+<http://oireachtas.ie/house/seanad/10/termCommencement> a oir:EventDate ;
+    dcterms:date "1961-12-14"^^xsd:date .
+
+<http://oireachtas.ie/house/seanad/10/termDissolution> a oir:EventDate ;
+    dcterms:date "1965-04-28"^^xsd:date .
+
+<http://oireachtas.ie/house/seanad/11/termCommencement> a oir:EventDate ;
+    dcterms:date "1965-06-23"^^xsd:date .
+
+<http://oireachtas.ie/house/seanad/11/termDissolution> a oir:EventDate ;
+    dcterms:date "1969-07-24"^^xsd:date .
+
+<http://oireachtas.ie/house/seanad/12/termCommencement> a oir:EventDate ;
+    dcterms:date "1969-11-05"^^xsd:date .
+
+<http://oireachtas.ie/house/seanad/12/termDissolution> a oir:EventDate ;
+    dcterms:date "1973-03-30"^^xsd:date .
+
+<http://oireachtas.ie/house/seanad/13/termCommencement> a oir:EventDate ;
+    dcterms:date "1973-06-01"^^xsd:date .
+
+<http://oireachtas.ie/house/seanad/13/termDissolution> a oir:EventDate ;
+    dcterms:date "1977-05-26"^^xsd:date .
+
+<http://oireachtas.ie/house/seanad/14/termCommencement> a oir:EventDate ;
+    dcterms:date "1977-10-17"^^xsd:date .
+
+<http://oireachtas.ie/house/seanad/14/termDissolution> a oir:EventDate ;
+    dcterms:date "1981-07-16"^^xsd:date .
+
+<http://oireachtas.ie/house/seanad/15/termCommencement> a oir:EventDate ;
+    dcterms:date "1981-10-08"^^xsd:date .
+
+<http://oireachtas.ie/house/seanad/15/termDissolution> a oir:EventDate ;
+    dcterms:date "1982-04-16"^^xsd:date .
+
+<http://oireachtas.ie/house/seanad/16/termCommencement> a oir:EventDate ;
+    dcterms:date "1982-05-13"^^xsd:date .
+
+<http://oireachtas.ie/house/seanad/16/termDissolution> a oir:EventDate ;
+    dcterms:date "1982-12-21"^^xsd:date .
+
+<http://oireachtas.ie/house/seanad/17/termCommencement> a oir:EventDate ;
+    dcterms:date "1983-02-23"^^xsd:date .
+
+<http://oireachtas.ie/house/seanad/17/termDissolution> a oir:EventDate ;
+    dcterms:date "1987-04-03"^^xsd:date .
+
+<http://oireachtas.ie/house/seanad/18/termCommencement> a oir:EventDate ;
+    dcterms:date "1987-04-25"^^xsd:date .
+
+<http://oireachtas.ie/house/seanad/18/termDissolution> a oir:EventDate ;
+    dcterms:date "1989-07-05"^^xsd:date .
+
+<http://oireachtas.ie/house/seanad/19/termCommencement> a oir:EventDate ;
+    dcterms:date "1989-11-01"^^xsd:date .
+
+<http://oireachtas.ie/house/seanad/19/termDissolution> a oir:EventDate ;
+    dcterms:date "1992-12-17"^^xsd:date .
+
+<http://oireachtas.ie/house/seanad/1922/termCommencement> a oir:EventDate ;
+    dcterms:date "1922-12-11"^^xsd:date .
+
+<http://oireachtas.ie/house/seanad/1922/termDissolution> a oir:EventDate ;
+    dcterms:date "1925-12-06"^^xsd:date .
+
+<http://oireachtas.ie/house/seanad/1925/termCommencement> a oir:EventDate ;
+    dcterms:date "1925-12-06"^^xsd:date .
+
+<http://oireachtas.ie/house/seanad/1925/termDissolution> a oir:EventDate ;
+    dcterms:date "1928-12-06"^^xsd:date .
+
+<http://oireachtas.ie/house/seanad/1928/termCommencement> a oir:EventDate ;
+    dcterms:date "1928-12-06"^^xsd:date .
+
+<http://oireachtas.ie/house/seanad/1928/termDissolution> a oir:EventDate ;
+    dcterms:date "1931-12-06"^^xsd:date .
+
+<http://oireachtas.ie/house/seanad/1931/termCommencement> a oir:EventDate ;
+    dcterms:date "1931-12-06"^^xsd:date .
+
+<http://oireachtas.ie/house/seanad/1931/termDissolution> a oir:EventDate ;
+    dcterms:date "1934-12-06"^^xsd:date .
+
+<http://oireachtas.ie/house/seanad/1934/termCommencement> a oir:EventDate ;
+    dcterms:date "1934-12-06"^^xsd:date .
+
+<http://oireachtas.ie/house/seanad/1934/termDissolution> a oir:EventDate ;
+    dcterms:date "1936-05-19"^^xsd:date .
+
+<http://oireachtas.ie/house/seanad/2/termCommencement> a oir:EventDate ;
+    dcterms:date "1938-04-27"^^xsd:date .
+
+<http://oireachtas.ie/house/seanad/2/termDissolution> a oir:EventDate ;
+    dcterms:date "1938-07-22"^^xsd:date .
+
+<http://oireachtas.ie/house/seanad/20/termCommencement> a oir:EventDate ;
+    dcterms:date "1993-02-17"^^xsd:date .
+
+<http://oireachtas.ie/house/seanad/20/termDissolution> a oir:EventDate ;
+    dcterms:date "1997-07-10"^^xsd:date .
+
+<http://oireachtas.ie/house/seanad/21/termCommencement> a oir:EventDate ;
+    dcterms:date "1997-09-17"^^xsd:date .
+
+<http://oireachtas.ie/house/seanad/21/termDissolution> a oir:EventDate ;
+    dcterms:date "2002-06-26"^^xsd:date .
+
+<http://oireachtas.ie/house/seanad/22/termCommencement> a oir:EventDate ;
+    dcterms:date "2002-09-12"^^xsd:date .
+
+<http://oireachtas.ie/house/seanad/22/termDissolution> a oir:EventDate ;
+    dcterms:date "2007-09-12"^^xsd:date .
+
+<http://oireachtas.ie/house/seanad/23/termCommencement> a oir:EventDate ;
+    dcterms:date "2007-09-13"^^xsd:date .
+
+<http://oireachtas.ie/house/seanad/23/termDissolution> a oir:EventDate ;
+    dcterms:date "2011-04-27"^^xsd:date .
+
+<http://oireachtas.ie/house/seanad/24/termCommencement> a oir:EventDate ;
+    dcterms:date "2011-04-28"^^xsd:date .
+
+<http://oireachtas.ie/house/seanad/24/termDissolution> a oir:EventDate ;
+    dcterms:date "nan"^^xsd:date .
+
+<http://oireachtas.ie/house/seanad/3/termCommencement> a oir:EventDate ;
+    dcterms:date "1938-09-07"^^xsd:date .
+
+<http://oireachtas.ie/house/seanad/3/termDissolution> a oir:EventDate ;
+    dcterms:date "1943-07-14"^^xsd:date .
+
+<http://oireachtas.ie/house/seanad/4/termCommencement> a oir:EventDate ;
+    dcterms:date "1943-09-08"^^xsd:date .
+
+<http://oireachtas.ie/house/seanad/4/termDissolution> a oir:EventDate ;
+    dcterms:date "1944-07-05"^^xsd:date .
+
+<http://oireachtas.ie/house/seanad/5/termCommencement> a oir:EventDate ;
+    dcterms:date "1944-08-18"^^xsd:date .
+
+<http://oireachtas.ie/house/seanad/5/termDissolution> a oir:EventDate ;
+    dcterms:date "1948-03-12"^^xsd:date .
+
+<http://oireachtas.ie/house/seanad/6/termCommencement> a oir:EventDate ;
+    dcterms:date "1948-04-21"^^xsd:date .
+
+<http://oireachtas.ie/house/seanad/6/termDissolution> a oir:EventDate ;
+    dcterms:date "1951-07-25"^^xsd:date .
+
+<http://oireachtas.ie/house/seanad/7/termCommencement> a oir:EventDate ;
+    dcterms:date "1951-08-14"^^xsd:date .
+
+<http://oireachtas.ie/house/seanad/7/termDissolution> a oir:EventDate ;
+    dcterms:date "1954-07-07"^^xsd:date .
+
+<http://oireachtas.ie/house/seanad/8/termCommencement> a oir:EventDate ;
+    dcterms:date "1954-07-22"^^xsd:date .
+
+<http://oireachtas.ie/house/seanad/8/termDissolution> a oir:EventDate ;
+    dcterms:date "1957-03-28"^^xsd:date .
+
+<http://oireachtas.ie/house/seanad/9/termCommencement> a oir:EventDate ;
+    dcterms:date "1957-05-22"^^xsd:date .
+
+<http://oireachtas.ie/house/seanad/9/termDissolution> a oir:EventDate ;
+    dcterms:date "1961-09-01"^^xsd:date .
+

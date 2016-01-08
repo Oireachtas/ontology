@@ -5,6 +5,7 @@
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix time: <http://www.w3.org/2006/time#> .
 @base <http://www.oireachtas.ie/ontology> .
 
 <http://www.oireachtas.ie/ontology> rdf:type owl:Ontology ;
@@ -16,7 +17,8 @@
 4. Agents"""@en ;
                                     
                                     owl:imports <http://data.europa.eu/eli/ontology#> ,
-                                                <http://www.metalex.eu/metalex/2008-05-02> .
+                                                <http://www.metalex.eu/metalex/2008-05-02> ,
+                                                org: .
 
 
 #################################################################
@@ -41,6 +43,60 @@
            rdfs:domain :BillEvent ;
            
            rdfs:range :Chamber .
+
+
+
+###  http://www.oireachtas.ie/ontology#commenced
+
+:commenced rdf:type owl:ObjectProperty ;
+           
+           rdfs:range :EventDate ;
+           
+           rdfs:domain time:TemporalEntity .
+
+
+
+###  http://www.oireachtas.ie/ontology#elected
+
+:elected rdf:type owl:ObjectProperty ;
+         
+         rdfs:range :EventDate ;
+         
+         rdfs:domain time:TemporalEntity .
+
+
+
+###  http://www.oireachtas.ie/ontology#ended
+
+:ended rdf:type owl:ObjectProperty ;
+       
+       rdfs:range :EventDate ;
+       
+       rdfs:domain time:TemporalEntity .
+
+
+
+###  http://www.oireachtas.ie/ontology#hasTerm
+
+:hasTerm rdf:type owl:ObjectProperty ;
+         
+         rdfs:domain :Chamber ;
+         
+         rdfs:range :House ;
+         
+         owl:inverseOf :termOf .
+
+
+
+###  http://www.oireachtas.ie/ontology#termOf
+
+:termOf rdf:type owl:ObjectProperty ;
+        
+        <http://www.w3.org/2004/02/skos/core#prefLabel> "term of"@en ;
+        
+        rdfs:range :Chamber ;
+        
+        rdfs:domain :House .
 
 
 
@@ -242,7 +298,15 @@
          
          rdfs:subClassOf :Oireachtas ;
          
-         rdfs:comment "The Dáil, the Seanad or a committee chamber"@en .
+         rdfs:comment "The Dáil, the Seanad or a committee chamber. A chamber in this context is a continuous entity associated with the physical location and the abstract concept of the debating chamber, as distinct from a House, which represents a specific Dáil or Seanad which exist for a period of time. It is also the physical site of a particular House."@en .
+
+
+
+###  http://www.oireachtas.ie/ontology#EventDate
+
+:EventDate rdf:type owl:Class ;
+           
+           rdfs:subClassOf time:TemporalEntity .
 
 
 
@@ -257,6 +321,16 @@
             <http://www.w3.org/2004/02/skos/core#prefLabel> "The Government"@en ;
             
             rdfs:comment "The Government, as defined by the Constitution."@en .
+
+
+
+###  http://www.oireachtas.ie/ontology#House
+
+:House rdf:type owl:Class ;
+       
+       rdfs:subClassOf :Oireachtas ;
+       
+       rdfs:comment "A term of the Dáil or Seanad lasting a period bounded by the election of Members/the commencement of sittings; and its dissolution. In the case of the pre-1936 Seanad, which formally sat continually between 1922 and 1936, the elections of 1922, 1925, 1928, 1931 and 1934 are are used as start-end periods, in line with convention."@en .
 
 
 
@@ -349,6 +423,28 @@
 
 
 
+###  http://www.w3.org/2006/time#Interval
+
+time:Interval rdf:type owl:Class ;
+              
+              rdfs:subClassOf time:TemporalEntity .
+
+
+
+###  http://www.w3.org/2006/time#ProperInterval
+
+time:ProperInterval rdf:type owl:Class ;
+                    
+                    rdfs:subClassOf time:Interval .
+
+
+
+###  http://www.w3.org/2006/time#TemporalEntity
+
+time:TemporalEntity rdf:type owl:Class .
+
+
+
 ###  http://www.w3.org/ns/org#FormalOrganization
 
 org:FormalOrganization rdf:type owl:Class .
@@ -362,6 +458,28 @@ org:FormalOrganization rdf:type owl:Class .
 #    Individuals
 #
 #################################################################
+
+
+###  http://www.oireachtas.ie/house/dail
+
+<http://www.oireachtas.ie/house/dail> rdf:type :Chamber ,
+                                               owl:NamedIndividual ;
+                                      
+                                      <http://purl.org/dc/terms/title> "Dáil Éireann"@ga ;
+                                      
+                                      <http://www.w3.org/2004/02/skos/core#prefLabel> "Dáil Éireann"@ga .
+
+
+
+###  http://www.oireachtas.ie/house/seanad
+
+<http://www.oireachtas.ie/house/seanad> rdf:type :Chamber ,
+                                                 owl:NamedIndividual ;
+                                        
+                                        <http://purl.org/dc/elements/1.1/title> "Seanad Éireann"@ga ;
+                                        
+                                        <http://www.w3.org/2004/02/skos/core#prefLabel> "Seanad Éireann"@ga .
+
 
 
 ###  http://www.oireachtas.ie/ontology#Act
@@ -1179,28 +1297,6 @@ org:FormalOrganization rdf:type owl:Class .
                <http://www.w3.org/2004/02/skos/core#topConceptOf> :BillStatusTable ;
                
                <http://www.w3.org/2004/02/skos/core#inScheme> :BillStatusTable .
-
-
-
-###  http://www.oireachtas.ie/ontology/chamber#Dail
-
-<http://www.oireachtas.ie/ontology/chamber#Dail> rdf:type :Chamber ,
-                                                          owl:NamedIndividual ;
-                                                 
-                                                 <http://www.w3.org/2004/02/skos/core#prefLabel> "The Dáil"@en ;
-                                                 
-                                                 <http://purl.org/dc/terms/title> "Dáil Éireann"@ga .
-
-
-
-###  http://www.oireachtas.ie/ontology/chamber#Seanad
-
-<http://www.oireachtas.ie/ontology/chamber#Seanad> rdf:type :Chamber ,
-                                                            owl:NamedIndividual ;
-                                                   
-                                                   <http://www.w3.org/2004/02/skos/core#prefLabel> "The Seanad"@en ;
-                                                   
-                                                   <http://purl.org/dc/elements/1.1/title> "Seanad Éireann"@ga .
 
 
 
