@@ -193,7 +193,9 @@ The following table lists the label and skos:conceptScheme vocabulary for Bill i
 | oir:withdrawn                           |
 | oir:rejected_by_referendum              |
 | oir:subject_to_referendum               |
-| oir:awaiting_signature                  |
+| oir:awaiting_signature |
+| oir:referred_supr_court |
+| oir:invalid|
 | oir:draft_heads                         |
 | oir:enacted                             |
 |                                         |
