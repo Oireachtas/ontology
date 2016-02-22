@@ -1,51 +1,65 @@
 [
   {
+    "eId": "/member/Kevin-Christopher-O'Higgins.D.1919-01-21",
     "end": "1927-07-10",
     "holder": "Kevin_O'Higgins",
     "office": "Vice-President of the Executive Council",
     "start": "1922-12-06",
+    "uri": "/vice-president_executive_council",
     "wikiOffice": "T\u00e1naiste"
   },
   {
+    "eId": "/member/Ernest-Blythe.D.1919-01-21",
     "end": "1932-03-09",
     "holder": "Ernest_Blythe",
     "office": "Vice-President of the Executive Council",
     "start": "1927-07-14",
+    "uri": "/vice-president_executive_council",
     "wikiOffice": "T\u00e1naiste"
   },
   {
+    "eId": "/member/Se\u00e1n-T-O'Kelly.D.1919-01-21",
     "end": "1937-12-29",
     "holder": "Se\u00e1n_T._O'Kelly",
     "office": "Vice-President of the Executive Council",
     "start": "1932-03-09",
+    "uri": "/vice-president_executive_council",
     "wikiOffice": "T\u00e1naiste"
   },
   {
+    "eId": "/member/Se\u00e1n-T-O'Kelly.D.1919-01-21",
     "end": "1945-06-14",
     "holder": "Se\u00e1n_T._O'Kelly",
     "office": "T\u00e1naiste",
     "start": "1937-12-29",
+    "uri": "/tanaiste",
     "wikiOffice": "T\u00e1naiste"
   },
   {
+    "eId": "/member/Se\u00e1n-F-Lemass.D.1924-11-18",
     "end": "1948-02-18",
     "holder": "Se\u00e1n_Lemass",
     "office": "T\u00e1naiste",
     "start": "1945-06-14",
+    "uri": "/tanaiste",
     "wikiOffice": "T\u00e1naiste"
   },
   {
+    "eId": "/member/William-Norton.D.1926-02-18",
     "end": "1951-06-13",
     "holder": "William_Norton",
     "office": "T\u00e1naiste",
     "start": "1948-02-18",
+    "uri": "/tanaiste",
     "wikiOffice": "T\u00e1naiste"
   },
   {
+    "eId": "/member/Se\u00e1n-F-Lemass.D.1924-11-18",
     "end": "1954-06-02",
     "holder": "Se\u00e1n_Lemass",
     "office": "T\u00e1naiste",
     "start": "1951-06-13",
+    "uri": "/tanaiste",
     "wikiOffice": "T\u00e1naiste"
   },
   {
@@ -53,83 +67,106 @@
     "end": "1959-06-23",
     "office": "T\u00e1naiste",
     "start": "1954-06-02",
+    "uri": "/tanaiste",
     "wikiOffice": "T\u00e1naiste"
   },
   {
+    "eId": "/member/Se\u00e1n-MacEntee.D.1919-01-21",
     "end": "1965-04-21",
     "holder": "Se\u00e1n_MacEntee",
     "office": "T\u00e1naiste",
     "start": "1959-06-23",
+    "uri": "/tanaiste",
     "wikiOffice": "T\u00e1naiste"
   },
   {
+    "eId": "/member/Frank-Aiken.D.1923-09-19",
     "end": "1969-07-02",
     "holder": "Frank_Aiken",
     "office": "T\u00e1naiste",
     "start": "1965-04-21",
+    "uri": "/tanaiste",
     "wikiOffice": "T\u00e1naiste"
   },
   {
+    "eId": "/member/Erskine-Hamilton-Childers.D.1938-06-30",
     "end": "1973-03-14",
     "holder": "Erskine_Hamilton_Childers",
     "office": "T\u00e1naiste",
     "start": "1969-07-02",
+    "uri": "/tanaiste",
     "wikiOffice": "T\u00e1naiste"
   },
   {
+    "eId": "/member/Brendan-Corish.D.1945-12-04",
     "end": "1977-07-05",
     "holder": "Brendan_Corish",
     "office": "T\u00e1naiste",
     "start": "1973-03-14",
+    "uri": "/tanaiste",
     "wikiOffice": "T\u00e1naiste"
   },
   {
+    "eId": "/member/George-Colley.D.1961-10-11",
     "end": "1981-06-30",
     "holder": "George_Colley",
     "office": "T\u00e1naiste",
     "start": "1977-07-05",
+    "uri": "/tanaiste",
     "wikiOffice": "T\u00e1naiste"
   },
   {
+    "eId": "/member/Michael-O'Leary.D.1965-04-21",
     "end": "1982-03-09",
     "holder": "Michael_O'Leary_(politician)",
     "office": "T\u00e1naiste",
     "start": "1981-06-30",
+    "uri": "/tanaiste",
     "wikiOffice": "T\u00e1naiste"
   },
   {
+    "eId": "/member/Raymond-MacSharry.D.1969-07-02",
     "end": "1982-12-14",
     "holder": "Ray_MacSharry",
     "office": "T\u00e1naiste",
     "start": "1982-03-09",
+    "uri": "/tanaiste",
     "wikiOffice": "T\u00e1naiste"
   },
   {
+    "eId": "/member/Dick-Spring.D.1981-06-30",
     "end": "1987-01-20",
     "holder": "Dick_Spring",
     "office": "T\u00e1naiste",
     "start": "1982-12-14",
+    "uri": "/tanaiste",
     "wikiOffice": "T\u00e1naiste"
   },
   {
+    "eId": "/member/Peter-Barry.D.1969-07-02",
     "end": "1987-03-10",
     "holder": "Peter_Barry",
     "office": "T\u00e1naiste",
     "start": "1987-01-20",
+    "uri": "/tanaiste",
     "wikiOffice": "T\u00e1naiste"
   },
   {
+    "eId": "/member/Brian-Lenihan-Snr.S.1957-05-22",
     "end": "1990-10-31",
     "holder": "Brian_Lenihan,_Snr",
     "office": "T\u00e1naiste",
     "start": "1987-03-10",
+    "uri": "/tanaiste",
     "wikiOffice": "T\u00e1naiste"
   },
   {
+    "eId": "/member/John-P-Wilson.D.1973-03-14",
     "end": "1993-01-12",
     "holder": "John_P._Wilson",
     "office": "T\u00e1naiste",
     "start": "1990-11-13",
+    "uri": "/tanaiste",
     "wikiOffice": "T\u00e1naiste"
   },
   {
@@ -137,13 +174,16 @@
     "end": "1994-11-17",
     "office": "T\u00e1naiste",
     "start": "1993-01-12",
+    "uri": "/tanaiste",
     "wikiOffice": "T\u00e1naiste"
   },
   {
+    "eId": "/member/Bertie-Ahern.D.1977-07-05",
     "end": "1994-12-15",
     "holder": "Bertie_Ahern",
     "office": "T\u00e1naiste",
     "start": "1994-11-17",
+    "uri": "/tanaiste",
     "wikiOffice": "T\u00e1naiste"
   },
   {
@@ -151,48 +191,61 @@
     "end": "1997-06-26",
     "office": "T\u00e1naiste",
     "start": "1994-12-15",
+    "uri": "/tanaiste",
     "wikiOffice": "T\u00e1naiste"
   },
   {
+    "eId": "/member/Mary-Harney.S.1977-10-27",
     "end": "2006-09-13",
     "holder": "Mary_Harney",
     "office": "T\u00e1naiste",
     "start": "1997-06-26",
+    "uri": "/tanaiste",
     "wikiOffice": "T\u00e1naiste"
   },
   {
+    "eId": "/member/Michael-McDowell.D.1987-03-10",
     "end": "2007-06-14",
     "holder": "Michael_McDowell_(politician)",
     "office": "T\u00e1naiste",
     "start": "2006-09-13",
+    "uri": "/tanaiste",
     "wikiOffice": "T\u00e1naiste"
   },
   {
+    "eId": "/member/Brian-Cowen.D.1984-06-14",
     "end": "2008-05-07",
     "holder": "Brian_Cowen",
     "office": "T\u00e1naiste",
     "start": "2007-06-14",
+    "uri": "/tanaiste",
     "wikiOffice": "T\u00e1naiste"
   },
   {
+    "eId": "/member/Mary-Coughlan.D.1987-03-10",
     "end": "2011-03-09",
     "holder": "Mary_Coughlan_(politician)",
     "office": "T\u00e1naiste",
     "start": "2008-05-07",
+    "uri": "/tanaiste",
     "wikiOffice": "T\u00e1naiste"
   },
   {
+    "eId": "/member/Eamon-Gilmore.D.1989-06-29",
     "end": "2014-07-04",
     "holder": "Eamon_Gilmore",
     "office": "T\u00e1naiste",
     "start": "2011-03-09",
+    "uri": "/tanaiste",
     "wikiOffice": "T\u00e1naiste"
   },
   {
-    "end": "Incumbent",
+    "eId": "/member/Joan-Burton.D.1992-12-14",
+    "end": null,
     "holder": "Joan_Burton",
     "office": "T\u00e1naiste",
     "start": "2014-07-04",
+    "uri": "/tanaiste",
     "wikiOffice": "T\u00e1naiste"
   }
 ]

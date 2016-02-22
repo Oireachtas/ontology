@@ -1,0 +1,14 @@
+OIR:Oireachtas,is a,org:FormalOrganisation,
+OIR:Oireachtas,is a,rda:Corporate Body,
+OIR:Chamber,is a,OIR:Oireachtas,ie/house/dail
+OIR:House,is a,time:ProperInterval,ie/house/dail/31
+OIR:House,is a,OIR:Oireachtas,
+OIR:Government,is a,OIR:Oireachtas,
+OIR:Government,is a,OIR:Legislator,
+OIR:Member,is a,metalex:Legislator,ie/member/Liam-J-Mellows.D.1919-01-21
+OIR:Member,is a,foaf:Person,
+OIR:Member,is a,rda:Person,
+oir:Minister,is a,oir:Member,
+oir:PrivateMember,is a,oir:Member,
+oir:PrivateSponsor,is a,oir:BillSource,
+oir:EventDate,is a,time:TemporalEntity,ie/house/dail/31

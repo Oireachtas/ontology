@@ -23,26 +23,36 @@ Where a function name is a phrase rather than a single word, the words in the ph
 department/foreign_affairs__trade
 minister_state/social__protection
 
+For posts:
+
+http://oireachtas.ie/ie/oireachtas/post/minister/{specific title}
+
 For ministerial or Cabinet roles:
 
-http://oireachtas.ie/taoiseach
-http://oireachtas.ie/tanaiste
+http://oireachtas.ie/ie/oireachtas/role/head_of_state/president
+http://oireachtas.ie/ie/oireachtas/role/head_of_government/taoiseach
+http://oireachtas.ie/ie/oireachtas/role/deputy_head_of_government/tanaiste
+http://oireachtas.ie/ie/oireachtas/role/head_of_government/president_of_the_executive_council
 
-http://oireachtas.ie/minister/{specific title}
-http://oireachtas.ie/minister_state/{specific title}
+http://oireachtas.ie/ie/oireachtas/role/secretary/{specific title}
+http://oireachtas.ie/ie/oireachtas/role/minister/{specific title}
 
-http://oireachtas.ie/minister_without_portfolio
+
+http://oireachtas.ie/ie/oireachtas/role/minister/without_portfolio
+
+http://oireachtas.ie/ie/oireachtas/role/minister_state/{specific title}
+http://oireachtas.ie/ie/oireachtas/role/director/{specific title}
 
 Where a Departmental function is a phrase rather than a single
 
 
-http://oireachtas.ie/department/{department specific name}
-http://oireachtas.ie/department/transport__tourism__sport
+http://oireachtas.ie/ie/oireachtas/department/{department specific name}
+http://oireachtas.ie/ie/oireachtas/department/transport__tourism__sport
 
 For departmental functions or areas:
 
-http://oireachtas.ie/department/function/{function}/{SI date}
-http://oireachtas.ie/department/function/transport/2011-03-29
+http://oireachtas.ie/ie/oireachtas/department/function/{function}/{SI date}
+http://oireachtas.ie/ie/oireachtas/department/function/transport/2011-03-29
 
 The Statutory Instrument date (SI) is either the date of the SI published under the 1930 Act or the appointment date in the case of SIs for other Ministers and Secretaries Acts.
 

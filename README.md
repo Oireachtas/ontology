@@ -6,6 +6,7 @@
 1. [Introduction](#introduction)
 1. [Bills Ontology](bills/README.md)
 1. [Departments](departments/README.md)
+2. [Members](members/README.md)
 2. [Namespaces](#namespaces)
 
 
@@ -30,6 +31,7 @@ This document deals only with the aspects of the ontology relating to Bills. Thi
 
 One of the core functions of any Parliament is to decide on the legal basis for the creation and dissolution of State bodies, and to set the scope of their functions. Where relevant (and feasible) the descriptions of Departments, roles and offices in this ontology will include a link to the decision of the Oireachtas on their creation, modification or dissolution, thereby allowing the Oireachtas dataset to be used as an authority vocabulary for Departments and Ministerial roles.
 
+The Oireachtas ontology in OWL format can be downloaded from /data/oireachtas.owl
 
 #### Terms used
 
@@ -75,8 +77,6 @@ The ontology is divided into four main areas:
 
 - **Legislative Documents**  
 These are the documents published by the Oireachtas as part of a deliberative process in a chamber. The most important example of a legislative document is a Bill, which is a draft law, but legislative documents could also be Standing Orders governing the conduct of business in the Oireachtas; motions that are proposed, moved or agreed by a chamber; documents laid before the Oireachtas; and reports prepared by committees.  
-
-  Legislative Documents do not include documents published by the Service, however.
 
 - **Journal Events**  
 These are the procedures through which the business of the Oireachtas is planned and recorded, most importantly in respect of procedures that affect legislative documents during their lifecycle. They are recorded either in the Order Paper, for future events, or in the Official Report of debates, for events that have taken place.

@@ -29,10 +29,10 @@
         <owl:imports rdf:resource="http://www.w3.org/ns/org#"/>
         <owl:imports rdf:resource="http://xmlns.com/foaf/0.1/"/>
     </owl:Ontology>
-    
 
 
-    <!-- 
+
+    <!--
     ///////////////////////////////////////////////////////////////////////////////////////
     //
     // Object Properties
@@ -40,7 +40,7 @@
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
-    
+
 
 
     <!-- http://oireachtas.ie/ontology/oireachtas#hasCabinetRole -->
@@ -49,13 +49,13 @@
         <rdfs:range rdf:resource="&oir;CabinetMember"/>
         <rdfs:domain rdf:resource="&oir;CabinetMembership"/>
     </owl:ObjectProperty>
-    
+
 
 
     <!-- http://oireachtas.ie/ontology/oireachtas#hasCommitteeMember -->
 
     <owl:ObjectProperty rdf:about="&oir;hasCommitteeMember"/>
-    
+
 
 
     <!-- http://oireachtas.ie/ontology/oireachtas#hasMembers -->
@@ -64,7 +64,7 @@
         <rdfs:domain rdf:resource="&oir;HousesOfTheOireachtas"/>
         <rdfs:range rdf:resource="&oir;Member"/>
     </owl:ObjectProperty>
-    
+
 
 
     <!-- http://oireachtas.ie/ontology/oireachtas#hasMembersMembership -->
@@ -73,7 +73,7 @@
         <rdfs:domain rdf:resource="&oir;Member"/>
         <rdfs:range rdf:resource="&oir;MembersMembership"/>
     </owl:ObjectProperty>
-    
+
 
 
     <!-- http://oireachtas.ie/ontology/oireachtas#hasMembershipDateRange -->
@@ -82,7 +82,7 @@
         <rdfs:range rdf:resource="&oir;DateRange"/>
         <rdfs:domain rdf:resource="&org;Membership"/>
     </owl:ObjectProperty>
-    
+
 
 
     <!-- http://oireachtas.ie/ontology/oireachtas#hasOireachtasMemberRole -->
@@ -91,13 +91,13 @@
         <rdfs:range rdf:resource="&oir;OireachtasMember"/>
         <rdfs:domain rdf:resource="&oir;OireachtasMembership"/>
     </owl:ObjectProperty>
-    
+
 
 
     <!-- http://oireachtas.ie/ontology/oireachtas#hasOireachtasMembers -->
 
     <owl:ObjectProperty rdf:about="&oir;hasOireachtasMembers"/>
-    
+
 
 
     <!-- http://oireachtas.ie/ontology/oireachtas#hasPartiesMembership -->
@@ -106,7 +106,7 @@
         <rdfs:range rdf:resource="&oir;PartiesMembership"/>
         <rdfs:domain rdf:resource="&oir;Party"/>
     </owl:ObjectProperty>
-    
+
 
 
     <!-- http://oireachtas.ie/ontology/oireachtas#isChairOf -->
@@ -116,7 +116,7 @@
         <rdfs:range rdf:resource="&oir;Chamber"/>
         <rdfs:range rdf:resource="&oir;Committee"/>
     </owl:ObjectProperty>
-    
+
 
 
     <!-- http://oireachtas.ie/ontology/oireachtas#isCommitteeMembershipOf -->
@@ -126,7 +126,7 @@
         <rdfs:domain rdf:resource="&oir;CommitteeMembership"/>
         <rdfs:subPropertyOf rdf:resource="&owl;topObjectProperty"/>
     </owl:ObjectProperty>
-    
+
 
 
     <!-- http://oireachtas.ie/ontology/oireachtas#isDeputyHeadOf -->
@@ -136,7 +136,7 @@
         <rdfs:range rdf:resource="&oir;Government"/>
         <rdfs:domain rdf:resource="&oir;Tanaiste"/>
     </owl:ObjectProperty>
-    
+
 
 
     <!-- http://oireachtas.ie/ontology/oireachtas#isExOfficioMemberOf -->
@@ -145,7 +145,7 @@
         <rdfs:range rdf:resource="&oir;DailSelectCommittee"/>
         <rdfs:domain rdf:resource="&oir;Minister"/>
     </owl:ObjectProperty>
-    
+
 
 
     <!-- http://oireachtas.ie/ontology/oireachtas#isHeadOf -->
@@ -154,7 +154,7 @@
         <rdfs:range rdf:resource="&oir;Government"/>
         <rdfs:domain rdf:resource="&oir;Taoiseach"/>
     </owl:ObjectProperty>
-    
+
 
 
     <!-- http://oireachtas.ie/ontology/oireachtas#isOireachtasMembershipOf -->
@@ -163,7 +163,7 @@
         <rdfs:range rdf:resource="&oir;Chamber"/>
         <rdfs:domain rdf:resource="&oir;OireachtasMembership"/>
     </owl:ObjectProperty>
-    
+
 
 
     <!-- http://oireachtas.ie/ontology/oireachtas#isPartyIn -->
@@ -173,7 +173,7 @@
         <rdfs:domain rdf:resource="&oir;PartiesMembership"/>
         <rdfs:range rdf:resource="&oir;SidesOfHouse"/>
     </owl:ObjectProperty>
-    
+
 
 
     <!-- http://oireachtas.ie/ontology/oireachtas#isPartyMembershipOf -->
@@ -182,7 +182,7 @@
         <rdfs:range rdf:resource="&oir;PartyGrouping"/>
         <rdfs:domain rdf:resource="&oir;PartyMembership"/>
     </owl:ObjectProperty>
-    
+
 
 
     <!-- http://oireachtas.ie/ontology/oireachtas#isRepresentativeFrom -->
@@ -192,7 +192,7 @@
         <rdfs:range rdf:resource="&oir;Constituencies"/>
         <rdfs:domain rdf:resource="&oir;OireachtasMembership"/>
     </owl:ObjectProperty>
-    
+
 
 
     <!-- http://oireachtas.ie/ontology/oireachtas#isWhipFor -->
@@ -201,10 +201,10 @@
         <rdfs:range rdf:resource="&oir;PartyGrouping"/>
         <rdfs:domain rdf:resource="&oir;Whip"/>
     </owl:ObjectProperty>
-    
 
 
-    <!-- 
+
+    <!--
     ///////////////////////////////////////////////////////////////////////////////////////
     //
     // Data properties
@@ -212,7 +212,7 @@
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
-    
+
 
 
     <!-- http://oireachtas.ie/ontology/oireachtas#DeputyTitle -->
@@ -224,7 +224,7 @@
         <rdfs:range rdf:resource="&rdfs;Literal"/>
         <rdfs:subPropertyOf rdf:resource="&foaf2;title"/>
     </owl:DatatypeProperty>
-    
+
 
 
     <!-- http://oireachtas.ie/ontology/oireachtas#EndDate -->
@@ -234,7 +234,7 @@
         <owl:propertyDisjointWith rdf:resource="&oir;StartDate"/>
         <rdfs:range rdf:resource="&xsd;dateTime"/>
     </owl:DatatypeProperty>
-    
+
 
 
     <!-- http://oireachtas.ie/ontology/oireachtas#MinisterialTitle -->
@@ -242,7 +242,7 @@
     <owl:DatatypeProperty rdf:about="&oir;MinisterialTitle">
         <rdfs:subPropertyOf rdf:resource="&foaf2;title"/>
     </owl:DatatypeProperty>
-    
+
 
 
     <!-- http://oireachtas.ie/ontology/oireachtas#SenatorTitle -->
@@ -253,7 +253,7 @@
         <rdfs:range rdf:resource="&rdfs;Literal"/>
         <rdfs:subPropertyOf rdf:resource="&foaf2;title"/>
     </owl:DatatypeProperty>
-    
+
 
 
     <!-- http://oireachtas.ie/ontology/oireachtas#StartDate -->
@@ -262,10 +262,10 @@
         <rdfs:domain rdf:resource="&oir;DateRange"/>
         <rdfs:range rdf:resource="&xsd;dateTime"/>
     </owl:DatatypeProperty>
-    
 
 
-    <!-- 
+
+    <!--
     ///////////////////////////////////////////////////////////////////////////////////////
     //
     // Classes
@@ -273,7 +273,7 @@
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
-    
+
 
 
     <!-- http://oireachtas.ie/ontology/oireachtas#Cabinet -->
@@ -281,7 +281,7 @@
     <owl:Class rdf:about="&oir;Cabinet">
         <rdfs:subClassOf rdf:resource="&oir;Government"/>
     </owl:Class>
-    
+
 
 
     <!-- http://oireachtas.ie/ontology/oireachtas#CabinetMember -->
@@ -289,7 +289,7 @@
     <owl:Class rdf:about="&oir;CabinetMember">
         <rdfs:subClassOf rdf:resource="&org;Role"/>
     </owl:Class>
-    
+
 
 
     <!-- http://oireachtas.ie/ontology/oireachtas#CabinetMembership -->
@@ -297,7 +297,7 @@
     <owl:Class rdf:about="&oir;CabinetMembership">
         <rdfs:subClassOf rdf:resource="&oir;MembersMembership"/>
     </owl:Class>
-    
+
 
 
     <!-- http://oireachtas.ie/ontology/oireachtas#Chair -->
@@ -305,7 +305,7 @@
     <owl:Class rdf:about="&oir;Chair">
         <rdfs:subClassOf rdf:resource="&org;Role"/>
     </owl:Class>
-    
+
 
 
     <!-- http://oireachtas.ie/ontology/oireachtas#Chamber -->
@@ -321,7 +321,7 @@
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="&oir;HousesOfTheOireachtas"/>
     </owl:Class>
-    
+
 
 
     <!-- http://oireachtas.ie/ontology/oireachtas#ChiefWhip -->
@@ -329,7 +329,7 @@
     <owl:Class rdf:about="&oir;ChiefWhip">
         <rdfs:subClassOf rdf:resource="&oir;Whip"/>
     </owl:Class>
-    
+
 
 
     <!-- http://oireachtas.ie/ontology/oireachtas#Committee -->
@@ -337,7 +337,7 @@
     <owl:Class rdf:about="&oir;Committee">
         <rdfs:subClassOf rdf:resource="&oir;HousesOfTheOireachtas"/>
     </owl:Class>
-    
+
 
 
     <!-- http://oireachtas.ie/ontology/oireachtas#CommitteeMembership -->
@@ -345,7 +345,7 @@
     <owl:Class rdf:about="&oir;CommitteeMembership">
         <rdfs:subClassOf rdf:resource="&oir;MembersMembership"/>
     </owl:Class>
-    
+
 
 
     <!-- http://oireachtas.ie/ontology/oireachtas#Constituencies -->
@@ -353,7 +353,7 @@
     <owl:Class rdf:about="&oir;Constituencies">
         <rdfs:subClassOf rdf:resource="&oir;HousesOfTheOireachtas"/>
     </owl:Class>
-    
+
 
 
     <!-- http://oireachtas.ie/ontology/oireachtas#Dail -->
@@ -362,7 +362,7 @@
         <rdfs:subClassOf rdf:resource="&oir;Chamber"/>
         <owl:disjointWith rdf:resource="&oir;Seanad"/>
     </owl:Class>
-    
+
 
 
     <!-- http://oireachtas.ie/ontology/oireachtas#DailConstituency -->
@@ -372,7 +372,7 @@
         <rdfs:subClassOf rdf:resource="&oir;Dail"/>
         <rdfs:subClassOf rdf:resource="http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing"/>
     </owl:Class>
-    
+
 
 
     <!-- http://oireachtas.ie/ontology/oireachtas#DailSelectCommittee -->
@@ -381,7 +381,7 @@
         <rdfs:subClassOf rdf:resource="&oir;SelectCommittee"/>
         <owl:disjointWith rdf:resource="&oir;SeanadSelectCommittee"/>
     </owl:Class>
-    
+
 
 
     <!-- http://oireachtas.ie/ontology/oireachtas#DailSelectCommitteeMembership -->
@@ -415,7 +415,7 @@
             </owl:Restriction>
         </rdfs:subClassOf>
     </owl:Class>
-    
+
 
 
     <!-- http://oireachtas.ie/ontology/oireachtas#DateRange -->
@@ -423,7 +423,7 @@
     <owl:Class rdf:about="&oir;DateRange">
         <rdfs:subClassOf rdf:resource="&oir;Temporal"/>
     </owl:Class>
-    
+
 
 
     <!-- http://oireachtas.ie/ontology/oireachtas#Deputy -->
@@ -453,7 +453,7 @@
         </rdfs:subClassOf>
         <owl:disjointWith rdf:resource="&oir;Senator"/>
     </owl:Class>
-    
+
 
 
     <!-- http://oireachtas.ie/ontology/oireachtas#Government -->
@@ -462,7 +462,7 @@
         <rdfs:subClassOf rdf:resource="&oir;SidesOfHouse"/>
         <owl:disjointWith rdf:resource="&oir;Opposition"/>
     </owl:Class>
-    
+
 
 
     <!-- http://oireachtas.ie/ontology/oireachtas#HousesOfTheOireachtas -->
@@ -470,7 +470,7 @@
     <owl:Class rdf:about="&oir;HousesOfTheOireachtas">
         <rdfs:subClassOf rdf:resource="&org;FormalOrganization"/>
     </owl:Class>
-    
+
 
 
     <!-- http://oireachtas.ie/ontology/oireachtas#Independent -->
@@ -479,7 +479,7 @@
         <rdfs:subClassOf rdf:resource="&oir;PartyGrouping"/>
         <owl:disjointWith rdf:resource="&oir;Party"/>
     </owl:Class>
-    
+
 
 
     <!-- http://oireachtas.ie/ontology/oireachtas#JointCommittee -->
@@ -507,7 +507,7 @@
             </owl:Restriction>
         </rdfs:subClassOf>
     </owl:Class>
-    
+
 
 
     <!-- http://oireachtas.ie/ontology/oireachtas#Member -->
@@ -521,7 +521,7 @@
             </owl:Restriction>
         </rdfs:subClassOf>
     </owl:Class>
-    
+
 
 
     <!-- http://oireachtas.ie/ontology/oireachtas#MembersMembership -->
@@ -529,7 +529,7 @@
     <owl:Class rdf:about="&oir;MembersMembership">
         <rdfs:subClassOf rdf:resource="&org;Membership"/>
     </owl:Class>
-    
+
 
 
     <!-- http://oireachtas.ie/ontology/oireachtas#Minister -->
@@ -537,7 +537,7 @@
     <owl:Class rdf:about="&oir;Minister">
         <rdfs:subClassOf rdf:resource="&oir;CabinetMember"/>
     </owl:Class>
-    
+
 
 
     <!-- http://oireachtas.ie/ontology/oireachtas#OireachtasMember -->
@@ -595,7 +595,7 @@
             </owl:Class>
         </rdfs:subClassOf>
     </owl:Class>
-    
+
 
 
     <!-- http://oireachtas.ie/ontology/oireachtas#OireachtasMembership -->
@@ -603,7 +603,7 @@
     <owl:Class rdf:about="&oir;OireachtasMembership">
         <rdfs:subClassOf rdf:resource="&oir;MembersMembership"/>
     </owl:Class>
-    
+
 
 
     <!-- http://oireachtas.ie/ontology/oireachtas#Opposition -->
@@ -611,7 +611,7 @@
     <owl:Class rdf:about="&oir;Opposition">
         <rdfs:subClassOf rdf:resource="&oir;SidesOfHouse"/>
     </owl:Class>
-    
+
 
 
     <!-- http://oireachtas.ie/ontology/oireachtas#PartiesMembership -->
@@ -619,7 +619,7 @@
     <owl:Class rdf:about="&oir;PartiesMembership">
         <rdfs:subClassOf rdf:resource="&org;Membership"/>
     </owl:Class>
-    
+
 
 
     <!-- http://oireachtas.ie/ontology/oireachtas#Party -->
@@ -627,7 +627,7 @@
     <owl:Class rdf:about="&oir;Party">
         <rdfs:subClassOf rdf:resource="&oir;PartyGrouping"/>
     </owl:Class>
-    
+
 
 
     <!-- http://oireachtas.ie/ontology/oireachtas#PartyGrouping -->
@@ -643,7 +643,7 @@
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="&foaf2;Group"/>
     </owl:Class>
-    
+
 
 
     <!-- http://oireachtas.ie/ontology/oireachtas#PartyInGovernment -->
@@ -672,7 +672,7 @@
             </owl:Class>
         </rdfs:subClassOf>
     </owl:Class>
-    
+
 
 
     <!-- http://oireachtas.ie/ontology/oireachtas#PartyInOpposition -->
@@ -701,7 +701,7 @@
             </owl:Class>
         </rdfs:subClassOf>
     </owl:Class>
-    
+
 
 
     <!-- http://oireachtas.ie/ontology/oireachtas#PartyMembership -->
@@ -709,7 +709,7 @@
     <owl:Class rdf:about="&oir;PartyMembership">
         <rdfs:subClassOf rdf:resource="&oir;MembersMembership"/>
     </owl:Class>
-    
+
 
 
     <!-- http://oireachtas.ie/ontology/oireachtas#Seanad -->
@@ -717,7 +717,7 @@
     <owl:Class rdf:about="&oir;Seanad">
         <rdfs:subClassOf rdf:resource="&oir;Chamber"/>
     </owl:Class>
-    
+
 
 
     <!-- http://oireachtas.ie/ontology/oireachtas#SeanadPanel -->
@@ -726,7 +726,7 @@
         <rdfs:subClassOf rdf:resource="&oir;Constituencies"/>
         <rdfs:subClassOf rdf:resource="&oir;Seanad"/>
     </owl:Class>
-    
+
 
 
     <!-- http://oireachtas.ie/ontology/oireachtas#SeanadSelectCommittee -->
@@ -734,7 +734,7 @@
     <owl:Class rdf:about="&oir;SeanadSelectCommittee">
         <rdfs:subClassOf rdf:resource="&oir;SelectCommittee"/>
     </owl:Class>
-    
+
 
 
     <!-- http://oireachtas.ie/ontology/oireachtas#SeanadSelectCommitteeMembership -->
@@ -768,7 +768,7 @@
             </owl:Restriction>
         </rdfs:subClassOf>
     </owl:Class>
-    
+
 
 
     <!-- http://oireachtas.ie/ontology/oireachtas#SelectCommittee -->
@@ -776,7 +776,7 @@
     <owl:Class rdf:about="&oir;SelectCommittee">
         <rdfs:subClassOf rdf:resource="&oir;Committee"/>
     </owl:Class>
-    
+
 
 
     <!-- http://oireachtas.ie/ontology/oireachtas#Senator -->
@@ -784,7 +784,7 @@
     <owl:Class rdf:about="&oir;Senator">
         <rdfs:subClassOf rdf:resource="&oir;OireachtasMember"/>
     </owl:Class>
-    
+
 
 
     <!-- http://oireachtas.ie/ontology/oireachtas#SidesOfHouse -->
@@ -792,7 +792,7 @@
     <owl:Class rdf:about="&oir;SidesOfHouse">
         <rdfs:subClassOf rdf:resource="&oir;HousesOfTheOireachtas"/>
     </owl:Class>
-    
+
 
 
     <!-- http://oireachtas.ie/ontology/oireachtas#SpecialCommittee -->
@@ -800,7 +800,7 @@
     <owl:Class rdf:about="&oir;SpecialCommittee">
         <rdfs:subClassOf rdf:resource="&oir;Committee"/>
     </owl:Class>
-    
+
 
 
     <!-- http://oireachtas.ie/ontology/oireachtas#StandingCommittee -->
@@ -808,7 +808,7 @@
     <owl:Class rdf:about="&oir;StandingCommittee">
         <rdfs:subClassOf rdf:resource="&oir;Committee"/>
     </owl:Class>
-    
+
 
 
     <!-- http://oireachtas.ie/ontology/oireachtas#Tanaiste -->
@@ -817,7 +817,7 @@
         <rdfs:subClassOf rdf:resource="&oir;CabinetMember"/>
         <owl:disjointWith rdf:resource="&oir;Taoiseach"/>
     </owl:Class>
-    
+
 
 
     <!-- http://oireachtas.ie/ontology/oireachtas#Taoiseach -->
@@ -825,13 +825,13 @@
     <owl:Class rdf:about="&oir;Taoiseach">
         <rdfs:subClassOf rdf:resource="&oir;CabinetMember"/>
     </owl:Class>
-    
+
 
 
     <!-- http://oireachtas.ie/ontology/oireachtas#Temporal -->
 
     <owl:Class rdf:about="&oir;Temporal"/>
-    
+
 
 
     <!-- http://oireachtas.ie/ontology/oireachtas#Whip -->
@@ -839,7 +839,7 @@
     <owl:Class rdf:about="&oir;Whip">
         <rdfs:subClassOf rdf:resource="&org;Role"/>
     </owl:Class>
-    
+
 
 
     <!-- http://www.w3.org/ns/org#Membership -->
@@ -852,7 +852,7 @@
             </owl:Restriction>
         </rdfs:subClassOf>
     </rdf:Description>
-    
+
 
 
     <!-- http://www.w3.org/ns/org#Role -->
@@ -860,10 +860,10 @@
     <rdf:Description rdf:about="&org;Role">
         <rdfs:subClassOf rdf:resource="&oir;OireachtasMember"/>
     </rdf:Description>
-    
 
 
-    <!-- 
+
+    <!--
     ///////////////////////////////////////////////////////////////////////////////////////
     //
     // Individuals
@@ -871,7 +871,7 @@
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
-    
+
 
 
     <!-- http://oireachtas.ie/ontology/oireachtas#Dáil-31 -->
@@ -885,4 +885,3 @@
 
 
 <!-- Generated by the OWL API (version 3.5.1) http://owlapi.sourceforge.net -->
-

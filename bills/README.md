@@ -10,30 +10,31 @@ As a legislative document, a Bill is described with the [functional requirements
 
 The Bill as legislative document is also associated with certain metadata about it, such as its sponsor, dates of publication and entry into force (enactment) and the Act it became, if relevant.
 
+![Bills schematic](bills.jpg)
 
-##### [Bill document URIs](#bill-doc-uris)
+##### [Bill document URI patterns](#bill-doc-uris)
 
 URIs for Bills as legislative documents have the following pattern:
 
-    http://oireachtas.ie/ie/bill/{year}/{order number}/{language}@{version}/{main component}/{sub component}{format extension}
+    http://oireachtas.ie/ie/oireachtas/bill/{year}/{order number}/{language}@{version}/{main component}/{sub component}.{format extension}
 
 The following table provides example uses of the pattern:
 
 | Class               | Example Value                         | Describes                                                      |
 |---------------------|---------------------------------------|----------------------------------------------------------------|
-| eli:LegalResource   | ie/bill/2015/44                       | The Bill as a distinct intellectual creation/ as a concept     |
-| eli:LegalExpression | ie/bill/2015/44/eng@initiated         | Bill as initiated, English version                             |
-|                     | ie/bill/2015/44/gle@initiated         | Bill as initiated, Irish version                               |
-|                     | ie/bill/2015/44/mul@/dail             | Bill as initiated, multilingual version (eg, referendum Bills) |
-|                     | ie/bill/2015/44/eng@ver_a             | 2nd version of Bill                                            |
-|                     | ie/bill/2015/44/eng@ver_b             | 3rd version of Bill                                            |
-|                     | ie/bill/2015/44/eng@passed            | Bill as passed by both Houses                                  |
-|                     | ie/bill/2015/44/eng@ver_b/main        | Main component of Bill (ie, the Bill in its entirety)          |
-|                     | ie/bill/2015/44/eng@ver_b/main/part_1 | Part 1 of the Bill                                             |
-| eli:Format          | ie/bill/2015/44/eng@ver_b/main.xml    | Bill in XML (eg, Akoma Ntoso) format                           |
-|                     | ie/bill/2015/44/eng@ver_b/main.pdf    | Bill in pdf format                                             |
-|                     | ie/bill/2015/44/eng@ver_b/main.htm    | Bill in html format                                            |
-|                     | ie/bill/2015/44/eng@ver_b/main.odt    | Bill in open office format                                     |
+| eli:LegalResource   | ie/oireachtas/bill/2015/44                       | The Bill as a distinct intellectual creation/ as a concept     |
+| eli:LegalExpression | ie/oireachtas/bill/2015/44/eng@initiated         | Bill as initiated, English version                             |
+|                     | ie/oireachtas/bill/2015/44/gle@initiated         | Bill as initiated, Irish version                               |
+|                     | ie/oireachtas/bill/2015/44/mul@/dail             | Bill as initiated, multilingual version (eg, referendum Bills) |
+|                     | ie/oireachtas/bill/2015/44/eng@ver_a             | 2nd version of Bill                                            |
+|                     | ie/oireachtas/bill/2015/44/eng@ver_b             | 3rd version of Bill                                            |
+|                     | ie/oireachtas/bill/2015/44/eng@passed            | Bill as passed by both Houses                                  |
+|                     | ie/oireachtas/bill/2015/44/eng@ver_b/main        | Main component of Bill (ie, the Bill in its entirety)          |
+|                     | ie/oireachtas/bill/2015/44/eng@ver_b/main/part_1 | Part 1 of the Bill                                             |
+| eli:Format          | ie/oireachtas/bill/2015/44/eng@ver_b/main.xml    | Bill in XML (eg, Akoma Ntoso) format                           |
+|                     | ie/oireachtas/bill/2015/44/eng@ver_b/main.pdf    | Bill in pdf format                                             |
+|                     | ie/oireachtas/bill/2015/44/eng@ver_b/main.htm    | Bill in html format                                            |
+|                     | ie/oireachtas/bill/2015/44/eng@ver_b/main.odt    | Bill in open office format                                     |
 
 
 
@@ -43,7 +44,7 @@ The following table provides example uses of the pattern:
 
 The URI pattern for Bill events is as follows:
 
-    http://oireachtas.ie/ie/bill/{year}/{order number}/{house}/{event context}/{event topic}
+    http://oireachtas.ie/ie/oireachtas/bill/{year}/{order number}/{house}/{event context}/{event topic}
 
 These URI patterns can be distinguished from version URIs because name of House will be in place of language/version element
 
@@ -51,35 +52,35 @@ The following table lists the label and skos:conceptScheme vocabulary for Bill i
 
 | Event                                                     | URI                                          |
 |-----------------------------------------------------------|----------------------------------------------|
-| First Stage                                               | ie/bill/2015/44/dail/1                       |
-| All Stages                                                | ie/bill/2015/44/dail/all                     |
-| Second Stage                                              | ie/bill/2015/44/dail/2                       |
-| Second and Subsequent Stages                              | ie/bill/2015/44/dail/2_sub                   |
-| Order for Second Stage                                    | ie/bill/2015/44/dail/2_ord                   |
-| Committee Stage                                           | ie/bill/2015/44/dail/3                       |
-| Committee and Remaining Stages                            | ie/bill/2015/44/dail/3_sub                   |
-| Order for Committee Stage                                 | ie/bill/2015/44/dail/3_ord                   |
-| Report Stage                                              | ie/bill/2015/44/dail/4                       |
-| Report and Final Stages                                   | ie/bill/2015/44/dail/4_sub                   |
-| Order for Report Stage                                    | ie/bill/2015/44/dail/2_ord                   |
-| Fifth Stage                                               | ie/bill/2015/44/dail/5                       |
-| Financial Resolution(s)                                   | ie/bill/2015/44/dail/motion/finance_res      |
-| Leave to Withdraw (I think always refers to 2nd Stage)    | ie/bill/2015/44/dail/motion/withdraw       |
-| Leave to Introduce                                        | ie/bill/2015/44/dail/motion/introduce      |
-| Instruction to committee                                  | ie/bill/2015/44/dail/motion/instruction      |
-| Referral to Select Committee                              | ie/bill/2015/44/dail/motion/referral         |
-| From the Seanad                                           | ie/bill/2015/44/dail/seanad_amd              |
-| [Seanad Bill amended by the Dáil] Report and Final Stages | ie/bill/2015/44/seanad/dail_amd        |
-| Motion for Earlier Signature                              | ie/bill/2015/44/dail/motion/early            |
-| Motion to Discharge Order for Second Stage                | ie/bill/2015/44/dail/motion/2_ord_withdraw |
-| Motion to Discharge Committee Stage                       | ie/bill/2015/44/dail/motion/3_withdraw       |
-| Statement for Information of Voters: Motion               | ie/bill/2015/44/dail/motion/ref_info         |
-| Referendum (Ballot Paper) Order 1998: Motion              | ie/bill/2015/44/dail/motion/ref_ballot       |
-| Motion to Recommit (is this always on Report?)            | ie/bill/2015/44/dail/motion/recommit         |
-| Restoration of Bill                                       | ie/bill/2015/44/dail/motion/restore          |
-| Bill amendment                                            | ie/bill/2015/44/dail/3/amd_1                 |
-| Bill recommendation (Seanad)                              | ie/bill/2015/44/seanad/3/rec_1               |
-| Bill amendment to amendment                               | ie/bill/2015/44/dail/3/amd_1_1               |
+| First Stage                                               | ie/oireachtas/bill/2015/44/dail/1                       |
+| All Stages                                                | ie/oireachtas/bill/2015/44/dail/all                     |
+| Second Stage                                              | ie/oireachtas/bill/2015/44/dail/2                       |
+| Second and Subsequent Stages                              | ie/oireachtas/bill/2015/44/dail/2_sub                   |
+| Order for Second Stage                                    | ie/oireachtas/bill/2015/44/dail/2_ord                   |
+| Committee Stage                                           | ie/oireachtas/bill/2015/44/dail/3                       |
+| Committee and Remaining Stages                            | ie/oireachtas/bill/2015/44/dail/3_sub                   |
+| Order for Committee Stage                                 | ie/oireachtas/bill/2015/44/dail/3_ord                   |
+| Report Stage                                              | ie/oireachtas/bill/2015/44/dail/4                       |
+| Report and Final Stages                                   | ie/oireachtas/bill/2015/44/dail/4_sub                   |
+| Order for Report Stage                                    | ie/oireachtas/bill/2015/44/dail/2_ord                   |
+| Fifth Stage                                               | ie/oireachtas/bill/2015/44/dail/5                       |
+| Financial Resolution(s)                                   | ie/oireachtas/bill/2015/44/dail/motion/finance_res      |
+| Leave to Withdraw (I think always refers to 2nd Stage)    | ie/oireachtas/bill/2015/44/dail/motion/withdraw       |
+| Leave to Introduce                                        | ie/oireachtas/bill/2015/44/dail/motion/introduce      |
+| Instruction to committee                                  | ie/oireachtas/bill/2015/44/dail/motion/instruction      |
+| Referral to Select Committee                              | ie/oireachtas/bill/2015/44/dail/motion/referral         |
+| From the Seanad                                           | ie/oireachtas/bill/2015/44/dail/seanad_amd              |
+| [Seanad Bill amended by the Dáil] Report and Final Stages | ie/oireachtas/bill/2015/44/seanad/dail_amd        |
+| Motion for Earlier Signature                              | ie/oireachtas/bill/2015/44/dail/motion/early            |
+| Motion to Discharge Order for Second Stage                | ie/oireachtas/bill/2015/44/dail/motion/2_ord_withdraw |
+| Motion to Discharge Committee Stage                       | ie/oireachtas/bill/2015/44/dail/motion/3_withdraw       |
+| Statement for Information of Voters: Motion               | ie/oireachtas/bill/2015/44/dail/motion/ref_info         |
+| Referendum (Ballot Paper) Order 1998: Motion              | ie/oireachtas/bill/2015/44/dail/motion/ref_ballot       |
+| Motion to Recommit (is this always on Report?)            | ie/oireachtas/bill/2015/44/dail/motion/recommit         |
+| Restoration of Bill                                       | ie/oireachtas/bill/2015/44/dail/motion/restore          |
+| Bill amendment                                            | ie/oireachtas/bill/2015/44/dail/3/amd_1                 |
+| Bill recommendation (Seanad)                              | ie/oireachtas/bill/2015/44/seanad/3/rec_1               |
+| Bill amendment to amendment                               | ie/oireachtas/bill/2015/44/dail/3/amd_1_1               |
 
 #### [Bill Classes](#bill-classes)
 

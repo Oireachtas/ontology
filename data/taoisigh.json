@@ -4,6 +4,7 @@
     "end": "1932-03-09",
     "office": "President of the Executive Council",
     "start": "1922-12-06",
+    "uri": "/president_executive_council",
     "wikiOffice": "Taoiseach"
   },
   {
@@ -11,6 +12,7 @@
     "end": "1937-12-29",
     "office": "President of the Executive Council",
     "start": "1932-03-09",
+    "uri": "/president_executive_council",
     "wikiOffice": "Taoiseach"
   },
   {
@@ -18,6 +20,7 @@
     "end": "1948-02-18",
     "office": "Taoiseach",
     "start": "1937-12-29",
+    "uri": "/taoiseach",
     "wikiOffice": "Taoiseach"
   },
   {
@@ -25,6 +28,7 @@
     "end": "1951-06-13",
     "office": "Taoiseach",
     "start": "1948-02-18",
+    "uri": "/taoiseach",
     "wikiOffice": "Taoiseach"
   },
   {
@@ -32,6 +36,7 @@
     "end": "1954-06-02",
     "office": "Taoiseach",
     "start": "1951-06-13",
+    "uri": "/taoiseach",
     "wikiOffice": "Taoiseach"
   },
   {
@@ -39,6 +44,7 @@
     "end": "1957-03-20",
     "office": "Taoiseach",
     "start": "1954-06-02",
+    "uri": "/taoiseach",
     "wikiOffice": "Taoiseach"
   },
   {
@@ -46,6 +52,7 @@
     "end": "1959-06-23",
     "office": "Taoiseach",
     "start": "1957-03-20",
+    "uri": "/taoiseach",
     "wikiOffice": "Taoiseach"
   },
   {
@@ -53,6 +60,7 @@
     "end": "1966-11-10",
     "office": "Taoiseach",
     "start": "1959-06-23",
+    "uri": "/taoiseach",
     "wikiOffice": "Taoiseach"
   },
   {
@@ -60,6 +68,7 @@
     "end": "1973-03-14",
     "office": "Taoiseach",
     "start": "1966-11-10",
+    "uri": "/taoiseach",
     "wikiOffice": "Taoiseach"
   },
   {
@@ -67,6 +76,7 @@
     "end": "1977-07-05",
     "office": "Taoiseach",
     "start": "1973-03-14",
+    "uri": "/taoiseach",
     "wikiOffice": "Taoiseach"
   },
   {
@@ -74,6 +84,7 @@
     "end": "1979-12-11",
     "office": "Taoiseach",
     "start": "1977-07-05",
+    "uri": "/taoiseach",
     "wikiOffice": "Taoiseach"
   },
   {
@@ -81,6 +92,7 @@
     "end": "1981-06-30",
     "office": "Taoiseach",
     "start": "1979-12-11",
+    "uri": "/taoiseach",
     "wikiOffice": "Taoiseach"
   },
   {
@@ -88,6 +100,7 @@
     "end": "1982-03-09",
     "office": "Taoiseach",
     "start": "1981-06-30",
+    "uri": "/taoiseach",
     "wikiOffice": "Taoiseach"
   },
   {
@@ -95,6 +108,7 @@
     "end": "1982-12-14",
     "office": "Taoiseach",
     "start": "1982-03-09",
+    "uri": "/taoiseach",
     "wikiOffice": "Taoiseach"
   },
   {
@@ -102,6 +116,7 @@
     "end": "1987-03-10",
     "office": "Taoiseach",
     "start": "1982-12-14",
+    "uri": "/taoiseach",
     "wikiOffice": "Taoiseach"
   },
   {
@@ -109,6 +124,7 @@
     "end": "1992-02-11",
     "office": "Taoiseach",
     "start": "1987-03-10",
+    "uri": "/taoiseach",
     "wikiOffice": "Taoiseach"
   },
   {
@@ -116,6 +132,7 @@
     "end": "1994-12-15",
     "office": "Taoiseach",
     "start": "1992-02-11",
+    "uri": "/taoiseach",
     "wikiOffice": "Taoiseach"
   },
   {
@@ -123,6 +140,7 @@
     "end": "1997-06-26",
     "office": "Taoiseach",
     "start": "1994-12-15",
+    "uri": "/taoiseach",
     "wikiOffice": "Taoiseach"
   },
   {
@@ -130,6 +148,7 @@
     "end": "2008-05-07",
     "office": "Taoiseach",
     "start": "1997-06-26",
+    "uri": "/taoiseach",
     "wikiOffice": "Taoiseach"
   },
   {
@@ -137,13 +156,15 @@
     "end": "2011-03-09",
     "office": "Taoiseach",
     "start": "2008-05-07",
+    "uri": "/taoiseach",
     "wikiOffice": "Taoiseach"
   },
   {
     "eId": "/member/Enda-Kenny.D.1975-11-12",
-    "end": "Incumbent",
+    "end": null,
     "office": "Taoiseach",
     "start": "2011-03-09",
+    "uri": "/taoiseach",
     "wikiOffice": "Taoiseach"
   }
 ]
