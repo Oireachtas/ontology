@@ -29,7 +29,7 @@ Cabinets are described by the class ``oir:Cabinet`` and are modeled as temporal 
 This table provides example usage of the URI pattern:
 
 |class|example URI|Describes|
-|-----|--|--|
+|-----|----|----|
 |oir:Chamber|/house/dail|The Dáil as a debating chamber/setting|
 |oir:HouseTerm|/house/dail/31|The 31st Dáil|
 |oir:EventDate|/house/dail/31/start/2011-03-09|Commencement of 31st Dáil|
@@ -39,7 +39,7 @@ This table provides example usage of the URI pattern:
 #### [House and Cabinet classes](#house-class)
 
 |Class|Sub-Class of/based on|Description|
-|-|-|-|
+|---|---|---|
 |oir:Oireachtas|org:FormalOrganisation|The Houses of the Oireachtas|
 |oir:Chamber|oir:Oireachtas, metalex:Agent, rda:Agent|Dáil, Seanad or committee as continuous entity/debate setting|
 |oir:HouseTerm|oir:Oireachtas, time:ProperInterval|Term of existence of a Chamber|
@@ -51,7 +51,7 @@ This table provides example usage of the URI pattern:
 Relevant sub-classes are set out below, but see the [Organisation](https://www.w3.org/TR/vocab-org/) ontology for more complete documentation.
 
 | Property|Domain| Range | Notes  |
-|-|
+|---|---|---|---|
 |oir:termOf|oir:HouseTerm|oir:Chamber|Term of the Dáil or Seanad (or committee)|
 |oir:hasTerm|oir:Chamber|oir:HouseTerm|Inverse of oir:termOf|
 |oir:start|time:TemporalEntity|oir:EventDate|Start date of period of oir:HouseTerm|
@@ -78,7 +78,7 @@ http://oireachtas.ie/ie/oireachtas/member/{firstname}-{opt middle name or initia
 member/{firstname}-{opt middle name or initial}-{last name}.{D|S}.{xs:date}/{dail|seanad}/{house number}/{elected|commenced|ended}/{date}
 
 |class|example URI|Describes|
-|-----|--|--|
+|-----|----|----|
 |oir:Member|/member/Enda-Kenny.D.1975-11-12|Enda Kenny, an individual who was elected to the Oireachtas.|
 |org:Membership|/member/Enda-Kenny.D.1975-11-12/dail/31|Enda Kenny's membership of the 31st Dáil|
 |time:ProperInterval|/member/Enda-Kenny.D.1975-11-12/dail/31|The period during which Enda Kenny was a Member of the 31st Dáil|
@@ -95,7 +95,7 @@ member/{firstname}-{opt middle name or initial}-{last name}.{D|S}.{xs:date}/{dai
 Relevant sub-classes are set out below, but see the [Organisation](https://www.w3.org/TR/vocab-org/) ontology for more complete documentation.
 
 |Class|Sub-Class of/based on|Description|
-|-|-|-|
+|---|---|---|
 |oir:Member|metalex:Legislator, foaf:Person, rda:Person|An individual agent who at some stage was a Member of the Oireachtas|
 |oir:MinisterialRole|org:Role|Ministerial role during a period of ``org:Membership`` of Cabinet|
 |oir:GovernmentMembers|foaf:Group, org:OrganisationalUnit|The collective of Members who support the Government|
@@ -105,7 +105,7 @@ Relevant sub-classes are set out below, but see the [Organisation](https://www.w
 #### [Member properties](#member-property)
 
 | Property|Domain| Range | Notes  |
-|-|
+|---|---|---|---|
 |foaf:familyName|oir:Member|xs:string| |
 |foaf:firstName|oir:Member|xs:string| |
 |foaf:Name|oir:Member|xs:string| |
