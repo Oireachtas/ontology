@@ -2427,7 +2427,7 @@
         "start": "1921-02-12"
       }
     ],
-    "eId": "/member//member/Erskine-Robert-Childers.D.1921-08-16",
+    "eId": "/member/Erskine-Robert-Childers.D.1921-08-16",
     "end": "1921-03-08",
     "functions": [
       "propaganda"
@@ -12601,6 +12601,44 @@
     ],
     "office": "Minister for Children and Youth Affairs",
     "start": "2014-07-11",
+    "uri": "/minister/children__youth_affairs",
+    "wikiOffice": "Minister_for_Children_and_Youth_Affairs"
+  },
+  {
+    "cabinets": [
+      {
+        "cabinet": "/cabinet/dail/31",
+        "end": "2014-07-11",
+        "start": "2014-05-08"
+      }
+    ],
+    "eId": "/member/Charles-Flanagan.D.1987-03-10",
+    "end": "2014-07-11",
+    "functions": [
+      "children",
+      "youth_affairs"
+    ],
+    "office": "Minister for Children and Youth Affairs",
+    "start": "2014-05-08",
+    "uri": "/minister/children__youth_affairs",
+    "wikiOffice": "Minister_for_Children_and_Youth_Affairs"
+  },
+  {
+    "cabinets": [
+      {
+        "cabinet": "/cabinet/dail/31",
+        "end": "2014-05-08",
+        "start": "2011-03-09"
+      }
+    ],
+    "eId": "/member/Frances-Fitzgerald.D.1992-12-14",
+    "end": "2014-05-08",
+    "functions": [
+      "children",
+      "youth_affairs"
+    ],
+    "office": "Minister for Children and Youth Affairs",
+    "start": "2011-03-09",
     "uri": "/minister/children__youth_affairs",
     "wikiOffice": "Minister_for_Children_and_Youth_Affairs"
   }

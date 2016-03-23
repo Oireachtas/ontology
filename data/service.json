@@ -4705,12 +4705,12 @@
     "constURI": [
       "/dail/constituency/Kildare-North"
     ],
-    "eId": "/member//member/Michael-Fitzpatrick.D.2007-06-14",
+    "eId": "/member/Michael-Fitzpatrick.D.2007-06-14",
     "elected": "2007-05-24",
     "houseURI": "/house/dail/30",
     "periodEnd": "2011-02-01",
     "periodStart": "2007-06-14",
-    "serviceURI": "/member//member/Michael-Fitzpatrick.D.2007-06-14/dail.30"
+    "serviceURI": "/member/Michael-Fitzpatrick.D.2007-06-14/dail.30"
   },
   {
     "constURI": [
@@ -6311,12 +6311,12 @@
     "constURI": [
       "/dail/constituency/Kildare\u2013Wicklow"
     ],
-    "eId": "/member//member/Erskine-Robert-Childers.D.1921-08-16",
+    "eId": "/member/Erskine-Robert-Childers.D.1921-08-16",
     "elected": "1921-05-24",
     "houseURI": "/house/dail/2",
     "periodEnd": "1922-06-16",
     "periodStart": "1921-08-16",
-    "serviceURI": "/member//member/Erskine-Robert-Childers.D.1921-08-16/dail.2"
+    "serviceURI": "/member/Erskine-Robert-Childers.D.1921-08-16/dail.2"
   },
   {
     "constURI": [
@@ -12297,12 +12297,12 @@
     "constURI": [
       "/dail/constituency/Cork-West"
     ],
-    "eId": "/member//member/Timothy-O'Sullivan.D.1937-07-21",
+    "eId": "/member/Timothy-O'Sullivan.D.1937-07-21",
     "elected": "1937-07-01",
     "houseURI": "/house/dail/9",
     "periodEnd": "1938-05-27",
     "periodStart": "1937-07-21",
-    "serviceURI": "/member//member/Timothy-O'Sullivan.D.1937-07-21/dail.9"
+    "serviceURI": "/member/Timothy-O'Sullivan.D.1937-07-21/dail.9"
   },
   {
     "constURI": [
@@ -13056,12 +13056,12 @@
     "constURI": [
       "/dail/constituency/Cork-West"
     ],
-    "eId": "/member//member/Timothy-O'Sullivan.D.1937-07-21",
+    "eId": "/member/Timothy-O'Sullivan.D.1937-07-21",
     "elected": "1938-06-17",
     "houseURI": "/house/dail/10",
     "periodEnd": "1943-05-31",
     "periodStart": "1938-06-30",
-    "serviceURI": "/member//member/Timothy-O'Sullivan.D.1937-07-21/dail.10"
+    "serviceURI": "/member/Timothy-O'Sullivan.D.1937-07-21/dail.10"
   },
   {
     "constURI": [
@@ -13925,12 +13925,12 @@
     "constURI": [
       "/dail/constituency/Cork-West"
     ],
-    "eId": "/member//member/Timothy-O'Sullivan.D.1937-07-21",
+    "eId": "/member/Timothy-O'Sullivan.D.1937-07-21",
     "elected": "1943-06-23",
     "houseURI": "/house/dail/11",
     "periodEnd": "1944-05-10",
     "periodStart": "1943-07-01",
-    "serviceURI": "/member//member/Timothy-O'Sullivan.D.1937-07-21/dail.11"
+    "serviceURI": "/member/Timothy-O'Sullivan.D.1937-07-21/dail.11"
   },
   {
     "constURI": [
@@ -14794,12 +14794,12 @@
     "constURI": [
       "/dail/constituency/Cork-West"
     ],
-    "eId": "/member//member/Timothy-O'Sullivan.D.1937-07-21",
+    "eId": "/member/Timothy-O'Sullivan.D.1937-07-21",
     "elected": "1944-05-30",
     "houseURI": "/house/dail/12",
     "periodEnd": "1948-01-12",
     "periodStart": "1944-06-09",
-    "serviceURI": "/member//member/Timothy-O'Sullivan.D.1937-07-21/dail.12"
+    "serviceURI": "/member/Timothy-O'Sullivan.D.1937-07-21/dail.12"
   },
   {
     "constURI": [
@@ -15773,12 +15773,12 @@
     "constURI": [
       "/dail/constituency/Cork-West"
     ],
-    "eId": "/member//member/Timothy-O'Sullivan.D.1937-07-21",
+    "eId": "/member/Timothy-O'Sullivan.D.1937-07-21",
     "elected": "1948-02-04",
     "houseURI": "/house/dail/13",
     "periodEnd": "1951-05-07",
     "periodStart": "1948-02-18",
-    "serviceURI": "/member//member/Timothy-O'Sullivan.D.1937-07-21/dail.13"
+    "serviceURI": "/member/Timothy-O'Sullivan.D.1937-07-21/dail.13"
   },
   {
     "constURI": [
@@ -16763,12 +16763,12 @@
     "constURI": [
       "/dail/constituency/Cork-West"
     ],
-    "eId": "/member//member/Timothy-O'Sullivan.D.1937-07-21",
+    "eId": "/member/Timothy-O'Sullivan.D.1937-07-21",
     "elected": "1951-05-30",
     "houseURI": "/house/dail/14",
     "periodEnd": "1954-04-24",
     "periodStart": "1951-06-13",
-    "serviceURI": "/member//member/Timothy-O'Sullivan.D.1937-07-21/dail.14"
+    "serviceURI": "/member/Timothy-O'Sullivan.D.1937-07-21/dail.14"
   },
   {
     "constURI": [
@@ -28885,12 +28885,12 @@
     "constURI": [
       "/seanad/panel/Agricultural-Panel"
     ],
-    "eId": "/member//member/Timothy-O'Sullivan.D.1937-07-21",
+    "eId": "/member/Timothy-O'Sullivan.D.1937-07-21",
     "elected": null,
     "houseURI": "/house/seanad/8",
     "periodEnd": "1957-03-28",
     "periodStart": "1954-07-22",
-    "serviceURI": "/member//member/Timothy-O'Sullivan.D.1937-07-21/seanad.8"
+    "serviceURI": "/member/Timothy-O'Sullivan.D.1937-07-21/seanad.8"
   },
   {
     "constURI": [
@@ -28973,12 +28973,12 @@
     "constURI": [
       "/seanad/panel/Agricultural-Panel"
     ],
-    "eId": "/member//member/Timothy-O'Sullivan.D.1937-07-21",
+    "eId": "/member/Timothy-O'Sullivan.D.1937-07-21",
     "elected": null,
     "houseURI": "/house/seanad/9",
     "periodEnd": "1961-09-01",
     "periodStart": "1957-05-22",
-    "serviceURI": "/member//member/Timothy-O'Sullivan.D.1937-07-21/seanad.9"
+    "serviceURI": "/member/Timothy-O'Sullivan.D.1937-07-21/seanad.9"
   },
   {
     "constURI": [
@@ -29094,12 +29094,12 @@
     "constURI": [
       "/seanad/panel/Agricultural-Panel"
     ],
-    "eId": "/member//member/Timothy-O'Sullivan.D.1937-07-21",
+    "eId": "/member/Timothy-O'Sullivan.D.1937-07-21",
     "elected": null,
     "houseURI": "/house/seanad/10",
     "periodEnd": "1965-04-28",
     "periodStart": "1961-12-14",
-    "serviceURI": "/member//member/Timothy-O'Sullivan.D.1937-07-21/seanad.10"
+    "serviceURI": "/member/Timothy-O'Sullivan.D.1937-07-21/seanad.10"
   },
   {
     "constURI": [
@@ -29215,12 +29215,12 @@
     "constURI": [
       "/seanad/panel/Agricultural-Panel"
     ],
-    "eId": "/member//member/Timothy-O'Sullivan.D.1937-07-21",
+    "eId": "/member/Timothy-O'Sullivan.D.1937-07-21",
     "elected": null,
     "houseURI": "/house/seanad/11",
     "periodEnd": "1969-07-24",
     "periodStart": "1965-06-23",
-    "serviceURI": "/member//member/Timothy-O'Sullivan.D.1937-07-21/seanad.11"
+    "serviceURI": "/member/Timothy-O'Sullivan.D.1937-07-21/seanad.11"
   },
   {
     "constURI": [
@@ -50599,12 +50599,12 @@
     "constURI": [
       "/dail/constituency/Kildare"
     ],
-    "eId": "/member//member/Gerard-Brady.D.1982-03-09",
+    "eId": "/member/Gerard-Brady.D.1982-03-09",
     "elected": "1982-02-18",
     "houseURI": "/house/dail/23",
     "periodEnd": "1982-11-04",
     "periodStart": "1982-03-09",
-    "serviceURI": "/member//member/Gerard-Brady.D.1982-03-09/dail.23"
+    "serviceURI": "/member/Gerard-Brady.D.1982-03-09/dail.23"
   },
   {
     "constURI": [
