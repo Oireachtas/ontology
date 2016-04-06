@@ -46457,7 +46457,7 @@
     "houseURI": "/house/dail/16",
     "periodEnd": "1961-09-15",
     "periodStart": "1957-03-20",
-    "serviceURI": "/member/A-Healy.D.1957-03-20/dail.16"
+    "serviceURI": "/member/Augustine-Healy.D.1957-03-20/dail.16"
   },
   {
     "constURI": [
@@ -47678,7 +47678,7 @@
     "houseURI": "/house/dail/18",
     "periodEnd": "1969-05-22",
     "periodStart": "1965-04-21",
-    "serviceURI": "/member/A-Healy.D.1957-03-20/dail.18"
+    "serviceURI": "/member/Augustine-Healy.D.1957-03-20/dail.18"
   },
   {
     "constURI": [
@@ -48261,7 +48261,7 @@
     "houseURI": "/house/dail/19",
     "periodEnd": "1973-02-05",
     "periodStart": "1969-07-02",
-    "serviceURI": "/member/A-Healy.D.1957-03-20/dail.19"
+    "serviceURI": "/member/Augustine-Healy.D.1957-03-20/dail.19"
   },
   {
     "constURI": [
@@ -48734,7 +48734,7 @@
     "houseURI": "/house/dail/20",
     "periodEnd": "1977-05-25",
     "periodStart": "1973-03-14",
-    "serviceURI": "/member/A-Healy.D.1957-03-20/dail.20"
+    "serviceURI": "/member/Augustine-Healy.D.1957-03-20/dail.20"
   },
   {
     "constURI": [
@@ -62528,7 +62528,7 @@
     "houseURI": "/house/seanad/10",
     "periodEnd": "1965-04-28",
     "periodStart": "1961-12-14",
-    "serviceURI": "/member/A-Healy.D.1957-03-20/seanad.10"
+    "serviceURI": "/member/Augustine-Healy.D.1957-03-20/seanad.10"
   },
   {
     "constURI": [
@@ -71846,5 +71846,16 @@
     "periodEnd": "2016-06-17",
     "periodStart": "2015-11-13",
     "serviceURI": "/member/M\u00e1ir\u00eda-Cahill.S.2015-11-13/seanad.24"
+  },
+  {
+    "constURI": [
+      "house/dail/3/constituency/Cavan"
+    ],
+    "eId": "/member/Arthur-Griffith.D.1919-01-21",
+    "elected": "1921-05-24",
+    "houseURI": "/house/dail/2",
+    "periodEnd": "1922-06-16",
+    "periodStart": "1921-08-16",
+    "serviceURI": "/member/Arthur-Griffith.D.1919-01-21/dail.2"
   }
 ]
