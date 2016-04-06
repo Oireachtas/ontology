@@ -4490,10 +4490,13 @@
         "cabinet": "http://oireachtas.ie/ie/oireachtas/cabinet/dail/3",
         "end": "1923-09-19",
         "start": "1922-09-09"
-      }
+      },
+      {"cabinet": "http://oireachtas.ie/ie/oireachtas/cabinet/dail/4",
+      "start": "1923-09-19",
+      "end": "1924-06-02"}
     ],
     "eId": "/member/Kevin-Christopher-O'Higgins.D.1919-01-21",
-    "end": "1923-09-19",
+    "end": "1924-06-02",
     "functions": [
       "home_affairs"
     ],
@@ -4507,7 +4510,7 @@
       {
         "cabinet": "http://oireachtas.ie/ie/oireachtas/cabinet/dail/4",
         "end": "1927-06-23",
-        "start": "1923-09-19"
+        "start": "1924-06-02"
       },
       {
         "cabinet": "http://oireachtas.ie/ie/oireachtas/cabinet/dail/5",
@@ -4521,7 +4524,7 @@
       "justice"
     ],
     "office": "Minister for Justice",
-    "start": "1923-09-19",
+    "start": "1924-06-02",
     "uri": "/minister/justice",
     "wikiOffice": "Minister_for_Justice_and_Equality"
   },
@@ -5175,9 +5178,13 @@
     "wikiOffice": "Minister_for_Justice_and_Equality"
   },
   {
-    "cabinets": [],
+    "cabinets": [{
+      "cabinet": "/cabinet/dail/31",
+      "start": "2011-03-09",
+      "end": "2014-05-08"
+    }],
     "eId": "/member/Alan-Shatter.D.1981-06-30",
-    "end": "2014-05-07",
+    "end": "2014-05-08",
     "functions": [
       "justice",
       "equality"
@@ -11458,7 +11465,7 @@
       {
         "cabinet": "/cabinet/dail/31",
         "end": null,
-        "start": "2011-03-09"
+        "start": "2011-10-17"
       }
     ],
     "eId": "/member/Simon-Coveney.D.1998-10-23",
@@ -11469,10 +11476,28 @@
       "marine"
     ],
     "office": "Minister for Agriculture, Food and the Marine",
-    "start": "2011-03-09",
+    "start": "2011-10-17",
     "uri": "/minister/agriculture__food__marine",
     "wikiOffice": "Minister_for_Agriculture,_Food_and_the_Marine"
   },
+  {"cabinets": [
+    {
+      "cabinet": "/cabinet/dail/31",
+      "start": "2011-03-09",
+      "end": "2011-10-17"
+    }],
+    "eId": "/member/Simon-Coveney.D.1998-10-23",
+  "end": "2011-10-17",
+  "functions": [
+    "agriculture",
+    "food",
+    "fisheries"
+  ],
+  "office": "Minister for Agriculture, Fisheries and Food",
+  "start": "2011-03-09",
+  "uri": "/minister/agriculture__fisheries__food",
+  "wikiOffice": "Minister_for_Agriculture,_Food_and_the_Marine"
+},
   {
     "cabinets": [
       {

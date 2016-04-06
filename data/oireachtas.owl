@@ -357,6 +357,7 @@ These are the entities who author, produce or modify legislative documents, jour
         <rdfs:label xml:lang="en">Bill Expression</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://data.europa.eu/eli/ontology#LegalExpression"/>
         <rdfs:subClassOf rdf:resource="http://www.metalex.eu/metalex/2008-05-02#BibliographicExpression"/>
+        <owl:disjointWith rdf:resource="http://www.metalex.eu/metalex/2008-05-02#BibliographicCreation"/>
     </owl:Class>
     
 
@@ -448,6 +449,16 @@ These are the entities who author, produce or modify legislative documents, jour
     
 
 
+    <!-- http://oireachtas.ie/ontology#Deputy -->
+
+    <owl:Class rdf:about="http://oireachtas.ie/ontology#Deputy">
+        <rdfs:label xml:lang="en">Deputy</rdfs:label>
+        <rdfs:label xml:lang="ga">Teachta</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://oireachtas.ie/ontology#Member"/>
+    </owl:Class>
+    
+
+
     <!-- http://oireachtas.ie/ontology#EventDate -->
 
     <owl:Class rdf:about="http://oireachtas.ie/ontology#EventDate">
@@ -507,6 +518,7 @@ These are the entities who author, produce or modify legislative documents, jour
         <rdfs:label xml:lang="en">Member of the Oireachtas</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://rdaregistry.info/Elements/c/C10004"/>
         <rdfs:subClassOf rdf:resource="http://www.metalex.eu/metalex/2008-05-02#Legislator"/>
+        <rdfs:subClassOf rdf:resource="&org;Role"/>
         <rdfs:comment xml:lang="en">A Member of one of the Houses of the Oireachtas</rdfs:comment>
         <skos:prefLabel xml:lang="en">Member</skos:prefLabel>
     </owl:Class>
@@ -588,11 +600,27 @@ These are the entities who author, produce or modify legislative documents, jour
     
 
 
+    <!-- http://oireachtas.ie/ontology#Senator -->
+
+    <owl:Class rdf:about="http://oireachtas.ie/ontology#Senator">
+        <rdfs:label xml:lang="en">Senator</rdfs:label>
+        <rdfs:label xml:lang="ga">Seanadóir</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://oireachtas.ie/ontology#Member"/>
+    </owl:Class>
+    
+
+
     <!-- http://rdaregistry.info/Elements/c/C10002 -->
 
     <rdf:Description rdf:about="http://rdaregistry.info/Elements/c/C10002">
         <rdfs:subClassOf rdf:resource="http://rdaregistry.info/Elements/c/C10005"/>
     </rdf:Description>
+    
+
+
+    <!-- http://www.metalex.eu/metalex/2008-05-02#BibliographicCreation -->
+
+    <rdf:Description rdf:about="http://www.metalex.eu/metalex/2008-05-02#BibliographicCreation"/>
     
 
 
