@@ -71857,5 +71857,52 @@
     "periodEnd": "1922-06-16",
     "periodStart": "1921-08-16",
     "serviceURI": "/member/Arthur-Griffith.D.1919-01-21/dail.2"
+  },
+  {
+    "constURI": [
+      "house/dail/2/constituency/Cork-Mid-North-South--South\u2013East-and-West",
+      "house/dail/2/constituency/Armagh"
+    ],
+    "eId": "/member/Michael-Collins.D.1919-01-21",
+    "elected": "1921-05-24",
+    "houseURI": "/house/dail/2",
+    "periodEnd": "1922-06-16",
+    "periodStart": "1921-08-16",
+    "serviceURI": "/member/Michael-Collins.D.1919-01-21/dail.2"
+  },
+  {
+    "constURI": [
+      "house/dail/2/constituency/Cavan"
+    ],
+    "eId": "/member/Se\u00e1n-Milroy.D.1922-09-09",
+    "elected": "1921-05-24",
+    "houseURI": "/house/dail/2",
+    "periodEnd": "1922-06-16",
+    "periodStart": "1921-08-16",
+    "serviceURI": "/member/Se\u00e1n-Milroy.D.1922-09-09/dail.2"
+  },
+  {
+    "constURI": [
+      "house/dail/2/constituency/Clare",
+      "house/dail/2/constituency/Down"
+    ],
+    "eId": "/member/Eamon-de-Valera.D.1919-01-21",
+    "elected": "1921-05-24",
+    "houseURI": "/house/dail/2",
+    "periodEnd": "1922-06-16",
+    "periodStart": "1921-08-16",
+    "serviceURI": "/member/Eamon-de-Valera.D.1919-01-21/dail.2"
+  },
+  {
+    "constURI": [
+      "house/dail/2/constituency/Londonderry-City",
+      "house/dail/2/constituency/National-University-of-Ireland"
+    ],
+    "eId": "/member/Eoin-MacNeill.D.1919-01-21",
+    "elected": "1921-05-24",
+    "houseURI": "/house/dail/2",
+    "periodEnd": "1922-06-16",
+    "periodStart": "1921-08-16",
+    "serviceURI": "/member/Eoin-MacNeill.D.1919-01-21/dail.2"
   }
 ]
