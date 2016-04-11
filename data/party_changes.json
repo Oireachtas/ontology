@@ -1,0 +1,2325 @@
+[
+  {
+    "const": "Dublin_South_(D\u00e1il_\u00c9ireann_constituency)",
+    "date": "1939-06-06",
+    "gain_party": "Fianna_F\u00e1il",
+    "house": "/house/dail/10",
+    "incoming": "John_McCann_(Irish_politician)",
+    "loss_party": "Fianna_F\u00e1il",
+    "note": " [[John McCann (Irish politician)|John McCann]] (FF) wins the seat vacated by the death of [[James Beckett (politician)|James Beckett]] (FG)\n",
+    "outgoing": "James_Beckett_(politician)"
+  },
+  {
+    "const": "Galway_West_(D\u00e1il_\u00c9ireann_constituency)",
+    "date": "1940-05-30",
+    "gain_party": "Fianna_F\u00e1il",
+    "house": "/house/dail/10",
+    "incoming": "John_J._Keane_(politician)",
+    "loss_party": "Fianna_F\u00e1il",
+    "note": " [[John J. Keane (politician)|John J. Keane]] (FF) holds the seat vacated by the death of [[Se\u00e1n Tubridy]] (FF)\n",
+    "outgoing": "Se\u00e1n_Tubridy"
+  },
+  {
+    "change_party": "William_Sheldon_(Irish_politician)",
+    "const": "Donegal_East_(D\u00e1il_\u00c9ireann_constituency)",
+    "date": "1943-07-06",
+    "gain_party": "Independent_(politician)",
+    "house": "/house/dail/11",
+    "loss_party": "Independent_(politician)",
+    "note": " [[William Sheldon (Irish politician)|William Sheldon]] (CnaT) resigns from Clann na Talmhan\n"
+  },
+  {
+    "change_party": "Thomas_Looney",
+    "const": "Cork_South\u2013East_(D\u00e1il_\u00c9ireann_constituency)",
+    "date": "1945-01-07",
+    "gain_party": "National_Labour_Party_(Ireland)",
+    "house": "/house/dail/11",
+    "loss_party": "National_Labour_Party_(Ireland)",
+    "note": " [[Thomas Looney]] resigns from the Labour Party and joins the National Labour Party\n"
+  },
+  {
+    "change_party": "Dan_Spring",
+    "const": "Kerry_North_(D\u00e1il_\u00c9ireann_constituency)",
+    "date": "1945-01-07",
+    "gain_party": "National_Labour_Party_(Ireland)",
+    "house": "/house/dail/11",
+    "loss_party": "National_Labour_Party_(Ireland)",
+    "note": " [[Dan Spring]] resigns from the Labour Party and joins the National Labour Party\n"
+  },
+  {
+    "change_party": "James_Pattison",
+    "const": "Kilkenny_(D\u00e1il_\u00c9ireann_constituency)",
+    "date": "1945-01-07",
+    "gain_party": "National_Labour_Party_(Ireland)",
+    "house": "/house/dail/11",
+    "loss_party": "National_Labour_Party_(Ireland)",
+    "note": " [[James Pattison]] resigns from the Labour Party and joins the National Labour Party\n"
+  },
+  {
+    "change_party": "John_O'Leary_(Wexford_politician)",
+    "const": "Wexford_(D\u00e1il_\u00c9ireann_constituency)",
+    "date": "1945-01-07",
+    "gain_party": "National_Labour_Party_(Ireland)",
+    "house": "/house/dail/11",
+    "loss_party": "National_Labour_Party_(Ireland)",
+    "note": " [[John O'Leary (Wexford politician)|John O'Leary]] resigns from the Labour Party and joins the National Labour Party\n"
+  },
+  {
+    "change_party": "James_Everett",
+    "const": "Wicklow_(D\u00e1il_\u00c9ireann_constituency)",
+    "date": "1945-01-07",
+    "gain_party": "National_Labour_Party_(Ireland)",
+    "house": "/house/dail/11",
+    "loss_party": "National_Labour_Party_(Ireland)",
+    "note": " [[James Everett]] resigns from the Labour Party and joins the National Labour Party as its Leader\n"
+  },
+  {
+    "const": "Kerry_South_(D\u00e1il_\u00c9ireann_constituency)",
+    "date": "1944-11-10",
+    "gain_party": "Fianna_F\u00e1il",
+    "house": "/house/dail/12",
+    "incoming": "Donal_O'Donoghue",
+    "loss_party": "Fianna_F\u00e1il",
+    "note": " [[Donal O'Donoghue]] (FF) wins the seat vacated by the appointment of [[Fion\u00e1n Lynch]] (FG) as a judge.\n",
+    "outgoing": "Fion\u00e1n_Lynch"
+  },
+  {
+    "const": "Clare_(D\u00e1il_\u00c9ireann_constituency)",
+    "date": "1945-12-04",
+    "gain_party": "Fianna_F\u00e1il",
+    "house": "/house/dail/12",
+    "incoming": "Patrick_Shanahan",
+    "loss_party": "Fianna_F\u00e1il",
+    "note": " [[Patrick Shanahan]] (FF) wins the seat vacated by the death of [[Patrick Burke (Clare politician)|Patrick Burke]] (FG)\n",
+    "outgoing": "Patrick_Burke_(Clare_politician)"
+  },
+  {
+    "const": "Dublin_North\u2013West_(D\u00e1il_\u00c9ireann_constituency)",
+    "date": "1945-12-04",
+    "gain_party": "Fianna_F\u00e1il",
+    "house": "/house/dail/12",
+    "incoming": "Vivion_de_Valera",
+    "loss_party": "Fianna_F\u00e1il",
+    "note": " [[Vivion de Valera]] (FF) holds the seat vacated by [[Se\u00e1n T. O'Kelly]] (FF) on his election to the [[President of Ireland|Presidency]]\n",
+    "outgoing": "Se\u00e1n_T._O'Kelly"
+  },
+  {
+    "const": "Kerry_South_(D\u00e1il_\u00c9ireann_constituency)",
+    "date": "1945-12-04",
+    "gain_party": "Fianna_F\u00e1il",
+    "house": "/house/dail/12",
+    "incoming": "Honor_Crowley",
+    "loss_party": "Fianna_F\u00e1il",
+    "note": " [[Honor Crowley]] (FF) holds the seat vacated by the death of her husband [[Frederick Crowley]] (FF)\n",
+    "outgoing": "Frederick_Crowley"
+  },
+  {
+    "const": "Mayo_South_(D\u00e1il_\u00c9ireann_constituency)",
+    "date": "1945-12-04",
+    "gain_party": "Clann_na_Talmhan",
+    "house": "/house/dail/12",
+    "incoming": "Bernard_Commons",
+    "loss_party": "Clann_na_Talmhan",
+    "note": " [[Bernard Commons]] (CnaT) wins the seat vacated by the appointment of [[Miche\u00e1l Clery]] (FF) as County Registrar of Dublin\n",
+    "outgoing": "Miche\u00e1l_Clery"
+  },
+  {
+    "const": "Wexford_(D\u00e1il_\u00c9ireann_constituency)",
+    "date": "1945-12-04",
+    "gain_party": "Labour_Party_(Ireland)",
+    "house": "/house/dail/12",
+    "incoming": "Brendan_Corish",
+    "loss_party": "Labour_Party_(Ireland)",
+    "note": " [[Brendan Corish]] (Lab) holds the seat vacated by the death of his father [[Richard Corish]] (Lab)\n",
+    "outgoing": "Richard_Corish"
+  },
+  {
+    "const": "Cork_Borough_(D\u00e1il_\u00c9ireann_constituency)",
+    "date": "1946-06-14",
+    "gain_party": "Fianna_F\u00e1il",
+    "house": "/house/dail/12",
+    "incoming": "Patrick_McGrath_(Irish_politician)",
+    "loss_party": "Fianna_F\u00e1il",
+    "note": " [[Patrick McGrath (Irish politician)|Patrick McGrath]] (FF) wins the seat vacated by the resignation of [[William Dwyer (Irish politician)|William Dwyer]] (Ind)\n",
+    "outgoing": "William_Dwyer_(Irish_politician)"
+  },
+  {
+    "const": "Dublin_County_(D\u00e1il_\u00c9ireann_constituency)",
+    "date": "1947-10-29",
+    "gain_party": "Clann_na_Poblachta",
+    "house": "/house/dail/12",
+    "incoming": "Se\u00e1n_MacBride",
+    "loss_party": "Clann_na_Poblachta",
+    "note": " [[Se\u00e1n MacBride]] (CnaP) wins the seat vacated by the death of [[Patrick Fogarty]] (FF)\n",
+    "outgoing": "Patrick_Fogarty"
+  },
+  {
+    "const": "Tipperary_(D\u00e1il_\u00c9ireann_constituency)",
+    "date": "1947-10-29",
+    "gain_party": "Clann_na_Poblachta",
+    "house": "/house/dail/12",
+    "incoming": "Patrick_Kinane",
+    "loss_party": "Clann_na_Poblachta",
+    "note": " [[Patrick Kinane]] (CnaP) wins the seat vacated by the death of [[William O'Donnell (Irish politician)|William O'Donnell]] (CnaT)\n",
+    "outgoing": "William_O'Donnell_(Irish_politician)"
+  },
+  {
+    "const": "Waterford_(D\u00e1il_\u00c9ireann_constituency)",
+    "date": "1947-10-29",
+    "gain_party": "Fianna_F\u00e1il",
+    "house": "/house/dail/12",
+    "incoming": "John_Ormonde",
+    "loss_party": "Fianna_F\u00e1il",
+    "note": " [[John Ormonde]] (FF) holds the seat vacated by the death of [[Michael Morrissey (politician)|Michael Morrissey]] (FF)\n",
+    "outgoing": "Michael_Morrissey_(politician)"
+  },
+  {
+    "const": "Donegal_East_(D\u00e1il_\u00c9ireann_constituency)",
+    "date": "1948-12-07",
+    "gain_party": "Fianna_F\u00e1il",
+    "house": "/house/dail/13",
+    "incoming": "Neil_Blaney",
+    "loss_party": "Fianna_F\u00e1il",
+    "note": " [[Neil Blaney]] (FF) holds the seat vacated by the death of his father [[Neal Blaney]] (FF)\n",
+    "outgoing": "Neal_Blaney"
+  },
+  {
+    "const": "Cork_West_(D\u00e1il_\u00c9ireann_constituency)",
+    "date": "1949-06-15",
+    "gain_party": "Labour_Party_(Ireland)",
+    "house": "/house/dail/13",
+    "incoming": "William_J._Murphy_(Labour_politician)",
+    "loss_party": "Labour_Party_(Ireland)",
+    "note": " [[William J. Murphy (Labour politician)|William J. Murphy]] (Lab) holds the seat vacated by the death of [[Timothy J. Murphy]] (Lab)\n",
+    "outgoing": "Timothy_J._Murphy"
+  },
+  {
+    "const": "Donegal_West_(D\u00e1il_\u00c9ireann_constituency)",
+    "date": "1949-11-16",
+    "gain_party": "Fine_Gael",
+    "house": "/house/dail/13",
+    "incoming": "Patrick_O'Donnell_(politician)",
+    "loss_party": "Fine_Gael",
+    "note": " [[Patrick O'Donnell (politician)|Patrick O'Donnell]] (FG) wins the seat vacated by the death of [[Brian Brady]] (FF)\n",
+    "outgoing": "Brian_Brady"
+  },
+  {
+    "const": "Limerick_East_(D\u00e1il_\u00c9ireann_constituency)",
+    "date": "1952-06-26",
+    "gain_party": "Fine_Gael",
+    "house": "/house/dail/14",
+    "incoming": "John_Carew_(Irish_politician)",
+    "loss_party": "Fine_Gael",
+    "note": " [[John Carew (Irish politician)|John Carew]] (FG) wins the seat vacated by the death of [[Daniel Bourke]] (FF)\n",
+    "outgoing": "Daniel_Bourke"
+  },
+  {
+    "const": "Mayo_North_(D\u00e1il_\u00c9ireann_constituency)",
+    "date": "1952-06-26",
+    "gain_party": "Fianna_F\u00e1il",
+    "house": "/house/dail/14",
+    "incoming": "Phelim_Calleary",
+    "loss_party": "Fianna_F\u00e1il",
+    "note": " [[Phelim Calleary]] (FF) holds the seat vacated by the death of [[P. J. Ruttledge]] (FF)\n",
+    "outgoing": "P._J._Ruttledge"
+  },
+  {
+    "const": "Waterford_(D\u00e1il_\u00c9ireann_constituency)",
+    "date": "1952-06-26",
+    "gain_party": "Fianna_F\u00e1il",
+    "house": "/house/dail/14",
+    "incoming": "William_Kenneally",
+    "loss_party": "Fianna_F\u00e1il",
+    "note": " [[William Kenneally]] (FF) wins the seat vacated by the death of [[Bridget Redmond]] (FG)\n",
+    "outgoing": "Bridget_Redmond"
+  },
+  {
+    "const": "Dublin_North\u2013West_(D\u00e1il_\u00c9ireann_constituency)",
+    "date": "1952-11-12",
+    "gain_party": "Independent_(politician)",
+    "house": "/house/dail/14",
+    "incoming": "Thomas_Byrne_(Dublin_politician)",
+    "loss_party": "Independent_(politician)",
+    "note": " [[Thomas Byrne (Dublin politician)|Thomas Byrne]] (Ind) holds the seat vacated by the death of his brother [[Alfred P. Byrne]] (Ind)\n",
+    "outgoing": "Alfred_P._Byrne"
+  },
+  {
+    "const": "Cork_East_(D\u00e1il_\u00c9ireann_constituency)",
+    "date": "1953-06-18",
+    "gain_party": "Fine_Gael",
+    "house": "/house/dail/14",
+    "incoming": "Richard_Barry_(Irish_politician)",
+    "loss_party": "Fine_Gael",
+    "note": " [[Richard Barry (Irish politician)|Richard Barry]] (FG) wins the seat vacated by the death of [[Se\u00e1n Keane (Irish politician)|Se\u00e1n Keane]] (Lab)\n",
+    "outgoing": "Se\u00e1n_Keane_(Irish_politician)"
+  },
+  {
+    "const": "Wicklow_(D\u00e1il_\u00c9ireann_constituency)",
+    "date": "1953-06-18",
+    "gain_party": "Fine_Gael",
+    "house": "/house/dail/14",
+    "incoming": "Mark_Deering",
+    "loss_party": "Fine_Gael",
+    "note": " [[Mark Deering]] (FG) holds the seat vacated by the death of [[Thomas Brennan (Fianna F\u00e1il)|Thomas Brennan]] (FF)\n",
+    "outgoing": "Thomas_Brennan_(Fianna_F\u00e1il)"
+  },
+  {
+    "const": "Galway_South_(D\u00e1il_\u00c9ireann_constituency)",
+    "date": "1953-08-21",
+    "gain_party": "Fianna_F\u00e1il",
+    "house": "/house/dail/14",
+    "incoming": "Robert_Lahiffe",
+    "loss_party": "Fianna_F\u00e1il",
+    "note": " [[Robert Lahiffe]] (FF) holds the seat vacated by the death of [[Frank Fahy]] (FF)\n",
+    "outgoing": "Frank_Fahy"
+  },
+  {
+    "const": "Cork_Borough_(D\u00e1il_\u00c9ireann_constituency)",
+    "date": "1954-03-03",
+    "gain_party": "Fine_Gael",
+    "house": "/house/dail/14",
+    "incoming": "Stephen_Barrett_(Irish_politician)",
+    "loss_party": "Fine_Gael",
+    "note": " [[Stephen Barrett (Irish politician)|Stephen Barrett]] (FG) holds the seat vacated by the death of [[Thomas F. O'Higgins]] (FG)\n",
+    "outgoing": "Thomas_F._O'Higgins"
+  },
+  {
+    "const": "Louth_(D\u00e1il_\u00c9ireann_constituency)",
+    "date": "1954-03-03",
+    "gain_party": "Fine_Gael",
+    "house": "/house/dail/14",
+    "incoming": "George_Coburn",
+    "loss_party": "Fine_Gael",
+    "note": " [[George Coburn]] (FG) holds the seat vacated by the death of his father [[James Coburn (Irish politician)|James Coburn]] (FG)\n",
+    "outgoing": "James_Coburn_(Irish_politician)"
+  },
+  {
+    "const": "Limerick_West_(D\u00e1il_\u00c9ireann_constituency)",
+    "date": "1955-12-13",
+    "gain_party": "Fianna_F\u00e1il",
+    "house": "/house/dail/15",
+    "incoming": "Michael_Colbert",
+    "loss_party": "Fianna_F\u00e1il",
+    "note": " [[Michael Colbert]] (FF) wins the seat vacated by the death of [[David Madden (politician)|David Madden]] (FG)\n",
+    "outgoing": "David_Madden_(politician)"
+  },
+  {
+    "const": "Kerry_North_(D\u00e1il_\u00c9ireann_constituency)",
+    "date": "1956-02-29",
+    "gain_party": "Clann_na_Poblachta",
+    "house": "/house/dail/15",
+    "incoming": "Kathleen_O'Connor",
+    "loss_party": "Clann_na_Poblachta",
+    "note": " [[Kathleen O'Connor]] (CnaP) holds the seat vacated by the death of her father [[Johnny Connor]] (CnaP)\n",
+    "outgoing": "Johnny_Connor"
+  },
+  {
+    "const": "Dublin_North\u2013East_(D\u00e1il_\u00c9ireann_constituency)",
+    "date": "1956-04-30",
+    "gain_party": "Independent_(politician)",
+    "house": "/house/dail/15",
+    "incoming": "Patrick_Byrne_(Irish_politician)",
+    "loss_party": "Independent_(politician)",
+    "note": " [[Patrick Byrne (Irish politician)|Patrick Byrne]] (Ind) holds the seat vacated by the death of his father [[Alfred Byrne]] (Ind)\n",
+    "outgoing": "Alfred_Byrne"
+  },
+  {
+    "const": "Laois\u2013Offaly_(D\u00e1il_\u00c9ireann_constituency)",
+    "date": "1956-04-30",
+    "gain_party": "Fianna_F\u00e1il",
+    "house": "/house/dail/15",
+    "incoming": "Kieran_Egan_(politician)",
+    "loss_party": "Fianna_F\u00e1il",
+    "note": " [[Kieran Egan (politician)|Kieran Egan]] (FF) wins the seat vacated by the death of [[William Davin]] (Lab)\n",
+    "outgoing": "William_Davin"
+  },
+  {
+    "const": "Cork_Borough_(D\u00e1il_\u00c9ireann_constituency)",
+    "date": "1956-08-02",
+    "gain_party": "Fianna_F\u00e1il",
+    "house": "/house/dail/15",
+    "incoming": "John_Galvin_(Irish_politician)",
+    "loss_party": "Fianna_F\u00e1il",
+    "note": " [[John Galvin (Irish politician)|John Galvin]] (FF) holds the seat vacated by the death of  [[Patrick McGrath (Irish politician)|Patrick McGrath]] (FF)\n",
+    "outgoing": "Patrick_McGrath_(Irish_politician)"
+  },
+  {
+    "const": "Carlow\u2013Kilkenny_(D\u00e1il_\u00c9ireann_constituency)",
+    "date": "1956-11-14",
+    "gain_party": "Fianna_F\u00e1il",
+    "house": "/house/dail/15",
+    "incoming": "Martin_Medlar",
+    "loss_party": "Fianna_F\u00e1il",
+    "note": " [[Martin Medlar]] (FF) holds the seat vacated by the death of [[Thomas Walsh (Irish politician)|Thomas Walsh]] (FF)\n",
+    "outgoing": "Thomas_Walsh_(Irish_politician)"
+  },
+  {
+    "const": "Dublin_South\u2013West_(D\u00e1il_\u00c9ireann_constituency)",
+    "date": "1956-11-14",
+    "gain_party": "Fianna_F\u00e1il",
+    "house": "/house/dail/15",
+    "incoming": "Noel_Lemass,_Jnr",
+    "loss_party": "Fianna_F\u00e1il",
+    "note": " [[Noel Lemass, Jnr]] (FF) wins the seat vacated by the death of [[Peadar Doyle]] (FG)\n",
+    "outgoing": "Peadar_Doyle"
+  },
+  {
+    "const": "Dublin_North\u2013Central_(D\u00e1il_\u00c9ireann_constituency)",
+    "date": "1957-11-14",
+    "gain_party": "Independent_(politician)",
+    "house": "/house/dail/16",
+    "incoming": "Frank_Sherwin",
+    "loss_party": "Independent_(politician)",
+    "note": " [[Frank Sherwin]] (Ind) wins the seat vacated by the death of  [[Colm Gallagher]] (FF)\n",
+    "outgoing": "Colm_Gallagher"
+  },
+  {
+    "change_party": "No\u00ebl_Browne",
+    "const": "Dublin_South\u2013East_(D\u00e1il_\u00c9ireann_constituency)",
+    "date": "1958-05-16",
+    "gain_party": "National_Progressive_Democrats",
+    "house": "/house/dail/16",
+    "loss_party": "National_Progressive_Democrats",
+    "note": " [[No\u00ebl Browne]] (Ind) co-founds the National Progressive Democrats\n"
+  },
+  {
+    "change_party": "Jack_McQuillan",
+    "const": "Roscommon_(D\u00e1il_\u00c9ireann_constituency)",
+    "date": "1958-05-16",
+    "gain_party": "National_Progressive_Democrats",
+    "house": "/house/dail/16",
+    "loss_party": "National_Progressive_Democrats",
+    "note": " [[Jack McQuillan]] (Ind) co-founds the National Progressive Democrats\n"
+  },
+  {
+    "const": "Galway_South_(D\u00e1il_\u00c9ireann_constituency)",
+    "date": "1958-05-30",
+    "gain_party": "Fianna_F\u00e1il",
+    "house": "/house/dail/16",
+    "incoming": "Anthony_Millar",
+    "loss_party": "Fianna_F\u00e1il",
+    "note": " [[Anthony Millar]] (FF) holds the seat vacated by the death of [[Patrick Beegan]] (FF)\n",
+    "outgoing": "Patrick_Beegan"
+  },
+  {
+    "const": "Dublin_South\u2013Central_(D\u00e1il_\u00c9ireann_constituency)",
+    "date": "1958-06-25",
+    "gain_party": "Fianna_F\u00e1il",
+    "house": "/house/dail/16",
+    "incoming": "Patrick_Cummins_(politician)",
+    "loss_party": "Fianna_F\u00e1il",
+    "note": " [[Patrick Cummins (politician)|Patrick Cummins]] (FF) wins the seat vacated by the resignation of  [[Jack Murphy (Irish politician)|Jack Murphy]] (Ind)\n",
+    "outgoing": "Jack_Murphy_(Irish_politician)"
+  },
+  {
+    "const": "Clare_(D\u00e1il_\u00c9ireann_constituency)",
+    "date": "1959-07-22",
+    "gain_party": "Fianna_F\u00e1il",
+    "house": "/house/dail/16",
+    "incoming": "Se\u00e1n_\u00d3_Ceallaigh_(Clare_politician)",
+    "loss_party": "Fianna_F\u00e1il",
+    "note": " [[Se\u00e1n \u00d3 Ceallaigh (Clare politician)|Se\u00e1n \u00d3 Ceallaigh]] (FF) holds the seat vacated by [[\u00c9amon de Valera]] (FF) on his election as [[President of Ireland|President]]\n",
+    "outgoing": "\u00c9amon_de_Valera"
+  },
+  {
+    "const": "Dublin_South\u2013West_(D\u00e1il_\u00c9ireann_constituency)",
+    "date": "1959-07-22",
+    "gain_party": "Fine_Gael",
+    "house": "/house/dail/16",
+    "incoming": "Richie_Ryan_(politician)",
+    "loss_party": "Fine_Gael",
+    "note": " [[Richie Ryan (politician)|Richie Ryan]] (FG) wins the seat vacated by the death of [[Bernard Butler (politician)|Bernard Butler]] (FF)\n",
+    "outgoing": "Bernard_Butler_(politician)"
+  },
+  {
+    "const": "Meath_(D\u00e1il_\u00c9ireann_constituency)",
+    "date": "1959-07-22",
+    "gain_party": "Fianna_F\u00e1il",
+    "house": "/house/dail/16",
+    "incoming": "Henry_Johnston_(Irish_politician)",
+    "loss_party": "Fianna_F\u00e1il",
+    "note": " [[Henry Johnston (Irish politician)|Henry Johnston]] (FF) holds the seat vacated by the death of [[James Griffin (Irish politician)|James Griffin]] (FF)\n",
+    "outgoing": "James_Griffin_(Irish_politician)"
+  },
+  {
+    "const": "Carlow\u2013Kilkenny_(D\u00e1il_\u00c9ireann_constituency)",
+    "date": "1960-06-23",
+    "gain_party": "Fianna_F\u00e1il",
+    "house": "/house/dail/16",
+    "incoming": "Patrick_Teehan",
+    "loss_party": "Fianna_F\u00e1il",
+    "note": " [[Patrick Teehan]] (FF) wins the seat vacated by the death of [[Joseph Hughes (politician)|Joseph Hughes]] (FG)\n",
+    "outgoing": "Joseph_Hughes_(politician)"
+  },
+  {
+    "const": "Sligo\u2013Leitrim_(D\u00e1il_\u00c9ireann_constituency)",
+    "date": "1960-03-01",
+    "gain_party": "Fine_Gael",
+    "house": "/house/dail/16",
+    "incoming": "Joseph_McLoughlin",
+    "loss_party": "Fine_Gael",
+    "note": " [[Joseph McLoughlin]] (FG) wins the seat vacated by the death of  [[Stephen Flynn]] (FF)\n",
+    "outgoing": "Stephen_Flynn"
+  },
+  {
+    "const": "Dublin_North\u2013East_(D\u00e1il_\u00c9ireann_constituency)",
+    "date": "1963-05-30",
+    "gain_party": "Fine_Gael",
+    "house": "/house/dail/17",
+    "incoming": "Paddy_Belton",
+    "loss_party": "Fine_Gael",
+    "note": " [[Paddy Belton]] (FG) holds the seat vacated by the death of his brother [[Jack Belton]] (FG)\n",
+    "outgoing": "Jack_Belton"
+  },
+  {
+    "change_party": "No\u00ebl_Browne",
+    "const": "Dublin_South\u2013East_(D\u00e1il_\u00c9ireann_constituency)",
+    "date": "1963-10-27",
+    "gain_party": "Labour_Party_(Ireland)",
+    "house": "/house/dail/17",
+    "loss_party": "Labour_Party_(Ireland)",
+    "note": " [[No\u00ebl Browne]] (NPD) disbands the National Progressive Democrats and joins the Labour Party\n"
+  },
+  {
+    "change_party": "Jack_McQuillan",
+    "const": "Roscommon_(D\u00e1il_\u00c9ireann_constituency)",
+    "date": "1963-10-27",
+    "gain_party": "Labour_Party_(Ireland)",
+    "house": "/house/dail/17",
+    "loss_party": "Labour_Party_(Ireland)",
+    "note": " [[Jack McQuillan]] (NPD) disbands the National Progressive Democrats and joins the Labour Party\n"
+  },
+  {
+    "change_party": "Se\u00e1n_Dunne_(politician)",
+    "const": "Dublin_County_(D\u00e1il_\u00c9ireann_constituency)",
+    "date": "1963-10-27",
+    "gain_party": "Labour_Party_(Ireland)",
+    "house": "/house/dail/17",
+    "loss_party": "Labour_Party_(Ireland)",
+    "note": " [[Se\u00e1n Dunne (politician)|Se\u00e1n Dunne]] (Ind) joins the Labour Party\n"
+  },
+  {
+    "const": "Cork_Borough_(D\u00e1il_\u00c9ireann_constituency)",
+    "date": "1964-02-19",
+    "gain_party": "Fianna_F\u00e1il",
+    "house": "/house/dail/17",
+    "incoming": "Sheila_Galvin",
+    "loss_party": "Fianna_F\u00e1il",
+    "note": " [[Sheila Galvin]] (FF) wins the seat vacated by the death of her husband [[John Galvin (Irish politician)|John Galvin]] (FF)\n",
+    "outgoing": "John_Galvin_(Irish_politician)"
+  },
+  {
+    "const": "Kildare_(D\u00e1il_\u00c9ireann_constituency)",
+    "date": "1964-02-19",
+    "gain_party": "Fianna_F\u00e1il",
+    "house": "/house/dail/17",
+    "incoming": "Terence_Boylan_(Irish_politician)",
+    "loss_party": "Fianna_F\u00e1il",
+    "note": " [[Terence Boylan (Irish politician)|Terence Boylan]] (FF) wins the seat vacated by the death of  [[William Norton]] (Lab)\n",
+    "outgoing": "William_Norton"
+  },
+  {
+    "const": "Roscommon_(D\u00e1il_\u00c9ireann_constituency)",
+    "date": "1964-07-08",
+    "gain_party": "Fine_Gael",
+    "house": "/house/dail/17",
+    "incoming": "Joan_Burke",
+    "loss_party": "Fine_Gael",
+    "note": " [[Joan Burke]] (FG) holds the seat vacated by the death of her husband [[James Burke (Roscommon politician)|James Burke]] (FG)\n",
+    "outgoing": "James_Burke_(Roscommon_politician)"
+  },
+  {
+    "const": "Galway_East_(D\u00e1il_\u00c9ireann_constituency)",
+    "date": "1964-12-03",
+    "gain_party": "Fine_Gael",
+    "house": "/house/dail/17",
+    "incoming": "John_Donnellan",
+    "loss_party": "Fine_Gael",
+    "note": " [[John Donnellan]] (FG) wins the seat vacated by the death of his father [[Michael Donnellan (politician)|Michael Donnellan]] (CnaT)\n",
+    "outgoing": "Michael_Donnellan_(politician)"
+  },
+  {
+    "const": "Cork_Mid_(D\u00e1il_\u00c9ireann_constituency)",
+    "date": "1965-03-10",
+    "gain_party": "Labour_Party_(Ireland)",
+    "house": "/house/dail/17",
+    "incoming": "Eileen_Desmond",
+    "loss_party": "Labour_Party_(Ireland)",
+    "note": " [[Eileen Desmond]] (Lab) holds the seat vacated by the death of her husband [[Dan Desmond]] (Lab)\n",
+    "outgoing": "Dan_Desmond"
+  },
+  {
+    "const": "Kerry_South_(D\u00e1il_\u00c9ireann_constituency)",
+    "date": "1966-12-07",
+    "gain_party": "Fianna_F\u00e1il",
+    "house": "/house/dail/18",
+    "incoming": "John_O'Leary_(Kerry_politician)",
+    "loss_party": "Fianna_F\u00e1il",
+    "note": " [[John O'Leary (Kerry politician)|John O'Leary]] (FF) holds the seat vacated by the death of [[Honor Crowley]] (FF)\n",
+    "outgoing": "Honor_Crowley"
+  },
+  {
+    "const": "Waterford_(D\u00e1il_\u00c9ireann_constituency)",
+    "date": "1966-12-07",
+    "gain_party": "Fianna_F\u00e1il",
+    "house": "/house/dail/18",
+    "incoming": "Fad_Browne",
+    "loss_party": "Fianna_F\u00e1il",
+    "note": " [[Fad Browne]] (FF) wins the seat vacated by the death of [[Thaddeus Lynch]] (FG)\n",
+    "outgoing": "Thaddeus_Lynch"
+  },
+  {
+    "const": "Cork_Borough_(D\u00e1il_\u00c9ireann_constituency)",
+    "date": "1967-11-09",
+    "gain_party": "Fianna_F\u00e1il",
+    "house": "/house/dail/18",
+    "incoming": "Se\u00e1n_French_(1931\u20132011)",
+    "loss_party": "Fianna_F\u00e1il",
+    "note": " [[Se\u00e1n French (1931\u20132011)|Se\u00e1n French]] (FF) wins the seat vacated by the death of [[Se\u00e1n Casey]] (Lab)\n",
+    "outgoing": "Se\u00e1n_Casey"
+  },
+  {
+    "const": "Limerick_West_(D\u00e1il_\u00c9ireann_constituency)",
+    "date": "1967-11-09",
+    "gain_party": "Fianna_F\u00e1il",
+    "house": "/house/dail/18",
+    "incoming": "Gerry_Collins_(politician)",
+    "loss_party": "Fianna_F\u00e1il",
+    "note": " [[Gerry Collins (politician)|Gerry Collins]] (FF) holds the seat vacated by the death of his father [[James Collins (Irish politician)|James Collins]] (FF)\n",
+    "outgoing": "James_Collins_(Irish_politician)"
+  },
+  {
+    "const": "Clare_(D\u00e1il_\u00c9ireann_constituency)",
+    "date": "1968-03-14",
+    "gain_party": "Fianna_F\u00e1il",
+    "house": "/house/dail/18",
+    "incoming": "Sylvester_Barrett",
+    "loss_party": "Fianna_F\u00e1il",
+    "note": " [[Sylvester Barrett]] (FF) wins the seat vacated by the death of [[William Murphy (Irish politician)|William Murphy]] (FG)\n",
+    "outgoing": "William_Murphy_(Irish_politician)"
+  },
+  {
+    "const": "Wicklow_(D\u00e1il_\u00c9ireann_constituency)",
+    "date": "1968-03-14",
+    "gain_party": "Fine_Gael",
+    "house": "/house/dail/18",
+    "incoming": "Godfrey_Timmins",
+    "loss_party": "Fine_Gael",
+    "note": " [[Godfrey Timmins]] (FG) wins the seat vacated by the death of [[James Everett]] (Lab)\n",
+    "outgoing": "James_Everett"
+  },
+  {
+    "const": "Limerick_East_(D\u00e1il_\u00c9ireann_constituency)",
+    "date": "1968-05-22",
+    "gain_party": "Fianna_F\u00e1il",
+    "house": "/house/dail/18",
+    "incoming": "Desmond_O'Malley",
+    "loss_party": "Fianna_F\u00e1il",
+    "note": " [[Desmond O'Malley]] (FF) holds the seat vacated by the death of his uncle [[Donogh O'Malley]] (FF)\n",
+    "outgoing": "Donogh_O'Malley"
+  },
+  {
+    "const": "Dublin_South\u2013West_(D\u00e1il_\u00c9ireann_constituency)",
+    "date": "1970-03-04",
+    "gain_party": "Fianna_F\u00e1il",
+    "house": "/house/dail/19",
+    "incoming": "Se\u00e1n_Sherwin",
+    "loss_party": "Fianna_F\u00e1il",
+    "note": " [[Se\u00e1n Sherwin]] (FF) wins the seat vacated by the death of  [[Se\u00e1n Dunne (politician)|Se\u00e1n Dunne]] (Lab)\n",
+    "outgoing": "Se\u00e1n_Dunne_(politician)"
+  },
+  {
+    "const": "Kildare_(D\u00e1il_\u00c9ireann_constituency)",
+    "date": "1970-04-14",
+    "gain_party": "Fine_Gael",
+    "house": "/house/dail/19",
+    "incoming": "Patrick_Malone_(Irish_politician)",
+    "loss_party": "Fine_Gael",
+    "note": " [[Patrick Malone (Irish politician)|Patrick Malone]] (FG) holds the seat vacated by the death of [[Gerard Sweetman]] (FG)\n",
+    "outgoing": "Gerard_Sweetman"
+  },
+  {
+    "const": "Longford\u2013Westmeath_(D\u00e1il_\u00c9ireann_constituency)",
+    "date": "1970-04-14",
+    "gain_party": "Fine_Gael",
+    "house": "/house/dail/19",
+    "incoming": "Patrick_Cooney",
+    "loss_party": "Fine_Gael",
+    "note": " [[Patrick Cooney]] (FG) wins the seat vacated by the death of  [[Patrick Lenihan]] (FF)\n",
+    "outgoing": "Patrick_Lenihan"
+  },
+  {
+    "const": "Donegal\u2013Leitrim_(D\u00e1il_\u00c9ireann_constituency)",
+    "date": "1970-12-02",
+    "gain_party": "Fianna_F\u00e1il",
+    "house": "/house/dail/19",
+    "incoming": "Patrick_Delap",
+    "loss_party": "Fianna_F\u00e1il",
+    "note": " [[Patrick Delap]] (FF) wins the seat vacated by the death of [[Patrick O'Donnell (politician)|Patrick O'Donnell]] (FG)\n",
+    "outgoing": "Patrick_O'Donnell_(politician)"
+  },
+  {
+    "const": "Dublin_County_South_(D\u00e1il_\u00c9ireann_constituency)",
+    "date": "1970-12-02",
+    "gain_party": "Fine_Gael",
+    "house": "/house/dail/19",
+    "incoming": "Larry_McMahon",
+    "loss_party": "Fine_Gael",
+    "note": " [[Larry McMahon]] (FG) wins the seat vacated by the resignation of [[Kevin Boland]] (FF)\n",
+    "outgoing": "Kevin_Boland"
+  },
+  {
+    "const": "Cork_Mid_(D\u00e1il_\u00c9ireann_constituency)",
+    "date": "1970-08-02",
+    "gain_party": "Fianna_F\u00e1il",
+    "house": "/house/dail/19",
+    "incoming": "Gene_Fitzgerald",
+    "loss_party": "Fianna_F\u00e1il",
+    "note": " [[Gene Fitzgerald]] (FF) holds the seat vacated by the death of [[Paddy Forde]] (FF)\n",
+    "outgoing": "Paddy_Forde"
+  },
+  {
+    "change_party": "Se\u00e1n_Sherwin",
+    "const": "Dublin_South\u2013West_(D\u00e1il_\u00c9ireann_constituency)",
+    "date": "1971-09-19",
+    "gain_party": "Aontacht_\u00c9ireann",
+    "house": "/house/dail/19",
+    "loss_party": "Aontacht_\u00c9ireann",
+    "note": " [[Se\u00e1n Sherwin]] switches party"
+  },
+  {
+    "change_party": "Neil_Blaney",
+    "const": "Donegal_North\u2013East_(D\u00e1il_\u00c9ireann_constituency)",
+    "date": "1972-06-26",
+    "gain_party": "Independent_Fianna_F\u00e1il",
+    "house": "/house/dail/19",
+    "loss_party": "Independent_Fianna_F\u00e1il",
+    "note": " [[Neil Blaney]] expelled"
+  },
+  {
+    "const": "Monaghan_(D\u00e1il_\u00c9ireann_constituency)",
+    "date": "1973-11-27",
+    "gain_party": "Fine_Gael",
+    "house": "/house/dail/20",
+    "incoming": "Brendan_Toal",
+    "loss_party": "Fine_Gael",
+    "note": " [[Brendan Toal]] (FG) wins the seat vacated by [[Erskine Hamilton Childers|Erskine H.Childers]] (FF) on his election to the [[President of Ireland|Presidency]]\n",
+    "outgoing": "Erskine_Hamilton_Childers"
+  },
+  {
+    "const": "Cork_North\u2013East_(D\u00e1il_\u00c9ireann_constituency)",
+    "date": "1974-11-13",
+    "gain_party": "Fianna_F\u00e1il",
+    "house": "/house/dail/20",
+    "incoming": "Se\u00e1n_Brosnan",
+    "loss_party": "Fianna_F\u00e1il",
+    "note": " [[Se\u00e1n Brosnan]] (FF) holds the seat vacated by the death of [[Liam Ahern]] (FF)\n",
+    "outgoing": "Liam_Ahern"
+  },
+  {
+    "const": "Galway_North\u2013East_(D\u00e1il_\u00c9ireann_constituency)",
+    "date": "1975-03-04",
+    "gain_party": "Fianna_F\u00e1il",
+    "house": "/house/dail/20",
+    "incoming": "Michael_P._Kitt",
+    "loss_party": "Fianna_F\u00e1il",
+    "note": " [[Michael P. Kitt]] (FF) holds the seat vacated by the death of his father [[Michael F. Kitt]] (FF)\n",
+    "outgoing": "Michael_F._Kitt"
+  },
+  {
+    "const": "Galway_West_(D\u00e1il_\u00c9ireann_constituency)",
+    "date": "1975-03-04",
+    "gain_party": "Fianna_F\u00e1il",
+    "house": "/house/dail/20",
+    "incoming": "M\u00e1ire_Geoghegan-Quinn",
+    "loss_party": "Fianna_F\u00e1il",
+    "note": " [[M\u00e1ire Geoghegan-Quinn]] (FF) holds the seat vacated by the death of her father [[Johnny Geoghegan]] (FF)\n",
+    "outgoing": "Johnny_Geoghegan"
+  },
+  {
+    "const": "Mayo_West_(D\u00e1il_\u00c9ireann_constituency)",
+    "date": "1975-11-12",
+    "gain_party": "Fine_Gael",
+    "house": "/house/dail/20",
+    "incoming": "Enda_Kenny",
+    "loss_party": "Fine_Gael",
+    "note": " [[Enda Kenny]] (FG) holds the seat vacated by the death of his father [[Henry Kenny]] (FG)\n",
+    "outgoing": "Henry_Kenny"
+  },
+  {
+    "const": "Donegal_North\u2013East_(D\u00e1il_\u00c9ireann_constituency)",
+    "date": "1976-06-10",
+    "gain_party": "Independent_Fianna_F\u00e1il",
+    "house": "/house/dail/20",
+    "incoming": "Paddy_Keaveney",
+    "loss_party": "Independent_Fianna_F\u00e1il",
+    "note": " [[Paddy Keaveney]] (IFF) takes the seat vacated by the death of [[Liam Cunningham (politician)|Liam Cunningham]] (FF)\n",
+    "outgoing": "Liam_Cunningham_(politician)"
+  },
+  {
+    "const": "Dublin_South\u2013West_(D\u00e1il_\u00c9ireann_constituency)",
+    "date": "1976-06-10",
+    "gain_party": "Labour_Party_(Ireland)",
+    "house": "/house/dail/20",
+    "incoming": "Brendan_Halligan",
+    "loss_party": "Labour_Party_(Ireland)",
+    "note": " [[Brendan Halligan]] (Lab) takes the seat vacated by the death of [[Noel Lemass, Jnr]] (FF)\n",
+    "outgoing": "Noel_Lemass,_Jnr"
+  },
+  {
+    "const": "Cork_City_(D\u00e1il_\u00c9ireann_constituency)",
+    "date": "1979-11-07",
+    "gain_party": "Fine_Gael",
+    "house": "/house/dail/21",
+    "incoming": "Liam_Burke",
+    "loss_party": "Fine_Gael",
+    "note": " [[Liam Burke]] (FG) wins the seat vacated by the death of [[Patrick Kerrigan]] (Lab)\n",
+    "outgoing": "Patrick_Kerrigan"
+  },
+  {
+    "const": "Cork_North\u2013East_(D\u00e1il_\u00c9ireann_constituency)",
+    "date": "1979-11-07",
+    "gain_party": "Fine_Gael",
+    "house": "/house/dail/21",
+    "incoming": "Myra_Barry",
+    "loss_party": "Fine_Gael",
+    "note": " [[Myra Barry]] (FG) wins the seat vacated by the death of [[Se\u00e1n Brosnan]] (FF)\n",
+    "outgoing": "Se\u00e1n_Brosnan"
+  },
+  {
+    "const": "Donegal_(D\u00e1il_\u00c9ireann_constituency)",
+    "date": "1980-11-06",
+    "gain_party": "Fianna_F\u00e1il",
+    "house": "/house/dail/21",
+    "incoming": "Clement_Coughlan",
+    "loss_party": "Fianna_F\u00e1il",
+    "note": " [[Clement Coughlan]] (FF) holds the seat vacated by the death of  [[Joseph Brennan (Irish politician)|Joseph Brennan]] (FF)\n",
+    "outgoing": "Joseph_Brennan_(Irish_politician)"
+  },
+  {
+    "const": "Dublin_West_(D\u00e1il_\u00c9ireann_constituency)",
+    "date": "1982-05-25",
+    "gain_party": "Fine_Gael",
+    "house": "/house/dail/23",
+    "incoming": "Liam_Skelly",
+    "loss_party": "Fine_Gael",
+    "note": " [[Liam Skelly]] (FG) holds the seat vacated by the resignation of [[Richard Burke (politician)|Richard Burke]] (FG)\n",
+    "outgoing": "Richard_Burke_(politician)"
+  },
+  {
+    "const": "Galway_East_(D\u00e1il_\u00c9ireann_constituency)",
+    "date": "1982-07-20",
+    "gain_party": "Fianna_F\u00e1il",
+    "house": "/house/dail/23",
+    "incoming": "Noel_Treacy",
+    "loss_party": "Fianna_F\u00e1il",
+    "note": " [[Noel Treacy]] (FF) holds the seat vacated by the death of [[Johnny Callanan]] (FF)\n",
+    "outgoing": "Johnny_Callanan"
+  },
+  {
+    "const": "Donegal_South\u2013West_(D\u00e1il_\u00c9ireann_constituency)",
+    "date": "1983-05-13",
+    "gain_party": "Fianna_F\u00e1il",
+    "house": "/house/dail/24",
+    "incoming": "Cathal_Coughlan_(politician)",
+    "loss_party": "Fianna_F\u00e1il",
+    "note": " [[Cathal Coughlan (politician)|Cathal Coughlan]] (FF) holds the seat vacated by the death of his brother [[Clement Coughlan]] (FF)\n",
+    "outgoing": "Clement_Coughlan"
+  },
+  {
+    "const": "Dublin_Central_(D\u00e1il_\u00c9ireann_constituency)",
+    "date": "1983-11-23",
+    "gain_party": "Fianna_F\u00e1il",
+    "house": "/house/dail/24",
+    "incoming": "Tom_Leonard_(Irish_politician)",
+    "loss_party": "Fianna_F\u00e1il",
+    "note": " [[Tom Leonard (Irish politician)|Tom Leonard]] (FF) holds the seat vacated by the death of [[George Colley]] (FF)\n",
+    "outgoing": "George_Colley"
+  },
+  {
+    "const": "Laois\u2013Offaly_(D\u00e1il_\u00c9ireann_constituency)",
+    "date": "1984-06-14",
+    "gain_party": "Fianna_F\u00e1il",
+    "house": "/house/dail/24",
+    "incoming": "Brian_Cowen",
+    "loss_party": "Fianna_F\u00e1il",
+    "note": " [[Brian Cowen]] (FF) holds the seat vacated by the death of his father [[Bernard Cowen]] (FF)\n",
+    "outgoing": "Bernard_Cowen"
+  },
+  {
+    "change_party": "Desmond_O'Malley",
+    "const": "Limerick_East_(D\u00e1il_\u00c9ireann_constituency)",
+    "date": "1985-12-21",
+    "gain_party": "Progressive_Democrats",
+    "house": "/house/dail/24",
+    "loss_party": "Progressive_Democrats",
+    "note": " [[Desmond O'Malley]] (FF) leaves Fianna F\u00e1il and founds the Progressive Democrats\n"
+  },
+  {
+    "change_party": "Mary_Harney",
+    "const": "Dublin_South\u2013West_(D\u00e1il_\u00c9ireann_constituency)",
+    "date": "1985-12-21",
+    "gain_party": "Progressive_Democrats",
+    "house": "/house/dail/24",
+    "loss_party": "Progressive_Democrats",
+    "note": " [[Mary Harney]] (FF) leaves Fianna F\u00e1il and joins the Progressive Democrats\n"
+  },
+  {
+    "change_party": "Bobby_Molloy",
+    "const": "Galway_West_(D\u00e1il_\u00c9ireann_constituency)",
+    "date": "1985-12-06",
+    "gain_party": "Progressive_Democrats",
+    "house": "/house/dail/24",
+    "loss_party": "Progressive_Democrats",
+    "note": " [[Bobby Molloy]] (FF) leaves Fianna F\u00e1il and joins the Progressive Democrats\n"
+  },
+  {
+    "change_party": "Pearse_Wyse",
+    "const": "Cork_South\u2013Central_(D\u00e1il_\u00c9ireann_constituency)",
+    "date": "1985-12-06",
+    "gain_party": "Progressive_Democrats",
+    "house": "/house/dail/24",
+    "loss_party": "Progressive_Democrats",
+    "note": " [[Pearse Wyse]] (FF) leaves Fianna F\u00e1il and joins the Progressive Democrats\n"
+  },
+  {
+    "change_party": "Michael_Keating_(Irish_politician)",
+    "const": "Dublin_Central_(D\u00e1il_\u00c9ireann_constituency)",
+    "date": "1985-12-06",
+    "gain_party": "Progressive_Democrats",
+    "house": "/house/dail/24",
+    "loss_party": "Progressive_Democrats",
+    "note": " [[Michael Keating (Irish politician)|Michael Keating]] (FG) leaves Fine Gael and joins the Progressive Democrats\n"
+  },
+  {
+    "const": "Dublin_South\u2013Central_(D\u00e1il_\u00c9ireann_constituency)",
+    "date": "1994-06-09",
+    "gain_party": "Democratic_Left_(Ireland)",
+    "house": "/house/dail/27",
+    "incoming": "Eric_Byrne",
+    "loss_party": "Democratic_Left_(Ireland)",
+    "note": " [[Eric Byrne]] (DL) takes the seat vacated by the resignation of [[John O'Connell (Dublin politician)|John O'Connell]] (FF)\n",
+    "outgoing": "John_O'Connell_(Dublin_politician)"
+  },
+  {
+    "const": "Mayo_West_(D\u00e1il_\u00c9ireann_constituency)",
+    "date": "1994-06-09",
+    "gain_party": "Fine_Gael",
+    "house": "/house/dail/27",
+    "incoming": "Michael_Ring",
+    "loss_party": "Fine_Gael",
+    "note": " [[Michael Ring]] (FG) takes the seat vacated by the resignation of [[P\u00e1draig Flynn]] (FF)\n",
+    "outgoing": "P\u00e1draig_Flynn"
+  },
+  {
+    "const": "Cork_North\u2013Central_(D\u00e1il_\u00c9ireann_constituency)",
+    "date": "1994-11-10",
+    "gain_party": "Democratic_Left_(Ireland)",
+    "house": "/house/dail/27",
+    "incoming": "Kathleen_Lynch_(politician)",
+    "loss_party": "Democratic_Left_(Ireland)",
+    "note": " [[Kathleen Lynch (politician)|Kathleen Lynch]] (DL) takes the seat vacated by the death of [[Gerry O'Sullivan]] (Lab)\n",
+    "outgoing": "Gerry_O'Sullivan"
+  },
+  {
+    "const": "Cork_South\u2013Central_(D\u00e1il_\u00c9ireann_constituency)",
+    "date": "1994-11-10",
+    "gain_party": "Fine_Gael",
+    "house": "/house/dail/27",
+    "incoming": "Hugh_Coveney",
+    "loss_party": "Fine_Gael",
+    "note": " [[Hugh Coveney]] (FG) takes the seat vacated by the resignation of [[Pat Cox]] (PD)\n",
+    "outgoing": "Pat_Cox"
+  },
+  {
+    "const": "Wicklow_(D\u00e1il_\u00c9ireann_constituency)",
+    "date": "1995-06-29",
+    "gain_party": "Independent_(politician)",
+    "house": "/house/dail/27",
+    "incoming": "Mildred_Fox",
+    "loss_party": "Independent_(politician)",
+    "note": " [[Mildred Fox]] (Ind) holds the seat vacated by the death of her father [[Johnny Fox]] (Ind)\n",
+    "outgoing": "Johnny_Fox"
+  },
+  {
+    "const": "Donegal_North\u2013East_(D\u00e1il_\u00c9ireann_constituency)",
+    "date": "1996-04-02",
+    "gain_party": "Fianna_F\u00e1il",
+    "house": "/house/dail/27",
+    "incoming": "Cecilia_Keaveney",
+    "loss_party": "Fianna_F\u00e1il",
+    "note": " [[Cecilia Keaveney]] (FF) takes the seat vacated by the death of [[Neil Blaney]] (Ind FF)\n",
+    "outgoing": "Neil_Blaney"
+  },
+  {
+    "const": "Dublin_West_(D\u00e1il_\u00c9ireann_constituency)",
+    "date": "1996-04-02",
+    "gain_party": "Fianna_F\u00e1il",
+    "house": "/house/dail/27",
+    "incoming": "Brian_Lenihan,_Jnr",
+    "loss_party": "Fianna_F\u00e1il",
+    "note": " [[Brian Lenihan, Jnr]] (FF) holds the seat vacated by the death of his father [[Brian Lenihan, Snr]] (FF)\n",
+    "outgoing": "Brian_Lenihan,_Snr"
+  },
+  {
+    "Ceann_Comhairle": {
+      "event": "elected",
+      "wikiTitle": "S\u00e9amus_Pattison"
+    },
+    "const": "Carlow\u2013Kilkenny_(D\u00e1il_\u00c9ireann_constituency)",
+    "date": "1997-06-26",
+    "gain_party": "Ceann_Comhairle",
+    "house": "/house/dail/28",
+    "loss_party": "Ceann_Comhairle",
+    "note": " [[S\u00e9amus Pattison]] (Lab) is elected Ceann Comhairle\n"
+  },
+  {
+    "const": "Limerick_East_(D\u00e1il_\u00c9ireann_constituency)",
+    "date": "1997-09-27",
+    "gain_party": "",
+    "house": "/house/dail/28",
+    "loss_party": "",
+    "note": " Death of [[Jim Kemmy]] (Lab)\n",
+    "outgoing": "Jim_Kemmy"
+  },
+  {
+    "const": "Dublin_North_(D\u00e1il_\u00c9ireann_constituency)",
+    "date": "1997-10-20",
+    "gain_party": "",
+    "house": "/house/dail/28",
+    "loss_party": "",
+    "note": " Resignation of [[Ray Burke (Irish politician)|Ray Burke]] (FF) from D\u00e1il \u00c9ireann\n",
+    "outgoing": "Ray_Burke_(Irish_politician)"
+  },
+  {
+    "const": "Limerick_East_(D\u00e1il_\u00c9ireann_constituency)",
+    "date": "1998-03-11",
+    "gain_party": "Labour_Party_(Ireland)",
+    "house": "/house/dail/28",
+    "incoming": "Jan_O'Sullivan",
+    "loss_party": "Labour_Party_(Ireland)",
+    "note": " [[Jan O'Sullivan]] (Lab) holds the seat vacated by the death of Jim Kemmy\n"
+  },
+  {
+    "const": "Dublin_North_(D\u00e1il_\u00c9ireann_constituency)",
+    "date": "1998-03-11",
+    "gain_party": "Labour_Party_(Ireland)",
+    "house": "/house/dail/28",
+    "incoming": "Se\u00e1n_Ryan_(politician)",
+    "loss_party": "Labour_Party_(Ireland)",
+    "note": " [[Se\u00e1n Ryan (politician)|Se\u00e1n Ryan]] (Lab) takes the seat vacated by Ray Burke\n"
+  },
+  {
+    "const": "Cork_South\u2013Central_(D\u00e1il_\u00c9ireann_constituency)",
+    "date": "1998-03-14",
+    "gain_party": "",
+    "house": "/house/dail/28",
+    "loss_party": "",
+    "note": " Death of [[Hugh Coveney]] (FG)\n",
+    "outgoing": "Hugh_Coveney"
+  },
+  {
+    "change_party": "Michael_Bell_(Irish_politician)",
+    "const": "Louth_(D\u00e1il_\u00c9ireann_constituency)",
+    "date": "1998-10-13",
+    "gain_party": "Independent_(politician)",
+    "house": "/house/dail/28",
+    "loss_party": "Independent_(politician)",
+    "note": " [[Michael Bell (Irish politician)|Michael Bell]] (Lab) resigns from the Labour Party\n"
+  },
+  {
+    "const": "Cork_South\u2013Central_(D\u00e1il_\u00c9ireann_constituency)",
+    "date": "1998-10-23",
+    "gain_party": "Fine_Gael",
+    "house": "/house/dail/28",
+    "incoming": "Simon_Coveney",
+    "loss_party": "Fine_Gael",
+    "note": " [[Simon Coveney]] (FG) holds the seat vacated by the death of his father Hugh Coveney\n"
+  },
+  {
+    "change_party": "Michael_Bell_(Irish_politician)",
+    "const": "Louth_(D\u00e1il_\u00c9ireann_constituency)",
+    "date": "1998-11-30",
+    "gain_party": "Labour_Party_(Ireland)",
+    "house": "/house/dail/28",
+    "loss_party": "Labour_Party_(Ireland)",
+    "note": " [[Michael Bell (Irish politician)|Michael Bell]] (Ind) rejoins the Labour Party\n"
+  },
+  {
+    "change_party": "Proinsias_De_Rossa",
+    "const": "Dublin_North\u2013West_(D\u00e1il_\u00c9ireann_constituency)",
+    "date": "1999-01-24",
+    "gain_party": "Labour_Party_(Ireland)",
+    "house": "/house/dail/28",
+    "loss_party": "Labour_Party_(Ireland)",
+    "note": " [[Proinsias De Rossa]] (DL) joins the Labour Party in a merger with DL\n"
+  },
+  {
+    "change_party": "Pat_Rabbitte",
+    "const": "Dublin_South\u2013West_(D\u00e1il_\u00c9ireann_constituency)",
+    "date": "1999-01-24",
+    "gain_party": "Labour_Party_(Ireland)",
+    "house": "/house/dail/28",
+    "loss_party": "Labour_Party_(Ireland)",
+    "note": " [[Pat Rabbitte]] (DL) joins the Labour Party in a merger with DL\n"
+  },
+  {
+    "change_party": "Eamon_Gilmore",
+    "const": "D\u00fan_Laoghaire_(D\u00e1il_\u00c9ireann_constituency)",
+    "date": "1999-01-24",
+    "gain_party": "Labour_Party_(Ireland)",
+    "house": "/house/dail/28",
+    "loss_party": "Labour_Party_(Ireland)",
+    "note": " [[Eamon Gilmore]] (DL) joins the Labour Party in a merger with DL\n"
+  },
+  {
+    "change_party": "Liz_McManus",
+    "const": "Wicklow_(D\u00e1il_\u00c9ireann_constituency)",
+    "date": "1999-01-24",
+    "gain_party": "Labour_Party_(Ireland)",
+    "house": "/house/dail/28",
+    "loss_party": "Labour_Party_(Ireland)",
+    "note": " [[Liz McManus]] (DL) joins the Labour Party in a merger with DL\n"
+  },
+  {
+    "const": "Dublin_South\u2013Central_(D\u00e1il_\u00c9ireann_constituency)",
+    "date": "1999-02-22",
+    "gain_party": "",
+    "house": "/house/dail/28",
+    "loss_party": "",
+    "note": " Death of [[Pat Upton]] (Lab)\n",
+    "outgoing": "Pat_Upton"
+  },
+  {
+    "change_party": "Beverley_Flynn",
+    "const": "Mayo_(D\u00e1il_\u00c9ireann_constituency)",
+    "date": "1999-02-24",
+    "gain_party": "Independent_(politician)",
+    "house": "/house/dail/28",
+    "loss_party": "Independent_(politician)",
+    "note": " [[Beverley Flynn]] (FF) resigns from Fianna F\u00e1il\n"
+  },
+  {
+    "const": "Dublin_South\u2013Central_(D\u00e1il_\u00c9ireann_constituency)",
+    "date": "1999-10-27",
+    "gain_party": "Labour_Party_(Ireland)",
+    "house": "/house/dail/28",
+    "incoming": "Mary_Upton",
+    "loss_party": "Labour_Party_(Ireland)",
+    "note": " [[Mary Upton]] (Lab) holds the seat vacated by the death of her brother Pat Upton\n"
+  },
+  {
+    "change_party": "Beverley_Flynn",
+    "const": "Mayo_(D\u00e1il_\u00c9ireann_constituency)",
+    "date": "1999-11-03",
+    "gain_party": "Fianna_F\u00e1il",
+    "house": "/house/dail/28",
+    "loss_party": "Fianna_F\u00e1il",
+    "note": " [[Beverley Flynn]] (Ind) rejoins Fianna F\u00e1il\n"
+  },
+  {
+    "change_party": "Denis_Foley",
+    "const": "Kerry_North_(D\u00e1il_\u00c9ireann_constituency)",
+    "date": "2000-02-09",
+    "gain_party": "Independent_(politician)",
+    "house": "/house/dail/28",
+    "loss_party": "Independent_(politician)",
+    "note": " [[Denis Foley]] (FF) resigns from Fianna F\u00e1il\n"
+  },
+  {
+    "const": "Tipperary_South_(D\u00e1il_\u00c9ireann_constituency)",
+    "date": "2000-03-21",
+    "gain_party": "",
+    "house": "/house/dail/28",
+    "loss_party": "",
+    "note": " Death of [[Michael Ferris]] (Lab)\n",
+    "outgoing": "Michael_Ferris"
+  },
+  {
+    "change_party": "Liam_Lawlor",
+    "const": "Dublin_West_(D\u00e1il_\u00c9ireann_constituency)",
+    "date": "2000-06-07",
+    "gain_party": "Independent_(politician)",
+    "house": "/house/dail/28",
+    "loss_party": "Independent_(politician)",
+    "note": " [[Liam Lawlor]] (FF) resigns from Fianna F\u00e1il\n"
+  },
+  {
+    "const": "Tipperary_South_(D\u00e1il_\u00c9ireann_constituency)",
+    "date": "2000-06-22",
+    "gain_party": "Independent_(politician)",
+    "house": "/house/dail/28",
+    "incoming": "S\u00e9amus_Healy",
+    "loss_party": "Independent_(politician)",
+    "note": " [[S\u00e9amus Healy]] (Ind) takes the seat vacated by the death of Michael Ferris\n"
+  },
+  {
+    "const": "Tipperary_South_(D\u00e1il_\u00c9ireann_constituency)",
+    "date": "2000-09-20",
+    "gain_party": "",
+    "house": "/house/dail/28",
+    "loss_party": "",
+    "note": " Death of [[Theresa Ahearn]] (FG)\n",
+    "outgoing": "Theresa_Ahearn"
+  },
+  {
+    "change_party": "Beverley_Flynn",
+    "const": "Mayo_(D\u00e1il_\u00c9ireann_constituency)",
+    "date": "2001-04-11",
+    "gain_party": "Independent_(politician)",
+    "house": "/house/dail/28",
+    "loss_party": "Independent_(politician)",
+    "note": " [[Beverley Flynn]] (FF) is expelled from Fianna F\u00e1il\n"
+  },
+  {
+    "const": "Tipperary_South_(D\u00e1il_\u00c9ireann_constituency)",
+    "date": "2001-07-01",
+    "gain_party": "Fine_Gael",
+    "house": "/house/dail/28",
+    "incoming": "Tom_Hayes_(politician)",
+    "loss_party": "Fine_Gael",
+    "note": " [[Tom Hayes (politician)|Tom Hayes]] (FG) holds the seat vacated by the death of Theresa Ahearn\n"
+  },
+  {
+    "Ceann_Comhairle": {
+      "event": "resigned",
+      "wikiTitle": "S\u00e9amus_Pattison"
+    },
+    "const": "Carlow\u2013Kilkenny_(D\u00e1il_\u00c9ireann_constituency)",
+    "date": "2002-06-06",
+    "gain_party": "Labour_Party_(Ireland)",
+    "house": "/house/dail/29",
+    "loss_party": "Labour_Party_(Ireland)",
+    "note": " [[S\u00e9amus Pattison]] (Lab) stands down as Ceann Comhairle\n"
+  },
+  {
+    "Ceann_Comhairle": {
+      "event": "elected",
+      "wikiTitle": "Rory_O'Hanlon"
+    },
+    "const": "Cavan\u2013Monaghan_(D\u00e1il_\u00c9ireann_constituency)",
+    "date": "2002-06-06",
+    "gain_party": "Ceann_Comhairle",
+    "house": "/house/dail/29",
+    "loss_party": "Ceann_Comhairle",
+    "note": " [[Rory O'Hanlon]] (FF) is elected Ceann Comhairle\n"
+  },
+  {
+    "change_party": "Michael_Collins_(Limerick_politician)",
+    "const": "Limerick_West_(D\u00e1il_\u00c9ireann_constituency)",
+    "date": "2003-09-27",
+    "gain_party": "Independent_(politician)",
+    "house": "/house/dail/29",
+    "loss_party": "Independent_(politician)",
+    "note": " [[Michael Collins (Limerick politician)|Michael J. Collins]] (FF) resigns from Fianna F\u00e1il\n"
+  },
+  {
+    "change_party": "Beverley_Flynn",
+    "const": "Mayo_(D\u00e1il_\u00c9ireann_constituency)",
+    "date": "2004-05-05",
+    "gain_party": "Independent_(politician)",
+    "house": "/house/dail/29",
+    "loss_party": "Independent_(politician)",
+    "note": " [[Beverley Flynn]] (FF) is expelled from Fianna F\u00e1il\n"
+  },
+  {
+    "change_party": "Liam_Twomey",
+    "const": "Wexford_(D\u00e1il_\u00c9ireann_constituency)",
+    "date": "2004-09-22",
+    "gain_party": "Fine_Gael",
+    "house": "/house/dail/29",
+    "loss_party": "Fine_Gael",
+    "note": " [[Liam Twomey]] (Ind) joins Fine Gael\n"
+  },
+  {
+    "const": "Kildare_North_(D\u00e1il_\u00c9ireann_constituency)",
+    "date": "2004-10-31",
+    "gain_party": "",
+    "house": "/house/dail/29",
+    "loss_party": "",
+    "note": " [[Charlie McCreevy]] (FF) resigns his seat\n",
+    "outgoing": "Charlie_McCreevy"
+  },
+  {
+    "const": "Meath_(D\u00e1il_\u00c9ireann_constituency)",
+    "date": "2004-10-31",
+    "gain_party": null,
+    "house": "/house/dail/29",
+    "loss_party": null,
+    "note": " [[John Bruton]] (FG) resigns his seat\n",
+    "outgoing": "John_Bruton"
+  },
+  {
+    "const": "Meath_(D\u00e1il_\u00c9ireann_constituency)",
+    "date": "2005-03-11",
+    "gain_party": "Fine_Gael",
+    "house": "/house/dail/29",
+    "incoming": "Shane_McEntee",
+    "loss_party": "Fine_Gael",
+    "note": " [[Shane McEntee]] (FG) holds the seat vacated by John Bruton\n"
+  },
+  {
+    "const": "Kildare_North_(D\u00e1il_\u00c9ireann_constituency)",
+    "date": "2005-03-11",
+    "gain_party": "Independent_(politician)",
+    "house": "/house/dail/29",
+    "incoming": "Catherine_Murphy_(politician)",
+    "loss_party": "Independent_(politician)",
+    "note": " [[Catherine Murphy (politician)|Catherine Murphy]] (Ind) takes the seat vacated by Charlie McCreevy\n"
+  },
+  {
+    "change_party": "Niall_Blaney",
+    "const": "Donegal_North\u2013East_(D\u00e1il_\u00c9ireann_constituency)",
+    "date": "2006-07-26",
+    "gain_party": "Fianna_F\u00e1il",
+    "house": "/house/dail/29",
+    "loss_party": "Fianna_F\u00e1il",
+    "note": " [[Niall Blaney]] (Ind) joins Fianna F\u00e1il\n"
+  },
+  {
+    "Ceann_Comhairle": {
+      "event": "resigned",
+      "wikiTitle": "Rory_O'Hanlon"
+    },
+    "const": "Cavan\u2013Monaghan_(D\u00e1il_\u00c9ireann_constituency)",
+    "date": "2007-06-14",
+    "gain_party": "Fianna_F\u00e1il",
+    "house": "/house/dail/30",
+    "loss_party": "Fianna_F\u00e1il",
+    "note": " [[Rory O'Hanlon]] (FF) stands down as Ceann Comhairle\n"
+  },
+  {
+    "Ceann_Comhairle": {
+      "event": "elected",
+      "wikiTitle": "John_O'Donoghue_(politician)"
+    },
+    "const": "Kerry_South_(D\u00e1il_\u00c9ireann_constituency)",
+    "date": "2007-06-14",
+    "gain_party": "Ceann_Comhairle",
+    "house": "/house/dail/30",
+    "loss_party": "Ceann_Comhairle",
+    "note": " [[John O'Donoghue (politician)|John O'Donoghue]] (FF) is elected Ceann Comhairle\n"
+  },
+  {
+    "change_party": "Ned_O'Keeffe",
+    "const": "Cork_East_(D\u00e1il_\u00c9ireann_constituency)",
+    "date": "2007-11-28",
+    "gain_party": "Independent_(politician)",
+    "house": "/house/dail/30",
+    "loss_party": "Independent_(politician)",
+    "note": " [[Ned O'Keeffe]] (FF) resigns from the Fianna F\u00e1il parliamentary party\n"
+  },
+  {
+    "change_party": "Ned_O'Keeffe",
+    "const": "Cork_East_(D\u00e1il_\u00c9ireann_constituency)",
+    "date": "2008-02-27",
+    "gain_party": "Fianna_F\u00e1il",
+    "house": "/house/dail/30",
+    "loss_party": "Fianna_F\u00e1il",
+    "note": " [[Ned O'Keeffe]] rejoins the Fianna F\u00e1il parliamentary party\n"
+  },
+  {
+    "change_party": "Beverley_Flynn",
+    "const": "Mayo_(D\u00e1il_\u00c9ireann_constituency)",
+    "date": "2008-04-08",
+    "gain_party": "Fianna_F\u00e1il",
+    "house": "/house/dail/30",
+    "loss_party": "Fianna_F\u00e1il",
+    "note": " [[Beverley Flynn]] (Ind) re-joins Fianna F\u00e1il"
+  },
+  {
+    "const": "Dublin_South_(D\u00e1il_\u00c9ireann_constituency)",
+    "date": "2008-07-09",
+    "gain_party": "",
+    "house": "/house/dail/30",
+    "loss_party": "",
+    "note": " Death of [[S\u00e9amus Brennan]] (FF)",
+    "outgoing": "S\u00e9amus_Brennan"
+  },
+  {
+    "change_party": "Joe_Behan",
+    "const": "Wicklow_(D\u00e1il_\u00c9ireann_constituency)",
+    "date": "2008-10-17",
+    "gain_party": "Independent_(politician)",
+    "house": "/house/dail/30",
+    "loss_party": "Independent_(politician)",
+    "note": " [[Joe Behan]] (FF) resigns from Fianna F\u00e1il"
+  },
+  {
+    "change_party": "Jim_McDaid",
+    "const": "Donegal_North\u2013East_(D\u00e1il_\u00c9ireann_constituency)",
+    "date": "2008-11-13",
+    "gain_party": "Independent_(politician)",
+    "house": "/house/dail/30",
+    "loss_party": "Independent_(politician)",
+    "note": " [[Jim McDaid]] (FF) loses the Fianna F\u00e1il party whip after abstaining in a vote on a health issue\n"
+  },
+  {
+    "const": "Dublin_Central_(D\u00e1il_\u00c9ireann_constituency)",
+    "date": "2009-01-02",
+    "gain_party": "",
+    "house": "/house/dail/30",
+    "loss_party": "",
+    "note": " Death of [[Tony Gregory]] (Ind)",
+    "outgoing": "Tony_Gregory"
+  },
+  {
+    "const": "Dublin_South_(D\u00e1il_\u00c9ireann_constituency)",
+    "date": "2009-06-06",
+    "gain_party": "Fine_Gael",
+    "house": "/house/dail/30",
+    "incoming": "George_Lee_(journalist)",
+    "loss_party": "Fine_Gael",
+    "note": " [[George Lee (journalist)|George Lee]] (FG) takes the seat vacated by the death of S\u00e9amus Brennan\n"
+  },
+  {
+    "const": "Dublin_Central_(D\u00e1il_\u00c9ireann_constituency)",
+    "date": "2009-06-06",
+    "gain_party": "Independent_(politician)",
+    "house": "/house/dail/30",
+    "incoming": "Maureen_O'Sullivan_(politician)",
+    "loss_party": "Independent_(politician)",
+    "note": " [[Maureen O'Sullivan (politician)|Maureen O'Sullivan]] (Ind) holds the seat vacated by the death of Tony Gregory\n"
+  },
+  {
+    "change_party": "Pat_the_Cope_Gallagher",
+    "const": "Donegal_South\u2013West_(D\u00e1il_\u00c9ireann_constituency)",
+    "date": "2009-06-08",
+    "gain_party": "",
+    "house": "/house/dail/30",
+    "loss_party": "",
+    "note": " [[Pat the Cope Gallagher]] (FF) elected as a [[Member of the European Parliament]]\n"
+  },
+  {
+    "change_party": "Jimmy_Devins",
+    "const": "Sligo\u2013North_Leitrim_(D\u00e1il_\u00c9ireann_constituency)",
+    "date": "2009-08-05",
+    "gain_party": "Independent_(politician)",
+    "house": "/house/dail/30",
+    "loss_party": "Independent_(politician)",
+    "note": " [[Jimmy Devins]] (FF) resigns the Fianna F\u00e1il party whip in protest at cuts in cancer services at Sligo General Hospital\n"
+  },
+  {
+    "change_party": "Eamon_Scanlon",
+    "const": "Sligo\u2013North_Leitrim_(D\u00e1il_\u00c9ireann_constituency)",
+    "date": "2009-08-05",
+    "gain_party": "Independent_(politician)",
+    "house": "/house/dail/30",
+    "loss_party": "Independent_(politician)",
+    "note": " [[Eamon Scanlon]] (FF) resigns the Fianna F\u00e1il party whip in protest at cuts in cancer services at Sligo General Hospital\n"
+  },
+  {
+    "Ceann_Comhairle": {
+      "event": "resigned",
+      "wikiTitle": "John_O'Donoghue_(politician)"
+    },
+    "const": "Kerry_South_(D\u00e1il_\u00c9ireann_constituency)",
+    "date": "2009-10-13",
+    "gain_party": "Fianna_F\u00e1il",
+    "house": "/house/dail/30",
+    "loss_party": "Fianna_F\u00e1il",
+    "note": " [[John O'Donoghue (politician)|John O'Donoghue]] (FF) resigns as Ceann Comhairle\n"
+  },
+  {
+    "Ceann_Comhairle": {
+      "event": "elected",
+      "wikiTitle": "S\u00e9amus_Kirk"
+    },
+    "const": "Louth_(D\u00e1il_\u00c9ireann_constituency)",
+    "date": "2009-10-13",
+    "gain_party": "Ceann_Comhairle",
+    "house": "/house/dail/30",
+    "loss_party": "Ceann_Comhairle",
+    "note": " [[S\u00e9amus Kirk]] (FF) is elected Ceann Comhairle\n"
+  },
+  {
+    "change_party": "Mary_Harney",
+    "const": "Dublin_Mid\u2013West_(D\u00e1il_\u00c9ireann_constituency)",
+    "date": "2009-11-20",
+    "gain_party": "Independent_(politician)",
+    "house": "/house/dail/30",
+    "loss_party": "Independent_(politician)",
+    "note": " [[Mary Harney]] (PD) becomes an Independent TD following the dissolution of the Progressive Democrats\n"
+  },
+  {
+    "change_party": "Noel_Grealish",
+    "const": "Galway_West_(D\u00e1il_\u00c9ireann_constituency)",
+    "date": "2009-11-20",
+    "gain_party": "Independent_(politician)",
+    "house": "/house/dail/30",
+    "loss_party": "Independent_(politician)",
+    "note": " [[Noel Grealish]] (PD) becomes an Independent TD following the dissolution of the Progressive Democrats\n"
+  },
+  {
+    "const": "Dublin_South_(D\u00e1il_\u00c9ireann_constituency)",
+    "date": "2010-02-08",
+    "gain_party": "",
+    "house": "/house/dail/30",
+    "loss_party": "",
+    "note": " [[George Lee (journalist)|George Lee]] (FG) resigns from D\u00e1il \u00c9ireann\n",
+    "outgoing": "George_Lee_(journalist)"
+  },
+  {
+    "const": "Waterford_(D\u00e1il_\u00c9ireann_constituency)",
+    "date": "2010-03-23",
+    "gain_party": "",
+    "house": "/house/dail/30",
+    "loss_party": "",
+    "note": " [[Martin Cullen]] (FF) resigns from D\u00e1il \u00c9ireann\n",
+    "outgoing": "Martin_Cullen"
+  },
+  {
+    "change_party": "Mattie_McGrath",
+    "const": "Tipperary_South_(D\u00e1il_\u00c9ireann_constituency)",
+    "date": "2010-06-29",
+    "gain_party": "Independent_(politician)",
+    "house": "/house/dail/30",
+    "loss_party": "Independent_(politician)",
+    "note": " [[Mattie McGrath]] (FF) loses the Fianna F\u00e1il party whip after voting against a bill to ban stag hunting\n"
+  },
+  {
+    "const": "Donegal_North\u2013East_(D\u00e1il_\u00c9ireann_constituency)",
+    "date": "2010-11-02",
+    "gain_party": "",
+    "house": "/house/dail/30",
+    "loss_party": "",
+    "note": " [[Jim McDaid]] (FF) resigns from D\u00e1il \u00c9ireann\n",
+    "outgoing": "Jim_McDaid"
+  },
+  {
+    "const": "Donegal_South\u2013West_(D\u00e1il_\u00c9ireann_constituency)",
+    "date": "2010-11-26",
+    "gain_party": "Sinn_F\u00e9in",
+    "house": "/house/dail/30",
+    "incoming": "Pearse_Doherty",
+    "loss_party": "Sinn_F\u00e9in",
+    "note": " [[Pearse Doherty]] (SF) takes the seat vacated by Pat the Cope Gallagher's election to the European Parliament\n"
+  },
+  {
+    "change_party": "Eamon_Scanlon",
+    "const": "Sligo\u2013North_Leitrim_(D\u00e1il_\u00c9ireann_constituency)",
+    "date": "2011-01-13",
+    "gain_party": "Fianna_F\u00e1il",
+    "house": "/house/dail/30",
+    "loss_party": "Fianna_F\u00e1il",
+    "note": " [[Eamon Scanlon]] rejoins the Fianna F\u00e1il parliamentary party"
+  },
+  {
+    "change_party": "Mattie_McGrath",
+    "const": "Tipperary_South_(D\u00e1il_\u00c9ireann_constituency)",
+    "date": "2011-01-25",
+    "gain_party": "Independent_(politician)",
+    "house": "/house/dail/30",
+    "loss_party": "Independent_(politician)",
+    "note": " [[Mattie McGrath]] resigns from Fianna F\u00e1il\n"
+  },
+  {
+    "change_party": "Jimmy_Devins",
+    "const": "Sligo\u2013North_Leitrim_(D\u00e1il_\u00c9ireann_constituency)",
+    "date": "2011-01-25",
+    "gain_party": "Fianna_F\u00e1il",
+    "house": "/house/dail/30",
+    "loss_party": "Fianna_F\u00e1il",
+    "note": " [[Jimmy Devins]] rejoins the Fianna F\u00e1il parliamentary party"
+  },
+  {
+    "const": "Dublin_South\u2013Central_(D\u00e1il_\u00c9ireann_constituency)",
+    "date": "2011-01-28",
+    "gain_party": "",
+    "house": "/house/dail/30",
+    "loss_party": "",
+    "note": " [[Se\u00e1n Ardagh]] (FF) resigns from D\u00e1il \u00c9ireann ",
+    "outgoing": "Se\u00e1n_Ardagh"
+  },
+  {
+    "change_party": "S\u00e9amus_Kirk",
+    "const": "Louth_(D\u00e1il_\u00c9ireann_constituency)",
+    "date": "2011-03-09",
+    "gain_party": "Fianna_F\u00e1il",
+    "house": "/house/dail/31",
+    "loss_party": "Fianna_F\u00e1il",
+    "note": " [[S\u00e9amus Kirk]] stands down as Ceann Comhairle.\n"
+  },
+  {
+    "change_party": "Se\u00e1n_Barrett_(Fine_Gael)",
+    "const": "D\u00fan_Laoghaire_(D\u00e1il_\u00c9ireann_constituency)",
+    "date": "2011-03-09",
+    "gain_party": "Ceann_Comhairle",
+    "house": "/house/dail/31",
+    "loss_party": "Ceann_Comhairle",
+    "note": " [[Se\u00e1n Barrett (Fine Gael)|Se\u00e1n Barrett]] is elected as Ceann Comhairle.\n"
+  },
+  {
+    "const": "Dublin_West_(D\u00e1il_\u00c9ireann_constituency)",
+    "date": "2011-06-10",
+    "gain_party": "",
+    "house": "/house/dail/31",
+    "loss_party": "",
+    "note": " Death of [[Brian Lenihan, Jnr|Brian Lenihan]].",
+    "outgoing": "Brian_Lenihan,_Jnr"
+  },
+  {
+    "change_party": "Denis_Naughten",
+    "const": null,
+    "date": "2011-07-07",
+    "gain_party": "Independent_politician",
+    "house": "/house/dail/31",
+    "loss_party": "Independent_politician",
+    "note": " [[Denis Naughten]] loses the Fine Gael party whip for opposing closure of Roscommon County Hospital emergency department."
+  },
+  {
+    "const": "Dublin_West_(D\u00e1il_\u00c9ireann_constituency)",
+    "date": "2011-10-29",
+    "gain_party": "Labour_Party_(Ireland)",
+    "house": "/house/dail/31",
+    "incoming": "Patrick_Nulty",
+    "loss_party": "Labour_Party_(Ireland)",
+    "note": " [[Patrick Nulty]] takes the seat vacated by the death of Brian Lenihan."
+  },
+  {
+    "change_party": "Willie_Penrose",
+    "const": "Longford\u2013Westmeath_(D\u00e1il_\u00c9ireann_constituency)",
+    "date": "2011-11-15",
+    "gain_party": "Independent_politician",
+    "house": "/house/dail/31",
+    "loss_party": "Independent_politician",
+    "note": " [[Willie Penrose]] resigns the Labour Party whip over the closure of an army barracks."
+  },
+  {
+    "change_party": "Tommy_Broughan",
+    "const": "Dublin_North\u2013East_(D\u00e1il_\u00c9ireann_constituency)",
+    "date": "2011-12-01",
+    "gain_party": "Independent_politician",
+    "house": "/house/dail/31",
+    "loss_party": "Independent_politician",
+    "note": " [[Tommy Broughan]] loses the Labour Party whip after voting against the Government on a vote relating to the Bank Guarantee Scheme."
+  },
+  {
+    "change_party": "Patrick_Nulty",
+    "const": "Dublin_West_(D\u00e1il_\u00c9ireann_constituency)",
+    "date": "2011-12-06",
+    "gain_party": "Independent_politician",
+    "house": "/house/dail/31",
+    "loss_party": "Independent_politician",
+    "note": " [[Patrick Nulty]] loses the Labour Party whip after voting against the [[Value added tax|VAT]] increase in the [[Irish budget, 2012|2012 budget]]."
+  },
+  {
+    "change_party": "Clare_Daly",
+    "const": "Dublin_North_(D\u00e1il_\u00c9ireann_constituency)",
+    "date": "2012-08-31",
+    "gain_party": "Independent_politician",
+    "house": "/house/dail/31",
+    "loss_party": "Independent_politician",
+    "note": " [[Clare Daly]] resigns from the Socialist Party."
+  },
+  {
+    "change_party": "R\u00f3is\u00edn_Shortall",
+    "const": "Dublin_North\u2013West_(D\u00e1il_\u00c9ireann_constituency)",
+    "date": "2012-09-26",
+    "gain_party": "Independent_politician",
+    "house": "/house/dail/31",
+    "loss_party": "Independent_politician",
+    "note": " [[R\u00f3is\u00edn Shortall]] resigns as Minister of State for Primary Care and the Labour Party whip."
+  },
+  {
+    "change_party": "Colm_Keaveney",
+    "const": "Galway_East_(D\u00e1il_\u00c9ireann_constituency)",
+    "date": "2012-12-13",
+    "gain_party": "Independent_politician",
+    "house": "/house/dail/31",
+    "loss_party": "Independent_politician",
+    "note": " [[Colm Keaveney]] loses the Labour Party whip after voting against part of the [[Irish budget, 2013|2013 budget]]."
+  },
+  {
+    "const": "Meath_East_(D\u00e1il_\u00c9ireann_constituency)",
+    "date": "2012-12-21",
+    "gain_party": "",
+    "house": "/house/dail/31",
+    "loss_party": "",
+    "note": " Death of [[Shane McEntee]].",
+    "outgoing": "Shane_McEntee"
+  },
+  {
+    "const": "Meath_East_(D\u00e1il_\u00c9ireann_constituency)",
+    "date": "2013-03-27",
+    "gain_party": "Fine_Gael",
+    "house": "/house/dail/31",
+    "incoming": "Helen_McEntee",
+    "loss_party": "Fine_Gael",
+    "note": " [[Helen McEntee]] takes the seat vacated by the death of Shane McEntee."
+  },
+  {
+    "change_party": "Joan_Collins_(politician)",
+    "const": "Dublin_South\u2013Central_(D\u00e1il_\u00c9ireann_constituency)",
+    "date": "2013-04-25",
+    "gain_party": "Independent_politician",
+    "house": "/house/dail/31",
+    "loss_party": "Independent_politician",
+    "note": " [[Joan Collins (politician)|Joan Collins]] leaves the People Before Profit Alliance and forms the [[United Left (Ireland)|United Left]], while remaining an independent TD."
+  },
+  {
+    "change_party": "Peter_Mathews_(politician)",
+    "const": "Dublin_South_(D\u00e1il_\u00c9ireann_constituency)",
+    "date": "2013-07-02",
+    "gain_party": "Independent_politician",
+    "house": "/house/dail/31",
+    "loss_party": "Independent_politician",
+    "note": " [[Peter Mathews (politician)|Peter Mathews]] loses the Fine Gael party whip for voting against the ''[[Protection of Life During Pregnancy Act 2013|Protection of Life During Pregnancy Bill 2013]]''."
+  },
+  {
+    "change_party": "Billy_Timmins",
+    "const": "Wicklow_(D\u00e1il_\u00c9ireann_constituency)",
+    "date": "2013-07-02",
+    "gain_party": "Independent_politician",
+    "house": "/house/dail/31",
+    "loss_party": "Independent_politician",
+    "note": " [[Billy Timmins]] loses the Fine Gael party whip for voting against the ''Protection of Life During Pregnancy Bill 2013''."
+  },
+  {
+    "change_party": "Brian_Walsh_(politician)",
+    "const": "Galway_West_(D\u00e1il_\u00c9ireann_constituency)",
+    "date": "2013-07-02",
+    "gain_party": "Independent_politician",
+    "house": "/house/dail/31",
+    "loss_party": "Independent_politician",
+    "note": " [[Brian Walsh (politician)|Brian Walsh]] loses the Fine Gael party whip for voting against the ''Protection of Life During Pregnancy Bill 2013''."
+  },
+  {
+    "change_party": "Terence_Flanagan",
+    "const": "Dublin_North\u2013East_(D\u00e1il_\u00c9ireann_constituency)",
+    "date": "2013-07-02",
+    "gain_party": "Independent_politician",
+    "house": "/house/dail/31",
+    "loss_party": "Independent_politician",
+    "note": " [[Terence Flanagan]] loses the Fine Gael party whip for voting against the ''Protection of Life During Pregnancy Bill 2013''."
+  },
+  {
+    "change_party": "Lucinda_Creighton",
+    "const": "Dublin_South\u2013East_(D\u00e1il_\u00c9ireann_constituency)",
+    "date": "2013-07-11",
+    "gain_party": "Independent_politician",
+    "house": "/house/dail/31",
+    "loss_party": "Independent_politician",
+    "note": " [[Lucinda Creighton]] loses the Fine Gael party whip for voting against the ''Protection of Life During Pregnancy Bill 2013''."
+  },
+  {
+    "change_party": "Peadar_T\u00f3ib\u00edn",
+    "const": "Meath_West_(D\u00e1il_\u00c9ireann_constituency)",
+    "date": "2013-07-12",
+    "gain_party": "Independent_politician",
+    "house": "/house/dail/31",
+    "loss_party": "Independent_politician",
+    "note": " [[Peadar T\u00f3ib\u00edn]] is suspended from the Sinn F\u00e9in parliamentary party for voting against the ''Protection of Life During Pregnancy Bill 2013''."
+  },
+  {
+    "change_party": "Willie_Penrose",
+    "const": "Longford\u2013Westmeath_(D\u00e1il_\u00c9ireann_constituency)",
+    "date": "2013-10-07",
+    "gain_party": "Labour_Party_(Ireland)",
+    "house": "/house/dail/31",
+    "loss_party": "Labour_Party_(Ireland)",
+    "note": " [[Willie Penrose]] rejoins the parliamentary Labour Party."
+  },
+  {
+    "change_party": "Colm_Keaveney",
+    "const": "Galway_East_(D\u00e1il_\u00c9ireann_constituency)",
+    "date": "2013-12-03",
+    "gain_party": "Fianna_F\u00e1il",
+    "house": "/house/dail/31",
+    "loss_party": "Fianna_F\u00e1il",
+    "note": " [[Colm Keaveney]] joins Fianna F\u00e1il."
+  },
+  {
+    "change_party": "Peadar_T\u00f3ib\u00edn",
+    "const": "Meath_West_(D\u00e1il_\u00c9ireann_constituency)",
+    "date": "2014-01-12",
+    "gain_party": "Sinn_F\u00e9in",
+    "house": "/house/dail/31",
+    "loss_party": "Sinn_F\u00e9in",
+    "note": " [[Peadar T\u00f3ib\u00edn]] rejoins the Sinn F\u00e9in parliamentary party after a six month suspension for voting against the ''Protection of Life During Pregnancy Bill 2013''.\n"
+  },
+  {
+    "const": "Dublin_West_(D\u00e1il_\u00c9ireann_constituency)",
+    "date": "2014-03-22",
+    "gain_party": "",
+    "house": "/house/dail/31",
+    "loss_party": "",
+    "note": " Resignation of [[Patrick Nulty]].",
+    "outgoing": "Patrick_Nulty"
+  },
+  {
+    "const": "Longford\u2013Westmeath_(D\u00e1il_\u00c9ireann_constituency)",
+    "date": "2014-03-25",
+    "gain_party": "",
+    "house": "/house/dail/31",
+    "loss_party": "",
+    "note": " Death of [[Nicky McFadden]].",
+    "outgoing": "Nicky_McFadden"
+  },
+  {
+    "change_party": "Brian_Walsh_(politician)",
+    "const": "Galway_West_(D\u00e1il_\u00c9ireann_constituency)",
+    "date": "2014-04-30",
+    "gain_party": "Fine_Gael",
+    "house": "/house/dail/31",
+    "loss_party": "Fine_Gael",
+    "note": " [[Brian Walsh (politician)|Brian Walsh]] rejoins the Fine Gael parliamentary party."
+  },
+  {
+    "const": "Dublin_West_(D\u00e1il_\u00c9ireann_constituency)",
+    "date": "2014-05-23",
+    "gain_party": "Socialist_Party_(Ireland)",
+    "house": "/house/dail/31",
+    "incoming": "Ruth_Coppinger",
+    "loss_party": "Socialist_Party_(Ireland)",
+    "note": " [[Ruth Coppinger]] takes the seat vacated by the resignation of Patrick Nulty."
+  },
+  {
+    "const": "Longford\u2013Westmeath_(D\u00e1il_\u00c9ireann_constituency)",
+    "date": "2014-05-23",
+    "gain_party": "Fine_Gael",
+    "house": "/house/dail/31",
+    "incoming": "Gabrielle_McFadden",
+    "loss_party": "Fine_Gael",
+    "note": " [[Gabrielle McFadden]] takes the seat vacated by the death of Nicky McFadden.\n"
+  },
+  {
+    "const": "Roscommon\u2013South_Leitrim_(D\u00e1il_\u00c9ireann_constituency)",
+    "date": "2014-05-26",
+    "gain_party": "",
+    "house": "/house/dail/31",
+    "loss_party": "",
+    "note": " Resignation of [[Luke 'Ming' Flanagan]] upon election to the [[European Parliament]].",
+    "outgoing": "Luke_'Ming'_Flanagan"
+  },
+  {
+    "const": "Dublin_South\u2013West_(D\u00e1il_\u00c9ireann_constituency)",
+    "date": "2014-05-26",
+    "gain_party": "",
+    "house": "/house/dail/31",
+    "loss_party": "",
+    "note": " Resignation of [[Brian Hayes (politician)|Brian Hayes]] upon election to the [[European Parliament]].",
+    "outgoing": "Brian_Hayes_(politician)"
+  },
+  {
+    "const": "Dublin_South\u2013West_(D\u00e1il_\u00c9ireann_constituency)",
+    "date": "2014-10-11",
+    "gain_party": "Anti-Austerity_Alliance",
+    "house": "/house/dail/31",
+    "incoming": "Paul_Murphy_(Irish_politician)",
+    "loss_party": "Anti-Austerity_Alliance",
+    "note": " [[Paul Murphy (Irish politician)|Paul Murphy]] takes the seat vacated by the resignation of Brian Hayes."
+  },
+  {
+    "const": "Roscommon\u2013South_Leitrim_(D\u00e1il_\u00c9ireann_constituency)",
+    "date": "2014-10-11",
+    "gain_party": "Independent_politician",
+    "house": "/house/dail/31",
+    "incoming": "Michael_Fitzmaurice_(politician)",
+    "loss_party": "Independent_politician",
+    "note": " [[Michael Fitzmaurice (politician)|Michael Fitzmaurice]] takes the seat vacated by the resignation of Luke 'Ming' Flanagan."
+  },
+  {
+    "const": "Carlow\u2013Kilkenny_(D\u00e1il_\u00c9ireann_constituency)",
+    "date": "2014-10-30",
+    "gain_party": "",
+    "house": "/house/dail/31",
+    "loss_party": "",
+    "note": " Resignation of [[Phil Hogan]] upon appointment to the [[European Commission]].",
+    "outgoing": "Phil_Hogan"
+  },
+  {
+    "change_party": "Anne_Ferris",
+    "const": "Wicklow_(D\u00e1il_\u00c9ireann_constituency)",
+    "date": "2015-02-10",
+    "gain_party": "Independent_politician",
+    "house": "/house/dail/31",
+    "loss_party": "Independent_politician",
+    "note": " [[Anne Ferris]] loses the Labour Party whip for voting in favour of providing for abortion in cases of fatal foetal abnormalities.\n"
+  },
+  {
+    "change_party": "Lucinda_Creighton",
+    "const": "Dublin_South\u2013East_(D\u00e1il_\u00c9ireann_constituency)",
+    "date": "2015-03-13",
+    "gain_party": "Renua_Ireland",
+    "house": "/house/dail/31",
+    "loss_party": "Renua_Ireland",
+    "note": " [[Lucinda Creighton]] joins Renua Ireland on its foundation."
+  },
+  {
+    "change_party": "Billy_Timmins",
+    "const": "Wicklow_(D\u00e1il_\u00c9ireann_constituency)",
+    "date": "2015-03-13",
+    "gain_party": "Renua_Ireland",
+    "house": "/house/dail/31",
+    "loss_party": "Renua_Ireland",
+    "note": " [[Billy Timmins]] joins Renua Ireland on its foundation."
+  },
+  {
+    "change_party": "Terence_Flanagan",
+    "const": "Dublin_North\u2013East_(D\u00e1il_\u00c9ireann_constituency)",
+    "date": "2015-03-13",
+    "gain_party": "Renua_Ireland",
+    "house": "/house/dail/31",
+    "loss_party": "Renua_Ireland",
+    "note": " [[Terence Flanagan]] joins Renua Ireland on its foundation."
+  },
+  {
+    "const": "Carlow\u2013Kilkenny_(D\u00e1il_\u00c9ireann_constituency)",
+    "date": "2015-05-23",
+    "gain_party": "Fianna_F\u00e1il",
+    "house": "/house/dail/31",
+    "incoming": "Bobby_Aylward",
+    "loss_party": "Fianna_F\u00e1il",
+    "note": " [[Bobby Aylward]] takes the seat vacated by the resignation of Phil Hogan."
+  },
+  {
+    "change_party": "Michael_McNamara_(politician)",
+    "const": "Clare_(D\u00e1il_\u00c9ireann_constituency)",
+    "date": "2015-05-29",
+    "gain_party": "Independent_politician",
+    "house": "/house/dail/31",
+    "loss_party": "Independent_politician",
+    "note": " [[Michael McNamara (politician)|Michael McNamara]] loses the Labour Party whip for voting against the sale of the State's stake in [[Aer Lingus]]."
+  },
+  {
+    "change_party": "Stephen_Donnelly",
+    "const": "Wicklow_(D\u00e1il_\u00c9ireann_constituency)",
+    "date": "2015-07-15",
+    "gain_party": "Social_Democrats_(Ireland)",
+    "house": "/house/dail/31",
+    "loss_party": "Social_Democrats_(Ireland)",
+    "note": " [[Stephen Donnelly]] joins the Social Democrats on its foundation."
+  },
+  {
+    "change_party": "Catherine_Murphy_(politician)",
+    "const": "Kildare_North_(D\u00e1il_\u00c9ireann_constituency)",
+    "date": "2015-07-15",
+    "gain_party": "Social_Democrats_(Ireland)",
+    "house": "/house/dail/31",
+    "loss_party": "Social_Democrats_(Ireland)",
+    "note": " [[Catherine Murphy (politician)|Catherine Murphy]] joins the Social Democrats on its foundation."
+  },
+  {
+    "change_party": "R\u00f3is\u00edn_Shortall",
+    "const": "Dublin_North\u2013West_(D\u00e1il_\u00c9ireann_constituency)",
+    "date": "2015-07-15",
+    "gain_party": "Social_Democrats_(Ireland)",
+    "house": "/house/dail/31",
+    "loss_party": "Social_Democrats_(Ireland)",
+    "note": " [[R\u00f3is\u00edn Shortall]] joins the Social Democrats on its foundation."
+  },
+  {
+    "change_party": "Anne_Ferris",
+    "const": "Wicklow_(D\u00e1il_\u00c9ireann_constituency)",
+    "date": "2015-07-16",
+    "gain_party": "Labour_Party_(Ireland)",
+    "house": "/house/dail/31",
+    "loss_party": "Labour_Party_(Ireland)",
+    "note": " [[Anne Ferris]] rejoins the parliamentary Labour Party."
+  },
+  {
+    "change_party": "Michael_McNamara_(politician)",
+    "const": "Clare_(D\u00e1il_\u00c9ireann_constituency)",
+    "date": "2015-09-16",
+    "gain_party": "Labour_Party_(Ireland)",
+    "house": "/house/dail/31",
+    "loss_party": "Labour_Party_(Ireland)",
+    "note": " [[Michael McNamara (politician)|Michael McNamara]] rejoins the parliamentary Labour Party."
+  },
+  {
+    "change_party": "Eamonn_Maloney",
+    "const": "Dublin_South\u2013West_(D\u00e1il_\u00c9ireann_constituency)",
+    "date": "2015-09-26",
+    "gain_party": "Independent_politician",
+    "house": "/house/dail/31",
+    "loss_party": "Independent_politician",
+    "note": " [[Eamonn Maloney]] resigns from the Labour Party."
+  },
+  {
+    "const": "Dublin_South_(D\u00e1il_\u00c9ireann_constituency)",
+    "date": "1923-10-27",
+    "gain_party": "Cumann_na_nGaedheal",
+    "house": "/house/dail/4",
+    "incoming": "Hugh_Kennedy",
+    "loss_party": "Cumann_na_nGaedheal",
+    "note": " [[Hugh Kennedy]] (CnaG) holds the seat vacated by the resignation of [[Michael Hayes (politician)|Michael Hayes]]",
+    "outgoing": "Michael_Hayes_(politician)"
+  },
+  {
+    "const": "National_University_of_Ireland_(constituency)",
+    "date": "1923-11-03",
+    "gain_party": "Cumann_na_nGaedheal",
+    "house": "/house/dail/4",
+    "incoming": "Patrick_McGilligan",
+    "loss_party": "Cumann_na_nGaedheal",
+    "note": " [[Patrick McGilligan]] (CnaG) holds the seat vacated by the resignation of [[Eoin MacNeill]]",
+    "outgoing": "Eoin_MacNeill"
+  },
+  {
+    "const": "Dublin_South_(D\u00e1il_\u00c9ireann_constituency)",
+    "date": "1924-03-12",
+    "gain_party": "Cumann_na_nGaedheal",
+    "house": "/house/dail/4",
+    "incoming": "James_O'Mara",
+    "loss_party": "Cumann_na_nGaedheal",
+    "note": " [[James O'Mara]] (CnaG) holds the seat vacated by the death of [[Philip Cosgrave]] (CnaG)\n",
+    "outgoing": "Philip_Cosgrave"
+  },
+  {
+    "const": "Dublin_County_(D\u00e1il_\u00c9ireann_constituency)",
+    "date": "1924-03-19",
+    "gain_party": "Cumann_na_nGaedheal",
+    "house": "/house/dail/4",
+    "incoming": "Batt_O'Connor",
+    "loss_party": "Cumann_na_nGaedheal",
+    "note": " [[Batt O'Connor]] (CnaG) holds the seat vacated by the death of [[Michael Derham]] (CnaG)\n",
+    "outgoing": "Michael_Derham"
+  },
+  {
+    "const": "Limerick_(D\u00e1il_\u00c9ireann_constituency)",
+    "date": "1924-05-28",
+    "gain_party": "Cumann_na_nGaedheal",
+    "house": "/house/dail/4",
+    "incoming": "Richard_O'Connell",
+    "loss_party": "Cumann_na_nGaedheal",
+    "note": " [[Richard O'Connell]] (CnaG) holds the seat vacated by the resignation of [[Richard Hayes (politician)|Richard Hayes]] (CnaG)\n",
+    "outgoing": "Richard_Hayes_(politician)"
+  },
+  {
+    "const": "Cork_East_(D\u00e1il_\u00c9ireann_constituency)",
+    "date": "1924-11-18",
+    "gain_party": "Cumann_na_nGaedheal",
+    "house": "/house/dail/4",
+    "incoming": "Michael_K._Noonan",
+    "loss_party": "Cumann_na_nGaedheal",
+    "note": " [[Michael K. Noonan|Michael Noonan]] (CnaG) holds the seat vacated by the death of [[Thomas O'Mahony]] (CnaG)\n",
+    "outgoing": "Thomas_O'Mahony"
+  },
+  {
+    "const": "Dublin_South_(D\u00e1il_\u00c9ireann_constituency)",
+    "date": "1924-11-18",
+    "gain_party": "Republican_(Ireland,_1923)",
+    "house": "/house/dail/4",
+    "incoming": "Se\u00e1n_Lemass",
+    "loss_party": "Republican_(Ireland,_1923)",
+    "note": " [[Se\u00e1n Lemass]] (Rep) wins the seat vacated by the appointment of [[Hugh Kennedy]] (CnaG) as [[Chief Justice of Ireland|Chief Justice]]\n",
+    "outgoing": "Hugh_Kennedy]]_(CnaG)_as_[[Chief_Justice_of_Ireland"
+  },
+  {
+    "const": "Mayo_North_(D\u00e1il_\u00c9ireann_constituency)",
+    "date": "1924-11-18",
+    "gain_party": "Republican_(Ireland,_1923)",
+    "house": "/house/dail/4",
+    "incoming": "John_Madden_(Irish_politician)",
+    "loss_party": "Republican_(Ireland,_1923)",
+    "note": " [[John Madden (Irish politician)|John Madden]] (Rep) wins the seat vacated by the disqualification of [[Henry Coyle (politician)|Henry Coyle]] (CnaG)\n",
+    "outgoing": "Henry_Coyle_(politician)"
+  },
+  {
+    "const": "Cork_Borough_(D\u00e1il_\u00c9ireann_constituency)",
+    "date": "1924-11-19",
+    "gain_party": "Cumann_na_nGaedheal",
+    "house": "/house/dail/4",
+    "incoming": "Michael_Egan_(Irish_politician)",
+    "loss_party": "Cumann_na_nGaedheal",
+    "note": " [[Michael Egan (Irish politician)|Michael Egan]] (CnaG) holds the seat vacated by the resignation of [[Alfred O'Rahilly]] (CnaG)\n",
+    "outgoing": "Alfred_O'Rahilly"
+  },
+  {
+    "const": "Donegal_(D\u00e1il_\u00c9ireann_constituency)",
+    "date": "1924-11-20",
+    "gain_party": "Cumann_na_nGaedheal",
+    "house": "/house/dail/4",
+    "incoming": "Denis_McCullough",
+    "loss_party": "Cumann_na_nGaedheal",
+    "note": " [[Denis McCullough]] (CnaG) holds the seat vacated by the resignation of [[Peter J. Ward|Peter Ward]] (CnaG)\n",
+    "outgoing": "Peter_J._Ward"
+  },
+  {
+    "const": "Carlow\u2013Kilkenny_(D\u00e1il_\u00c9ireann_constituency)",
+    "date": "1925-03-11",
+    "gain_party": "Cumann_na_nGaedheal",
+    "house": "/house/dail/4",
+    "incoming": "Thomas_Bolger",
+    "loss_party": "Cumann_na_nGaedheal",
+    "note": " [[Thomas Bolger]] (CnaG) holds the seat vacated by the resignation of [[Se\u00e1n Gibbons]] (CnaG)\n",
+    "outgoing": "Se\u00e1n_Gibbons"
+  },
+  {
+    "const": "Cavan_(D\u00e1il_\u00c9ireann_constituency)",
+    "date": "1925-03-11",
+    "gain_party": "Cumann_na_nGaedheal",
+    "house": "/house/dail/4",
+    "incoming": "John_Joe_O'Reilly",
+    "loss_party": "Cumann_na_nGaedheal",
+    "note": " [[John Joe O'Reilly]] (CnaG) holds the seat vacated by the resignation of [[Se\u00e1n Milroy]] (CnaG)\n",
+    "outgoing": "Se\u00e1n_Milroy"
+  },
+  {
+    "const": "Dublin_North_(D\u00e1il_\u00c9ireann_constituency)",
+    "date": "1925-03-11",
+    "gain_party": "Cumann_na_nGaedheal",
+    "house": "/house/dail/4",
+    "incoming": "Patrick_Leonard_(Irish_politician)",
+    "loss_party": "Cumann_na_nGaedheal",
+    "note": " [[Patrick Leonard (Irish politician)|Patrick Leonard]] (CnaG) holds the seat vacated by the resignation of [[Francis Cahill]] (CnaG)\n",
+    "outgoing": "Francis_Cahill"
+  },
+  {
+    "const": "Dublin_North_(D\u00e1il_\u00c9ireann_constituency)",
+    "date": "1925-03-11",
+    "gain_party": "Republican_(Ireland,_1923)",
+    "house": "/house/dail/4",
+    "incoming": "Oscar_Traynor",
+    "loss_party": "Republican_(Ireland,_1923)",
+    "note": " [[Oscar Traynor]] (Rep) wins the seat vacated by the resignation of [[Se\u00e1n McGarry]] (CnaG)\n",
+    "outgoing": "Se\u00e1n_McGarry"
+  },
+  {
+    "const": "Dublin_South_(D\u00e1il_\u00c9ireann_constituency)",
+    "date": "1925-03-11",
+    "gain_party": "Cumann_na_nGaedheal",
+    "house": "/house/dail/4",
+    "incoming": "Thomas_Hennessy",
+    "loss_party": "Cumann_na_nGaedheal",
+    "note": " [[Thomas Hennessy]] (CnaG) holds the seat vacated by the resignation of [[Daniel McCarthy (politician)|Daniel McCarthy]] (CnaG)\n",
+    "outgoing": "Daniel_McCarthy_(politician)"
+  },
+  {
+    "const": "Leitrim\u2013Sligo_(D\u00e1il_\u00c9ireann_constituency)",
+    "date": "1925-03-11",
+    "gain_party": "Republican_(Ireland,_1923)",
+    "house": "/house/dail/4",
+    "incoming": "Samuel_Holt",
+    "loss_party": "Republican_(Ireland,_1923)",
+    "note": " [[Samuel Holt]] (Rep) wins the seat vacated by the resignation of [[Thomas Carter (Irish politician)|Thomas Carter]] (CnaG)\n",
+    "outgoing": "Thomas_Carter_(Irish_politician)"
+  },
+  {
+    "const": "Leitrim\u2013Sligo_(D\u00e1il_\u00c9ireann_constituency)",
+    "date": "1925-03-11",
+    "gain_party": "Cumann_na_nGaedheal",
+    "house": "/house/dail/4",
+    "incoming": "Martin_Roddy",
+    "loss_party": "Cumann_na_nGaedheal",
+    "note": " [[Martin Roddy]] (CnaG) holds the seat vacated by the resignation of [[Alexander McCabe]] (CnaG)\n",
+    "outgoing": "Alexander_McCabe"
+  },
+  {
+    "const": "Mayo_North_(D\u00e1il_\u00c9ireann_constituency)",
+    "date": "1925-03-11",
+    "gain_party": "Cumann_na_nGaedheal",
+    "house": "/house/dail/4",
+    "incoming": "Michael_Tierney_(politician)",
+    "loss_party": "Cumann_na_nGaedheal",
+    "note": " [[Michael Tierney (politician)|Michael Tierney]] (CnaG) holds the seat vacated by the resignation of [[Joseph McGrath (Irish politician)|Joseph McGrath]] (CnaG)\n",
+    "outgoing": "Joseph_McGrath_(Irish_politician)"
+  },
+  {
+    "const": "Roscommon_(D\u00e1il_\u00c9ireann_constituency)",
+    "date": "1925-03-11",
+    "gain_party": "Cumann_na_nGaedheal",
+    "house": "/house/dail/4",
+    "incoming": "Martin_Conlon",
+    "loss_party": "Cumann_na_nGaedheal",
+    "note": " [[Martin Conlon]] (CnaG) holds the seat vacated by the resignation of [[Henry Finlay]] (CnaG)\n",
+    "outgoing": "Henry_Finlay"
+  },
+  {
+    "const": "Dublin_County_(D\u00e1il_\u00c9ireann_constituency)",
+    "date": "1926-02-18",
+    "gain_party": "Labour_Party_(Ireland)",
+    "house": "/house/dail/4",
+    "incoming": "William_Norton",
+    "loss_party": "Labour_Party_(Ireland)",
+    "note": " [[William Norton]] (Lab) wins the seat vacated by the death of [[Darrell Figgis]] (Ind)\n",
+    "outgoing": "Darrell_Figgis"
+  },
+  {
+    "const": "Laois\u2013Offaly_(D\u00e1il_\u00c9ireann_constituency)",
+    "date": "1926-02-18",
+    "gain_party": "Cumann_na_nGaedheal",
+    "house": "/house/dail/4",
+    "incoming": "James_Dwyer_(politician)",
+    "loss_party": "Cumann_na_nGaedheal",
+    "note": " [[James Dwyer (politician)|James Dwyer]] (CnG) wins the seat vacated by the disqualification of [[Se\u00e1n McGuinness]] (Rep)\n",
+    "outgoing": "Se\u00e1n_McGuinness"
+  },
+  {
+    "change_party": "William_Redmond_(1886\u20131932)",
+    "const": "Waterford_(D\u00e1il_\u00c9ireann_constituency)",
+    "date": "1926-09-06",
+    "gain_party": "National_League_Party",
+    "house": "/house/dail/4",
+    "loss_party": "National_League_Party",
+    "note": " [[William Redmond (1886\u20131932)|William Redmond]] (Ind) joins the National League Party as founder member.\n"
+  },
+  {
+    "change_party": "James_Cosgrave",
+    "const": "Galway_(D\u00e1il_\u00c9ireann_constituency)",
+    "date": "1926-09-06",
+    "gain_party": "National_League_Party",
+    "house": "/house/dail/4",
+    "loss_party": "National_League_Party",
+    "note": " [[James Cosgrave]] (Ind) joins the National League Party as founder member.\n"
+  },
+  {
+    "const": "Dublin_South_(D\u00e1il_\u00c9ireann_constituency)",
+    "date": "1927-08-24",
+    "gain_party": "Cumann_na_nGaedheal",
+    "house": "/house/dail/5",
+    "incoming": "Thomas_Hennessy",
+    "loss_party": "Cumann_na_nGaedheal",
+    "note": " [[Thomas Hennessy]] (CnaG) wins the seat vacated by the death of [[Constance Markievicz]] (FF)\n",
+    "outgoing": "Constance_Markievicz"
+  },
+  {
+    "const": "Dublin_County_(D\u00e1il_\u00c9ireann_constituency)",
+    "date": "1927-08-24",
+    "gain_party": "Cumann_na_nGaedheal",
+    "house": "/house/dail/5",
+    "incoming": "Gear\u00f3id_O'Sullivan",
+    "loss_party": "Cumann_na_nGaedheal",
+    "note": " [[Gear\u00f3id O'Sullivan]] (CnaG) holds the seat vacated by the death of [[Kevin O'Higgins]] (CnaG)\n",
+    "outgoing": "Kevin_O'Higgins"
+  },
+  {
+    "const": "Carlow\u2013Kilkenny_(D\u00e1il_\u00c9ireann_constituency)",
+    "date": "1927-11-03",
+    "gain_party": "Cumann_na_nGaedheal",
+    "house": "/house/dail/6",
+    "incoming": "Denis_Gorey",
+    "loss_party": "Cumann_na_nGaedheal",
+    "note": " [[Denis Gorey]] (CnaG) holds the seat vacated by [[W. T. Cosgrave]]",
+    "outgoing": "W._T._Cosgrave"
+  },
+  {
+    "const": "Dublin_North_(D\u00e1il_\u00c9ireann_constituency)",
+    "date": "1928-04-03",
+    "gain_party": "Cumann_na_nGaedheal",
+    "house": "/house/dail/6",
+    "incoming": "Vincent_Rice",
+    "loss_party": "Cumann_na_nGaedheal",
+    "note": " [[Vincent Rice]] (CnaG) wins the seat vacated by [[James Larkin]]",
+    "outgoing": "James_Larkin"
+  },
+  {
+    "const": "Dublin_North_(D\u00e1il_\u00c9ireann_constituency)",
+    "date": "1929-03-14",
+    "gain_party": "Cumann_na_nGaedheal",
+    "house": "/house/dail/6",
+    "incoming": "Thomas_F._O'Higgins",
+    "loss_party": "Cumann_na_nGaedheal",
+    "note": " [[Thomas F. O'Higgins]] (CnaG) wins the seat vacated by [[Alfred Byrne]]",
+    "outgoing": "Alfred_Byrne"
+  },
+  {
+    "const": "Leitrim\u2013Sligo_(D\u00e1il_\u00c9ireann_constituency)",
+    "date": "1929-06-07",
+    "gain_party": "Cumann_na_nGaedheal",
+    "house": "/house/dail/6",
+    "incoming": "Se\u00e1n_Mac_Eoin",
+    "loss_party": "Cumann_na_nGaedheal",
+    "note": " [[Se\u00e1n Mac Eoin]] (CnaG) wins the seat vacated by the death of [[Samuel Holt]] (FF)\n",
+    "outgoing": "Samuel_Holt"
+  },
+  {
+    "const": "Longford\u2013Westmeath_(D\u00e1il_\u00c9ireann_constituency)",
+    "date": "1930-06-13",
+    "gain_party": "Fianna_F\u00e1il",
+    "house": "/house/dail/6",
+    "incoming": "James_Geoghegan",
+    "loss_party": "Fianna_F\u00e1il",
+    "note": " [[James Geoghegan]] (FF) holds the seat vacated by the death of [[James Killane]] (FF)\n",
+    "outgoing": "James_Killane"
+  },
+  {
+    "const": "Dublin_County_(D\u00e1il_\u00c9ireann_constituency)",
+    "date": "1930-12-09",
+    "gain_party": "Cumann_na_nGaedheal",
+    "house": "/house/dail/6",
+    "incoming": "Thomas_Finlay_(Cumann_na_nGaedheal)",
+    "loss_party": "Cumann_na_nGaedheal",
+    "note": " [[Thomas Finlay (Cumann na nGaedheal)|Thomas Finlay]] (CnaG) holds the seat vacated by the death of [[Bryan Cooper (politician)|Bryan Cooper]] (CnaG)\n",
+    "outgoing": "Bryan_Cooper_(politician)"
+  },
+  {
+    "const": "Kildare_(D\u00e1il_\u00c9ireann_constituency)",
+    "date": "1931-06-29",
+    "gain_party": "Fianna_F\u00e1il",
+    "house": "/house/dail/6",
+    "incoming": "Thomas_Harris_(Irish_politician)",
+    "loss_party": "Fianna_F\u00e1il",
+    "note": " [[Thomas Harris (Irish politician)|Thomas Harris]] (FF) wins the seat vacated by the death of [[Hugh Colohan]] (Lab)\n",
+    "outgoing": "Hugh_Colohan"
+  },
+  {
+    "change_party": "William_Redmond_(1886\u20131932)",
+    "const": "Waterford_(D\u00e1il_\u00c9ireann_constituency)",
+    "date": "1931-07-06",
+    "gain_party": "Cumann_na_nGaedheal",
+    "house": "/house/dail/6",
+    "loss_party": "Cumann_na_nGaedheal",
+    "note": " [[William Redmond (1886\u20131932)|William Redmond]] (NL) joins Cumann na nGaedheal following the disbandment of the National League Party.\n"
+  },
+  {
+    "change_party": "James_Coburn_(Irish_politician)",
+    "const": "Louth_(D\u00e1il_\u00c9ireann_constituency)",
+    "date": "1931-07-06",
+    "gain_party": "Independent_(politician)",
+    "house": "/house/dail/6",
+    "loss_party": "Independent_(politician)",
+    "note": " [[James Coburn (Irish politician)|James Coburn]] (NL) becomes an Independent TD following the disbandment of the National League Party.\n"
+  },
+  {
+    "const": "University_of_Dublin_(constituency)",
+    "date": "1933-10-13",
+    "gain_party": "Independent_(politician)",
+    "house": "/house/dail/8",
+    "incoming": "Robert_Rowlette",
+    "loss_party": "Independent_(politician)",
+    "note": " [[Robert Rowlette]] (Ind) wins the seat vacated by the death of [[James Craig (University of Dublin)|James Craig]] (Ind)\n",
+    "outgoing": "James_Craig_(University_of_Dublin)"
+  },
+  {
+    "const": "Dublin_County_(D\u00e1il_\u00c9ireann_constituency)",
+    "date": "1935-06-17",
+    "gain_party": "Fine_Gael",
+    "house": "/house/dail/8",
+    "incoming": "Cecil_Lavery",
+    "loss_party": "Fine_Gael",
+    "note": " [[Cecil Lavery]] (FG) holds the seat vacated by the death of [[Batt O'Connor]] (FG)\n",
+    "outgoing": "Batt_O'Connor"
+  },
+  {
+    "const": "Galway_(D\u00e1il_\u00c9ireann_constituency)",
+    "date": "1935-06-19",
+    "gain_party": "Fianna_F\u00e1il",
+    "house": "/house/dail/8",
+    "incoming": "Eamon_Corbett",
+    "loss_party": "Fianna_F\u00e1il",
+    "note": " [[Eamon Corbett]] (FF) wins the seat vacated by the death of [[Martin McDonogh]] (FG)\n",
+    "outgoing": "Martin_McDonogh"
+  },
+  {
+    "const": "Galway_(D\u00e1il_\u00c9ireann_constituency)",
+    "date": "1936-08-13",
+    "gain_party": "Fianna_F\u00e1il",
+    "house": "/house/dail/8",
+    "incoming": "Martin_Neilan",
+    "loss_party": "Fianna_F\u00e1il",
+    "note": " [[Martin Neilan]] (FF) wins the seat vacated by the death of [[Patrick Hogan (Cumann na nGaedheal)|Patrick Hogan]] (FG)\n",
+    "outgoing": "Patrick_Hogan_(Cumann_na_nGaedheal)"
+  },
+  {
+    "const": "Wexford_(D\u00e1il_\u00c9ireann_constituency)",
+    "date": "1936-08-17",
+    "gain_party": "Fianna_F\u00e1il",
+    "house": "/house/dail/8",
+    "incoming": "Denis_Allen_(politician)",
+    "loss_party": "Fianna_F\u00e1il",
+    "note": " [[Denis Allen (politician)|Denis Allen]] (FF) wins the seat vacated by the death of [[Sir Osmond Esmonde, 12th Baronet|Osmond Esmonde]] (FG)\n",
+    "outgoing": "Sir_Osmond_Esmonde,_12th_Baronet"
+  }
+]
