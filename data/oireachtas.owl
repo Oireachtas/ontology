@@ -589,6 +589,26 @@ These are the entities who author, produce or modify legislative documents, jour
     
 
 
+    <!-- http://oireachtas.ie/ontology#Party -->
+
+    <owl:Class rdf:about="http://oireachtas.ie/ontology#Party">
+        <rdfs:label xml:lang="en">Political Party</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://rdaregistry.info/Elements/c/C10005"/>
+        <rdfs:subClassOf rdf:resource="http://xmlns.com/foaf/0.1/Organization"/>
+    </owl:Class>
+    
+
+
+    <!-- http://oireachtas.ie/ontology#PartyMember -->
+
+    <owl:Class rdf:about="http://oireachtas.ie/ontology#PartyMember">
+        <rdfs:label xml:lang="en">Party Member</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://rdaregistry.info/Elements/c/C10004"/>
+        <rdfs:subClassOf rdf:resource="&org;Role"/>
+    </owl:Class>
+    
+
+
     <!-- http://oireachtas.ie/ontology#RestoreBillEvent -->
 
     <owl:Class rdf:about="http://oireachtas.ie/ontology#RestoreBillEvent">
@@ -607,6 +627,12 @@ These are the entities who author, produce or modify legislative documents, jour
         <rdfs:label xml:lang="ga">Seanadóir</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://oireachtas.ie/ontology#Member"/>
     </owl:Class>
+    
+
+
+    <!-- http://oireachtas.ie/ontology#Votes -->
+
+    <owl:Class rdf:about="http://oireachtas.ie/ontology#Votes"/>
     
 
 
@@ -648,7 +674,9 @@ These are the entities who author, produce or modify legislative documents, jour
 
     <!-- http://www.w3.org/ns/org#FormalOrganization -->
 
-    <owl:Class rdf:about="&org;FormalOrganization"/>
+    <owl:Class rdf:about="&org;FormalOrganization">
+        <rdfs:subClassOf rdf:resource="http://purl.org/goodrelations/v1#BusinessEntity"/>
+    </owl:Class>
     
 
 
@@ -671,19 +699,19 @@ These are the entities who author, produce or modify legislative documents, jour
     
 
 
-    <!-- http://oireachtas.ie/house/dail -->
+    <!-- http://oireachtas.ie/ie/oireachtas/house/dail -->
 
-    <owl:NamedIndividual rdf:about="http://oireachtas.ie/house/dail">
+    <owl:NamedIndividual rdf:about="http://oireachtas.ie/ie/oireachtas/house/dail">
         <rdf:type rdf:resource="http://oireachtas.ie/ontology#Chamber"/>
-        <skos:prefLabel xml:lang="ga">Dáil Éireann</skos:prefLabel>
         <terms:title xml:lang="ga">Dáil Éireann</terms:title>
+        <skos:prefLabel xml:lang="ga">Dáil Éireann</skos:prefLabel>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://oireachtas.ie/house/seanad -->
+    <!-- http://oireachtas.ie/ie/oireachtas/house/seanad -->
 
-    <owl:NamedIndividual rdf:about="http://oireachtas.ie/house/seanad">
+    <owl:NamedIndividual rdf:about="http://oireachtas.ie/ie/oireachtas/house/seanad">
         <rdf:type rdf:resource="http://oireachtas.ie/ontology#Chamber"/>
         <dc:title xml:lang="ga">Seanad Éireann</dc:title>
         <skos:prefLabel xml:lang="ga">Seanad Éireann</skos:prefLabel>
@@ -1167,6 +1195,16 @@ These are the entities who author, produce or modify legislative documents, jour
     
 
 
+    <!-- http://oireachtas.ie/ontology#NílVote -->
+
+    <owl:NamedIndividual rdf:about="http://oireachtas.ie/ontology#NílVote">
+        <rdf:type rdf:resource="http://oireachtas.ie/ontology#Votes"/>
+        <skos:inScheme rdf:resource="http://oireachtas.ie/ontology#VoteTable"/>
+        <skos:topConceptOf rdf:resource="http://oireachtas.ie/ontology#VoteTable"/>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://oireachtas.ie/ontology#OrderCommitteeStage -->
 
     <owl:NamedIndividual rdf:about="http://oireachtas.ie/ontology#OrderCommitteeStage">
@@ -1367,6 +1405,16 @@ These are the entities who author, produce or modify legislative documents, jour
     
 
 
+    <!-- http://oireachtas.ie/ontology#TáVote -->
+
+    <owl:NamedIndividual rdf:about="http://oireachtas.ie/ontology#TáVote">
+        <rdf:type rdf:resource="http://oireachtas.ie/ontology#Votes"/>
+        <skos:topConceptOf rdf:resource="http://oireachtas.ie/ontology#VoteTable"/>
+        <skos:inScheme rdf:resource="http://oireachtas.ie/ontology#VoteTable"/>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://oireachtas.ie/ontology#VersionA -->
 
     <owl:NamedIndividual rdf:about="http://oireachtas.ie/ontology#VersionA">
@@ -1407,6 +1455,14 @@ These are the entities who author, produce or modify legislative documents, jour
         <skos:prefLabel xml:lang="en">Fifth Printing</skos:prefLabel>
         <skos:inScheme rdf:resource="http://data.europa.eu/eli/ontology#VersionTable"/>
         <skos:topConceptOf rdf:resource="http://data.europa.eu/eli/ontology#VersionTable"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://oireachtas.ie/ontology#VoteTable -->
+
+    <owl:NamedIndividual rdf:about="http://oireachtas.ie/ontology#VoteTable">
+        <rdf:type rdf:resource="&skos;ConceptScheme"/>
     </owl:NamedIndividual>
     
 
