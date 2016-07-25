@@ -65,6 +65,16 @@ These are the entities who author, produce or modify legislative documents, jour
     
 
 
+    <!-- http://oireachtas.ie/ontology#amends -->
+
+    <owl:ObjectProperty rdf:about="http://oireachtas.ie/ontology#amends">
+        <rdfs:subPropertyOf rdf:resource="http://data.europa.eu/eli/ontology#changes"/>
+        <rdfs:domain rdf:resource="http://oireachtas.ie/ontology#BillAmendmentText"/>
+        <rdfs:range rdf:resource="http://oireachtas.ie/ontology#BillExpression"/>
+    </owl:ObjectProperty>
+    
+
+
     <!-- http://oireachtas.ie/ontology#billDelivery -->
 
     <owl:ObjectProperty rdf:about="http://oireachtas.ie/ontology#billDelivery">
@@ -77,7 +87,7 @@ These are the entities who author, produce or modify legislative documents, jour
     <!-- http://oireachtas.ie/ontology#billEventType -->
 
     <owl:ObjectProperty rdf:about="http://oireachtas.ie/ontology#billEventType">
-        <rdfs:domain rdf:resource="http://oireachtas.ie/ontology#RestoreBillEvent"/>
+        <rdfs:domain rdf:resource="http://oireachtas.ie/ontology#BillEvent"/>
         <rdfs:range rdf:resource="http://www.oireachtas.ie/ontology#BillEvent"/>
     </owl:ObjectProperty>
     
@@ -168,8 +178,8 @@ These are the entities who author, produce or modify legislative documents, jour
 
     <owl:ObjectProperty rdf:about="http://oireachtas.ie/ontology#inChamber">
         <rdfs:comment xml:lang="en">The Chamber in which a Bill event occurs</rdfs:comment>
+        <rdfs:domain rdf:resource="http://oireachtas.ie/ontology#BillEvent"/>
         <rdfs:range rdf:resource="http://oireachtas.ie/ontology#Chamber"/>
-        <rdfs:domain rdf:resource="http://oireachtas.ie/ontology#RestoreBillEvent"/>
     </owl:ObjectProperty>
     
 
@@ -300,6 +310,7 @@ These are the entities who author, produce or modify legislative documents, jour
     <!-- http://oireachtas.ie/ontology#AmendmentList -->
 
     <owl:Class rdf:about="http://oireachtas.ie/ontology#AmendmentList">
+        <rdfs:label xml:lang="en">Bill Amendment List</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://data.europa.eu/eli/ontology#LegalResource"/>
         <rdfs:subClassOf rdf:resource="http://www.metalex.eu/metalex/2008-05-02#BibliographicWork"/>
     </owl:Class>
@@ -309,11 +320,17 @@ These are the entities who author, produce or modify legislative documents, jour
     <!-- http://oireachtas.ie/ontology#BillAmendment -->
 
     <owl:Class rdf:about="http://oireachtas.ie/ontology#BillAmendment">
-        <rdfs:label xml:lang="en">Bill Amendment</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://data.europa.eu/eli/ontology#LegalExpression"/>
+        <rdfs:subClassOf rdf:resource="http://data.europa.eu/eli/ontology#LegalResource"/>
         <rdfs:subClassOf rdf:resource="http://oireachtas.ie/ontology#AmendingStage"/>
-        <rdfs:comment xml:lang="en">An amendment is both an expression (or perhaps a work) and a modifying event</rdfs:comment>
-        <skos:prefLabel xml:lang="en">Bill Amendment</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://oireachtas.ie/ontology#BillAmendmentText -->
+
+    <owl:Class rdf:about="http://oireachtas.ie/ontology#BillAmendmentText">
+        <rdfs:subClassOf rdf:resource="http://data.europa.eu/eli/ontology#LegalExpression"/>
+        <rdfs:comment xml:lang="en">Text of Bill Amendment</rdfs:comment>
     </owl:Class>
     
 
@@ -336,6 +353,17 @@ These are the entities who author, produce or modify legislative documents, jour
         <rdfs:subClassOf rdf:resource="http://www.metalex.eu/metalex/2008-05-02#Result"/>
         <skos:prefLabel xml:lang="en">Bill Delivery Outcome</skos:prefLabel>
         <rdfs:comment xml:lang="en">The means by which the Bill was initiated in the Houses of the Oireachtas</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://oireachtas.ie/ontology#BillEvent -->
+
+    <owl:Class rdf:about="http://oireachtas.ie/ontology#BillEvent">
+        <rdfs:label xml:lang="en">Bill Event</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://oireachtas.ie/ontology#JournalEvent"/>
+        <rdfs:comment xml:lang="en">A procedural event that occurs during the lifecycle of a Bill</rdfs:comment>
+        <skos:prefLabel xml:lang="en">Bill Event</skos:prefLabel>
     </owl:Class>
     
 
@@ -375,6 +403,7 @@ These are the entities who author, produce or modify legislative documents, jour
     <!-- http://oireachtas.ie/ontology#BillResource -->
 
     <owl:Class rdf:about="http://oireachtas.ie/ontology#BillResource">
+        <rdfs:label xml:lang="en">Bill Resource</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://data.europa.eu/eli/ontology#LegalResource"/>
         <rdfs:subClassOf rdf:resource="http://www.metalex.eu/metalex/2008-05-02#BibliographicWork"/>
     </owl:Class>
@@ -391,7 +420,7 @@ These are the entities who author, produce or modify legislative documents, jour
 
     <owl:Class rdf:about="http://oireachtas.ie/ontology#BillStage">
         <rdfs:label xml:lang="en">Bill Stage</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://oireachtas.ie/ontology#RestoreBillEvent"/>
+        <rdfs:subClassOf rdf:resource="http://oireachtas.ie/ontology#BillEvent"/>
         <skos:prefLabel xml:lang="en">Stage of Bill</skos:prefLabel>
     </owl:Class>
     
@@ -435,6 +464,14 @@ These are the entities who author, produce or modify legislative documents, jour
         <rdfs:subClassOf rdf:resource="&time;ProperInterval"/>
         <rdfs:comment xml:lang="en">A Cabinet consists of the Taoiseach, the Tánaiste and between 7 and 15 Ministers, as well as the Attorney General (the only member of the Cabinet who is not also a Member of the Oireachtas).</rdfs:comment>
         <rdfs:comment xml:lang="en">An individual cabinet exists for a term beginning on the same date as the start of a Dáil term and ending on the date on which the succeeding Dáil commences. Members of the Cabinet remain in office until they are replaced by a new Cabinet in the next Dáil</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://oireachtas.ie/ontology#CarriedOutcome -->
+
+    <owl:Class rdf:about="http://oireachtas.ie/ontology#CarriedOutcome">
+        <rdfs:subClassOf rdf:resource="http://www.oireachtas.ie/ontology#BillEventOutcome"/>
     </owl:Class>
     
 
@@ -609,17 +646,6 @@ These are the entities who author, produce or modify legislative documents, jour
     
 
 
-    <!-- http://oireachtas.ie/ontology#RestoreBillEvent -->
-
-    <owl:Class rdf:about="http://oireachtas.ie/ontology#RestoreBillEvent">
-        <rdfs:label xml:lang="en">Bill Event</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://oireachtas.ie/ontology#JournalEvent"/>
-        <rdfs:comment xml:lang="en">A procedural event that occurs during the lifecycle of a Bill</rdfs:comment>
-        <skos:prefLabel xml:lang="en">Bill Event</skos:prefLabel>
-    </owl:Class>
-    
-
-
     <!-- http://oireachtas.ie/ontology#Senator -->
 
     <owl:Class rdf:about="http://oireachtas.ie/ontology#Senator">
@@ -734,9 +760,11 @@ These are the entities who author, produce or modify legislative documents, jour
 
     <owl:NamedIndividual rdf:about="http://oireachtas.ie/ontology#Agreed">
         <rdf:type rdf:resource="http://oireachtas.ie/ontology#BillEventOutcome"/>
+        <rdf:type rdf:resource="http://oireachtas.ie/ontology#CarriedOutcome"/>
         <skos:prefLabel xml:lang="en">Agreed to</skos:prefLabel>
         <skos:inScheme rdf:resource="http://oireachtas.ie/ontology#BillEventResultTable"/>
         <skos:topConceptOf rdf:resource="http://oireachtas.ie/ontology#BillEventResultTable"/>
+        <skos:topConceptOf rdf:resource="http://oireachtas.ie/ontology#CarriedOutcomeTable"/>
     </owl:NamedIndividual>
     
 
@@ -744,8 +772,8 @@ These are the entities who author, produce or modify legislative documents, jour
     <!-- http://oireachtas.ie/ontology#AllStages -->
 
     <owl:NamedIndividual rdf:about="http://oireachtas.ie/ontology#AllStages">
+        <rdf:type rdf:resource="http://oireachtas.ie/ontology#BillEvent"/>
         <rdf:type rdf:resource="http://oireachtas.ie/ontology#BillStage"/>
-        <rdf:type rdf:resource="http://oireachtas.ie/ontology#RestoreBillEvent"/>
         <skos:prefLabel xml:lang="en">All stages</skos:prefLabel>
         <skos:inScheme rdf:resource="http://oireachtas.ie/ontology#BillEventTable"/>
         <skos:topConceptOf rdf:resource="http://oireachtas.ie/ontology#BillEventTable"/>
@@ -788,7 +816,7 @@ These are the entities who author, produce or modify legislative documents, jour
     <!-- http://oireachtas.ie/ontology#BallotOrder -->
 
     <owl:NamedIndividual rdf:about="http://oireachtas.ie/ontology#BallotOrder">
-        <rdf:type rdf:resource="http://oireachtas.ie/ontology#RestoreBillEvent"/>
+        <rdf:type rdf:resource="http://oireachtas.ie/ontology#BillEvent"/>
         <skos:prefLabel xml:lang="en">Ballot paper motion</skos:prefLabel>
         <skos:inScheme rdf:resource="http://oireachtas.ie/ontology#BillEventTable"/>
         <skos:topConceptOf rdf:resource="http://oireachtas.ie/ontology#BillEventTable"/>
@@ -807,24 +835,23 @@ These are the entities who author, produce or modify legislative documents, jour
     
 
 
-    <!-- http://oireachtas.ie/ontology#BillAmend -->
+    <!-- http://oireachtas.ie/ontology#BillAmendment -->
 
-    <owl:NamedIndividual rdf:about="http://oireachtas.ie/ontology#BillAmend">
-        <rdf:type rdf:resource="http://oireachtas.ie/ontology#RestoreBillEvent"/>
-        <skos:prefLabel xml:lang="en">Bill amendment</skos:prefLabel>
-        <skos:inScheme rdf:resource="http://oireachtas.ie/ontology#BillEventTable"/>
+    <owl:NamedIndividual rdf:about="http://oireachtas.ie/ontology#BillAmendment">
+        <rdf:type rdf:resource="http://oireachtas.ie/ontology#BillEvent"/>
         <skos:topConceptOf rdf:resource="http://oireachtas.ie/ontology#BillEventTable"/>
+        <skos:inScheme rdf:resource="http://oireachtas.ie/ontology#BillEventTable"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://oireachtas.ie/ontology#BillAmend2Amend -->
+    <!-- http://oireachtas.ie/ontology#BillAmendment2Amendment -->
 
-    <owl:NamedIndividual rdf:about="http://oireachtas.ie/ontology#BillAmend2Amend">
-        <rdf:type rdf:resource="http://oireachtas.ie/ontology#RestoreBillEvent"/>
+    <owl:NamedIndividual rdf:about="http://oireachtas.ie/ontology#BillAmendment2Amendment">
+        <rdf:type rdf:resource="http://oireachtas.ie/ontology#BillEvent"/>
         <skos:prefLabel xml:lang="en">Amendment to Bill amendment</skos:prefLabel>
-        <skos:inScheme rdf:resource="http://oireachtas.ie/ontology#BillEventTable"/>
         <skos:topConceptOf rdf:resource="http://oireachtas.ie/ontology#BillEventTable"/>
+        <skos:inScheme rdf:resource="http://oireachtas.ie/ontology#BillEventTable"/>
     </owl:NamedIndividual>
     
 
@@ -869,7 +896,7 @@ These are the entities who author, produce or modify legislative documents, jour
     <!-- http://oireachtas.ie/ontology#BillRecommendation -->
 
     <owl:NamedIndividual rdf:about="http://oireachtas.ie/ontology#BillRecommendation">
-        <rdf:type rdf:resource="http://oireachtas.ie/ontology#RestoreBillEvent"/>
+        <rdf:type rdf:resource="http://oireachtas.ie/ontology#BillEvent"/>
         <skos:prefLabel xml:lang="en">Bill recommendation</skos:prefLabel>
         <skos:topConceptOf rdf:resource="http://oireachtas.ie/ontology#BillEventTable"/>
         <skos:inScheme rdf:resource="http://oireachtas.ie/ontology#BillEventTable"/>
@@ -880,7 +907,7 @@ These are the entities who author, produce or modify legislative documents, jour
     <!-- http://oireachtas.ie/ontology#BillRejection -->
 
     <owl:NamedIndividual rdf:about="http://oireachtas.ie/ontology#BillRejection">
-        <rdf:type rdf:resource="http://oireachtas.ie/ontology#RestoreBillEvent"/>
+        <rdf:type rdf:resource="http://oireachtas.ie/ontology#BillEvent"/>
         <skos:topConceptOf rdf:resource="http://oireachtas.ie/ontology#BillEventTable"/>
     </owl:NamedIndividual>
     
@@ -903,12 +930,18 @@ These are the entities who author, produce or modify legislative documents, jour
     
 
 
+    <!-- http://oireachtas.ie/ontology#CarriedOutcomeTable -->
+
+    <owl:NamedIndividual rdf:about="http://oireachtas.ie/ontology#CarriedOutcomeTable"/>
+    
+
+
     <!-- http://oireachtas.ie/ontology#CommitteeStage -->
 
     <owl:NamedIndividual rdf:about="http://oireachtas.ie/ontology#CommitteeStage">
         <rdf:type rdf:resource="http://oireachtas.ie/ontology#AmendingStage"/>
+        <rdf:type rdf:resource="http://oireachtas.ie/ontology#BillEvent"/>
         <rdf:type rdf:resource="http://oireachtas.ie/ontology#BillStage"/>
-        <rdf:type rdf:resource="http://oireachtas.ie/ontology#RestoreBillEvent"/>
         <skos:prefLabel xml:lang="en">Committee stage</skos:prefLabel>
         <skos:topConceptOf rdf:resource="http://oireachtas.ie/ontology#BillEventTable"/>
         <skos:inScheme rdf:resource="http://oireachtas.ie/ontology#BillEventTable"/>
@@ -920,8 +953,8 @@ These are the entities who author, produce or modify legislative documents, jour
 
     <owl:NamedIndividual rdf:about="http://oireachtas.ie/ontology#CommitteeSubStages">
         <rdf:type rdf:resource="http://oireachtas.ie/ontology#AmendingStage"/>
+        <rdf:type rdf:resource="http://oireachtas.ie/ontology#BillEvent"/>
         <rdf:type rdf:resource="http://oireachtas.ie/ontology#BillStage"/>
-        <rdf:type rdf:resource="http://oireachtas.ie/ontology#RestoreBillEvent"/>
         <skos:prefLabel xml:lang="en">Committee and remaining stages</skos:prefLabel>
         <skos:inScheme rdf:resource="http://oireachtas.ie/ontology#BillEventTable"/>
         <skos:topConceptOf rdf:resource="http://oireachtas.ie/ontology#BillEventTable"/>
@@ -943,7 +976,7 @@ These are the entities who author, produce or modify legislative documents, jour
     <!-- http://oireachtas.ie/ontology#DailAmdSeanad -->
 
     <owl:NamedIndividual rdf:about="http://oireachtas.ie/ontology#DailAmdSeanad">
-        <rdf:type rdf:resource="http://oireachtas.ie/ontology#RestoreBillEvent"/>
+        <rdf:type rdf:resource="http://oireachtas.ie/ontology#BillEvent"/>
         <skos:prefLabel xml:lang="en">Dáil amendments in the Seanad</skos:prefLabel>
         <skos:inScheme rdf:resource="http://oireachtas.ie/ontology#BillEventTable"/>
         <skos:topConceptOf rdf:resource="http://oireachtas.ie/ontology#BillEventTable"/>
@@ -955,9 +988,11 @@ These are the entities who author, produce or modify legislative documents, jour
 
     <owl:NamedIndividual rdf:about="http://oireachtas.ie/ontology#DeclaredCarried">
         <rdf:type rdf:resource="http://oireachtas.ie/ontology#BillEventOutcome"/>
+        <rdf:type rdf:resource="http://oireachtas.ie/ontology#CarriedOutcome"/>
         <skos:prefLabel xml:lang="en">Declared carried</skos:prefLabel>
         <skos:topConceptOf rdf:resource="http://oireachtas.ie/ontology#BillEventResultTable"/>
         <skos:inScheme rdf:resource="http://oireachtas.ie/ontology#BillEventResultTable"/>
+        <skos:topConceptOf rdf:resource="http://oireachtas.ie/ontology#CarriedOutcomeTable"/>
     </owl:NamedIndividual>
     
 
@@ -976,7 +1011,7 @@ These are the entities who author, produce or modify legislative documents, jour
     <!-- http://oireachtas.ie/ontology#DeemedPassed -->
 
     <owl:NamedIndividual rdf:about="http://oireachtas.ie/ontology#DeemedPassed">
-        <rdf:type rdf:resource="http://oireachtas.ie/ontology#RestoreBillEvent"/>
+        <rdf:type rdf:resource="http://oireachtas.ie/ontology#BillEvent"/>
         <skos:topConceptOf rdf:resource="http://oireachtas.ie/ontology#BillEventTable"/>
     </owl:NamedIndividual>
     
@@ -996,7 +1031,7 @@ These are the entities who author, produce or modify legislative documents, jour
     <!-- http://oireachtas.ie/ontology#DischargeOrderSecondStage -->
 
     <owl:NamedIndividual rdf:about="http://oireachtas.ie/ontology#DischargeOrderSecondStage">
-        <rdf:type rdf:resource="http://oireachtas.ie/ontology#RestoreBillEvent"/>
+        <rdf:type rdf:resource="http://oireachtas.ie/ontology#BillEvent"/>
         <skos:prefLabel xml:lang="en">Motion for discharge order for second stage</skos:prefLabel>
         <skos:topConceptOf rdf:resource="http://oireachtas.ie/ontology#BillEventTable"/>
         <skos:inScheme rdf:resource="http://oireachtas.ie/ontology#BillEventTable"/>
@@ -1007,7 +1042,7 @@ These are the entities who author, produce or modify legislative documents, jour
     <!-- http://oireachtas.ie/ontology#DischargeSecondStage -->
 
     <owl:NamedIndividual rdf:about="http://oireachtas.ie/ontology#DischargeSecondStage">
-        <rdf:type rdf:resource="http://oireachtas.ie/ontology#RestoreBillEvent"/>
+        <rdf:type rdf:resource="http://oireachtas.ie/ontology#BillEvent"/>
         <skos:prefLabel xml:lang="en">Motion for discharge order for second stage</skos:prefLabel>
         <skos:topConceptOf rdf:resource="http://oireachtas.ie/ontology#BillEventTable"/>
         <skos:inScheme rdf:resource="http://oireachtas.ie/ontology#BillEventTable"/>
@@ -1040,7 +1075,7 @@ These are the entities who author, produce or modify legislative documents, jour
     <!-- http://oireachtas.ie/ontology#EarlySign -->
 
     <owl:NamedIndividual rdf:about="http://oireachtas.ie/ontology#EarlySign">
-        <rdf:type rdf:resource="http://oireachtas.ie/ontology#RestoreBillEvent"/>
+        <rdf:type rdf:resource="http://oireachtas.ie/ontology#BillEvent"/>
         <skos:prefLabel xml:lang="en">Motion for early signature</skos:prefLabel>
         <skos:topConceptOf rdf:resource="http://oireachtas.ie/ontology#BillEventTable"/>
         <skos:inScheme rdf:resource="http://oireachtas.ie/ontology#BillEventTable"/>
@@ -1082,8 +1117,8 @@ These are the entities who author, produce or modify legislative documents, jour
     <!-- http://oireachtas.ie/ontology#FifthStage -->
 
     <owl:NamedIndividual rdf:about="http://oireachtas.ie/ontology#FifthStage">
+        <rdf:type rdf:resource="http://oireachtas.ie/ontology#BillEvent"/>
         <rdf:type rdf:resource="http://oireachtas.ie/ontology#BillStage"/>
-        <rdf:type rdf:resource="http://oireachtas.ie/ontology#RestoreBillEvent"/>
         <skos:prefLabel xml:lang="en">Fifth stage</skos:prefLabel>
         <skos:topConceptOf rdf:resource="http://oireachtas.ie/ontology#BillEventTable"/>
         <skos:inScheme rdf:resource="http://oireachtas.ie/ontology#BillEventTable"/>
@@ -1094,7 +1129,7 @@ These are the entities who author, produce or modify legislative documents, jour
     <!-- http://oireachtas.ie/ontology#FinancialResolution -->
 
     <owl:NamedIndividual rdf:about="http://oireachtas.ie/ontology#FinancialResolution">
-        <rdf:type rdf:resource="http://oireachtas.ie/ontology#RestoreBillEvent"/>
+        <rdf:type rdf:resource="http://oireachtas.ie/ontology#BillEvent"/>
         <skos:prefLabel xml:lang="en">Financial resolution</skos:prefLabel>
         <skos:topConceptOf rdf:resource="http://oireachtas.ie/ontology#BillEventTable"/>
     </owl:NamedIndividual>
@@ -1104,8 +1139,8 @@ These are the entities who author, produce or modify legislative documents, jour
     <!-- http://oireachtas.ie/ontology#FirstStage -->
 
     <owl:NamedIndividual rdf:about="http://oireachtas.ie/ontology#FirstStage">
+        <rdf:type rdf:resource="http://oireachtas.ie/ontology#BillEvent"/>
         <rdf:type rdf:resource="http://oireachtas.ie/ontology#BillStage"/>
-        <rdf:type rdf:resource="http://oireachtas.ie/ontology#RestoreBillEvent"/>
         <skos:prefLabel xml:lang="en">First stage</skos:prefLabel>
         <skos:inScheme rdf:resource="http://oireachtas.ie/ontology#BillEventTable"/>
         <skos:topConceptOf rdf:resource="http://oireachtas.ie/ontology#BillEventTable"/>
@@ -1126,7 +1161,7 @@ These are the entities who author, produce or modify legislative documents, jour
     <!-- http://oireachtas.ie/ontology#InstrCommittee -->
 
     <owl:NamedIndividual rdf:about="http://oireachtas.ie/ontology#InstrCommittee">
-        <rdf:type rdf:resource="http://oireachtas.ie/ontology#RestoreBillEvent"/>
+        <rdf:type rdf:resource="http://oireachtas.ie/ontology#BillEvent"/>
         <skos:prefLabel xml:lang="en">Instruction to committee</skos:prefLabel>
         <skos:inScheme rdf:resource="http://oireachtas.ie/ontology#BillEventTable"/>
         <skos:topConceptOf rdf:resource="http://oireachtas.ie/ontology#BillEventTable"/>
@@ -1167,7 +1202,7 @@ These are the entities who author, produce or modify legislative documents, jour
     <!-- http://oireachtas.ie/ontology#LapsedBillEvent -->
 
     <owl:NamedIndividual rdf:about="http://oireachtas.ie/ontology#LapsedBillEvent">
-        <rdf:type rdf:resource="http://oireachtas.ie/ontology#RestoreBillEvent"/>
+        <rdf:type rdf:resource="http://oireachtas.ie/ontology#BillEvent"/>
         <skos:topConceptOf rdf:resource="http://oireachtas.ie/ontology#BillEventTable"/>
     </owl:NamedIndividual>
     
@@ -1176,7 +1211,7 @@ These are the entities who author, produce or modify legislative documents, jour
     <!-- http://oireachtas.ie/ontology#LeaveToWithdraw -->
 
     <owl:NamedIndividual rdf:about="http://oireachtas.ie/ontology#LeaveToWithdraw">
-        <rdf:type rdf:resource="http://oireachtas.ie/ontology#RestoreBillEvent"/>
+        <rdf:type rdf:resource="http://oireachtas.ie/ontology#BillEvent"/>
         <skos:prefLabel xml:lang="en">Leave to withdraw</skos:prefLabel>
         <skos:topConceptOf rdf:resource="http://oireachtas.ie/ontology#BillEventTable"/>
         <skos:inScheme rdf:resource="http://oireachtas.ie/ontology#BillEventTable"/>
@@ -1208,8 +1243,8 @@ These are the entities who author, produce or modify legislative documents, jour
     <!-- http://oireachtas.ie/ontology#OrderCommitteeStage -->
 
     <owl:NamedIndividual rdf:about="http://oireachtas.ie/ontology#OrderCommitteeStage">
+        <rdf:type rdf:resource="http://oireachtas.ie/ontology#BillEvent"/>
         <rdf:type rdf:resource="http://oireachtas.ie/ontology#BillStage"/>
-        <rdf:type rdf:resource="http://oireachtas.ie/ontology#RestoreBillEvent"/>
         <skos:prefLabel xml:lang="en">Order for committee stage</skos:prefLabel>
         <skos:topConceptOf rdf:resource="http://oireachtas.ie/ontology#BillEventTable"/>
         <skos:inScheme rdf:resource="http://oireachtas.ie/ontology#BillEventTable"/>
@@ -1220,8 +1255,8 @@ These are the entities who author, produce or modify legislative documents, jour
     <!-- http://oireachtas.ie/ontology#OrderReportStage -->
 
     <owl:NamedIndividual rdf:about="http://oireachtas.ie/ontology#OrderReportStage">
+        <rdf:type rdf:resource="http://oireachtas.ie/ontology#BillEvent"/>
         <rdf:type rdf:resource="http://oireachtas.ie/ontology#BillStage"/>
-        <rdf:type rdf:resource="http://oireachtas.ie/ontology#RestoreBillEvent"/>
         <skos:prefLabel xml:lang="en">Order for report stage</skos:prefLabel>
         <skos:topConceptOf rdf:resource="http://oireachtas.ie/ontology#BillEventTable"/>
         <skos:inScheme rdf:resource="http://oireachtas.ie/ontology#BillEventTable"/>
@@ -1232,8 +1267,8 @@ These are the entities who author, produce or modify legislative documents, jour
     <!-- http://oireachtas.ie/ontology#OrderSecondStage -->
 
     <owl:NamedIndividual rdf:about="http://oireachtas.ie/ontology#OrderSecondStage">
+        <rdf:type rdf:resource="http://oireachtas.ie/ontology#BillEvent"/>
         <rdf:type rdf:resource="http://oireachtas.ie/ontology#BillStage"/>
-        <rdf:type rdf:resource="http://oireachtas.ie/ontology#RestoreBillEvent"/>
         <skos:prefLabel xml:lang="en">Order for second stage</skos:prefLabel>
         <skos:inScheme rdf:resource="http://oireachtas.ie/ontology#BillEventTable"/>
         <skos:topConceptOf rdf:resource="http://oireachtas.ie/ontology#BillEventTable"/>
@@ -1283,7 +1318,7 @@ These are the entities who author, produce or modify legislative documents, jour
     <!-- http://oireachtas.ie/ontology#RecommitBill -->
 
     <owl:NamedIndividual rdf:about="http://oireachtas.ie/ontology#RecommitBill">
-        <rdf:type rdf:resource="http://oireachtas.ie/ontology#RestoreBillEvent"/>
+        <rdf:type rdf:resource="http://oireachtas.ie/ontology#BillEvent"/>
         <skos:prefLabel xml:lang="en">Motion to recommit</skos:prefLabel>
         <skos:inScheme rdf:resource="http://oireachtas.ie/ontology#BillEventTable"/>
         <skos:topConceptOf rdf:resource="http://oireachtas.ie/ontology#BillEventTable"/>
@@ -1294,7 +1329,7 @@ These are the entities who author, produce or modify legislative documents, jour
     <!-- http://oireachtas.ie/ontology#RefCommittee -->
 
     <owl:NamedIndividual rdf:about="http://oireachtas.ie/ontology#RefCommittee">
-        <rdf:type rdf:resource="http://oireachtas.ie/ontology#RestoreBillEvent"/>
+        <rdf:type rdf:resource="http://oireachtas.ie/ontology#BillEvent"/>
         <skos:prefLabel xml:lang="en">Referral to select committee</skos:prefLabel>
         <skos:topConceptOf rdf:resource="http://oireachtas.ie/ontology#BillEventTable"/>
         <skos:inScheme rdf:resource="http://oireachtas.ie/ontology#BillEventTable"/>
@@ -1326,8 +1361,8 @@ These are the entities who author, produce or modify legislative documents, jour
 
     <owl:NamedIndividual rdf:about="http://oireachtas.ie/ontology#ReportStage">
         <rdf:type rdf:resource="http://oireachtas.ie/ontology#AmendingStage"/>
+        <rdf:type rdf:resource="http://oireachtas.ie/ontology#BillEvent"/>
         <rdf:type rdf:resource="http://oireachtas.ie/ontology#BillStage"/>
-        <rdf:type rdf:resource="http://oireachtas.ie/ontology#RestoreBillEvent"/>
         <skos:prefLabel xml:lang="en">Report stage</skos:prefLabel>
         <skos:inScheme rdf:resource="http://oireachtas.ie/ontology#BillEventTable"/>
         <skos:topConceptOf rdf:resource="http://oireachtas.ie/ontology#BillEventTable"/>
@@ -1339,8 +1374,8 @@ These are the entities who author, produce or modify legislative documents, jour
 
     <owl:NamedIndividual rdf:about="http://oireachtas.ie/ontology#ReportSubStages">
         <rdf:type rdf:resource="http://oireachtas.ie/ontology#AmendingStage"/>
+        <rdf:type rdf:resource="http://oireachtas.ie/ontology#BillEvent"/>
         <rdf:type rdf:resource="http://oireachtas.ie/ontology#BillStage"/>
-        <rdf:type rdf:resource="http://oireachtas.ie/ontology#RestoreBillEvent"/>
         <skos:prefLabel xml:lang="en">Report and final stages</skos:prefLabel>
         <skos:inScheme rdf:resource="http://oireachtas.ie/ontology#BillEventTable"/>
         <skos:topConceptOf rdf:resource="http://oireachtas.ie/ontology#BillEventTable"/>
@@ -1351,7 +1386,7 @@ These are the entities who author, produce or modify legislative documents, jour
     <!-- http://oireachtas.ie/ontology#RestoredBill -->
 
     <owl:NamedIndividual rdf:about="http://oireachtas.ie/ontology#RestoredBill">
-        <rdf:type rdf:resource="http://oireachtas.ie/ontology#RestoreBillEvent"/>
+        <rdf:type rdf:resource="http://oireachtas.ie/ontology#BillEvent"/>
         <skos:prefLabel xml:lang="en">Restoration of Bill</skos:prefLabel>
         <skos:topConceptOf rdf:resource="http://oireachtas.ie/ontology#BillEventTable"/>
         <skos:inScheme rdf:resource="http://oireachtas.ie/ontology#BillEventTable"/>
@@ -1362,7 +1397,7 @@ These are the entities who author, produce or modify legislative documents, jour
     <!-- http://oireachtas.ie/ontology#SeanadAmdDail -->
 
     <owl:NamedIndividual rdf:about="http://oireachtas.ie/ontology#SeanadAmdDail">
-        <rdf:type rdf:resource="http://oireachtas.ie/ontology#RestoreBillEvent"/>
+        <rdf:type rdf:resource="http://oireachtas.ie/ontology#BillEvent"/>
         <skos:prefLabel xml:lang="en">Seanad amendments in the Dáil</skos:prefLabel>
         <skos:inScheme rdf:resource="http://oireachtas.ie/ontology#BillEventTable"/>
         <skos:topConceptOf rdf:resource="http://oireachtas.ie/ontology#BillEventTable"/>
@@ -1373,8 +1408,8 @@ These are the entities who author, produce or modify legislative documents, jour
     <!-- http://oireachtas.ie/ontology#SecondStage -->
 
     <owl:NamedIndividual rdf:about="http://oireachtas.ie/ontology#SecondStage">
+        <rdf:type rdf:resource="http://oireachtas.ie/ontology#BillEvent"/>
         <rdf:type rdf:resource="http://oireachtas.ie/ontology#BillStage"/>
-        <rdf:type rdf:resource="http://oireachtas.ie/ontology#RestoreBillEvent"/>
         <skos:prefLabel xml:lang="en">Second stage</skos:prefLabel>
         <skos:topConceptOf rdf:resource="http://oireachtas.ie/ontology#BillEventTable"/>
         <skos:inScheme rdf:resource="http://oireachtas.ie/ontology#BillEventTable"/>
@@ -1385,8 +1420,8 @@ These are the entities who author, produce or modify legislative documents, jour
     <!-- http://oireachtas.ie/ontology#SecondSubStages -->
 
     <owl:NamedIndividual rdf:about="http://oireachtas.ie/ontology#SecondSubStages">
+        <rdf:type rdf:resource="http://oireachtas.ie/ontology#BillEvent"/>
         <rdf:type rdf:resource="http://oireachtas.ie/ontology#BillStage"/>
-        <rdf:type rdf:resource="http://oireachtas.ie/ontology#RestoreBillEvent"/>
         <skos:prefLabel xml:lang="en">Second and subsequent stages</skos:prefLabel>
         <skos:topConceptOf rdf:resource="http://oireachtas.ie/ontology#BillEventTable"/>
         <skos:inScheme rdf:resource="http://oireachtas.ie/ontology#BillEventTable"/>
@@ -1470,7 +1505,7 @@ These are the entities who author, produce or modify legislative documents, jour
     <!-- http://oireachtas.ie/ontology#VoterInfo -->
 
     <owl:NamedIndividual rdf:about="http://oireachtas.ie/ontology#VoterInfo">
-        <rdf:type rdf:resource="http://oireachtas.ie/ontology#RestoreBillEvent"/>
+        <rdf:type rdf:resource="http://oireachtas.ie/ontology#BillEvent"/>
         <skos:prefLabel xml:lang="en">Motion on statement of information for voters</skos:prefLabel>
         <skos:inScheme rdf:resource="http://oireachtas.ie/ontology#BillEventTable"/>
         <skos:topConceptOf rdf:resource="http://oireachtas.ie/ontology#BillEventTable"/>
@@ -1510,6 +1545,12 @@ These are the entities who author, produce or modify legislative documents, jour
 
     <rdf:Description rdf:about="http://data.europa.eu/eli/ontology#title_alternative">
         <rdfs:label xml:lang="en">Long title of a Bill</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://oireachtas.ie/ontology#BillAmendment">
+        <rdfs:label xml:lang="en">Bill Amendment</rdfs:label>
+        <rdfs:comment xml:lang="en">An amendment is both an expression (or perhaps a work) and a modifying event</rdfs:comment>
+        <skos:prefLabel xml:lang="en">Bill Amendment</skos:prefLabel>
+        <skos:prefLabel xml:lang="en">Bill amendment</skos:prefLabel>
     </rdf:Description>
     <rdf:Description rdf:about="http://data.europa.eu/eli/ontology#title">
         <rdfs:label>Short title of a Bill</rdfs:label>
