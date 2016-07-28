@@ -80,7 +80,6 @@ def bill_triples(g):
         g.add((oir[uri], ELI.is_realized_by, oir[bill_init]))
         g.add((oir[uri], DCTERMS.title, Literal(b["bill_title_sh_en"], lang="en")))
         g.add((oir[uri], DCTERMS.title, Literal(b["bill_title_sh_ga"], lang="ga")))
-        g.add((oir[uri], DCTERMS.title, Literal(b["bill_title_sh_ga"], lang="ga")))
         g.add((oir[uri], ELI.type_document, OIR.Bill))
         g.add((oir[uri], OIR.billStatus, OIR[status_lu[b['status']]]))
         g.add((oir[uri], OIR.billSource, OIR[b['source'].replace(" ", "")+"Bill"]))
