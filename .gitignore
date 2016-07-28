@@ -188,6 +188,11 @@ $RECYCLE.BIN/
 ## Python
 #############
 
+# Project specific
+
+config.py
+
+
 *.py[cod]
 
 # Packages
