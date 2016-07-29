@@ -192,6 +192,7 @@ $RECYCLE.BIN/
 
 config.py
 catalog*.xml
+.ipynb-checkpoints/
 
 *.py[cod]
 
