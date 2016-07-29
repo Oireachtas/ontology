@@ -191,7 +191,7 @@ $RECYCLE.BIN/
 # Project specific
 
 config.py
-
+catalog*.xml
 
 *.py[cod]
 
