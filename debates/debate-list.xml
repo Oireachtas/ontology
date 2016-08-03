@@ -1,0 +1,38 @@
+<?xml version='1.0' encoding='utf-8'?>
+<debate-list>
+  <head>
+    <chamber name="DÁIL ÉIREANN" uri="/ie/oireachtas/house/dail"/>
+    <date-range end="2015-11-12" start="2015-11-12"/>
+  </head>
+  <results count="1">
+    <debateRecord date="2015-11-12" uri="/akn/ie/debateRecord/dail/2015-11-12/debate">
+      <heading uri="/akn/ie/debateRecord/dail/2015-11-12/debate/dbsect_1" value="Prelude"/>
+      <heading uri="/akn/ie/debateRecord/dail/2015-11-12/debate/dbsect_2" value="Ceisteanna - Questions"/>
+      <heading uri="/akn/ie/debateRecord/dail/2015-11-12/debate/dbsect_3" value="Priority Questions"/>
+      <heading uri="/akn/ie/debateRecord/dail/2015-11-12/debate/dbsect_4" value="Heritage Council Funding"/>
+      <heading uri="/akn/ie/debateRecord/dail/2015-11-12/debate/dbsect_5" value="Seirbhísí Eitilte"/>
+      <heading uri="/akn/ie/debateRecord/dail/2015-11-12/debate/dbsect_6" value="National Monuments"/>
+      <heading uri="/akn/ie/debateRecord/dail/2015-11-12/debate/dbsect_7" value="Seirbhísí Eitilte"/>
+      <heading uri="/akn/ie/debateRecord/dail/2015-11-12/debate/dbsect_8" value="National Monuments"/>
+      <heading uri="/akn/ie/debateRecord/dail/2015-11-12/debate/dbsect_9" value="Other Questions"/>
+      <heading uri="/akn/ie/debateRecord/dail/2015-11-12/debate/dbsect_10" value="Cultural Policy"/>
+      <heading uri="/akn/ie/debateRecord/dail/2015-11-12/debate/dbsect_11" value="Commemorative Events"/>
+      <heading uri="/akn/ie/debateRecord/dail/2015-11-12/debate/dbsect_12" value="Céanna agus Cuanta"/>
+      <heading uri="/akn/ie/debateRecord/dail/2015-11-12/debate/dbsect_13" value="Pleananna Teanga"/>
+      <heading uri="/akn/ie/debateRecord/dail/2015-11-12/debate/dbsect_14" value="Deer Culls"/>
+      <heading uri="/akn/ie/debateRecord/dail/2015-11-12/debate/dbsect_15" value="Message from Select Committee"/>
+      <heading uri="/akn/ie/debateRecord/dail/2015-11-12/debate/dbsect_16" value="Garda Síochána (Policing Authority and Miscellaneous Provisions) Bill 2015: Report Stage (Resumed)"/>
+      <heading uri="/akn/ie/debateRecord/dail/2015-11-12/debate/dbsect_29" value="Leaders’ Questions"/>
+      <heading uri="/akn/ie/debateRecord/dail/2015-11-12/debate/dbsect_30" value="Order of Business"/>
+      <heading uri="/akn/ie/debateRecord/dail/2015-11-12/debate/dbsect_31" value="Finance Bill 2015: Financial Resolutions"/>
+      <heading uri="/akn/ie/debateRecord/dail/2015-11-12/debate/dbsect_32" value="Finance Bill 2015: Allocation of Time: Motion"/>
+      <heading uri="/akn/ie/debateRecord/dail/2015-11-12/debate/dbsect_33" value="Garda Síochána (Policing Authority and Miscellaneous Provisions) Bill 2015: Report Stage (Resumed)"/>
+      <heading uri="/akn/ie/debateRecord/dail/2015-11-12/debate/dbsect_82" value="Topical Issue Matters"/>
+      <heading uri="/akn/ie/debateRecord/dail/2015-11-12/debate/dbsect_83" value="Topical Issue Debate"/>
+      <heading uri="/akn/ie/debateRecord/dail/2015-11-12/debate/dbsect_84" value="Preschool Services"/>
+      <heading uri="/akn/ie/debateRecord/dail/2015-11-12/debate/dbsect_85" value="Sexual Abuse and Violence"/>
+      <heading uri="/akn/ie/debateRecord/dail/2015-11-12/debate/dbsect_86" value="Housing Issues"/>
+      <heading uri="/akn/ie/debateRecord/dail/2015-11-12/debate/dbsect_87" value="Schools Building Projects Applications"/>
+    </debateRecord>
+  </results>
+</debate-list>

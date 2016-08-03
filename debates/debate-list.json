@@ -1,0 +1,206 @@
+{
+  "debate-list": {
+    "head": {
+      "chamber": {
+        "name": "D\u00c1IL \u00c9IREANN",
+        "uri": "/ie/oireachtas/house/dail"
+      },
+      "date-range": {
+        "end": "2015-11-12",
+        "start": "2015-11-12"
+      },
+      "search-terms": []
+    },
+    "results": [
+      {
+        "heading": {
+          "context": null,
+          "uri": "/akn/ie/debateRecord/dail/2015-11-12/debate/dbsect_1",
+          "value": "Prelude"
+        }
+      },
+      {
+        "heading": {
+          "context": null,
+          "uri": "/akn/ie/debateRecord/dail/2015-11-12/debate/dbsect_2",
+          "value": "Ceisteanna - Questions"
+        }
+      },
+      {
+        "heading": {
+          "context": null,
+          "uri": "/akn/ie/debateRecord/dail/2015-11-12/debate/dbsect_3",
+          "value": "Priority Questions"
+        }
+      },
+      {
+        "heading": {
+          "context": null,
+          "uri": "/akn/ie/debateRecord/dail/2015-11-12/debate/dbsect_4",
+          "value": "Heritage Council Funding"
+        }
+      },
+      {
+        "heading": {
+          "context": null,
+          "uri": "/akn/ie/debateRecord/dail/2015-11-12/debate/dbsect_5",
+          "value": "Seirbh\u00eds\u00ed Eitilte"
+        }
+      },
+      {
+        "heading": {
+          "context": null,
+          "uri": "/akn/ie/debateRecord/dail/2015-11-12/debate/dbsect_6",
+          "value": "National Monuments"
+        }
+      },
+      {
+        "heading": {
+          "context": null,
+          "uri": "/akn/ie/debateRecord/dail/2015-11-12/debate/dbsect_7",
+          "value": "Seirbh\u00eds\u00ed Eitilte"
+        }
+      },
+      {
+        "heading": {
+          "context": null,
+          "uri": "/akn/ie/debateRecord/dail/2015-11-12/debate/dbsect_8",
+          "value": "National Monuments"
+        }
+      },
+      {
+        "heading": {
+          "context": null,
+          "uri": "/akn/ie/debateRecord/dail/2015-11-12/debate/dbsect_9",
+          "value": "Other Questions"
+        }
+      },
+      {
+        "heading": {
+          "context": null,
+          "uri": "/akn/ie/debateRecord/dail/2015-11-12/debate/dbsect_10",
+          "value": "Cultural Policy"
+        }
+      },
+      {
+        "heading": {
+          "context": null,
+          "uri": "/akn/ie/debateRecord/dail/2015-11-12/debate/dbsect_11",
+          "value": "Commemorative Events"
+        }
+      },
+      {
+        "heading": {
+          "context": null,
+          "uri": "/akn/ie/debateRecord/dail/2015-11-12/debate/dbsect_12",
+          "value": "C\u00e9anna agus Cuanta"
+        }
+      },
+      {
+        "heading": {
+          "context": null,
+          "uri": "/akn/ie/debateRecord/dail/2015-11-12/debate/dbsect_13",
+          "value": "Pleananna Teanga"
+        }
+      },
+      {
+        "heading": {
+          "context": null,
+          "uri": "/akn/ie/debateRecord/dail/2015-11-12/debate/dbsect_14",
+          "value": "Deer Culls"
+        }
+      },
+      {
+        "heading": {
+          "context": null,
+          "uri": "/akn/ie/debateRecord/dail/2015-11-12/debate/dbsect_15",
+          "value": "Message from Select Committee"
+        }
+      },
+      {
+        "heading": {
+          "context": null,
+          "uri": "/akn/ie/debateRecord/dail/2015-11-12/debate/dbsect_16",
+          "value": "Garda S\u00edoch\u00e1na (Policing Authority and Miscellaneous Provisions) Bill 2015: Report Stage (Resumed)"
+        }
+      },
+      {
+        "heading": {
+          "context": null,
+          "uri": "/akn/ie/debateRecord/dail/2015-11-12/debate/dbsect_29",
+          "value": "Leaders\u2019 Questions"
+        }
+      },
+      {
+        "heading": {
+          "context": null,
+          "uri": "/akn/ie/debateRecord/dail/2015-11-12/debate/dbsect_30",
+          "value": "Order of Business"
+        }
+      },
+      {
+        "heading": {
+          "context": null,
+          "uri": "/akn/ie/debateRecord/dail/2015-11-12/debate/dbsect_31",
+          "value": "Finance Bill 2015: Financial Resolutions"
+        }
+      },
+      {
+        "heading": {
+          "context": null,
+          "uri": "/akn/ie/debateRecord/dail/2015-11-12/debate/dbsect_32",
+          "value": "Finance Bill 2015: Allocation of Time: Motion"
+        }
+      },
+      {
+        "heading": {
+          "context": null,
+          "uri": "/akn/ie/debateRecord/dail/2015-11-12/debate/dbsect_33",
+          "value": "Garda S\u00edoch\u00e1na (Policing Authority and Miscellaneous Provisions) Bill 2015: Report Stage (Resumed)"
+        }
+      },
+      {
+        "heading": {
+          "context": null,
+          "uri": "/akn/ie/debateRecord/dail/2015-11-12/debate/dbsect_82",
+          "value": "Topical Issue Matters"
+        }
+      },
+      {
+        "heading": {
+          "context": null,
+          "uri": "/akn/ie/debateRecord/dail/2015-11-12/debate/dbsect_83",
+          "value": "Topical Issue Debate"
+        }
+      },
+      {
+        "heading": {
+          "context": null,
+          "uri": "/akn/ie/debateRecord/dail/2015-11-12/debate/dbsect_84",
+          "value": "Preschool Services"
+        }
+      },
+      {
+        "heading": {
+          "context": null,
+          "uri": "/akn/ie/debateRecord/dail/2015-11-12/debate/dbsect_85",
+          "value": "Sexual Abuse and Violence"
+        }
+      },
+      {
+        "heading": {
+          "context": null,
+          "uri": "/akn/ie/debateRecord/dail/2015-11-12/debate/dbsect_86",
+          "value": "Housing Issues"
+        }
+      },
+      {
+        "heading": {
+          "context": null,
+          "uri": "/akn/ie/debateRecord/dail/2015-11-12/debate/dbsect_87",
+          "value": "Schools Building Projects Applications"
+        }
+      }
+    ]
+  }
+}

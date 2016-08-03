@@ -24,6 +24,9 @@
     ],
     "eId": "/member/William-T-Cosgrave.D.1919-01-21",
     "end": "1932-03-09",
+    "function": [
+      "president_executive_council"
+    ],
     "office": "President of the Executive Council",
     "start": "1922-12-06",
     "uri": "/president_executive_council",
@@ -49,6 +52,9 @@
     ],
     "eId": "/member/Eamon-de-Valera.D.1919-01-21",
     "end": "1937-12-29",
+    "function": [
+      "president_executive_council"
+    ],
     "office": "President of the Executive Council",
     "start": "1932-03-09",
     "uri": "/president_executive_council",
@@ -79,6 +85,9 @@
     ],
     "eId": "/member/Eamon-de-Valera.D.1919-01-21",
     "end": "1948-02-18",
+    "function": [
+      "taoiseach"
+    ],
     "office": "Taoiseach",
     "start": "1937-12-29",
     "uri": "/taoiseach",
@@ -94,6 +103,9 @@
     ],
     "eId": "/member/John-Aloysius-Costello.D.1933-02-08",
     "end": "1951-06-13",
+    "function": [
+      "taoiseach"
+    ],
     "office": "Taoiseach",
     "start": "1948-02-18",
     "uri": "/taoiseach",
@@ -109,6 +121,9 @@
     ],
     "eId": "/member/Eamon-de-Valera.D.1919-01-21",
     "end": "1954-06-02",
+    "function": [
+      "taoiseach"
+    ],
     "office": "Taoiseach",
     "start": "1951-06-13",
     "uri": "/taoiseach",
@@ -124,6 +139,9 @@
     ],
     "eId": "/member/John-Aloysius-Costello.D.1933-02-08",
     "end": "1957-03-20",
+    "function": [
+      "taoiseach"
+    ],
     "office": "Taoiseach",
     "start": "1954-06-02",
     "uri": "/taoiseach",
@@ -139,6 +157,9 @@
     ],
     "eId": "/member/Eamon-de-Valera.D.1919-01-21",
     "end": "1959-06-23",
+    "function": [
+      "taoiseach"
+    ],
     "office": "Taoiseach",
     "start": "1957-03-20",
     "uri": "/taoiseach",
@@ -164,6 +185,9 @@
     ],
     "eId": "/member/Se\u00e1n-F-Lemass.D.1924-11-18",
     "end": "1966-11-10",
+    "function": [
+      "taoiseach"
+    ],
     "office": "Taoiseach",
     "start": "1959-06-23",
     "uri": "/taoiseach",
@@ -184,6 +208,9 @@
     ],
     "eId": "/member/John-Lynch.D.1948-02-18",
     "end": "1973-03-14",
+    "function": [
+      "taoiseach"
+    ],
     "office": "Taoiseach",
     "start": "1966-11-10",
     "uri": "/taoiseach",
@@ -199,6 +226,9 @@
     ],
     "eId": "/member/Liam-Cosgrave.D.1943-07-01",
     "end": "1977-07-05",
+    "function": [
+      "taoiseach"
+    ],
     "office": "Taoiseach",
     "start": "1973-03-14",
     "uri": "/taoiseach",
@@ -214,6 +244,9 @@
     ],
     "eId": "/member/John-Lynch.D.1948-02-18",
     "end": "1979-12-11",
+    "function": [
+      "taoiseach"
+    ],
     "office": "Taoiseach",
     "start": "1977-07-05",
     "uri": "/taoiseach",
@@ -229,6 +262,9 @@
     ],
     "eId": "/member/Charles-J-Haughey.D.1957-03-20",
     "end": "1981-06-30",
+    "function": [
+      "taoiseach"
+    ],
     "office": "Taoiseach",
     "start": "1979-12-11",
     "uri": "/taoiseach",
@@ -244,6 +280,9 @@
     ],
     "eId": "/member/Garrett-Fitzgerald.S.1965-06-23",
     "end": "1982-03-09",
+    "function": [
+      "taoiseach"
+    ],
     "office": "Taoiseach",
     "start": "1981-06-30",
     "uri": "/taoiseach",
@@ -259,6 +298,9 @@
     ],
     "eId": "/member/Charles-J-Haughey.D.1957-03-20",
     "end": "1982-12-14",
+    "function": [
+      "taoiseach"
+    ],
     "office": "Taoiseach",
     "start": "1982-03-09",
     "uri": "/taoiseach",
@@ -274,6 +316,9 @@
     ],
     "eId": "/member/Garrett-Fitzgerald.S.1965-06-23",
     "end": "1987-03-10",
+    "function": [
+      "taoiseach"
+    ],
     "office": "Taoiseach",
     "start": "1982-12-14",
     "uri": "/taoiseach",
@@ -294,6 +339,9 @@
     ],
     "eId": "/member/Charles-J-Haughey.D.1957-03-20",
     "end": "1992-02-11",
+    "function": [
+      "taoiseach"
+    ],
     "office": "Taoiseach",
     "start": "1987-03-10",
     "uri": "/taoiseach",
@@ -314,6 +362,9 @@
     ],
     "eId": "/member/Albert-Reynolds.D.1977-07-05",
     "end": "1994-12-15",
+    "function": [
+      "taoiseach"
+    ],
     "office": "Taoiseach",
     "start": "1992-02-11",
     "uri": "/taoiseach",
@@ -329,6 +380,9 @@
     ],
     "eId": "/member/John-Bruton.D.1969-07-02",
     "end": "1997-06-26",
+    "function": [
+      "taoiseach"
+    ],
     "office": "Taoiseach",
     "start": "1994-12-15",
     "uri": "/taoiseach",
@@ -354,6 +408,9 @@
     ],
     "eId": "/member/Bertie-Ahern.D.1977-07-05",
     "end": "2008-05-07",
+    "function": [
+      "taoiseach"
+    ],
     "office": "Taoiseach",
     "start": "1997-06-26",
     "uri": "/taoiseach",
@@ -369,6 +426,9 @@
     ],
     "eId": "/member/Brian-Cowen.D.1984-06-14",
     "end": "2011-03-09",
+    "function": [
+      "taoiseach"
+    ],
     "office": "Taoiseach",
     "start": "2008-05-07",
     "uri": "/taoiseach",
@@ -378,12 +438,15 @@
     "cabinets": [
       {
         "cabinet": "/cabinet/dail/31",
-        "end": null,
+        "end": "2016-05-06",
         "start": "2011-03-09"
       }
     ],
     "eId": "/member/Enda-Kenny.D.1975-11-12",
-    "end": null,
+    "end": "2016-05-06",
+    "function": [
+      "taoiseach"
+    ],
     "office": "Taoiseach",
     "start": "2011-03-09",
     "uri": "/taoiseach",
@@ -409,6 +472,9 @@
     ],
     "eId": "/member/Kevin-Christopher-O'Higgins.D.1919-01-21",
     "end": "1927-07-10",
+    "function": [
+      "vice-president_executive_council"
+    ],
     "holder": "Kevin_O'Higgins",
     "office": "Vice-President of the Executive Council",
     "start": "1922-12-06",
@@ -430,6 +496,9 @@
     ],
     "eId": "/member/Ernest-Blythe.D.1919-01-21",
     "end": "1932-03-09",
+    "function": [
+      "vice-president_executive_council"
+    ],
     "holder": "Ernest_Blythe",
     "office": "Vice-President of the Executive Council",
     "start": "1927-07-14",
@@ -456,6 +525,9 @@
     ],
     "eId": "/member/Se\u00e1n-T-O'Kelly.D.1919-01-21",
     "end": "1937-12-29",
+    "function": [
+      "vice-president_executive_council"
+    ],
     "holder": "Se\u00e1n_T._O'Kelly",
     "office": "Vice-President of the Executive Council",
     "start": "1932-03-09",
@@ -487,6 +559,9 @@
     ],
     "eId": "/member/Se\u00e1n-T-O'Kelly.D.1919-01-21",
     "end": "1945-06-14",
+    "function": [
+      "tanaiste"
+    ],
     "holder": "Se\u00e1n_T._O'Kelly",
     "office": "T\u00e1naiste",
     "start": "1937-12-29",
@@ -503,6 +578,9 @@
     ],
     "eId": "/member/Se\u00e1n-F-Lemass.D.1924-11-18",
     "end": "1948-02-18",
+    "function": [
+      "tanaiste"
+    ],
     "holder": "Se\u00e1n_Lemass",
     "office": "T\u00e1naiste",
     "start": "1945-06-14",
@@ -519,6 +597,9 @@
     ],
     "eId": "/member/William-Norton.D.1926-02-18",
     "end": "1951-06-13",
+    "function": [
+      "tanaiste"
+    ],
     "holder": "William_Norton",
     "office": "T\u00e1naiste",
     "start": "1948-02-18",
@@ -535,6 +616,9 @@
     ],
     "eId": "/member/Se\u00e1n-F-Lemass.D.1924-11-18",
     "end": "1954-06-02",
+    "function": [
+      "tanaiste"
+    ],
     "holder": "Se\u00e1n_Lemass",
     "office": "T\u00e1naiste",
     "start": "1951-06-13",
@@ -556,6 +640,9 @@
     ],
     "eId": "/member/William-Norton.D.1926-02-18",
     "end": "1959-06-23",
+    "function": [
+      "tanaiste"
+    ],
     "office": "T\u00e1naiste",
     "start": "1954-06-02",
     "uri": "/tanaiste",
@@ -576,6 +663,9 @@
     ],
     "eId": "/member/Se\u00e1n-MacEntee.D.1919-01-21",
     "end": "1965-04-21",
+    "function": [
+      "tanaiste"
+    ],
     "holder": "Se\u00e1n_MacEntee",
     "office": "T\u00e1naiste",
     "start": "1959-06-23",
@@ -592,6 +682,9 @@
     ],
     "eId": "/member/Frank-Aiken.D.1923-09-19",
     "end": "1969-07-02",
+    "function": [
+      "tanaiste"
+    ],
     "holder": "Frank_Aiken",
     "office": "T\u00e1naiste",
     "start": "1965-04-21",
@@ -608,6 +701,9 @@
     ],
     "eId": "/member/Erskine-Hamilton-Childers.D.1938-06-30",
     "end": "1973-03-14",
+    "function": [
+      "tanaiste"
+    ],
     "holder": "Erskine_Hamilton_Childers",
     "office": "T\u00e1naiste",
     "start": "1969-07-02",
@@ -624,6 +720,9 @@
     ],
     "eId": "/member/Brendan-Corish.D.1945-12-04",
     "end": "1977-07-05",
+    "function": [
+      "tanaiste"
+    ],
     "holder": "Brendan_Corish",
     "office": "T\u00e1naiste",
     "start": "1973-03-14",
@@ -640,6 +739,9 @@
     ],
     "eId": "/member/George-Colley.D.1961-10-11",
     "end": "1981-06-30",
+    "function": [
+      "tanaiste"
+    ],
     "holder": "George_Colley",
     "office": "T\u00e1naiste",
     "start": "1977-07-05",
@@ -656,6 +758,9 @@
     ],
     "eId": "/member/Michael-O'Leary.D.1965-04-21",
     "end": "1982-03-09",
+    "function": [
+      "tanaiste"
+    ],
     "holder": "Michael_O'Leary_(politician)",
     "office": "T\u00e1naiste",
     "start": "1981-06-30",
@@ -672,6 +777,9 @@
     ],
     "eId": "/member/Raymond-MacSharry.D.1969-07-02",
     "end": "1982-12-14",
+    "function": [
+      "tanaiste"
+    ],
     "holder": "Ray_MacSharry",
     "office": "T\u00e1naiste",
     "start": "1982-03-09",
@@ -688,6 +796,9 @@
     ],
     "eId": "/member/Dick-Spring.D.1981-06-30",
     "end": "1987-01-20",
+    "function": [
+      "tanaiste"
+    ],
     "holder": "Dick_Spring",
     "office": "T\u00e1naiste",
     "start": "1982-12-14",
@@ -704,6 +815,9 @@
     ],
     "eId": "/member/Peter-Barry.D.1969-07-02",
     "end": "1987-03-10",
+    "function": [
+      "tanaiste"
+    ],
     "holder": "Peter_Barry",
     "office": "T\u00e1naiste",
     "start": "1987-01-20",
@@ -725,6 +839,9 @@
     ],
     "eId": "/member/Brian-Lenihan-Snr.S.1957-05-22",
     "end": "1990-10-31",
+    "function": [
+      "tanaiste"
+    ],
     "holder": "Brian_Lenihan,_Snr",
     "office": "T\u00e1naiste",
     "start": "1987-03-10",
@@ -746,6 +863,9 @@
     ],
     "eId": "/member/John-P-Wilson.D.1973-03-14",
     "end": "1993-01-12",
+    "function": [
+      "tanaiste"
+    ],
     "holder": "John_P._Wilson",
     "office": "T\u00e1naiste",
     "start": "1990-11-13",
@@ -762,6 +882,9 @@
     ],
     "eId": "/member/Dick-Spring.D.1981-06-30",
     "end": "1994-11-17",
+    "function": [
+      "tanaiste"
+    ],
     "office": "T\u00e1naiste",
     "start": "1993-01-12",
     "uri": "/tanaiste",
@@ -777,6 +900,9 @@
     ],
     "eId": "/member/Bertie-Ahern.D.1977-07-05",
     "end": "1994-12-15",
+    "function": [
+      "tanaiste"
+    ],
     "holder": "Bertie_Ahern",
     "office": "T\u00e1naiste",
     "start": "1994-11-17",
@@ -793,6 +919,9 @@
     ],
     "eId": "/member/Dick-Spring.D.1981-06-30",
     "end": "1997-06-26",
+    "function": [
+      "tanaiste"
+    ],
     "office": "T\u00e1naiste",
     "start": "1994-12-15",
     "uri": "/tanaiste",
@@ -813,6 +942,9 @@
     ],
     "eId": "/member/Mary-Harney.S.1977-10-27",
     "end": "2006-09-13",
+    "function": [
+      "tanaiste"
+    ],
     "holder": "Mary_Harney",
     "office": "T\u00e1naiste",
     "start": "1997-06-26",
@@ -829,6 +961,9 @@
     ],
     "eId": "/member/Michael-McDowell.D.1987-03-10",
     "end": "2007-06-14",
+    "function": [
+      "tanaiste"
+    ],
     "holder": "Michael_McDowell_(politician)",
     "office": "T\u00e1naiste",
     "start": "2006-09-13",
@@ -845,6 +980,9 @@
     ],
     "eId": "/member/Brian-Cowen.D.1984-06-14",
     "end": "2008-05-07",
+    "function": [
+      "tanaiste"
+    ],
     "holder": "Brian_Cowen",
     "office": "T\u00e1naiste",
     "start": "2007-06-14",
@@ -861,6 +999,9 @@
     ],
     "eId": "/member/Mary-Coughlan.D.1987-03-10",
     "end": "2011-03-09",
+    "function": [
+      "tanaiste"
+    ],
     "holder": "Mary_Coughlan_(politician)",
     "office": "T\u00e1naiste",
     "start": "2008-05-07",
@@ -871,6 +1012,9 @@
     "cabinets": [],
     "eId": "/member/Eamon-Gilmore.D.1989-06-29",
     "end": "2014-07-04",
+    "function": [
+      "tanaiste"
+    ],
     "holder": "Eamon_Gilmore",
     "office": "T\u00e1naiste",
     "start": "2011-03-09",
@@ -881,12 +1025,15 @@
     "cabinets": [
       {
         "cabinet": "/cabinet/dail/31",
-        "end": null,
+        "end": "2016-05-06",
         "start": "2014-07-04"
       }
     ],
     "eId": "/member/Joan-Burton.D.1992-12-14",
-    "end": null,
+    "end": "2016-05-06",
+    "function": [
+      "tanaiste"
+    ],
     "holder": "Joan_Burton",
     "office": "T\u00e1naiste",
     "start": "2014-07-04",
@@ -903,6 +1050,10 @@
     ],
     "eId": "/member/S\u00e9amus-Aloysius-Bourke.D.1919-01-21",
     "end": "1927-06-23",
+    "function": [
+      "local_government",
+      "public_health"
+    ],
     "functions": [
       "local_government",
       "public_health"
@@ -927,6 +1078,10 @@
     ],
     "eId": "/member/Richard-James-Mulcahy.D.1919-01-21",
     "end": "1932-03-09",
+    "function": [
+      "local_government",
+      "public_health"
+    ],
     "functions": [
       "local_government",
       "public_health"
@@ -961,6 +1116,10 @@
     ],
     "eId": "/member/Se\u00e1n-T-O'Kelly.D.1919-01-21",
     "end": "1939-09-08",
+    "function": [
+      "local_government",
+      "public_health"
+    ],
     "functions": [
       "local_government",
       "public_health"
@@ -980,6 +1139,10 @@
     ],
     "eId": "/member/Patrick-Joseph-Ruttledge.D.1921-08-16",
     "end": "1941-08-14",
+    "function": [
+      "local_government",
+      "public_health"
+    ],
     "functions": [
       "local_government",
       "public_health"
@@ -999,6 +1162,10 @@
     ],
     "eId": "/member/Eamon-de-Valera.D.1919-01-21",
     "end": "1941-08-18",
+    "function": [
+      "local_government",
+      "public_health"
+    ],
     "functions": [
       "local_government",
       "public_health"
@@ -1028,6 +1195,10 @@
     ],
     "eId": "/member/Se\u00e1n-MacEntee.D.1919-01-21",
     "end": "1947-01-22",
+    "function": [
+      "local_government",
+      "public_health"
+    ],
     "functions": [
       "local_government",
       "public_health"
@@ -1047,6 +1218,9 @@
     ],
     "eId": "/member/James-Ryan.D.1919-01-21",
     "end": "1948-02-18",
+    "function": [
+      "health"
+    ],
     "functions": [
       "health"
     ],
@@ -1065,6 +1239,9 @@
     ],
     "eId": "/member/Noel-C-Browne.D.1948-02-18",
     "end": "1951-04-11",
+    "function": [
+      "health"
+    ],
     "functions": [
       "health"
     ],
@@ -1083,6 +1260,9 @@
     ],
     "eId": "/member/John-Aloysius-Costello.D.1933-02-08",
     "end": "1951-06-13",
+    "function": [
+      "health"
+    ],
     "functions": [
       "health"
     ],
@@ -1101,6 +1281,9 @@
     ],
     "eId": "/member/James-Ryan.D.1919-01-21",
     "end": "1954-06-02",
+    "function": [
+      "health"
+    ],
     "functions": [
       "health"
     ],
@@ -1119,6 +1302,9 @@
     ],
     "eId": "/member/Thomas-F-O'Higgins-Jnr.D.1948-02-18",
     "end": "1957-03-20",
+    "function": [
+      "health"
+    ],
     "functions": [
       "health"
     ],
@@ -1142,6 +1328,9 @@
     ],
     "eId": "/member/Se\u00e1n-MacEntee.D.1919-01-21",
     "end": "1965-04-21",
+    "function": [
+      "health"
+    ],
     "functions": [
       "health"
     ],
@@ -1160,6 +1349,9 @@
     ],
     "eId": "/member/Donogh-O'Malley.D.1954-06-02",
     "end": "1966-07-13",
+    "function": [
+      "health"
+    ],
     "functions": [
       "health"
     ],
@@ -1178,6 +1370,9 @@
     ],
     "eId": "/member/Se\u00e1n-Flanagan.D.1951-06-13",
     "end": "1969-07-02",
+    "function": [
+      "health"
+    ],
     "functions": [
       "health"
     ],
@@ -1196,6 +1391,9 @@
     ],
     "eId": "/member/Erskine-Hamilton-Childers.D.1938-06-30",
     "end": "1973-03-14",
+    "function": [
+      "health"
+    ],
     "functions": [
       "health"
     ],
@@ -1214,6 +1412,9 @@
     ],
     "eId": "/member/Brendan-Corish.D.1945-12-04",
     "end": "1977-07-05",
+    "function": [
+      "health"
+    ],
     "functions": [
       "health"
     ],
@@ -1232,6 +1433,9 @@
     ],
     "eId": "/member/Charles-J-Haughey.D.1957-03-20",
     "end": "1979-12-11",
+    "function": [
+      "health"
+    ],
     "functions": [
       "health"
     ],
@@ -1250,6 +1454,9 @@
     ],
     "eId": "/member/Michael-Woods.D.1977-07-05",
     "end": "1981-06-30",
+    "function": [
+      "health"
+    ],
     "functions": [
       "health"
     ],
@@ -1268,6 +1475,9 @@
     ],
     "eId": "/member/Eileen-Desmond.D.1965-03-10",
     "end": "1982-03-09",
+    "function": [
+      "health"
+    ],
     "functions": [
       "health"
     ],
@@ -1286,6 +1496,9 @@
     ],
     "eId": "/member/Michael-Woods.D.1977-07-05",
     "end": "1982-12-14",
+    "function": [
+      "health"
+    ],
     "functions": [
       "health"
     ],
@@ -1304,6 +1517,9 @@
     ],
     "eId": "/member/Barry-Desmond.D.1969-07-02",
     "end": "1987-01-20",
+    "function": [
+      "health"
+    ],
     "functions": [
       "health"
     ],
@@ -1322,6 +1538,9 @@
     ],
     "eId": "/member/John-Boland.S.1969-11-05",
     "end": "1987-03-10",
+    "function": [
+      "health"
+    ],
     "functions": [
       "health"
     ],
@@ -1345,6 +1564,9 @@
     ],
     "eId": "/member/Rory-O'Hanlon.D.1977-07-05",
     "end": "1991-11-14",
+    "function": [
+      "health"
+    ],
     "functions": [
       "health"
     ],
@@ -1363,6 +1585,9 @@
     ],
     "eId": "/member/Mary-O'Rourke.S.1981-10-08",
     "end": "1992-02-11",
+    "function": [
+      "health"
+    ],
     "functions": [
       "health"
     ],
@@ -1386,6 +1611,9 @@
     ],
     "eId": "/member/John-F-O'Connell.D.1965-04-21",
     "end": "1993-01-12",
+    "function": [
+      "health"
+    ],
     "functions": [
       "health"
     ],
@@ -1404,6 +1632,9 @@
     ],
     "eId": "/member/Brendan-Howlin.S.1983-02-23",
     "end": "1994-11-17",
+    "function": [
+      "health"
+    ],
     "functions": [
       "health"
     ],
@@ -1422,6 +1653,9 @@
     ],
     "eId": "/member/Michael-Woods.D.1977-07-05",
     "end": "1994-12-15",
+    "function": [
+      "health"
+    ],
     "functions": [
       "health"
     ],
@@ -1440,6 +1674,9 @@
     ],
     "eId": "/member/Michael-Noonan.D.1981-06-30",
     "end": "1997-06-26",
+    "function": [
+      "health"
+    ],
     "functions": [
       "health"
     ],
@@ -1458,6 +1695,9 @@
     ],
     "eId": "/member/Brian-Cowen.D.1984-06-14",
     "end": "1997-07-12",
+    "function": [
+      "health"
+    ],
     "functions": [
       "health"
     ],
@@ -1476,6 +1716,10 @@
     ],
     "eId": "/member/Brian-Cowen.D.1984-06-14",
     "end": "2000-01-27",
+    "function": [
+      "health",
+      "children"
+    ],
     "functions": [
       "health",
       "children"
@@ -1500,6 +1744,10 @@
     ],
     "eId": "/member/Miche\u00e1l-Martin.D.1989-06-29",
     "end": "2004-09-29",
+    "function": [
+      "health",
+      "children"
+    ],
     "functions": [
       "health",
       "children"
@@ -1524,6 +1772,10 @@
     ],
     "eId": "/member/Mary-Harney.S.1977-10-27",
     "end": "2011-01-19",
+    "function": [
+      "health",
+      "children"
+    ],
     "functions": [
       "health",
       "children"
@@ -1543,6 +1795,10 @@
     ],
     "eId": "/member/Mary-Coughlan.D.1987-03-10",
     "end": "2011-03-09",
+    "function": [
+      "health",
+      "children"
+    ],
     "functions": [
       "health",
       "children"
@@ -1556,6 +1812,9 @@
     "cabinets": [],
     "eId": "/member/James-Reilly.D.2007-06-14",
     "end": "2014-07-11",
+    "function": [
+      "health"
+    ],
     "functions": [
       "health"
     ],
@@ -1568,12 +1827,15 @@
     "cabinets": [
       {
         "cabinet": "/cabinet/dail/31",
-        "end": null,
+        "end": "2016-05-06",
         "start": "2014-07-11"
       }
     ],
     "eId": "/member/Leo-Varadkar.D.2007-06-14",
-    "end": null,
+    "end": "2016-05-06",
+    "function": [
+      "health"
+    ],
     "functions": [
       "health"
     ],
@@ -1602,6 +1864,9 @@
     ],
     "eId": "/member/Se\u00e1n-F-Lemass.D.1924-11-18",
     "end": "1945-07-31",
+    "function": [
+      "supplies"
+    ],
     "functions": [
       "supplies"
     ],
@@ -1625,6 +1890,9 @@
     ],
     "eId": "/member/George-Noble-Plunkett.D.1919-01-21",
     "end": "1921-08-26",
+    "function": [
+      "foreign_affairs"
+    ],
     "functions": [
       "foreign_affairs"
     ],
@@ -1643,6 +1911,9 @@
     ],
     "eId": "/member/Arthur-Griffith.D.1919-01-21",
     "end": "1922-01-09",
+    "function": [
+      "foreign_affairs"
+    ],
     "functions": [
       "foreign_affairs"
     ],
@@ -1661,6 +1932,9 @@
     ],
     "eId": "/member/George-Gavan-Duffy.D.1919-01-21",
     "end": "1922-07-25",
+    "function": [
+      "foreign_affairs"
+    ],
     "functions": [
       "foreign_affairs"
     ],
@@ -1679,6 +1953,9 @@
     ],
     "eId": "/member/Arthur-Griffith.D.1919-01-21",
     "end": "1922-08-12",
+    "function": [
+      "foreign_affairs"
+    ],
     "functions": [
       "foreign_affairs"
     ],
@@ -1697,6 +1974,9 @@
     ],
     "eId": "/member/Michael-Hayes.D.1921-08-16",
     "end": "1922-09-09",
+    "function": [
+      "foreign_affairs"
+    ],
     "functions": [
       "foreign_affairs"
     ],
@@ -1725,6 +2005,9 @@
     ],
     "eId": "/member/Desmond-FitzGerald.D.1919-01-21",
     "end": "1927-06-23",
+    "function": [
+      "external_affairs"
+    ],
     "functions": [
       "external_affairs"
     ],
@@ -1743,6 +2026,9 @@
     ],
     "eId": "/member/Kevin-Christopher-O'Higgins.D.1919-01-21",
     "end": "1927-07-10",
+    "function": [
+      "external_affairs"
+    ],
     "functions": [
       "external_affairs"
     ],
@@ -1761,6 +2047,9 @@
     ],
     "eId": "/member/William-T-Cosgrave.D.1919-01-21",
     "end": "1927-10-11",
+    "function": [
+      "external_affairs"
+    ],
     "functions": [
       "external_affairs"
     ],
@@ -1779,6 +2068,9 @@
     ],
     "eId": "/member/Patrick-McGilligan.D.1923-11-03",
     "end": "1932-03-09",
+    "function": [
+      "external_affairs"
+    ],
     "functions": [
       "external_affairs"
     ],
@@ -1822,6 +2114,9 @@
     ],
     "eId": "/member/Eamon-de-Valera.D.1919-01-21",
     "end": "1948-02-18",
+    "function": [
+      "external_affairs"
+    ],
     "functions": [
       "external_affairs"
     ],
@@ -1840,6 +2135,9 @@
     ],
     "eId": "/member/Se\u00e1n-MacBride.D.1947-10-29",
     "end": "1951-06-13",
+    "function": [
+      "external_affairs"
+    ],
     "functions": [
       "external_affairs"
     ],
@@ -1858,6 +2156,9 @@
     ],
     "eId": "/member/Frank-Aiken.D.1923-09-19",
     "end": "1954-06-02",
+    "function": [
+      "external_affairs"
+    ],
     "functions": [
       "external_affairs"
     ],
@@ -1876,6 +2177,9 @@
     ],
     "eId": "/member/Liam-Cosgrave.D.1943-07-01",
     "end": "1957-03-20",
+    "function": [
+      "external_affairs"
+    ],
     "functions": [
       "external_affairs"
     ],
@@ -1904,6 +2208,9 @@
     ],
     "eId": "/member/Frank-Aiken.D.1923-09-19",
     "end": "1969-07-02",
+    "function": [
+      "external_affairs"
+    ],
     "functions": [
       "external_affairs"
     ],
@@ -1922,6 +2229,9 @@
     ],
     "eId": "/member/Patrick-John-Hillery.D.1951-06-13",
     "end": "1971-03-03",
+    "function": [
+      "external_affairs"
+    ],
     "functions": [
       "external_affairs"
     ],
@@ -1940,6 +2250,9 @@
     ],
     "eId": "/member/Patrick-John-Hillery.D.1951-06-13",
     "end": "1973-01-03",
+    "function": [
+      "foreign_affairs"
+    ],
     "functions": [
       "foreign_affairs"
     ],
@@ -1958,6 +2271,9 @@
     ],
     "eId": "/member/Brian-Lenihan-Snr.S.1957-05-22",
     "end": "1973-03-14",
+    "function": [
+      "foreign_affairs"
+    ],
     "functions": [
       "foreign_affairs"
     ],
@@ -1976,6 +2292,9 @@
     ],
     "eId": "/member/Garrett-Fitzgerald.S.1965-06-23",
     "end": "1977-07-05",
+    "function": [
+      "foreign_affairs"
+    ],
     "functions": [
       "foreign_affairs"
     ],
@@ -1994,6 +2313,9 @@
     ],
     "eId": "/member/Michael-O'Kennedy.S.1965-06-23",
     "end": "1979-12-11",
+    "function": [
+      "foreign_affairs"
+    ],
     "functions": [
       "foreign_affairs"
     ],
@@ -2012,6 +2334,9 @@
     ],
     "eId": "/member/Brian-Lenihan-Snr.S.1957-05-22",
     "end": "1981-06-30",
+    "function": [
+      "foreign_affairs"
+    ],
     "functions": [
       "foreign_affairs"
     ],
@@ -2030,6 +2355,9 @@
     ],
     "eId": "/member/John-M-Kelly.S.1969-11-05",
     "end": "1981-10-21",
+    "function": [
+      "foreign_affairs"
+    ],
     "functions": [
       "foreign_affairs"
     ],
@@ -2048,6 +2376,9 @@
     ],
     "eId": "/member/James-CI-Dooge-.S.1963-11-28",
     "end": "1982-03-09",
+    "function": [
+      "foreign_affairs"
+    ],
     "functions": [
       "foreign_affairs"
     ],
@@ -2066,6 +2397,9 @@
     ],
     "eId": "/member/Gerard-Collins.D.1967-11-09",
     "end": "1982-12-14",
+    "function": [
+      "foreign_affairs"
+    ],
     "functions": [
       "foreign_affairs"
     ],
@@ -2084,6 +2418,9 @@
     ],
     "eId": "/member/Peter-Barry.D.1969-07-02",
     "end": "1987-03-10",
+    "function": [
+      "foreign_affairs"
+    ],
     "functions": [
       "foreign_affairs"
     ],
@@ -2107,6 +2444,9 @@
     ],
     "eId": "/member/Brian-Lenihan-Snr.S.1957-05-22",
     "end": "1989-07-12",
+    "function": [
+      "foreign_affairs"
+    ],
     "functions": [
       "foreign_affairs"
     ],
@@ -2125,6 +2465,9 @@
     ],
     "eId": "/member/Gerard-Collins.D.1967-11-09",
     "end": "1992-02-11",
+    "function": [
+      "foreign_affairs"
+    ],
     "functions": [
       "foreign_affairs"
     ],
@@ -2148,6 +2491,9 @@
     ],
     "eId": "/member/David-Andrews.D.1965-04-21",
     "end": "1993-01-12",
+    "function": [
+      "foreign_affairs"
+    ],
     "functions": [
       "foreign_affairs"
     ],
@@ -2166,6 +2512,9 @@
     ],
     "eId": "/member/Dick-Spring.D.1981-06-30",
     "end": "1994-11-17",
+    "function": [
+      "foreign_affairs"
+    ],
     "functions": [
       "foreign_affairs"
     ],
@@ -2184,6 +2533,9 @@
     ],
     "eId": "/member/Albert-Reynolds.D.1977-07-05",
     "end": "1994-12-15",
+    "function": [
+      "foreign_affairs"
+    ],
     "functions": [
       "foreign_affairs"
     ],
@@ -2202,6 +2554,9 @@
     ],
     "eId": "/member/Dick-Spring.D.1981-06-30",
     "end": "1997-06-26",
+    "function": [
+      "foreign_affairs"
+    ],
     "functions": [
       "foreign_affairs"
     ],
@@ -2220,6 +2575,9 @@
     ],
     "eId": "/member/Ray-Burke.D.1973-03-14",
     "end": "1997-10-07",
+    "function": [
+      "foreign_affairs"
+    ],
     "functions": [
       "foreign_affairs"
     ],
@@ -2238,6 +2596,9 @@
     ],
     "eId": "/member/David-Andrews.D.1965-04-21",
     "end": "2000-01-27",
+    "function": [
+      "foreign_affairs"
+    ],
     "functions": [
       "foreign_affairs"
     ],
@@ -2261,6 +2622,9 @@
     ],
     "eId": "/member/Brian-Cowen.D.1984-06-14",
     "end": "2004-09-29",
+    "function": [
+      "foreign_affairs"
+    ],
     "functions": [
       "foreign_affairs"
     ],
@@ -2284,6 +2648,9 @@
     ],
     "eId": "/member/Dermot-Ahern.D.1987-03-10",
     "end": "2008-05-07",
+    "function": [
+      "foreign_affairs"
+    ],
     "functions": [
       "foreign_affairs"
     ],
@@ -2302,6 +2669,9 @@
     ],
     "eId": "/member/Miche\u00e1l-Martin.D.1989-06-29",
     "end": "2011-01-19",
+    "function": [
+      "foreign_affairs"
+    ],
     "functions": [
       "foreign_affairs"
     ],
@@ -2320,6 +2690,9 @@
     ],
     "eId": "/member/Brian-Cowen.D.1984-06-14",
     "end": "2011-03-09",
+    "function": [
+      "foreign_affairs"
+    ],
     "functions": [
       "foreign_affairs"
     ],
@@ -2332,6 +2705,10 @@
     "cabinets": [],
     "eId": "/member/Eamon-Gilmore.D.1989-06-29",
     "end": "2014-07-11",
+    "function": [
+      "foreign_affairs",
+      "trade"
+    ],
     "functions": [
       "foreign_affairs",
       "trade"
@@ -2345,12 +2722,16 @@
     "cabinets": [
       {
         "cabinet": "/cabinet/dail/31",
-        "end": null,
+        "end": "2016-05-06",
         "start": "2014-07-11"
       }
     ],
     "eId": "/member/Charles-Flanagan.D.1987-03-10",
-    "end": null,
+    "end": "2016-05-06",
+    "function": [
+      "foreign_affairs",
+      "trade"
+    ],
     "functions": [
       "foreign_affairs",
       "trade"
@@ -2375,6 +2756,9 @@
     ],
     "eId": "/member/Eoin-MacNeill.D.1919-01-21",
     "end": "1921-08-26",
+    "function": [
+      "industries"
+    ],
     "functions": [
       "industries"
     ],
@@ -2393,6 +2777,9 @@
     ],
     "eId": "/member/Laurence-Ginnell.D.1919-01-21",
     "end": "1919-06-17",
+    "function": [
+      "propaganda"
+    ],
     "functions": [
       "propaganda"
     ],
@@ -2411,6 +2798,9 @@
     ],
     "eId": "/member/Desmond-FitzGerald.D.1919-01-21",
     "end": "1921-02-11",
+    "function": [
+      "propaganda"
+    ],
     "functions": [
       "propaganda"
     ],
@@ -2429,6 +2819,9 @@
     ],
     "eId": "/member/Erskine-Robert-Childers.D.1921-08-16",
     "end": "1921-03-08",
+    "function": [
+      "propaganda"
+    ],
     "functions": [
       "propaganda"
     ],
@@ -2447,6 +2840,9 @@
     ],
     "eId": "/member/Desmond-FitzGerald.D.1919-01-21",
     "end": "1922-09-09",
+    "function": [
+      "publicity"
+    ],
     "functions": [
       "publicity"
     ],
@@ -2465,6 +2861,9 @@
     ],
     "eId": "/member/Richie-Ryan.D.1959-07-22",
     "end": "1977-07-05",
+    "function": [
+      "public_service"
+    ],
     "functions": [
       "public_service"
     ],
@@ -2483,6 +2882,9 @@
     ],
     "eId": "/member/George-Colley.D.1961-10-11",
     "end": "1979-12-11",
+    "function": [
+      "public_service"
+    ],
     "functions": [
       "public_service"
     ],
@@ -2501,6 +2903,9 @@
     ],
     "eId": "/member/Michael-O'Kennedy.S.1965-06-23",
     "end": "1980-03-24",
+    "function": [
+      "public_service"
+    ],
     "functions": [
       "public_service"
     ],
@@ -2519,6 +2924,9 @@
     ],
     "eId": "/member/Gene-Fitzgerald.D.1972-08-02",
     "end": "1981-06-30",
+    "function": [
+      "public_service"
+    ],
     "functions": [
       "public_service"
     ],
@@ -2537,6 +2945,9 @@
     ],
     "eId": "/member/Liam-Kavanagh.D.1969-07-02",
     "end": "1982-03-09",
+    "function": [
+      "public_service"
+    ],
     "functions": [
       "public_service"
     ],
@@ -2555,6 +2966,9 @@
     ],
     "eId": "/member/Gene-Fitzgerald.D.1972-08-02",
     "end": "1982-12-14",
+    "function": [
+      "public_service"
+    ],
     "functions": [
       "public_service"
     ],
@@ -2573,6 +2987,9 @@
     ],
     "eId": "/member/John-Boland.S.1969-11-05",
     "end": "1986-02-14",
+    "function": [
+      "public_service"
+    ],
     "functions": [
       "public_service"
     ],
@@ -2591,6 +3008,9 @@
     ],
     "eId": "/member/Ruair\u00ed-Quinn.S.1976-07-01",
     "end": "1987-01-20",
+    "function": [
+      "public_service"
+    ],
     "functions": [
       "public_service"
     ],
@@ -2609,6 +3029,9 @@
     ],
     "eId": "/member/John-Bruton.D.1969-07-02",
     "end": "1987-03-10",
+    "function": [
+      "public_service"
+    ],
     "functions": [
       "public_service"
     ],
@@ -2627,6 +3050,9 @@
     ],
     "eId": "/member/Raymond-MacSharry.D.1969-07-02",
     "end": "1987-03-20",
+    "function": [
+      "public_service"
+    ],
     "functions": [
       "public_service"
     ],
@@ -2650,6 +3076,9 @@
     ],
     "eId": "/member/William-T-Cosgrave.D.1919-01-21",
     "end": "1922-09-09",
+    "function": [
+      "local_government"
+    ],
     "functions": [
       "local_government"
     ],
@@ -2678,6 +3107,9 @@
     ],
     "eId": "/member/Ernest-Blythe.D.1919-01-21",
     "end": "1923-10-15",
+    "function": [
+      "local_government"
+    ],
     "functions": [
       "local_government"
     ],
@@ -2696,6 +3128,9 @@
     ],
     "eId": "/member/S\u00e9amus-Aloysius-Bourke.D.1919-01-21",
     "end": "1924-06-02",
+    "function": [
+      "local_government"
+    ],
     "functions": [
       "local_government"
     ],
@@ -2714,6 +3149,10 @@
     ],
     "eId": "/member/S\u00e9amus-Aloysius-Bourke.D.1919-01-21",
     "end": "1927-06-23",
+    "function": [
+      "local_government",
+      "public_health"
+    ],
     "functions": [
       "local_government",
       "public_health"
@@ -2738,6 +3177,10 @@
     ],
     "eId": "/member/Richard-James-Mulcahy.D.1919-01-21",
     "end": "1932-03-09",
+    "function": [
+      "local_government",
+      "public_health"
+    ],
     "functions": [
       "local_government",
       "public_health"
@@ -2772,6 +3215,10 @@
     ],
     "eId": "/member/Se\u00e1n-T-O'Kelly.D.1919-01-21",
     "end": "1939-09-08",
+    "function": [
+      "local_government",
+      "public_health"
+    ],
     "functions": [
       "local_government",
       "public_health"
@@ -2791,6 +3238,10 @@
     ],
     "eId": "/member/Patrick-Joseph-Ruttledge.D.1921-08-16",
     "end": "1941-08-14",
+    "function": [
+      "local_government",
+      "public_health"
+    ],
     "functions": [
       "local_government",
       "public_health"
@@ -2810,6 +3261,10 @@
     ],
     "eId": "/member/Eamon-de-Valera.D.1919-01-21",
     "end": "1941-08-18",
+    "function": [
+      "local_government",
+      "public_health"
+    ],
     "functions": [
       "local_government",
       "public_health"
@@ -2839,6 +3294,10 @@
     ],
     "eId": "/member/Se\u00e1n-MacEntee.D.1919-01-21",
     "end": "1947-01-22",
+    "function": [
+      "local_government",
+      "public_health"
+    ],
     "functions": [
       "local_government",
       "public_health"
@@ -2858,6 +3317,9 @@
     ],
     "eId": "/member/Se\u00e1n-MacEntee.D.1919-01-21",
     "end": "1948-02-18",
+    "function": [
+      "local_government"
+    ],
     "functions": [
       "local_government"
     ],
@@ -2876,6 +3338,9 @@
     ],
     "eId": "/member/Timothy-J-Murphy.D.1923-09-19",
     "end": "1949-04-29",
+    "function": [
+      "local_government"
+    ],
     "functions": [
       "local_government"
     ],
@@ -2894,6 +3359,9 @@
     ],
     "eId": "/member/William-Norton.D.1926-02-18",
     "end": "1949-05-11",
+    "function": [
+      "local_government"
+    ],
     "functions": [
       "local_government"
     ],
@@ -2912,6 +3380,9 @@
     ],
     "eId": "/member/Michael-J-Keyes.D.1927-06-23",
     "end": "1951-06-13",
+    "function": [
+      "local_government"
+    ],
     "functions": [
       "local_government"
     ],
@@ -2930,6 +3401,9 @@
     ],
     "eId": "/member/Patrick-Smith.D.1923-09-19",
     "end": "1954-06-02",
+    "function": [
+      "local_government"
+    ],
     "functions": [
       "local_government"
     ],
@@ -2948,6 +3422,9 @@
     ],
     "eId": "/member/Patrick-O'Donnell.D.1949-11-16",
     "end": "1957-03-20",
+    "function": [
+      "local_government"
+    ],
     "functions": [
       "local_government"
     ],
@@ -2966,6 +3443,9 @@
     ],
     "eId": "/member/Patrick-Smith.D.1923-09-19",
     "end": "1957-11-27",
+    "function": [
+      "local_government"
+    ],
     "functions": [
       "local_government"
     ],
@@ -2994,6 +3474,9 @@
     ],
     "eId": "/member/Neil-TC-Blaney.D.1948-12-07",
     "end": "1966-11-10",
+    "function": [
+      "local_government"
+    ],
     "functions": [
       "local_government"
     ],
@@ -3017,6 +3500,9 @@
     ],
     "eId": "/member/Kevin-Boland.D.1957-03-20",
     "end": "1970-05-07",
+    "function": [
+      "local_government"
+    ],
     "functions": [
       "local_government"
     ],
@@ -3035,6 +3521,9 @@
     ],
     "eId": "/member/Robert-Molloy.D.1965-04-21",
     "end": "1973-03-14",
+    "function": [
+      "local_government"
+    ],
     "functions": [
       "local_government"
     ],
@@ -3053,6 +3542,9 @@
     ],
     "eId": "/member/James-Tully.D.1954-06-02",
     "end": "1977-07-05",
+    "function": [
+      "local_government"
+    ],
     "functions": [
       "local_government"
     ],
@@ -3071,6 +3563,9 @@
     ],
     "eId": "/member/Sylvester-Barrett.D.1968-03-14",
     "end": "1977-08-16",
+    "function": [
+      "local_government"
+    ],
     "functions": [
       "local_government"
     ],
@@ -3089,6 +3584,9 @@
     ],
     "eId": "/member/Sylvester-Barrett.D.1968-03-14",
     "end": "1980-10-15",
+    "function": [
+      "environment"
+    ],
     "functions": [
       "environment"
     ],
@@ -3107,6 +3605,9 @@
     ],
     "eId": "/member/Ray-Burke.D.1973-03-14",
     "end": "1981-06-30",
+    "function": [
+      "environment"
+    ],
     "functions": [
       "environment"
     ],
@@ -3125,6 +3626,9 @@
     ],
     "eId": "/member/Peter-Barry.D.1969-07-02",
     "end": "1982-03-09",
+    "function": [
+      "environment"
+    ],
     "functions": [
       "environment"
     ],
@@ -3143,6 +3647,9 @@
     ],
     "eId": "/member/Ray-Burke.D.1973-03-14",
     "end": "1982-12-14",
+    "function": [
+      "environment"
+    ],
     "functions": [
       "environment"
     ],
@@ -3161,6 +3668,9 @@
     ],
     "eId": "/member/Dick-Spring.D.1981-06-30",
     "end": "1983-12-13",
+    "function": [
+      "environment"
+    ],
     "functions": [
       "environment"
     ],
@@ -3179,6 +3689,9 @@
     ],
     "eId": "/member/Liam-Kavanagh.D.1969-07-02",
     "end": "1986-02-14",
+    "function": [
+      "environment"
+    ],
     "functions": [
       "environment"
     ],
@@ -3197,6 +3710,9 @@
     ],
     "eId": "/member/John-Boland.S.1969-11-05",
     "end": "1987-03-10",
+    "function": [
+      "environment"
+    ],
     "functions": [
       "environment"
     ],
@@ -3220,6 +3736,9 @@
     ],
     "eId": "/member/P\u00e1draig-Flynn.D.1977-07-05",
     "end": "1991-11-08",
+    "function": [
+      "environment"
+    ],
     "functions": [
       "environment"
     ],
@@ -3238,6 +3757,9 @@
     ],
     "eId": "/member/John-P-Wilson.D.1973-03-14",
     "end": "1991-11-14",
+    "function": [
+      "environment"
+    ],
     "functions": [
       "environment"
     ],
@@ -3256,6 +3778,9 @@
     ],
     "eId": "/member/Rory-O'Hanlon.D.1977-07-05",
     "end": "1992-02-14",
+    "function": [
+      "environment"
+    ],
     "functions": [
       "environment"
     ],
@@ -3279,6 +3804,9 @@
     ],
     "eId": "/member/Michael-Smith.D.1969-07-02",
     "end": "1994-12-14",
+    "function": [
+      "environment"
+    ],
     "functions": [
       "environment"
     ],
@@ -3297,6 +3825,9 @@
     ],
     "eId": "/member/Brendan-Howlin.S.1983-02-23",
     "end": "1997-06-26",
+    "function": [
+      "environment"
+    ],
     "functions": [
       "environment"
     ],
@@ -3315,6 +3846,9 @@
     ],
     "eId": "/member/Noel-Dempsey.D.1987-03-10",
     "end": "1997-07-22",
+    "function": [
+      "environment"
+    ],
     "functions": [
       "environment"
     ],
@@ -3333,6 +3867,10 @@
     ],
     "eId": "/member/Noel-Dempsey.D.1987-03-10",
     "end": "2002-06-06",
+    "function": [
+      "environment",
+      "local_government"
+    ],
     "functions": [
       "environment",
       "local_government"
@@ -3352,6 +3890,11 @@
     ],
     "eId": "/member/Martin-Cullen.D.1987-03-10",
     "end": "2004-09-29",
+    "function": [
+      "environment",
+      "heritage",
+      "local_government"
+    ],
     "functions": [
       "environment",
       "heritage",
@@ -3372,6 +3915,11 @@
     ],
     "eId": "/member/Dick-Roche.D.1987-03-10",
     "end": "2007-06-14",
+    "function": [
+      "environment",
+      "heritage",
+      "local_government"
+    ],
     "functions": [
       "environment",
       "heritage",
@@ -3392,6 +3940,11 @@
     ],
     "eId": "/member/John-Gormley.D.1997-06-26",
     "end": "2011-01-23",
+    "function": [
+      "environment",
+      "heritage",
+      "local_government"
+    ],
     "functions": [
       "environment",
       "heritage",
@@ -3412,6 +3965,11 @@
     ],
     "eId": "/member/\u00c9amon-\u00d3-Cu\u00edv.S.1989-10-01",
     "end": "2011-03-09",
+    "function": [
+      "environment",
+      "heritage",
+      "local_government"
+    ],
     "functions": [
       "environment",
       "heritage",
@@ -3426,6 +3984,11 @@
     "cabinets": [],
     "eId": "/member/Phil-Hogan.S.1987-04-25",
     "end": "2014-07-11",
+    "function": [
+      "environment",
+      "community",
+      "local_government"
+    ],
     "functions": [
       "environment",
       "community",
@@ -3440,12 +4003,17 @@
     "cabinets": [
       {
         "cabinet": "/cabinet/dail/31",
-        "end": null,
+        "end": "2016-05-06",
         "start": "2014-07-11"
       }
     ],
     "eId": "/member/Alan-Kelly.S.2007-07-23",
-    "end": null,
+    "end": "2016-05-06",
+    "function": [
+      "environment",
+      "community",
+      "local_government"
+    ],
     "functions": [
       "environment",
       "community",
@@ -3466,6 +4034,9 @@
     ],
     "eId": "/member/Robert-Childers-Barton.D.1919-01-21",
     "end": "1922-01-09",
+    "function": [
+      "economic_affairs"
+    ],
     "functions": [
       "economic_affairs"
     ],
@@ -3484,6 +4055,9 @@
     ],
     "eId": "/member/Kevin-Christopher-O'Higgins.D.1919-01-21",
     "end": "1922-09-09",
+    "function": [
+      "economic_affairs"
+    ],
     "functions": [
       "economic_affairs"
     ],
@@ -3502,6 +4076,9 @@
     ],
     "eId": "/member/Ernest-Blythe.D.1919-01-21",
     "end": "1922-09-09",
+    "function": [
+      "economic_affairs"
+    ],
     "functions": [
       "economic_affairs"
     ],
@@ -3521,6 +4098,9 @@
     ],
     "eId": "/member/Martin-O'Donoghue.D.1977-07-05",
     "end": "1979-12-11",
+    "function": [
+      "economic_planning_development"
+    ],
     "functions": [
       "economic_planning_development"
     ],
@@ -3540,6 +4120,9 @@
     ],
     "eId": "/member/Michael-O'Kennedy.S.1965-06-23",
     "end": "1980-01-21",
+    "function": [
+      "economic_planning_development"
+    ],
     "functions": [
       "economic_planning_development"
     ],
@@ -3558,6 +4141,9 @@
     ],
     "eId": "/member/Michael-O'Kennedy.S.1965-06-23",
     "end": "1980-01-22",
+    "function": [
+      "energy"
+    ],
     "functions": [
       "energy"
     ],
@@ -3576,6 +4162,9 @@
     ],
     "eId": "/member/George-Colley.D.1961-10-11",
     "end": "1981-06-30",
+    "function": [
+      "energy"
+    ],
     "functions": [
       "energy"
     ],
@@ -3594,6 +4183,9 @@
     ],
     "eId": "/member/Michael-O'Leary.D.1965-04-21",
     "end": "1981-08-21",
+    "function": [
+      "energy"
+    ],
     "functions": [
       "energy"
     ],
@@ -3612,6 +4204,10 @@
     ],
     "eId": "/member/Michael-O'Leary.D.1965-04-21",
     "end": "1982-03-09",
+    "function": [
+      "industry",
+      "energy"
+    ],
     "functions": [
       "industry",
       "energy"
@@ -3631,6 +4227,10 @@
     ],
     "eId": "/member/Albert-Reynolds.D.1977-07-05",
     "end": "1982-12-14",
+    "function": [
+      "industry",
+      "energy"
+    ],
     "functions": [
       "industry",
       "energy"
@@ -3650,6 +4250,10 @@
     ],
     "eId": "/member/John-Bruton.D.1969-07-02",
     "end": "1983-12-13",
+    "function": [
+      "industry",
+      "energy"
+    ],
     "functions": [
       "industry",
       "energy"
@@ -3669,6 +4273,10 @@
     ],
     "eId": "/member/Dick-Spring.D.1981-06-30",
     "end": "1983-12-17",
+    "function": [
+      "industry",
+      "energy"
+    ],
     "functions": [
       "industry",
       "energy"
@@ -3688,6 +4296,9 @@
     ],
     "eId": "/member/Dick-Spring.D.1981-06-30",
     "end": "1987-01-20",
+    "function": [
+      "energy"
+    ],
     "functions": [
       "energy"
     ],
@@ -3706,6 +4317,9 @@
     ],
     "eId": "/member/Michael-Noonan.D.1981-06-30",
     "end": "1987-03-10",
+    "function": [
+      "energy"
+    ],
     "functions": [
       "energy"
     ],
@@ -3724,6 +4338,9 @@
     ],
     "eId": "/member/Ray-Burke.D.1973-03-14",
     "end": "1988-11-24",
+    "function": [
+      "energy"
+    ],
     "functions": [
       "energy"
     ],
@@ -3747,6 +4364,9 @@
     ],
     "eId": "/member/Michael-Smith.D.1969-07-02",
     "end": "1989-07-12",
+    "function": [
+      "energy"
+    ],
     "functions": [
       "energy"
     ],
@@ -3765,6 +4385,9 @@
     ],
     "eId": "/member/Robert-Molloy.D.1965-04-21",
     "end": "1992-11-04",
+    "function": [
+      "energy"
+    ],
     "functions": [
       "energy"
     ],
@@ -3788,6 +4411,9 @@
     ],
     "eId": "/member/Albert-Reynolds.D.1977-07-05",
     "end": "1993-01-12",
+    "function": [
+      "energy"
+    ],
     "functions": [
       "energy"
     ],
@@ -3806,6 +4432,9 @@
     ],
     "eId": "/member/Brian-Cowen.D.1984-06-14",
     "end": "1993-01-22",
+    "function": [
+      "energy"
+    ],
     "functions": [
       "energy"
     ],
@@ -3824,6 +4453,10 @@
     ],
     "eId": "/member/Charlie-McCreevy.D.1977-07-05",
     "end": "1994-12-15",
+    "function": [
+      "tourism",
+      "trade"
+    ],
     "functions": [
       "tourism",
       "trade"
@@ -3843,6 +4476,10 @@
     ],
     "eId": "/member/Enda-Kenny.D.1975-11-12",
     "end": "1997-06-26",
+    "function": [
+      "tourism",
+      "trade"
+    ],
     "functions": [
       "tourism",
       "trade"
@@ -3862,6 +4499,10 @@
     ],
     "eId": "/member/James-McDaid.D.1989-06-29",
     "end": "1997-07-12",
+    "function": [
+      "tourism",
+      "trade"
+    ],
     "functions": [
       "tourism",
       "trade"
@@ -3881,6 +4522,11 @@
     ],
     "eId": "/member/James-McDaid.D.1989-06-29",
     "end": "2002-06-06",
+    "function": [
+      "tourism",
+      "sport",
+      "recreation"
+    ],
     "functions": [
       "tourism",
       "sport",
@@ -3901,6 +4547,11 @@
     ],
     "eId": "/member/John-O'Donoghue.D.1987-03-10",
     "end": "2007-06-14",
+    "function": [
+      "arts",
+      "sport",
+      "tourism"
+    ],
     "functions": [
       "arts",
       "sport",
@@ -3921,6 +4572,11 @@
     ],
     "eId": "/member/Seamus-Brennan.S.1977-10-27",
     "end": "2008-05-06",
+    "function": [
+      "arts",
+      "sport",
+      "tourism"
+    ],
     "functions": [
       "arts",
       "sport",
@@ -3941,6 +4597,11 @@
     ],
     "eId": "/member/Martin-Cullen.D.1987-03-10",
     "end": "2010-03-23",
+    "function": [
+      "arts",
+      "sport",
+      "tourism"
+    ],
     "functions": [
       "arts",
       "sport",
@@ -3961,6 +4622,11 @@
     ],
     "eId": "/member/Mary-Hanafin.D.1997-06-26",
     "end": "2011-03-09",
+    "function": [
+      "tourism",
+      "culture",
+      "sport"
+    ],
     "functions": [
       "tourism",
       "culture",
@@ -3975,6 +4641,11 @@
     "cabinets": [],
     "eId": "/member/Jimmy-Deenihan.S.1983-02-23",
     "end": "2014-07-11",
+    "function": [
+      "arts",
+      "heritage",
+      "gaeltacht"
+    ],
     "functions": [
       "arts",
       "heritage",
@@ -3989,12 +4660,17 @@
     "cabinets": [
       {
         "cabinet": "/cabinet/dail/31",
-        "end": null,
+        "end": "2016-05-06",
         "start": "2014-07-11"
       }
     ],
     "eId": "/member/Heather-Humphreys.D.2011-03-09",
-    "end": null,
+    "end": "2016-05-06",
+    "function": [
+      "arts",
+      "heritage",
+      "gaeltacht"
+    ],
     "functions": [
       "arts",
       "heritage",
@@ -4020,6 +4696,9 @@
     ],
     "eId": "/member/Co\ufeffnstance-Georgina-de-Markievicz.D.1919-01-21",
     "end": "1922-01-09",
+    "function": [
+      "labour"
+    ],
     "functions": [
       "labour"
     ],
@@ -4038,6 +4717,9 @@
     ],
     "eId": "/member/Joseph-McGrath.D.1919-01-21",
     "end": "1922-09-09",
+    "function": [
+      "labour"
+    ],
     "functions": [
       "labour"
     ],
@@ -4056,6 +4738,9 @@
     ],
     "eId": "/member/Patrick-J-Hogan.D.1921-08-16",
     "end": "1922-09-09",
+    "function": [
+      "labour"
+    ],
     "functions": [
       "labour"
     ],
@@ -4074,6 +4759,9 @@
     ],
     "eId": "/member/Patrick-John-Hillery.D.1951-06-13",
     "end": "1969-07-02",
+    "function": [
+      "labour"
+    ],
     "functions": [
       "labour"
     ],
@@ -4092,6 +4780,9 @@
     ],
     "eId": "/member/Joseph-Brennan.D.1951-06-13",
     "end": "1973-03-14",
+    "function": [
+      "labour"
+    ],
     "functions": [
       "labour"
     ],
@@ -4110,6 +4801,9 @@
     ],
     "eId": "/member/Michael-O'Leary.D.1965-04-21",
     "end": "1977-07-05",
+    "function": [
+      "labour"
+    ],
     "functions": [
       "labour"
     ],
@@ -4128,6 +4822,9 @@
     ],
     "eId": "/member/Gene-Fitzgerald.D.1972-08-02",
     "end": "1980-12-16",
+    "function": [
+      "labour"
+    ],
     "functions": [
       "labour"
     ],
@@ -4146,6 +4843,9 @@
     ],
     "eId": "/member/Thomas-Nolan.S.1961-12-14",
     "end": "1981-06-30",
+    "function": [
+      "labour"
+    ],
     "functions": [
       "labour"
     ],
@@ -4164,6 +4864,9 @@
     ],
     "eId": "/member/Liam-Kavanagh.D.1969-07-02",
     "end": "1982-03-09",
+    "function": [
+      "labour"
+    ],
     "functions": [
       "labour"
     ],
@@ -4182,6 +4885,9 @@
     ],
     "eId": "/member/Gene-Fitzgerald.D.1972-08-02",
     "end": "1982-12-14",
+    "function": [
+      "labour"
+    ],
     "functions": [
       "labour"
     ],
@@ -4200,6 +4906,9 @@
     ],
     "eId": "/member/Liam-Kavanagh.D.1969-07-02",
     "end": "1983-12-13",
+    "function": [
+      "labour"
+    ],
     "functions": [
       "labour"
     ],
@@ -4218,6 +4927,9 @@
     ],
     "eId": "/member/Ruair\u00ed-Quinn.S.1976-07-01",
     "end": "1987-01-20",
+    "function": [
+      "labour"
+    ],
     "functions": [
       "labour"
     ],
@@ -4236,6 +4948,9 @@
     ],
     "eId": "/member/Gemma-Hussey.S.1977-10-27",
     "end": "1987-03-10",
+    "function": [
+      "labour"
+    ],
     "functions": [
       "labour"
     ],
@@ -4259,6 +4974,9 @@
     ],
     "eId": "/member/Bertie-Ahern.D.1977-07-05",
     "end": "1991-11-14",
+    "function": [
+      "labour"
+    ],
     "functions": [
       "labour"
     ],
@@ -4277,6 +4995,9 @@
     ],
     "eId": "/member/Michael-O'Kennedy.S.1965-06-23",
     "end": "1992-02-11",
+    "function": [
+      "labour"
+    ],
     "functions": [
       "labour"
     ],
@@ -4300,6 +5021,9 @@
     ],
     "eId": "/member/Brian-Cowen.D.1984-06-14",
     "end": "1993-01-12",
+    "function": [
+      "labour"
+    ],
     "functions": [
       "labour"
     ],
@@ -4318,6 +5042,9 @@
     ],
     "eId": "/member/Mervyn-Taylor.D.1981-06-30",
     "end": "1993-01-21",
+    "function": [
+      "labour"
+    ],
     "functions": [
       "labour"
     ],
@@ -4336,6 +5063,10 @@
     ],
     "eId": "/member/Mervyn-Taylor.D.1981-06-30",
     "end": "1994-11-17",
+    "function": [
+      "equality",
+      "law_reform"
+    ],
     "functions": [
       "equality",
       "law_reform"
@@ -4355,6 +5086,10 @@
     ],
     "eId": "/member/M\u00e1ire-Geoghegan-Quinn.D.1975-03-04",
     "end": "1994-12-15",
+    "function": [
+      "equality",
+      "law_reform"
+    ],
     "functions": [
       "equality",
       "law_reform"
@@ -4374,6 +5109,10 @@
     ],
     "eId": "/member/Mervyn-Taylor.D.1981-06-30",
     "end": "1997-06-26",
+    "function": [
+      "equality",
+      "law_reform"
+    ],
     "functions": [
       "equality",
       "law_reform"
@@ -4393,6 +5132,10 @@
     ],
     "eId": "/member/John-O'Donoghue.D.1987-03-10",
     "end": "1997-07-08",
+    "function": [
+      "equality",
+      "law_reform"
+    ],
     "functions": [
       "equality",
       "law_reform"
@@ -4412,6 +5155,9 @@
     ],
     "eId": "/member/Michael-Collins.D.1919-01-21",
     "end": "1919-04-01",
+    "function": [
+      "home_affairs"
+    ],
     "functions": [
       "home_affairs"
     ],
@@ -4435,6 +5181,9 @@
     ],
     "eId": "/member/Arthur-Griffith.D.1919-01-21",
     "end": "1921-08-22",
+    "function": [
+      "home_affairs"
+    ],
     "functions": [
       "home_affairs"
     ],
@@ -4453,6 +5202,9 @@
     ],
     "eId": "/member/Austin-Stack.D.1919-01-21",
     "end": "1922-01-09",
+    "function": [
+      "home_affairs"
+    ],
     "functions": [
       "home_affairs"
     ],
@@ -4471,6 +5223,9 @@
     ],
     "eId": "/member/Edmund-John-Duggan.D.1919-01-21",
     "end": "1922-09-09",
+    "function": [
+      "home_affairs"
+    ],
     "functions": [
       "home_affairs"
     ],
@@ -4491,12 +5246,17 @@
         "end": "1923-09-19",
         "start": "1922-09-09"
       },
-      {"cabinet": "http://oireachtas.ie/ie/oireachtas/cabinet/dail/4",
-      "start": "1923-09-19",
-      "end": "1924-06-02"}
+      {
+        "cabinet": "http://oireachtas.ie/ie/oireachtas/cabinet/dail/4",
+        "end": "1924-06-02",
+        "start": "1923-09-19"
+      }
     ],
     "eId": "/member/Kevin-Christopher-O'Higgins.D.1919-01-21",
     "end": "1924-06-02",
+    "function": [
+      "home_affairs"
+    ],
     "functions": [
       "home_affairs"
     ],
@@ -4520,6 +5280,9 @@
     ],
     "eId": "/member/Kevin-Christopher-O'Higgins.D.1919-01-21",
     "end": "1927-07-10",
+    "function": [
+      "justice"
+    ],
     "functions": [
       "justice"
     ],
@@ -4543,6 +5306,9 @@
     ],
     "eId": "/member/William-T-Cosgrave.D.1919-01-21",
     "end": "1927-10-12",
+    "function": [
+      "justice"
+    ],
     "functions": [
       "justice"
     ],
@@ -4561,6 +5327,9 @@
     ],
     "eId": "/member/James-Fitzgerald-Kenney.D.1927-06-23",
     "end": "1932-03-09",
+    "function": [
+      "justice"
+    ],
     "functions": [
       "justice"
     ],
@@ -4579,6 +5348,9 @@
     ],
     "eId": "/member/James-Geoghehan.D.1930-06-13",
     "end": "1933-02-08",
+    "function": [
+      "justice"
+    ],
     "functions": [
       "justice"
     ],
@@ -4607,6 +5379,9 @@
     ],
     "eId": "/member/Patrick-Joseph-Ruttledge.D.1921-08-16",
     "end": "1939-09-08",
+    "function": [
+      "justice"
+    ],
     "functions": [
       "justice"
     ],
@@ -4635,6 +5410,9 @@
     ],
     "eId": "/member/Gerald-Boland.D.1923-09-19",
     "end": "1948-02-18",
+    "function": [
+      "justice"
+    ],
     "functions": [
       "justice"
     ],
@@ -4653,6 +5431,9 @@
     ],
     "eId": "/member/General-Se\u00e1n-MacEoin.D.1921-08-16",
     "end": "1951-03-07",
+    "function": [
+      "justice"
+    ],
     "functions": [
       "justice"
     ],
@@ -4671,6 +5452,9 @@
     ],
     "eId": "/member/Daniel-Morrissey.D.1922-09-09",
     "end": "1951-06-13",
+    "function": [
+      "justice"
+    ],
     "functions": [
       "justice"
     ],
@@ -4689,6 +5473,9 @@
     ],
     "eId": "/member/Gerald-Boland.D.1923-09-19",
     "end": "1954-06-02",
+    "function": [
+      "justice"
+    ],
     "functions": [
       "justice"
     ],
@@ -4707,6 +5494,9 @@
     ],
     "eId": "/member/James-Everett.D.1922-09-09",
     "end": "1957-03-20",
+    "function": [
+      "justice"
+    ],
     "functions": [
       "justice"
     ],
@@ -4725,6 +5515,9 @@
     ],
     "eId": "/member/Oscar-Traynor.D.1925-03-11",
     "end": "1961-10-11",
+    "function": [
+      "justice"
+    ],
     "functions": [
       "justice"
     ],
@@ -4743,6 +5536,9 @@
     ],
     "eId": "/member/Charles-J-Haughey.D.1957-03-20",
     "end": "1964-10-08",
+    "function": [
+      "justice"
+    ],
     "functions": [
       "justice"
     ],
@@ -4761,6 +5557,9 @@
     ],
     "eId": "/member/Se\u00e1n-F-Lemass.D.1924-11-18",
     "end": "1964-11-03",
+    "function": [
+      "justice"
+    ],
     "functions": [
       "justice"
     ],
@@ -4784,6 +5583,9 @@
     ],
     "eId": "/member/Brian-Lenihan-Snr.S.1957-05-22",
     "end": "1968-03-26",
+    "function": [
+      "justice"
+    ],
     "functions": [
       "justice"
     ],
@@ -4807,6 +5609,9 @@
     ],
     "eId": "/member/Michael-Moran.D.1938-06-30",
     "end": "1970-05-05",
+    "function": [
+      "justice"
+    ],
     "functions": [
       "justice"
     ],
@@ -4825,6 +5630,9 @@
     ],
     "eId": "/member/Desmond-J-O'Malley.D.1968-05-22",
     "end": "1973-03-14",
+    "function": [
+      "justice"
+    ],
     "functions": [
       "justice"
     ],
@@ -4843,6 +5651,9 @@
     ],
     "eId": "/member/Patrick-Mark-Cooney.D.1970-04-14",
     "end": "1977-07-05",
+    "function": [
+      "justice"
+    ],
     "functions": [
       "justice"
     ],
@@ -4861,6 +5672,9 @@
     ],
     "eId": "/member/Gerard-Collins.D.1967-11-09",
     "end": "1981-06-30",
+    "function": [
+      "justice"
+    ],
     "functions": [
       "justice"
     ],
@@ -4879,6 +5693,9 @@
     ],
     "eId": "/member/Jim-Mitchell.D.1977-07-05",
     "end": "1982-03-09",
+    "function": [
+      "justice"
+    ],
     "functions": [
       "justice"
     ],
@@ -4897,6 +5714,9 @@
     ],
     "eId": "/member/Se\u00e1n-Doherty.D.1977-07-05",
     "end": "1982-12-14",
+    "function": [
+      "justice"
+    ],
     "functions": [
       "justice"
     ],
@@ -4915,6 +5735,9 @@
     ],
     "eId": "/member/Michael-Noonan.D.1981-06-30",
     "end": "1986-02-14",
+    "function": [
+      "justice"
+    ],
     "functions": [
       "justice"
     ],
@@ -4933,6 +5756,9 @@
     ],
     "eId": "/member/Alan-M-Dukes.D.1981-06-30",
     "end": "1987-03-10",
+    "function": [
+      "justice"
+    ],
     "functions": [
       "justice"
     ],
@@ -4956,6 +5782,9 @@
     ],
     "eId": "/member/Gerard-Collins.D.1967-11-09",
     "end": "1989-07-12",
+    "function": [
+      "justice"
+    ],
     "functions": [
       "justice"
     ],
@@ -4974,6 +5803,9 @@
     ],
     "eId": "/member/Ray-Burke.D.1973-03-14",
     "end": "1992-02-11",
+    "function": [
+      "justice"
+    ],
     "functions": [
       "justice"
     ],
@@ -4997,6 +5829,9 @@
     ],
     "eId": "/member/P\u00e1draig-Flynn.D.1977-07-05",
     "end": "1993-01-04",
+    "function": [
+      "justice"
+    ],
     "functions": [
       "justice"
     ],
@@ -5015,6 +5850,9 @@
     ],
     "eId": "/member/M\u00e1ire-Geoghegan-Quinn.D.1975-03-04",
     "end": "1994-12-15",
+    "function": [
+      "justice"
+    ],
     "functions": [
       "justice"
     ],
@@ -5033,6 +5871,9 @@
     ],
     "eId": "/member/Nora-Owen.D.1981-06-30",
     "end": "1997-06-26",
+    "function": [
+      "justice"
+    ],
     "functions": [
       "justice"
     ],
@@ -5051,6 +5892,9 @@
     ],
     "eId": "/member/John-O'Donoghue.D.1987-03-10",
     "end": "1997-07-08",
+    "function": [
+      "justice"
+    ],
     "functions": [
       "justice"
     ],
@@ -5069,6 +5913,11 @@
     ],
     "eId": "/member/John-O'Donoghue.D.1987-03-10",
     "end": "2002-06-06",
+    "function": [
+      "justice",
+      "equality",
+      "law_reform"
+    ],
     "functions": [
       "justice",
       "equality",
@@ -5089,6 +5938,11 @@
     ],
     "eId": "/member/Michael-McDowell.D.1987-03-10",
     "end": "2007-06-14",
+    "function": [
+      "justice",
+      "equality",
+      "law_reform"
+    ],
     "functions": [
       "justice",
       "equality",
@@ -5109,6 +5963,11 @@
     ],
     "eId": "/member/Brian-Lenihan.D.1996-04-02",
     "end": "2008-05-07",
+    "function": [
+      "justice",
+      "equality",
+      "law_reform"
+    ],
     "functions": [
       "justice",
       "equality",
@@ -5129,6 +5988,11 @@
     ],
     "eId": "/member/Dermot-Ahern.D.1987-03-10",
     "end": "2010-03-23",
+    "function": [
+      "justice",
+      "equality",
+      "law_reform"
+    ],
     "functions": [
       "justice",
       "equality",
@@ -5149,6 +6013,10 @@
     ],
     "eId": "/member/Dermot-Ahern.D.1987-03-10",
     "end": "2011-01-19",
+    "function": [
+      "justice",
+      "law_reform"
+    ],
     "functions": [
       "justice",
       "law_reform"
@@ -5168,6 +6036,10 @@
     ],
     "eId": "/member/Brendan-Smith.D.1992-12-14",
     "end": "2011-03-09",
+    "function": [
+      "justice",
+      "law_reform"
+    ],
     "functions": [
       "justice",
       "law_reform"
@@ -5178,13 +6050,19 @@
     "wikiOffice": "Minister_for_Justice_and_Equality"
   },
   {
-    "cabinets": [{
-      "cabinet": "/cabinet/dail/31",
-      "start": "2011-03-09",
-      "end": "2014-05-08"
-    }],
+    "cabinets": [
+      {
+        "cabinet": "/cabinet/dail/31",
+        "end": "2014-05-08",
+        "start": "2011-03-09"
+      }
+    ],
     "eId": "/member/Alan-Shatter.D.1981-06-30",
     "end": "2014-05-08",
+    "function": [
+      "justice",
+      "equality"
+    ],
     "functions": [
       "justice",
       "equality"
@@ -5198,12 +6076,16 @@
     "cabinets": [
       {
         "cabinet": "/cabinet/dail/31",
-        "end": null,
+        "end": "2016-05-06",
         "start": "2014-05-08"
       }
     ],
     "eId": "/member/Frances-Fitzgerald.D.1992-12-14",
-    "end": null,
+    "end": "2016-05-06",
+    "function": [
+      "justice",
+      "equality"
+    ],
     "functions": [
       "justice",
       "equality"
@@ -5223,6 +6105,9 @@
     ],
     "eId": "/member/George-Noble-Plunkett.D.1919-01-21",
     "end": "1922-01-09",
+    "function": [
+      "fine_arts"
+    ],
     "functions": [
       "fine_arts"
     ],
@@ -5241,6 +6126,9 @@
     ],
     "eId": "/member/Jim-Mitchell.D.1977-07-05",
     "end": "1987-03-10",
+    "function": [
+      "communications"
+    ],
     "functions": [
       "communications"
     ],
@@ -5259,6 +6147,9 @@
     ],
     "eId": "/member/John-P-Wilson.D.1973-03-14",
     "end": "1987-03-31",
+    "function": [
+      "communications"
+    ],
     "functions": [
       "communications"
     ],
@@ -5282,6 +6173,9 @@
     ],
     "eId": "/member/Ray-Burke.D.1973-03-14",
     "end": "1991-02-06",
+    "function": [
+      "communications"
+    ],
     "functions": [
       "communications"
     ],
@@ -5310,6 +6204,10 @@
     ],
     "eId": "/member/Erskine-Hamilton-Childers.D.1938-06-30",
     "end": "1969-07-02",
+    "function": [
+      "transport",
+      "power"
+    ],
     "functions": [
       "transport",
       "power"
@@ -5329,6 +6227,10 @@
     ],
     "eId": "/member/Brian-Lenihan-Snr.S.1957-05-22",
     "end": "1973-01-03",
+    "function": [
+      "transport",
+      "power"
+    ],
     "functions": [
       "transport",
       "power"
@@ -5348,6 +6250,10 @@
     ],
     "eId": "/member/Michael-O'Kennedy.S.1965-06-23",
     "end": "1973-03-14",
+    "function": [
+      "transport",
+      "power"
+    ],
     "functions": [
       "transport",
       "power"
@@ -5367,6 +6273,10 @@
     ],
     "eId": "/member/Peter-Barry.D.1969-07-02",
     "end": "1976-12-02",
+    "function": [
+      "transport",
+      "power"
+    ],
     "functions": [
       "transport",
       "power"
@@ -5386,6 +6296,10 @@
     ],
     "eId": "/member/Thomas-J-Fitzpatrick.S.1961-12-14",
     "end": "1977-07-05",
+    "function": [
+      "transport",
+      "power"
+    ],
     "functions": [
       "transport",
       "power"
@@ -5405,6 +6319,10 @@
     ],
     "eId": "/member/Padraig-Faulkner.D.1957-03-20",
     "end": "1979-07-12",
+    "function": [
+      "transport",
+      "power"
+    ],
     "functions": [
       "transport",
       "power"
@@ -5424,6 +6342,10 @@
     ],
     "eId": "/member/Padraig-Faulkner.D.1957-03-20",
     "end": "1979-12-11",
+    "function": [
+      "tourism",
+      "transport"
+    ],
     "functions": [
       "tourism",
       "transport"
@@ -5443,6 +6365,10 @@
     ],
     "eId": "/member/George-Colley.D.1961-10-11",
     "end": "1980-01-25",
+    "function": [
+      "tourism",
+      "transport"
+    ],
     "functions": [
       "tourism",
       "transport"
@@ -5462,6 +6388,9 @@
     ],
     "eId": "/member/Albert-Reynolds.D.1977-07-05",
     "end": "1981-06-30",
+    "function": [
+      "transport"
+    ],
     "functions": [
       "transport"
     ],
@@ -5480,6 +6409,9 @@
     ],
     "eId": "/member/Patrick-Mark-Cooney.D.1970-04-14",
     "end": "1982-03-09",
+    "function": [
+      "transport"
+    ],
     "functions": [
       "transport"
     ],
@@ -5498,6 +6430,9 @@
     ],
     "eId": "/member/John-P-Wilson.D.1973-03-14",
     "end": "1982-12-14",
+    "function": [
+      "transport"
+    ],
     "functions": [
       "transport"
     ],
@@ -5516,6 +6451,9 @@
     ],
     "eId": "/member/Jim-Mitchell.D.1977-07-05",
     "end": "1987-03-10",
+    "function": [
+      "transport"
+    ],
     "functions": [
       "transport"
     ],
@@ -5534,6 +6472,10 @@
     ],
     "eId": "/member/Raymond-MacSharry.D.1969-07-02",
     "end": "1987-03-31",
+    "function": [
+      "tourism",
+      "transport"
+    ],
     "functions": [
       "tourism",
       "transport"
@@ -5558,6 +6500,10 @@
     ],
     "eId": "/member/John-P-Wilson.D.1973-03-14",
     "end": "1989-07-12",
+    "function": [
+      "tourism",
+      "transport"
+    ],
     "functions": [
       "tourism",
       "transport"
@@ -5577,6 +6523,10 @@
     ],
     "eId": "/member/Seamus-Brennan.S.1977-10-27",
     "end": "1991-02-07",
+    "function": [
+      "tourism",
+      "transport"
+    ],
     "functions": [
       "tourism",
       "transport"
@@ -5596,6 +6546,11 @@
     ],
     "eId": "/member/Seamus-Brennan.S.1977-10-27",
     "end": "1992-02-11",
+    "function": [
+      "tourism",
+      "transport",
+      "communications"
+    ],
     "functions": [
       "tourism",
       "transport",
@@ -5621,6 +6576,11 @@
     ],
     "eId": "/member/M\u00e1ire-Geoghegan-Quinn.D.1975-03-04",
     "end": "1993-01-12",
+    "function": [
+      "tourism",
+      "transport",
+      "communications"
+    ],
     "functions": [
       "tourism",
       "transport",
@@ -5641,6 +6601,11 @@
     ],
     "eId": "/member/Charlie-McCreevy.D.1977-07-05",
     "end": "1993-01-22",
+    "function": [
+      "tourism",
+      "transport",
+      "communications"
+    ],
     "functions": [
       "tourism",
       "transport",
@@ -5661,6 +6626,11 @@
     ],
     "eId": "/member/Brian-Cowen.D.1984-06-14",
     "end": "1994-12-15",
+    "function": [
+      "transport",
+      "energy",
+      "communications"
+    ],
     "functions": [
       "transport",
       "energy",
@@ -5681,6 +6651,11 @@
     ],
     "eId": "/member/Michael-Lowry.D.1987-03-10",
     "end": "1996-11-30",
+    "function": [
+      "transport",
+      "energy",
+      "communications"
+    ],
     "functions": [
       "transport",
       "energy",
@@ -5701,6 +6676,11 @@
     ],
     "eId": "/member/John-Bruton.D.1969-07-02",
     "end": "1996-12-03",
+    "function": [
+      "transport",
+      "energy",
+      "communications"
+    ],
     "functions": [
       "transport",
       "energy",
@@ -5721,6 +6701,11 @@
     ],
     "eId": "/member/Alan-M-Dukes.D.1981-06-30",
     "end": "1997-06-26",
+    "function": [
+      "transport",
+      "energy",
+      "communications"
+    ],
     "functions": [
       "transport",
       "energy",
@@ -5741,6 +6726,11 @@
     ],
     "eId": "/member/Mary-O'Rourke.S.1981-10-08",
     "end": "1997-07-12",
+    "function": [
+      "transport",
+      "energy",
+      "communications"
+    ],
     "functions": [
       "transport",
       "energy",
@@ -5761,6 +6751,9 @@
     ],
     "eId": "/member/Mary-O'Rourke.S.1981-10-08",
     "end": "2002-06-06",
+    "function": [
+      "public_enterprise"
+    ],
     "functions": [
       "public_enterprise"
     ],
@@ -5779,6 +6772,9 @@
     ],
     "eId": "/member/Seamus-Brennan.S.1977-10-27",
     "end": "2004-09-29",
+    "function": [
+      "transport"
+    ],
     "functions": [
       "transport"
     ],
@@ -5797,6 +6793,9 @@
     ],
     "eId": "/member/Martin-Cullen.D.1987-03-10",
     "end": "2007-06-14",
+    "function": [
+      "transport"
+    ],
     "functions": [
       "transport"
     ],
@@ -5815,6 +6814,9 @@
     ],
     "eId": "/member/Noel-Dempsey.D.1987-03-10",
     "end": "2011-01-19",
+    "function": [
+      "transport"
+    ],
     "functions": [
       "transport"
     ],
@@ -5833,6 +6835,9 @@
     ],
     "eId": "/member/Pat-Carey.D.1997-06-26",
     "end": "2011-03-08",
+    "function": [
+      "transport"
+    ],
     "functions": [
       "transport"
     ],
@@ -5845,6 +6850,11 @@
     "cabinets": [],
     "eId": "/member/Leo-Varadkar.D.2007-06-14",
     "end": "2014-07-11",
+    "function": [
+      "transport",
+      "tourism",
+      "sport"
+    ],
     "functions": [
       "transport",
       "tourism",
@@ -5859,12 +6869,17 @@
     "cabinets": [
       {
         "cabinet": "/cabinet/dail/31",
-        "end": null,
+        "end": "2016-05-06",
         "start": "2014-07-11"
       }
     ],
     "eId": "/member/Paschal-Donohoe.S.2007-07-23",
-    "end": null,
+    "end": "2016-05-06",
+    "function": [
+      "transport",
+      "tourism",
+      "sport"
+    ],
     "functions": [
       "transport",
       "tourism",
@@ -5885,6 +6900,9 @@
     ],
     "eId": "/member/Richard-James-Mulcahy.D.1919-01-21",
     "end": "1919-04-01",
+    "function": [
+      "defence"
+    ],
     "functions": [
       "defence"
     ],
@@ -5908,6 +6926,9 @@
     ],
     "eId": "/member/Cathal-Brugha.D.1919-01-21",
     "end": "1922-01-09",
+    "function": [
+      "defence"
+    ],
     "functions": [
       "defence"
     ],
@@ -5936,6 +6957,9 @@
     ],
     "eId": "/member/Richard-James-Mulcahy.D.1919-01-21",
     "end": "1924-03-19",
+    "function": [
+      "defence"
+    ],
     "functions": [
       "defence"
     ],
@@ -5954,6 +6978,9 @@
     ],
     "eId": "/member/William-T-Cosgrave.D.1919-01-21",
     "end": "1924-11-21",
+    "function": [
+      "defence"
+    ],
     "functions": [
       "defence"
     ],
@@ -5972,6 +6999,9 @@
     ],
     "eId": "/member/Peter-Hughes.D.1921-08-16",
     "end": "1927-06-23",
+    "function": [
+      "defence"
+    ],
     "functions": [
       "defence"
     ],
@@ -5995,6 +7025,9 @@
     ],
     "eId": "/member/Desmond-FitzGerald.D.1919-01-21",
     "end": "1932-03-09",
+    "function": [
+      "defence"
+    ],
     "functions": [
       "defence"
     ],
@@ -6028,6 +7061,9 @@
     ],
     "eId": "/member/Frank-Aiken.D.1923-09-19",
     "end": "1939-09-08",
+    "function": [
+      "defence"
+    ],
     "functions": [
       "defence"
     ],
@@ -6056,6 +7092,9 @@
     ],
     "eId": "/member/Oscar-Traynor.D.1925-03-11",
     "end": "1948-02-18",
+    "function": [
+      "defence"
+    ],
     "functions": [
       "defence"
     ],
@@ -6074,6 +7113,9 @@
     ],
     "eId": "/member/Dr-Thomas-Francis-O'Higgins-Snr.D.1929-03-14",
     "end": "1951-03-07",
+    "function": [
+      "defence"
+    ],
     "functions": [
       "defence"
     ],
@@ -6092,6 +7134,9 @@
     ],
     "eId": "/member/General-Se\u00e1n-MacEoin.D.1921-08-16",
     "end": "1951-06-13",
+    "function": [
+      "defence"
+    ],
     "functions": [
       "defence"
     ],
@@ -6110,6 +7155,9 @@
     ],
     "eId": "/member/Oscar-Traynor.D.1925-03-11",
     "end": "1954-06-02",
+    "function": [
+      "defence"
+    ],
     "functions": [
       "defence"
     ],
@@ -6128,6 +7176,9 @@
     ],
     "eId": "/member/General-Se\u00e1n-MacEoin.D.1921-08-16",
     "end": "1957-03-20",
+    "function": [
+      "defence"
+    ],
     "functions": [
       "defence"
     ],
@@ -6146,6 +7197,9 @@
     ],
     "eId": "/member/Kevin-Boland.D.1957-03-20",
     "end": "1961-10-11",
+    "function": [
+      "defence"
+    ],
     "functions": [
       "defence"
     ],
@@ -6164,6 +7218,9 @@
     ],
     "eId": "/member/Gerald-Bartley.D.1932-03-09",
     "end": "1965-04-21",
+    "function": [
+      "defence"
+    ],
     "functions": [
       "defence"
     ],
@@ -6182,6 +7239,9 @@
     ],
     "eId": "/member/Michael-Hilliard.D.1943-07-01",
     "end": "1969-07-02",
+    "function": [
+      "defence"
+    ],
     "functions": [
       "defence"
     ],
@@ -6200,6 +7260,9 @@
     ],
     "eId": "/member/James-M-Gibbons.D.1957-03-20",
     "end": "1970-05-09",
+    "function": [
+      "defence"
+    ],
     "functions": [
       "defence"
     ],
@@ -6218,6 +7281,9 @@
     ],
     "eId": "/member/Jeremiah-Cronin.D.1965-04-21",
     "end": "1973-03-14",
+    "function": [
+      "defence"
+    ],
     "functions": [
       "defence"
     ],
@@ -6236,6 +7302,9 @@
     ],
     "eId": "/member/Patrick-S-Donegan.D.1954-06-02",
     "end": "1976-12-02",
+    "function": [
+      "defence"
+    ],
     "functions": [
       "defence"
     ],
@@ -6254,6 +7323,9 @@
     ],
     "eId": "/member/Liam-Cosgrave.D.1943-07-01",
     "end": "1976-12-16",
+    "function": [
+      "defence"
+    ],
     "functions": [
       "defence"
     ],
@@ -6272,6 +7344,9 @@
     ],
     "eId": "/member/Oliver-J-Flanagan.D.1943-07-01",
     "end": "1977-07-05",
+    "function": [
+      "defence"
+    ],
     "functions": [
       "defence"
     ],
@@ -6290,6 +7365,9 @@
     ],
     "eId": "/member/Robert-Molloy.D.1965-04-21",
     "end": "1979-12-11",
+    "function": [
+      "defence"
+    ],
     "functions": [
       "defence"
     ],
@@ -6308,6 +7386,9 @@
     ],
     "eId": "/member/Padraig-Faulkner.D.1957-03-20",
     "end": "1980-10-15",
+    "function": [
+      "defence"
+    ],
     "functions": [
       "defence"
     ],
@@ -6326,6 +7407,9 @@
     ],
     "eId": "/member/Sylvester-Barrett.D.1968-03-14",
     "end": "1981-06-30",
+    "function": [
+      "defence"
+    ],
     "functions": [
       "defence"
     ],
@@ -6344,6 +7428,9 @@
     ],
     "eId": "/member/James-Tully.D.1954-06-02",
     "end": "1982-03-09",
+    "function": [
+      "defence"
+    ],
     "functions": [
       "defence"
     ],
@@ -6362,6 +7449,9 @@
     ],
     "eId": "/member/Patrick-Power.D.1969-07-02",
     "end": "1982-12-14",
+    "function": [
+      "defence"
+    ],
     "functions": [
       "defence"
     ],
@@ -6380,6 +7470,9 @@
     ],
     "eId": "/member/Patrick-Mark-Cooney.D.1970-04-14",
     "end": "1986-02-14",
+    "function": [
+      "defence"
+    ],
     "functions": [
       "defence"
     ],
@@ -6408,6 +7501,9 @@
     ],
     "eId": "/member/Patrick-O'Toole.S.1973-06-01",
     "end": "1987-03-10",
+    "function": [
+      "defence"
+    ],
     "functions": [
       "defence"
     ],
@@ -6431,6 +7527,9 @@
     ],
     "eId": "/member/Michael-J-Noonan.D.1969-07-02",
     "end": "1989-07-12",
+    "function": [
+      "defence"
+    ],
     "functions": [
       "defence"
     ],
@@ -6449,6 +7548,9 @@
     ],
     "eId": "/member/Brian-Lenihan-Snr.S.1957-05-22",
     "end": "1990-10-31",
+    "function": [
+      "defence"
+    ],
     "functions": [
       "defence"
     ],
@@ -6467,6 +7569,9 @@
     ],
     "eId": "/member/Charles-J-Haughey.D.1957-03-20",
     "end": "1991-02-05",
+    "function": [
+      "defence"
+    ],
     "functions": [
       "defence"
     ],
@@ -6485,6 +7590,9 @@
     ],
     "eId": "/member/Brendan-Daly.D.1973-03-14",
     "end": "1991-11-14",
+    "function": [
+      "defence"
+    ],
     "functions": [
       "defence"
     ],
@@ -6503,6 +7611,9 @@
     ],
     "eId": "/member/Vincent-Brady.D.1977-07-05",
     "end": "1992-02-11",
+    "function": [
+      "defence"
+    ],
     "functions": [
       "defence"
     ],
@@ -6526,6 +7637,9 @@
     ],
     "eId": "/member/John-P-Wilson.D.1973-03-14",
     "end": "1993-01-12",
+    "function": [
+      "defence"
+    ],
     "functions": [
       "defence"
     ],
@@ -6544,6 +7658,9 @@
     ],
     "eId": "/member/David-Andrews.D.1965-04-21",
     "end": "1994-12-15",
+    "function": [
+      "defence"
+    ],
     "functions": [
       "defence"
     ],
@@ -6562,6 +7679,9 @@
     ],
     "eId": "/member/Hugh-Coveney.D.1981-06-30",
     "end": "1995-05-23",
+    "function": [
+      "defence"
+    ],
     "functions": [
       "defence"
     ],
@@ -6580,6 +7700,9 @@
     ],
     "eId": "/member/Se\u00e1n-Barrett.D.1981-06-30",
     "end": "1997-06-26",
+    "function": [
+      "defence"
+    ],
     "functions": [
       "defence"
     ],
@@ -6598,6 +7721,9 @@
     ],
     "eId": "/member/David-Andrews.D.1965-04-21",
     "end": "1997-10-08",
+    "function": [
+      "defence"
+    ],
     "functions": [
       "defence"
     ],
@@ -6621,6 +7747,9 @@
     ],
     "eId": "/member/Michael-Smith.D.1969-07-02",
     "end": "2004-09-29",
+    "function": [
+      "defence"
+    ],
     "functions": [
       "defence"
     ],
@@ -6644,6 +7773,9 @@
     ],
     "eId": "/member/Willie-O'Dea.D.1982-03-09",
     "end": "2010-02-18",
+    "function": [
+      "defence"
+    ],
     "functions": [
       "defence"
     ],
@@ -6662,6 +7794,9 @@
     ],
     "eId": "/member/Brian-Cowen.D.1984-06-14",
     "end": "2010-03-23",
+    "function": [
+      "defence"
+    ],
     "functions": [
       "defence"
     ],
@@ -6680,6 +7815,9 @@
     ],
     "eId": "/member/Tony-Killeen.D.1992-12-14",
     "end": "2011-01-19",
+    "function": [
+      "defence"
+    ],
     "functions": [
       "defence"
     ],
@@ -6698,6 +7836,9 @@
     ],
     "eId": "/member/\u00c9amon-\u00d3-Cu\u00edv.S.1989-10-01",
     "end": "2011-03-09",
+    "function": [
+      "defence"
+    ],
     "functions": [
       "defence"
     ],
@@ -6710,6 +7851,9 @@
     "cabinets": [],
     "eId": "/member/Alan-Shatter.D.1981-06-30",
     "end": "2014-05-07",
+    "function": [
+      "defence"
+    ],
     "functions": [
       "defence"
     ],
@@ -6722,6 +7866,9 @@
     "cabinets": [],
     "eId": "/member/Enda-Kenny.D.1975-11-12",
     "end": "2014-07-11",
+    "function": [
+      "defence"
+    ],
     "functions": [
       "defence"
     ],
@@ -6734,12 +7881,15 @@
     "cabinets": [
       {
         "cabinet": "/cabinet/dail/31",
-        "end": null,
+        "end": "2016-05-06",
         "start": "2014-07-11"
       }
     ],
     "eId": "/member/Simon-Coveney.D.1998-10-23",
-    "end": null,
+    "end": "2016-05-06",
+    "function": [
+      "defence"
+    ],
     "functions": [
       "defence"
     ],
@@ -6763,6 +7913,10 @@
     ],
     "eId": "/member/Ernest-Blythe.D.1919-01-21",
     "end": "1921-08-26",
+    "function": [
+      "trade",
+      "commerce"
+    ],
     "functions": [
       "trade",
       "commerce"
@@ -6782,6 +7936,10 @@
     ],
     "eId": "/member/Ernest-Blythe.D.1919-01-21",
     "end": "1922-01-11",
+    "function": [
+      "trade",
+      "commerce"
+    ],
     "functions": [
       "trade",
       "commerce"
@@ -6801,6 +7959,9 @@
     ],
     "eId": "/member/Ernest-Blythe.D.1919-01-21",
     "end": "1922-08-30",
+    "function": [
+      "trade"
+    ],
     "functions": [
       "trade"
     ],
@@ -6829,6 +7990,10 @@
     ],
     "eId": "/member/Joseph-McGrath.D.1919-01-21",
     "end": "1924-03-07",
+    "function": [
+      "industry",
+      "commerce"
+    ],
     "functions": [
       "industry",
       "commerce"
@@ -6858,6 +8023,10 @@
     ],
     "eId": "/member/Patrick-McGilligan.D.1923-11-03",
     "end": "1932-03-09",
+    "function": [
+      "industry",
+      "commerce"
+    ],
     "functions": [
       "industry",
       "commerce"
@@ -6892,6 +8061,10 @@
     ],
     "eId": "/member/Se\u00e1n-F-Lemass.D.1924-11-18",
     "end": "1939-09-16",
+    "function": [
+      "industry",
+      "commerce"
+    ],
     "functions": [
       "industry",
       "commerce"
@@ -6911,6 +8084,10 @@
     ],
     "eId": "/member/Se\u00e1n-MacEntee.D.1919-01-21",
     "end": "1941-08-18",
+    "function": [
+      "industry",
+      "commerce"
+    ],
     "functions": [
       "industry",
       "commerce"
@@ -6940,6 +8117,10 @@
     ],
     "eId": "/member/Se\u00e1n-F-Lemass.D.1924-11-18",
     "end": "1948-02-18",
+    "function": [
+      "industry",
+      "commerce"
+    ],
     "functions": [
       "industry",
       "commerce"
@@ -6959,6 +8140,10 @@
     ],
     "eId": "/member/Daniel-Morrissey.D.1922-09-09",
     "end": "1951-03-07",
+    "function": [
+      "industry",
+      "commerce"
+    ],
     "functions": [
       "industry",
       "commerce"
@@ -6978,6 +8163,10 @@
     ],
     "eId": "/member/Dr-Thomas-Francis-O'Higgins-Snr.D.1929-03-14",
     "end": "1951-06-13",
+    "function": [
+      "industry",
+      "commerce"
+    ],
     "functions": [
       "industry",
       "commerce"
@@ -6997,6 +8186,10 @@
     ],
     "eId": "/member/Se\u00e1n-F-Lemass.D.1924-11-18",
     "end": "1954-06-02",
+    "function": [
+      "industry",
+      "commerce"
+    ],
     "functions": [
       "industry",
       "commerce"
@@ -7016,6 +8209,10 @@
     ],
     "eId": "/member/William-Norton.D.1926-02-18",
     "end": "1957-03-20",
+    "function": [
+      "industry",
+      "commerce"
+    ],
     "functions": [
       "industry",
       "commerce"
@@ -7035,6 +8232,10 @@
     ],
     "eId": "/member/Se\u00e1n-F-Lemass.D.1924-11-18",
     "end": "1959-06-23",
+    "function": [
+      "industry",
+      "commerce"
+    ],
     "functions": [
       "industry",
       "commerce"
@@ -7059,6 +8260,10 @@
     ],
     "eId": "/member/John-Lynch.D.1948-02-18",
     "end": "1965-04-21",
+    "function": [
+      "industry",
+      "commerce"
+    ],
     "functions": [
       "industry",
       "commerce"
@@ -7078,6 +8283,10 @@
     ],
     "eId": "/member/Patrick-John-Hillery.D.1951-06-13",
     "end": "1966-07-13",
+    "function": [
+      "industry",
+      "commerce"
+    ],
     "functions": [
       "industry",
       "commerce"
@@ -7102,6 +8311,10 @@
     ],
     "eId": "/member/George-Colley.D.1961-10-11",
     "end": "1970-05-09",
+    "function": [
+      "industry",
+      "commerce"
+    ],
     "functions": [
       "industry",
       "commerce"
@@ -7121,6 +8334,10 @@
     ],
     "eId": "/member/Patrick-J-Lalor.D.1961-10-11",
     "end": "1973-03-14",
+    "function": [
+      "industry",
+      "commerce"
+    ],
     "functions": [
       "industry",
       "commerce"
@@ -7140,6 +8357,10 @@
     ],
     "eId": "/member/Justin-Keating.D.1969-07-02",
     "end": "1977-07-05",
+    "function": [
+      "industry",
+      "commerce"
+    ],
     "functions": [
       "industry",
       "commerce"
@@ -7159,6 +8380,10 @@
     ],
     "eId": "/member/Desmond-J-O'Malley.D.1968-05-22",
     "end": "1977-09-23",
+    "function": [
+      "industry",
+      "commerce"
+    ],
     "functions": [
       "industry",
       "commerce"
@@ -7178,6 +8403,11 @@
     ],
     "eId": "/member/Desmond-J-O'Malley.D.1968-05-22",
     "end": "1980-01-23",
+    "function": [
+      "industry",
+      "commerce",
+      "energy"
+    ],
     "functions": [
       "industry",
       "commerce",
@@ -7198,6 +8428,11 @@
     ],
     "eId": "/member/Desmond-J-O'Malley.D.1968-05-22",
     "end": "1981-06-30",
+    "function": [
+      "industry",
+      "commerce",
+      "tourism"
+    ],
     "functions": [
       "industry",
       "commerce",
@@ -7218,6 +8453,11 @@
     ],
     "eId": "/member/John-M-Kelly.S.1969-11-05",
     "end": "1981-08-21",
+    "function": [
+      "industry",
+      "commerce",
+      "tourism"
+    ],
     "functions": [
       "industry",
       "commerce",
@@ -7238,6 +8478,11 @@
     ],
     "eId": "/member/John-M-Kelly.S.1969-11-05",
     "end": "1982-03-09",
+    "function": [
+      "trade",
+      "commerce",
+      "tourism"
+    ],
     "functions": [
       "trade",
       "commerce",
@@ -7258,6 +8503,11 @@
     ],
     "eId": "/member/Desmond-J-O'Malley.D.1968-05-22",
     "end": "1982-10-06",
+    "function": [
+      "trade",
+      "commerce",
+      "tourism"
+    ],
     "functions": [
       "trade",
       "commerce",
@@ -7278,6 +8528,11 @@
     ],
     "eId": "/member/Patrick-Power.D.1969-07-02",
     "end": "1982-10-27",
+    "function": [
+      "trade",
+      "commerce",
+      "tourism"
+    ],
     "functions": [
       "trade",
       "commerce",
@@ -7298,6 +8553,11 @@
     ],
     "eId": "/member/P\u00e1draig-Flynn.D.1977-07-05",
     "end": "1982-12-14",
+    "function": [
+      "trade",
+      "commerce",
+      "tourism"
+    ],
     "functions": [
       "trade",
       "commerce",
@@ -7318,6 +8578,11 @@
     ],
     "eId": "/member/Frank-Cluskey.D.1965-04-21",
     "end": "1983-12-08",
+    "function": [
+      "trade",
+      "commerce",
+      "tourism"
+    ],
     "functions": [
       "trade",
       "commerce",
@@ -7338,6 +8603,11 @@
     ],
     "eId": "/member/Garrett-Fitzgerald.S.1965-06-23",
     "end": "1983-12-13",
+    "function": [
+      "trade",
+      "commerce",
+      "tourism"
+    ],
     "functions": [
       "trade",
       "commerce",
@@ -7358,6 +8628,11 @@
     ],
     "eId": "/member/John-Bruton.D.1969-07-02",
     "end": "1983-12-17",
+    "function": [
+      "trade",
+      "commerce",
+      "tourism"
+    ],
     "functions": [
       "trade",
       "commerce",
@@ -7378,6 +8653,12 @@
     ],
     "eId": "/member/John-Bruton.D.1969-07-02",
     "end": "1986-02-14",
+    "function": [
+      "industry",
+      "trade",
+      "commerce",
+      "tourism"
+    ],
     "functions": [
       "industry",
       "trade",
@@ -7399,6 +8680,12 @@
     ],
     "eId": "/member/Michael-Noonan.D.1981-06-30",
     "end": "1986-02-19",
+    "function": [
+      "industry",
+      "trade",
+      "commerce",
+      "tourism"
+    ],
     "functions": [
       "industry",
       "trade",
@@ -7420,6 +8707,10 @@
     ],
     "eId": "/member/Michael-Noonan.D.1981-06-30",
     "end": "1987-03-10",
+    "function": [
+      "industry",
+      "commerce"
+    ],
     "functions": [
       "industry",
       "commerce"
@@ -7439,6 +8730,10 @@
     ],
     "eId": "/member/Albert-Reynolds.D.1977-07-05",
     "end": "1988-11-24",
+    "function": [
+      "industry",
+      "commerce"
+    ],
     "functions": [
       "industry",
       "commerce"
@@ -7463,6 +8758,10 @@
     ],
     "eId": "/member/Ray-Burke.D.1973-03-14",
     "end": "1989-07-12",
+    "function": [
+      "industry",
+      "commerce"
+    ],
     "functions": [
       "industry",
       "commerce"
@@ -7482,6 +8781,10 @@
     ],
     "eId": "/member/Desmond-J-O'Malley.D.1968-05-22",
     "end": "1992-11-04",
+    "function": [
+      "industry",
+      "commerce"
+    ],
     "functions": [
       "industry",
       "commerce"
@@ -7506,6 +8809,10 @@
     ],
     "eId": "/member/P\u00e1draig-Flynn.D.1977-07-05",
     "end": "1993-01-04",
+    "function": [
+      "industry",
+      "commerce"
+    ],
     "functions": [
       "industry",
       "commerce"
@@ -7525,6 +8832,10 @@
     ],
     "eId": "/member/Bertie-Ahern.D.1977-07-05",
     "end": "1993-01-12",
+    "function": [
+      "industry",
+      "commerce"
+    ],
     "functions": [
       "industry",
       "commerce"
@@ -7544,6 +8855,10 @@
     ],
     "eId": "/member/Ruair\u00ed-Quinn.S.1976-07-01",
     "end": "1993-01-21",
+    "function": [
+      "industry",
+      "commerce"
+    ],
     "functions": [
       "industry",
       "commerce"
@@ -7563,6 +8878,10 @@
     ],
     "eId": "/member/Ruair\u00ed-Quinn.S.1976-07-01",
     "end": "1994-11-17",
+    "function": [
+      "enterprise",
+      "employment"
+    ],
     "functions": [
       "enterprise",
       "employment"
@@ -7582,6 +8901,10 @@
     ],
     "eId": "/member/Charlie-McCreevy.D.1977-07-05",
     "end": "1994-12-15",
+    "function": [
+      "enterprise",
+      "employment"
+    ],
     "functions": [
       "enterprise",
       "employment"
@@ -7601,6 +8924,10 @@
     ],
     "eId": "/member/Richard-Bruton.S.1981-10-08",
     "end": "1997-06-26",
+    "function": [
+      "enterprise",
+      "employment"
+    ],
     "functions": [
       "enterprise",
       "employment"
@@ -7620,6 +8947,10 @@
     ],
     "eId": "/member/Mary-Harney.S.1977-10-27",
     "end": "1997-07-12",
+    "function": [
+      "enterprise",
+      "employment"
+    ],
     "functions": [
       "enterprise",
       "employment"
@@ -7644,6 +8975,11 @@
     ],
     "eId": "/member/Mary-Harney.S.1977-10-27",
     "end": "2004-09-29",
+    "function": [
+      "enterprise",
+      "trade",
+      "employment"
+    ],
     "functions": [
       "enterprise",
       "trade",
@@ -7669,6 +9005,11 @@
     ],
     "eId": "/member/Miche\u00e1l-Martin.D.1989-06-29",
     "end": "2008-05-07",
+    "function": [
+      "enterprise",
+      "trade",
+      "employment"
+    ],
     "functions": [
       "enterprise",
       "trade",
@@ -7689,6 +9030,11 @@
     ],
     "eId": "/member/Mary-Coughlan.D.1987-03-10",
     "end": "2010-03-23",
+    "function": [
+      "enterprise",
+      "trade",
+      "employment"
+    ],
     "functions": [
       "enterprise",
       "trade",
@@ -7709,6 +9055,11 @@
     ],
     "eId": "/member/Batt-O'Keeffe.D.1987-03-10",
     "end": "2011-01-20",
+    "function": [
+      "enterprise",
+      "trade",
+      "innovation"
+    ],
     "functions": [
       "enterprise",
       "trade",
@@ -7729,6 +9080,11 @@
     ],
     "eId": "/member/Mary-Hanafin.D.1997-06-26",
     "end": "2011-03-09",
+    "function": [
+      "enterprise",
+      "trade",
+      "innovation"
+    ],
     "functions": [
       "enterprise",
       "trade",
@@ -7743,12 +9099,17 @@
     "cabinets": [
       {
         "cabinet": "/cabinet/dail/31",
-        "end": null,
+        "end": "2016-05-06",
         "start": "2011-03-09"
       }
     ],
     "eId": "/member/Richard-Bruton.S.1981-10-08",
-    "end": null,
+    "end": "2016-05-06",
+    "function": [
+      "jobs",
+      "enterprise",
+      "innovation"
+    ],
     "functions": [
       "jobs",
       "enterprise",
@@ -7769,6 +9130,9 @@
     ],
     "eId": "/member/Eoin-MacNeill.D.1919-01-21",
     "end": "1919-04-01",
+    "function": [
+      "finance"
+    ],
     "functions": [
       "finance"
     ],
@@ -7792,6 +9156,9 @@
     ],
     "eId": "/member/Michael-Collins.D.1919-01-21",
     "end": "1922-08-22",
+    "function": [
+      "finance"
+    ],
     "functions": [
       "finance"
     ],
@@ -7820,6 +9187,9 @@
     ],
     "eId": "/member/William-T-Cosgrave.D.1919-01-21",
     "end": "1923-09-21",
+    "function": [
+      "finance"
+    ],
     "functions": [
       "finance"
     ],
@@ -7848,6 +9218,9 @@
     ],
     "eId": "/member/Ernest-Blythe.D.1919-01-21",
     "end": "1932-03-09",
+    "function": [
+      "finance"
+    ],
     "functions": [
       "finance"
     ],
@@ -7881,6 +9254,9 @@
     ],
     "eId": "/member/Se\u00e1n-MacEntee.D.1919-01-21",
     "end": "1939-09-16",
+    "function": [
+      "finance"
+    ],
     "functions": [
       "finance"
     ],
@@ -7909,6 +9285,9 @@
     ],
     "eId": "/member/Se\u00e1n-T-O'Kelly.D.1919-01-21",
     "end": "1945-06-14",
+    "function": [
+      "finance"
+    ],
     "functions": [
       "finance"
     ],
@@ -7927,6 +9306,9 @@
     ],
     "eId": "/member/Frank-Aiken.D.1923-09-19",
     "end": "1948-02-18",
+    "function": [
+      "finance"
+    ],
     "functions": [
       "finance"
     ],
@@ -7945,6 +9327,9 @@
     ],
     "eId": "/member/Patrick-McGilligan.D.1923-11-03",
     "end": "1951-06-13",
+    "function": [
+      "finance"
+    ],
     "functions": [
       "finance"
     ],
@@ -7963,6 +9348,9 @@
     ],
     "eId": "/member/Se\u00e1n-MacEntee.D.1919-01-21",
     "end": "1954-06-02",
+    "function": [
+      "finance"
+    ],
     "functions": [
       "finance"
     ],
@@ -7981,6 +9369,9 @@
     ],
     "eId": "/member/Gerard-Sweetman.S.1943-09-08",
     "end": "1957-03-20",
+    "function": [
+      "finance"
+    ],
     "functions": [
       "finance"
     ],
@@ -8004,6 +9395,9 @@
     ],
     "eId": "/member/James-Ryan.D.1919-01-21",
     "end": "1965-04-21",
+    "function": [
+      "finance"
+    ],
     "functions": [
       "finance"
     ],
@@ -8022,6 +9416,9 @@
     ],
     "eId": "/member/John-Lynch.D.1948-02-18",
     "end": "1966-11-10",
+    "function": [
+      "finance"
+    ],
     "functions": [
       "finance"
     ],
@@ -8045,6 +9442,9 @@
     ],
     "eId": "/member/Charles-J-Haughey.D.1957-03-20",
     "end": "1970-05-07",
+    "function": [
+      "finance"
+    ],
     "functions": [
       "finance"
     ],
@@ -8063,6 +9463,9 @@
     ],
     "eId": "/member/George-Colley.D.1961-10-11",
     "end": "1973-03-14",
+    "function": [
+      "finance"
+    ],
     "functions": [
       "finance"
     ],
@@ -8081,6 +9484,9 @@
     ],
     "eId": "/member/Richie-Ryan.D.1959-07-22",
     "end": "1977-07-05",
+    "function": [
+      "finance"
+    ],
     "functions": [
       "finance"
     ],
@@ -8099,6 +9505,9 @@
     ],
     "eId": "/member/George-Colley.D.1961-10-11",
     "end": "1979-12-11",
+    "function": [
+      "finance"
+    ],
     "functions": [
       "finance"
     ],
@@ -8117,6 +9526,9 @@
     ],
     "eId": "/member/Michael-O'Kennedy.S.1965-06-23",
     "end": "1980-12-16",
+    "function": [
+      "finance"
+    ],
     "functions": [
       "finance"
     ],
@@ -8135,6 +9547,9 @@
     ],
     "eId": "/member/Gene-Fitzgerald.D.1972-08-02",
     "end": "1981-06-30",
+    "function": [
+      "finance"
+    ],
     "functions": [
       "finance"
     ],
@@ -8153,6 +9568,9 @@
     ],
     "eId": "/member/John-Bruton.D.1969-07-02",
     "end": "1982-03-09",
+    "function": [
+      "finance"
+    ],
     "functions": [
       "finance"
     ],
@@ -8171,6 +9589,9 @@
     ],
     "eId": "/member/Raymond-MacSharry.D.1969-07-02",
     "end": "1982-12-14",
+    "function": [
+      "finance"
+    ],
     "functions": [
       "finance"
     ],
@@ -8189,6 +9610,9 @@
     ],
     "eId": "/member/Alan-M-Dukes.D.1981-06-30",
     "end": "1986-02-14",
+    "function": [
+      "finance"
+    ],
     "functions": [
       "finance"
     ],
@@ -8207,6 +9631,9 @@
     ],
     "eId": "/member/John-Bruton.D.1969-07-02",
     "end": "1987-03-10",
+    "function": [
+      "finance"
+    ],
     "functions": [
       "finance"
     ],
@@ -8225,6 +9652,9 @@
     ],
     "eId": "/member/Raymond-MacSharry.D.1969-07-02",
     "end": "1988-11-24",
+    "function": [
+      "finance"
+    ],
     "functions": [
       "finance"
     ],
@@ -8248,6 +9678,9 @@
     ],
     "eId": "/member/Albert-Reynolds.D.1977-07-05",
     "end": "1991-11-07",
+    "function": [
+      "finance"
+    ],
     "functions": [
       "finance"
     ],
@@ -8266,6 +9699,9 @@
     ],
     "eId": "/member/Charles-J-Haughey.D.1957-03-20",
     "end": "1991-11-14",
+    "function": [
+      "finance"
+    ],
     "functions": [
       "finance"
     ],
@@ -8289,6 +9725,9 @@
     ],
     "eId": "/member/Bertie-Ahern.D.1977-07-05",
     "end": "1994-12-15",
+    "function": [
+      "finance"
+    ],
     "functions": [
       "finance"
     ],
@@ -8307,6 +9746,9 @@
     ],
     "eId": "/member/Ruair\u00ed-Quinn.S.1976-07-01",
     "end": "1997-06-26",
+    "function": [
+      "finance"
+    ],
     "functions": [
       "finance"
     ],
@@ -8330,6 +9772,9 @@
     ],
     "eId": "/member/Charlie-McCreevy.D.1977-07-05",
     "end": "2004-09-29",
+    "function": [
+      "finance"
+    ],
     "functions": [
       "finance"
     ],
@@ -8353,6 +9798,9 @@
     ],
     "eId": "/member/Brian-Cowen.D.1984-06-14",
     "end": "2008-05-07",
+    "function": [
+      "finance"
+    ],
     "functions": [
       "finance"
     ],
@@ -8371,6 +9819,9 @@
     ],
     "eId": "/member/Brian-Lenihan.D.1996-04-02",
     "end": "2011-03-09",
+    "function": [
+      "finance"
+    ],
     "functions": [
       "finance"
     ],
@@ -8383,12 +9834,15 @@
     "cabinets": [
       {
         "cabinet": "/cabinet/dail/31",
-        "end": null,
+        "end": "2016-05-06",
         "start": "2011-03-09"
       }
     ],
     "eId": "/member/Michael-Noonan.D.1981-06-30",
-    "end": null,
+    "end": "2016-05-06",
+    "function": [
+      "finance"
+    ],
     "functions": [
       "finance"
     ],
@@ -8412,6 +9866,9 @@
     ],
     "eId": "/member/Se\u00e1n-Etchingham.D.1919-01-21",
     "end": "1921-08-26",
+    "function": [
+      "fisheries"
+    ],
     "functions": [
       "fisheries"
     ],
@@ -8430,6 +9887,9 @@
     ],
     "eId": "/member/Se\u00e1n-Etchingham.D.1919-01-21",
     "end": "1922-01-09",
+    "function": [
+      "fisheries"
+    ],
     "functions": [
       "fisheries"
     ],
@@ -8463,6 +9923,9 @@
     ],
     "eId": "/member/Fion\u00e1n-Lynch.D.1919-01-21",
     "end": "1930-04-03",
+    "function": [
+      "fisheries"
+    ],
     "functions": [
       "fisheries"
     ],
@@ -8481,6 +9944,10 @@
     ],
     "eId": "/member/Fion\u00e1n-Lynch.D.1919-01-21",
     "end": "1932-03-09",
+    "function": [
+      "lands",
+      "fisheries"
+    ],
     "functions": [
       "lands",
       "fisheries"
@@ -8500,6 +9967,10 @@
     ],
     "eId": "/member/Patrick-Joseph-Ruttledge.D.1921-08-16",
     "end": "1933-02-08",
+    "function": [
+      "lands",
+      "fisheries"
+    ],
     "functions": [
       "lands",
       "fisheries"
@@ -8519,6 +9990,10 @@
     ],
     "eId": "/member/Joseph-Connolly.S.1928-06-12",
     "end": "1936-05-29",
+    "function": [
+      "lands",
+      "fisheries"
+    ],
     "functions": [
       "lands",
       "fisheries"
@@ -8538,6 +10013,10 @@
     ],
     "eId": "/member/Frank-Aiken.D.1923-09-19",
     "end": "1936-11-11",
+    "function": [
+      "lands",
+      "fisheries"
+    ],
     "functions": [
       "lands",
       "fisheries"
@@ -8557,6 +10036,10 @@
     ],
     "eId": "/member/Gerald-Boland.D.1923-09-19",
     "end": "1937-07-21",
+    "function": [
+      "lands",
+      "fisheries"
+    ],
     "functions": [
       "lands",
       "fisheries"
@@ -8581,6 +10064,9 @@
     ],
     "eId": "/member/Gerald-Boland.D.1923-09-19",
     "end": "1939-09-08",
+    "function": [
+      "lands"
+    ],
     "functions": [
       "lands"
     ],
@@ -8604,6 +10090,9 @@
     ],
     "eId": "/member/Thomas-Derrig.D.1921-08-16",
     "end": "1943-07-02",
+    "function": [
+      "lands"
+    ],
     "functions": [
       "lands"
     ],
@@ -8627,6 +10116,9 @@
     ],
     "eId": "/member/Se\u00e1n-Moylan.D.1921-08-16",
     "end": "1948-02-18",
+    "function": [
+      "lands"
+    ],
     "functions": [
       "lands"
     ],
@@ -8645,6 +10137,9 @@
     ],
     "eId": "/member/Joseph-Blowick.D.1943-07-01",
     "end": "1951-03-07",
+    "function": [
+      "lands"
+    ],
     "functions": [
       "lands"
     ],
@@ -8663,6 +10158,9 @@
     ],
     "eId": "/member/Thomas-Derrig.D.1921-08-16",
     "end": "1954-06-02",
+    "function": [
+      "lands"
+    ],
     "functions": [
       "lands"
     ],
@@ -8681,6 +10179,9 @@
     ],
     "eId": "/member/Joseph-Blowick.D.1943-07-01",
     "end": "1957-03-20",
+    "function": [
+      "lands"
+    ],
     "functions": [
       "lands"
     ],
@@ -8699,6 +10200,9 @@
     ],
     "eId": "/member/Erskine-Hamilton-Childers.D.1938-06-30",
     "end": "1959-07-23",
+    "function": [
+      "lands"
+    ],
     "functions": [
       "lands"
     ],
@@ -8727,6 +10231,9 @@
     ],
     "eId": "/member/Michael-Moran.D.1938-06-30",
     "end": "1968-03-26",
+    "function": [
+      "lands"
+    ],
     "functions": [
       "lands"
     ],
@@ -8745,6 +10252,9 @@
     ],
     "eId": "/member/Padraig-Faulkner.D.1957-03-20",
     "end": "1969-07-02",
+    "function": [
+      "lands"
+    ],
     "functions": [
       "lands"
     ],
@@ -8763,6 +10273,9 @@
     ],
     "eId": "/member/Se\u00e1n-Flanagan.D.1951-06-13",
     "end": "1973-03-14",
+    "function": [
+      "lands"
+    ],
     "functions": [
       "lands"
     ],
@@ -8781,6 +10294,9 @@
     ],
     "eId": "/member/Thomas-J-Fitzpatrick.S.1961-12-14",
     "end": "1976-12-02",
+    "function": [
+      "lands"
+    ],
     "functions": [
       "lands"
     ],
@@ -8799,6 +10315,9 @@
     ],
     "eId": "/member/Patrick-S-Donegan.D.1954-06-02",
     "end": "1977-02-09",
+    "function": [
+      "lands"
+    ],
     "functions": [
       "lands"
     ],
@@ -8817,6 +10336,9 @@
     ],
     "eId": "/member/Patrick-S-Donegan.D.1954-06-02",
     "end": "1977-07-05",
+    "function": [
+      "fisheries"
+    ],
     "functions": [
       "fisheries"
     ],
@@ -8835,6 +10357,9 @@
     ],
     "eId": "/member/Brian-Lenihan-Snr.S.1957-05-22",
     "end": "1978-07-15",
+    "function": [
+      "fisheries"
+    ],
     "functions": [
       "fisheries"
     ],
@@ -8853,6 +10378,10 @@
     ],
     "eId": "/member/Brian-Lenihan-Snr.S.1957-05-22",
     "end": "1979-12-11",
+    "function": [
+      "fisheries",
+      "forestry"
+    ],
     "functions": [
       "fisheries",
       "forestry"
@@ -8872,6 +10401,10 @@
     ],
     "eId": "/member/Patrick-Power.D.1969-07-02",
     "end": "1981-06-30",
+    "function": [
+      "fisheries",
+      "forestry"
+    ],
     "functions": [
       "fisheries",
       "forestry"
@@ -8891,6 +10424,10 @@
     ],
     "eId": "/member/Thomas-J-Fitzpatrick.S.1961-12-14",
     "end": "1982-03-09",
+    "function": [
+      "fisheries",
+      "forestry"
+    ],
     "functions": [
       "fisheries",
       "forestry"
@@ -8910,6 +10447,10 @@
     ],
     "eId": "/member/Brendan-Daly.D.1973-03-14",
     "end": "1982-12-14",
+    "function": [
+      "fisheries",
+      "forestry"
+    ],
     "functions": [
       "fisheries",
       "forestry"
@@ -8929,6 +10470,10 @@
     ],
     "eId": "/member/Patrick-O'Toole.S.1973-06-01",
     "end": "1986-02-14",
+    "function": [
+      "fisheries",
+      "forestry"
+    ],
     "functions": [
       "fisheries",
       "forestry"
@@ -8948,6 +10493,10 @@
     ],
     "eId": "/member/Liam-Kavanagh.D.1969-07-02",
     "end": "1986-02-19",
+    "function": [
+      "fisheries",
+      "forestry"
+    ],
     "functions": [
       "fisheries",
       "forestry"
@@ -8967,6 +10516,11 @@
     ],
     "eId": "/member/Liam-Kavanagh.D.1969-07-02",
     "end": "1987-01-20",
+    "function": [
+      "tourism",
+      "fisheries",
+      "forestry"
+    ],
     "functions": [
       "tourism",
       "fisheries",
@@ -8987,6 +10541,11 @@
     ],
     "eId": "/member/Patrick-O'Toole.S.1973-06-01",
     "end": "1987-03-10",
+    "function": [
+      "tourism",
+      "fisheries",
+      "forestry"
+    ],
     "functions": [
       "tourism",
       "fisheries",
@@ -9007,6 +10566,11 @@
     ],
     "eId": "/member/Brendan-Daly.D.1973-03-14",
     "end": "1987-03-20",
+    "function": [
+      "tourism",
+      "fisheries",
+      "forestry"
+    ],
     "functions": [
       "tourism",
       "fisheries",
@@ -9032,6 +10596,9 @@
     ],
     "eId": "/member/Brendan-Daly.D.1973-03-14",
     "end": "1989-07-12",
+    "function": [
+      "marine"
+    ],
     "functions": [
       "marine"
     ],
@@ -9050,6 +10617,9 @@
     ],
     "eId": "/member/John-P-Wilson.D.1973-03-14",
     "end": "1992-02-11",
+    "function": [
+      "marine"
+    ],
     "functions": [
       "marine"
     ],
@@ -9073,6 +10643,9 @@
     ],
     "eId": "/member/Michael-Woods.D.1977-07-05",
     "end": "1993-01-12",
+    "function": [
+      "marine"
+    ],
     "functions": [
       "marine"
     ],
@@ -9091,6 +10664,9 @@
     ],
     "eId": "/member/David-Andrews.D.1965-04-21",
     "end": "1994-12-15",
+    "function": [
+      "marine"
+    ],
     "functions": [
       "marine"
     ],
@@ -9109,6 +10685,9 @@
     ],
     "eId": "/member/Hugh-Coveney.D.1981-06-30",
     "end": "1995-05-23",
+    "function": [
+      "marine"
+    ],
     "functions": [
       "marine"
     ],
@@ -9127,6 +10706,9 @@
     ],
     "eId": "/member/Se\u00e1n-Barrett.D.1981-06-30",
     "end": "1997-06-26",
+    "function": [
+      "marine"
+    ],
     "functions": [
       "marine"
     ],
@@ -9145,6 +10727,9 @@
     ],
     "eId": "/member/Michael-Woods.D.1977-07-05",
     "end": "1997-07-12",
+    "function": [
+      "marine"
+    ],
     "functions": [
       "marine"
     ],
@@ -9163,6 +10748,10 @@
     ],
     "eId": "/member/Michael-Woods.D.1977-07-05",
     "end": "2000-01-27",
+    "function": [
+      "marine",
+      "natural_resources"
+    ],
     "functions": [
       "marine",
       "natural_resources"
@@ -9182,6 +10771,10 @@
     ],
     "eId": "/member/Frank-Fahey.D.1982-03-09",
     "end": "2002-06-06",
+    "function": [
+      "marine",
+      "natural_resources"
+    ],
     "functions": [
       "marine",
       "natural_resources"
@@ -9201,6 +10794,11 @@
     ],
     "eId": "/member/Dermot-Ahern.D.1987-03-10",
     "end": "2004-09-29",
+    "function": [
+      "communications",
+      "marine",
+      "natural_resources"
+    ],
     "functions": [
       "communications",
       "marine",
@@ -9221,6 +10819,11 @@
     ],
     "eId": "/member/Noel-Dempsey.D.1987-03-10",
     "end": "2007-06-14",
+    "function": [
+      "communications",
+      "marine",
+      "natural_resources"
+    ],
     "functions": [
       "communications",
       "marine",
@@ -9241,6 +10844,11 @@
     ],
     "eId": "/member/Eamon-Ryan.D.2002-06-06",
     "end": "2011-01-23",
+    "function": [
+      "communications",
+      "energy",
+      "natural_resources"
+    ],
     "functions": [
       "communications",
       "energy",
@@ -9261,6 +10869,11 @@
     ],
     "eId": "/member/Pat-Carey.D.1997-06-26",
     "end": "2011-03-09",
+    "function": [
+      "communications",
+      "energy",
+      "natural_resources"
+    ],
     "functions": [
       "communications",
       "energy",
@@ -9275,6 +10888,11 @@
     "cabinets": [],
     "eId": "/member/Pat-Rabbitte.D.1989-06-29",
     "end": "2014-07-11",
+    "function": [
+      "communications",
+      "energy",
+      "natural_resources"
+    ],
     "functions": [
       "communications",
       "energy",
@@ -9289,12 +10907,17 @@
     "cabinets": [
       {
         "cabinet": "/cabinet/dail/31",
-        "end": null,
+        "end": "2016-05-06",
         "start": "2014-07-11"
       }
     ],
     "eId": "/member/Alex-White.S.2007-07-23",
-    "end": null,
+    "end": "2016-05-06",
+    "function": [
+      "communications",
+      "energy",
+      "natural_resources"
+    ],
     "functions": [
       "communications",
       "energy",
@@ -9315,6 +10938,9 @@
     ],
     "eId": "/member/Martin-O'Donoghue.D.1977-07-05",
     "end": "1977-12-13",
+    "function": [
+      "without_portfolio"
+    ],
     "functions": [
       "without_portfolio"
     ],
@@ -9327,6 +10953,9 @@
     "cabinets": [],
     "eId": "/member/Brendan-Howlin.S.1983-02-23",
     "end": "2011-07-06",
+    "function": [
+      "without_portfolio"
+    ],
     "functions": [
       "without_portfolio"
     ],
@@ -9345,6 +10974,9 @@
     ],
     "eId": "/member/Se\u00e1n-\u00d3-Ceallaigh.D.1919-01-21",
     "end": "1922-01-09",
+    "function": [
+      "education"
+    ],
     "functions": [
       "education"
     ],
@@ -9363,6 +10995,9 @@
     ],
     "eId": "/member/Michael-Hayes.D.1921-08-16",
     "end": "1922-09-09",
+    "function": [
+      "education"
+    ],
     "functions": [
       "education"
     ],
@@ -9381,6 +11016,9 @@
     ],
     "eId": "/member/Fion\u00e1n-Lynch.D.1919-01-21",
     "end": "1922-08-30",
+    "function": [
+      "education"
+    ],
     "functions": [
       "education"
     ],
@@ -9409,6 +11047,9 @@
     ],
     "eId": "/member/Eoin-MacNeill.D.1919-01-21",
     "end": "1925-11-24",
+    "function": [
+      "education"
+    ],
     "functions": [
       "education"
     ],
@@ -9437,6 +11078,9 @@
     ],
     "eId": "/member/Prof-John-Marcus-O'Sullivan.D.1923-09-19",
     "end": "1932-03-09",
+    "function": [
+      "education"
+    ],
     "functions": [
       "education"
     ],
@@ -9470,6 +11114,9 @@
     ],
     "eId": "/member/Thomas-Derrig.D.1921-08-16",
     "end": "1939-09-08",
+    "function": [
+      "education"
+    ],
     "functions": [
       "education"
     ],
@@ -9488,6 +11135,9 @@
     ],
     "eId": "/member/Se\u00e1n-T-O'Kelly.D.1919-01-21",
     "end": "1939-09-27",
+    "function": [
+      "education"
+    ],
     "functions": [
       "education"
     ],
@@ -9506,6 +11156,9 @@
     ],
     "eId": "/member/Eamon-de-Valera.D.1919-01-21",
     "end": "1940-06-18",
+    "function": [
+      "education"
+    ],
     "functions": [
       "education"
     ],
@@ -9534,6 +11187,9 @@
     ],
     "eId": "/member/Thomas-Derrig.D.1921-08-16",
     "end": "1948-02-18",
+    "function": [
+      "education"
+    ],
     "functions": [
       "education"
     ],
@@ -9552,6 +11208,9 @@
     ],
     "eId": "/member/Richard-James-Mulcahy.D.1919-01-21",
     "end": "1951-06-13",
+    "function": [
+      "education"
+    ],
     "functions": [
       "education"
     ],
@@ -9570,6 +11229,9 @@
     ],
     "eId": "/member/Se\u00e1n-Moylan.D.1921-08-16",
     "end": "1954-06-02",
+    "function": [
+      "education"
+    ],
     "functions": [
       "education"
     ],
@@ -9588,6 +11250,9 @@
     ],
     "eId": "/member/Richard-James-Mulcahy.D.1919-01-21",
     "end": "1957-03-20",
+    "function": [
+      "education"
+    ],
     "functions": [
       "education"
     ],
@@ -9606,6 +11271,9 @@
     ],
     "eId": "/member/John-Lynch.D.1948-02-18",
     "end": "1959-06-23",
+    "function": [
+      "education"
+    ],
     "functions": [
       "education"
     ],
@@ -9629,6 +11297,9 @@
     ],
     "eId": "/member/Patrick-John-Hillery.D.1951-06-13",
     "end": "1965-04-21",
+    "function": [
+      "education"
+    ],
     "functions": [
       "education"
     ],
@@ -9647,6 +11318,9 @@
     ],
     "eId": "/member/George-Colley.D.1961-10-11",
     "end": "1966-07-13",
+    "function": [
+      "education"
+    ],
     "functions": [
       "education"
     ],
@@ -9665,6 +11339,9 @@
     ],
     "eId": "/member/Donogh-O'Malley.D.1954-06-02",
     "end": "1968-03-10",
+    "function": [
+      "education"
+    ],
     "functions": [
       "education"
     ],
@@ -9683,6 +11360,9 @@
     ],
     "eId": "/member/John-Lynch.D.1948-02-18",
     "end": "1968-03-26",
+    "function": [
+      "education"
+    ],
     "functions": [
       "education"
     ],
@@ -9701,6 +11381,9 @@
     ],
     "eId": "/member/Brian-Lenihan-Snr.S.1957-05-22",
     "end": "1969-07-02",
+    "function": [
+      "education"
+    ],
     "functions": [
       "education"
     ],
@@ -9719,6 +11402,9 @@
     ],
     "eId": "/member/Padraig-Faulkner.D.1957-03-20",
     "end": "1973-03-14",
+    "function": [
+      "education"
+    ],
     "functions": [
       "education"
     ],
@@ -9737,6 +11423,9 @@
     ],
     "eId": "/member/Richard-Burke.D.1969-07-02",
     "end": "1976-12-02",
+    "function": [
+      "education"
+    ],
     "functions": [
       "education"
     ],
@@ -9755,6 +11444,9 @@
     ],
     "eId": "/member/Peter-Barry.D.1969-07-02",
     "end": "1977-07-05",
+    "function": [
+      "education"
+    ],
     "functions": [
       "education"
     ],
@@ -9773,6 +11465,9 @@
     ],
     "eId": "/member/John-P-Wilson.D.1973-03-14",
     "end": "1981-06-30",
+    "function": [
+      "education"
+    ],
     "functions": [
       "education"
     ],
@@ -9791,6 +11486,9 @@
     ],
     "eId": "/member/John-Boland.S.1969-11-05",
     "end": "1982-03-09",
+    "function": [
+      "education"
+    ],
     "functions": [
       "education"
     ],
@@ -9809,6 +11507,9 @@
     ],
     "eId": "/member/Martin-O'Donoghue.D.1977-07-05",
     "end": "1982-10-06",
+    "function": [
+      "education"
+    ],
     "functions": [
       "education"
     ],
@@ -9827,6 +11528,9 @@
     ],
     "eId": "/member/Charles-J-Haughey.D.1957-03-20",
     "end": "1982-10-27",
+    "function": [
+      "education"
+    ],
     "functions": [
       "education"
     ],
@@ -9845,6 +11549,9 @@
     ],
     "eId": "/member/Gerard-Brady.D.1977-07-05",
     "end": "1982-12-14",
+    "function": [
+      "education"
+    ],
     "functions": [
       "education"
     ],
@@ -9863,6 +11570,9 @@
     ],
     "eId": "/member/Gemma-Hussey.S.1977-10-27",
     "end": "1986-02-14",
+    "function": [
+      "education"
+    ],
     "functions": [
       "education"
     ],
@@ -9881,6 +11591,9 @@
     ],
     "eId": "/member/Patrick-Mark-Cooney.D.1970-04-14",
     "end": "1987-03-10",
+    "function": [
+      "education"
+    ],
     "functions": [
       "education"
     ],
@@ -9904,6 +11617,9 @@
     ],
     "eId": "/member/Mary-O'Rourke.S.1981-10-08",
     "end": "1991-11-14",
+    "function": [
+      "education"
+    ],
     "functions": [
       "education"
     ],
@@ -9922,6 +11638,9 @@
     ],
     "eId": "/member/Noel-Davern.D.1969-07-02",
     "end": "1992-02-11",
+    "function": [
+      "education"
+    ],
     "functions": [
       "education"
     ],
@@ -9945,6 +11664,9 @@
     ],
     "eId": "/member/Seamus-Brennan.S.1977-10-27",
     "end": "1993-01-12",
+    "function": [
+      "education"
+    ],
     "functions": [
       "education"
     ],
@@ -9963,6 +11685,9 @@
     ],
     "eId": "/member/Niamh-Bhreathnach.D.1992-12-14",
     "end": "1994-11-17",
+    "function": [
+      "education"
+    ],
     "functions": [
       "education"
     ],
@@ -9981,6 +11706,9 @@
     ],
     "eId": "/member/Michael-Smith.D.1969-07-02",
     "end": "1994-12-15",
+    "function": [
+      "education"
+    ],
     "functions": [
       "education"
     ],
@@ -9999,6 +11727,9 @@
     ],
     "eId": "/member/Niamh-Bhreathnach.D.1992-12-14",
     "end": "1997-06-26",
+    "function": [
+      "education"
+    ],
     "functions": [
       "education"
     ],
@@ -10017,6 +11748,9 @@
     ],
     "eId": "/member/Miche\u00e1l-Martin.D.1989-06-29",
     "end": "1997-09-30",
+    "function": [
+      "education"
+    ],
     "functions": [
       "education"
     ],
@@ -10035,6 +11769,10 @@
     ],
     "eId": "/member/Miche\u00e1l-Martin.D.1989-06-29",
     "end": "2000-01-27",
+    "function": [
+      "education",
+      "science"
+    ],
     "functions": [
       "education",
       "science"
@@ -10054,6 +11792,10 @@
     ],
     "eId": "/member/Michael-Woods.D.1977-07-05",
     "end": "2002-06-06",
+    "function": [
+      "education",
+      "science"
+    ],
     "functions": [
       "education",
       "science"
@@ -10073,6 +11815,10 @@
     ],
     "eId": "/member/Noel-Dempsey.D.1987-03-10",
     "end": "2004-09-29",
+    "function": [
+      "education",
+      "science"
+    ],
     "functions": [
       "education",
       "science"
@@ -10097,6 +11843,10 @@
     ],
     "eId": "/member/Mary-Hanafin.D.1997-06-26",
     "end": "2008-05-07",
+    "function": [
+      "education",
+      "science"
+    ],
     "functions": [
       "education",
       "science"
@@ -10116,6 +11866,10 @@
     ],
     "eId": "/member/Batt-O'Keeffe.D.1987-03-10",
     "end": "2010-03-23",
+    "function": [
+      "education",
+      "science"
+    ],
     "functions": [
       "education",
       "science"
@@ -10135,6 +11889,10 @@
     ],
     "eId": "/member/Mary-Coughlan.D.1987-03-10",
     "end": "2011-03-09",
+    "function": [
+      "education",
+      "skills"
+    ],
     "functions": [
       "education",
       "skills"
@@ -10148,6 +11906,10 @@
     "cabinets": [],
     "eId": "/member/Ruair\u00ed-Quinn.S.1976-07-01",
     "end": "2014-07-11",
+    "function": [
+      "education",
+      "skills"
+    ],
     "functions": [
       "education",
       "skills"
@@ -10161,12 +11923,16 @@
     "cabinets": [
       {
         "cabinet": "/cabinet/dail/31",
-        "end": null,
+        "end": "2016-05-06",
         "start": "2014-07-11"
       }
     ],
     "eId": "/member/Jan-O'Sullivan.S.1993-02-17",
-    "end": null,
+    "end": "2016-05-06",
+    "function": [
+      "education",
+      "skills"
+    ],
     "functions": [
       "education",
       "skills"
@@ -10196,6 +11962,9 @@
     ],
     "eId": "/member/James-Joseph-Walsh.D.1919-01-21",
     "end": "1924-06-02",
+    "function": [
+      "postmaster_general"
+    ],
     "functions": [
       "postmaster_general",
       "posts",
@@ -10226,6 +11995,10 @@
     ],
     "eId": "/member/James-Joseph-Walsh.D.1919-01-21",
     "end": "1927-10-12",
+    "function": [
+      "posts",
+      "telegraphs"
+    ],
     "functions": [
       "posts",
       "telegraphs"
@@ -10245,6 +12018,10 @@
     ],
     "eId": "/member/Ernest-Blythe.D.1919-01-21",
     "end": "1932-03-09",
+    "function": [
+      "posts",
+      "telegraphs"
+    ],
     "functions": [
       "posts",
       "telegraphs"
@@ -10264,6 +12041,10 @@
     ],
     "eId": "/member/Joseph-Connolly.S.1928-06-12",
     "end": "1933-02-08",
+    "function": [
+      "posts",
+      "telegraphs"
+    ],
     "functions": [
       "posts",
       "telegraphs"
@@ -10283,6 +12064,10 @@
     ],
     "eId": "/member/Gerald-Boland.D.1923-09-19",
     "end": "1936-11-11",
+    "function": [
+      "posts",
+      "telegraphs"
+    ],
     "functions": [
       "posts",
       "telegraphs"
@@ -10312,6 +12097,10 @@
     ],
     "eId": "/member/Oscar-Traynor.D.1925-03-11",
     "end": "1939-09-08",
+    "function": [
+      "posts",
+      "telegraphs"
+    ],
     "functions": [
       "posts",
       "telegraphs"
@@ -10331,6 +12120,10 @@
     ],
     "eId": "/member/Thomas-Derrig.D.1921-08-16",
     "end": "1939-09-27",
+    "function": [
+      "posts",
+      "telegraphs"
+    ],
     "functions": [
       "posts",
       "telegraphs"
@@ -10360,6 +12153,10 @@
     ],
     "eId": "/member/Patrick-J-Little.D.1927-06-23",
     "end": "1948-02-18",
+    "function": [
+      "posts",
+      "telegraphs"
+    ],
     "functions": [
       "posts",
       "telegraphs"
@@ -10379,6 +12176,10 @@
     ],
     "eId": "/member/James-Everett.D.1922-09-09",
     "end": "1951-06-13",
+    "function": [
+      "posts",
+      "telegraphs"
+    ],
     "functions": [
       "posts",
       "telegraphs"
@@ -10398,6 +12199,10 @@
     ],
     "eId": "/member/Erskine-Hamilton-Childers.D.1938-06-30",
     "end": "1954-06-02",
+    "function": [
+      "posts",
+      "telegraphs"
+    ],
     "functions": [
       "posts",
       "telegraphs"
@@ -10417,6 +12222,10 @@
     ],
     "eId": "/member/Michael-J-Keyes.D.1927-06-23",
     "end": "1957-03-20",
+    "function": [
+      "posts",
+      "telegraphs"
+    ],
     "functions": [
       "posts",
       "telegraphs"
@@ -10436,6 +12245,10 @@
     ],
     "eId": "/member/Neil-TC-Blaney.D.1948-12-07",
     "end": "1957-12-04",
+    "function": [
+      "posts",
+      "telegraphs"
+    ],
     "functions": [
       "posts",
       "telegraphs"
@@ -10455,6 +12268,10 @@
     ],
     "eId": "/member/John-Ormonde.D.1947-10-29",
     "end": "1959-06-23",
+    "function": [
+      "posts",
+      "telegraphs"
+    ],
     "functions": [
       "posts",
       "telegraphs"
@@ -10479,6 +12296,10 @@
     ],
     "eId": "/member/Michael-Hilliard.D.1943-07-01",
     "end": "1965-04-21",
+    "function": [
+      "posts",
+      "telegraphs"
+    ],
     "functions": [
       "posts",
       "telegraphs"
@@ -10498,6 +12319,10 @@
     ],
     "eId": "/member/Joseph-Brennan.D.1951-06-13",
     "end": "1966-11-10",
+    "function": [
+      "posts",
+      "telegraphs"
+    ],
     "functions": [
       "posts",
       "telegraphs"
@@ -10517,6 +12342,10 @@
     ],
     "eId": "/member/Erskine-Hamilton-Childers.D.1938-06-30",
     "end": "1969-07-02",
+    "function": [
+      "posts",
+      "telegraphs"
+    ],
     "functions": [
       "posts",
       "telegraphs"
@@ -10536,6 +12365,10 @@
     ],
     "eId": "/member/Patrick-J-Lalor.D.1961-10-11",
     "end": "1970-05-09",
+    "function": [
+      "posts",
+      "telegraphs"
+    ],
     "functions": [
       "posts",
       "telegraphs"
@@ -10555,6 +12388,10 @@
     ],
     "eId": "/member/Gerard-Collins.D.1967-11-09",
     "end": "1973-03-14",
+    "function": [
+      "posts",
+      "telegraphs"
+    ],
     "functions": [
       "posts",
       "telegraphs"
@@ -10574,6 +12411,10 @@
     ],
     "eId": "/member/Conor-Cruise-O'Brien.D.1969-07-02",
     "end": "1977-07-05",
+    "function": [
+      "posts",
+      "telegraphs"
+    ],
     "functions": [
       "posts",
       "telegraphs"
@@ -10593,6 +12434,10 @@
     ],
     "eId": "/member/Padraig-Faulkner.D.1957-03-20",
     "end": "1979-12-11",
+    "function": [
+      "posts",
+      "telegraphs"
+    ],
     "functions": [
       "posts",
       "telegraphs"
@@ -10612,6 +12457,10 @@
     ],
     "eId": "/member/Albert-Reynolds.D.1977-07-05",
     "end": "1981-06-30",
+    "function": [
+      "posts",
+      "telegraphs"
+    ],
     "functions": [
       "posts",
       "telegraphs"
@@ -10631,6 +12480,10 @@
     ],
     "eId": "/member/Patrick-Mark-Cooney.D.1970-04-14",
     "end": "1982-03-09",
+    "function": [
+      "posts",
+      "telegraphs"
+    ],
     "functions": [
       "posts",
       "telegraphs"
@@ -10650,6 +12503,10 @@
     ],
     "eId": "/member/John-P-Wilson.D.1973-03-14",
     "end": "1982-12-14",
+    "function": [
+      "posts",
+      "telegraphs"
+    ],
     "functions": [
       "posts",
       "telegraphs"
@@ -10669,6 +12526,10 @@
     ],
     "eId": "/member/Jim-Mitchell.D.1977-07-05",
     "end": "1984-01-02",
+    "function": [
+      "posts",
+      "telegraphs"
+    ],
     "functions": [
       "posts",
       "telegraphs"
@@ -10693,6 +12554,9 @@
     ],
     "eId": "/member/Robert-Childers-Barton.D.1919-01-21",
     "end": "1921-08-26",
+    "function": [
+      "agriculture"
+    ],
     "functions": [
       "agriculture"
     ],
@@ -10711,6 +12575,9 @@
     ],
     "eId": "/member/Art-O'Connor.D.1919-01-21",
     "end": "1922-01-09",
+    "function": [
+      "agriculture"
+    ],
     "functions": [
       "agriculture"
     ],
@@ -10739,6 +12606,9 @@
     ],
     "eId": "/member/Patrick-J-Hogan.D.1921-08-16",
     "end": "1924-06-02",
+    "function": [
+      "agriculture"
+    ],
     "functions": [
       "agriculture"
     ],
@@ -10767,6 +12637,10 @@
     ],
     "eId": "/member/Patrick-J-Hogan.D.1921-08-16",
     "end": "1930-04-03",
+    "function": [
+      "lands",
+      "agriculture"
+    ],
     "functions": [
       "lands",
       "agriculture"
@@ -10786,6 +12660,9 @@
     ],
     "eId": "/member/Patrick-J-Hogan.D.1921-08-16",
     "end": "1932-03-09",
+    "function": [
+      "agriculture"
+    ],
     "functions": [
       "agriculture"
     ],
@@ -10829,6 +12706,9 @@
     ],
     "eId": "/member/James-Ryan.D.1919-01-21",
     "end": "1947-01-21",
+    "function": [
+      "agriculture"
+    ],
     "functions": [
       "agriculture"
     ],
@@ -10847,6 +12727,9 @@
     ],
     "eId": "/member/Patrick-Smith.D.1923-09-19",
     "end": "1948-02-18",
+    "function": [
+      "agriculture"
+    ],
     "functions": [
       "agriculture"
     ],
@@ -10865,6 +12748,9 @@
     ],
     "eId": "/member/James-Matthew-Dillon.D.1932-03-09",
     "end": "1951-06-13",
+    "function": [
+      "agriculture"
+    ],
     "functions": [
       "agriculture"
     ],
@@ -10883,6 +12769,9 @@
     ],
     "eId": "/member/Thomas-Walsh.S.1943-09-08",
     "end": "1954-06-02",
+    "function": [
+      "agriculture"
+    ],
     "functions": [
       "agriculture"
     ],
@@ -10901,6 +12790,9 @@
     ],
     "eId": "/member/James-Matthew-Dillon.D.1932-03-09",
     "end": "1957-03-20",
+    "function": [
+      "agriculture"
+    ],
     "functions": [
       "agriculture"
     ],
@@ -10919,6 +12811,9 @@
     ],
     "eId": "/member/Frank-Aiken.D.1923-09-19",
     "end": "1957-05-16",
+    "function": [
+      "agriculture"
+    ],
     "functions": [
       "agriculture"
     ],
@@ -10937,6 +12832,9 @@
     ],
     "eId": "/member/Se\u00e1n-Moylan.D.1921-08-16",
     "end": "1957-11-16",
+    "function": [
+      "agriculture"
+    ],
     "functions": [
       "agriculture"
     ],
@@ -10955,6 +12853,9 @@
     ],
     "eId": "/member/Frank-Aiken.D.1923-09-19",
     "end": "1957-11-27",
+    "function": [
+      "agriculture"
+    ],
     "functions": [
       "agriculture"
     ],
@@ -10978,6 +12879,9 @@
     ],
     "eId": "/member/Patrick-Smith.D.1923-09-19",
     "end": "1964-10-08",
+    "function": [
+      "agriculture"
+    ],
     "functions": [
       "agriculture"
     ],
@@ -11001,6 +12905,9 @@
     ],
     "eId": "/member/Charles-J-Haughey.D.1957-03-20",
     "end": "1965-07-06",
+    "function": [
+      "agriculture"
+    ],
     "functions": [
       "agriculture"
     ],
@@ -11019,6 +12926,10 @@
     ],
     "eId": "/member/Charles-J-Haughey.D.1957-03-20",
     "end": "1966-11-10",
+    "function": [
+      "agriculture",
+      "fisheries"
+    ],
     "functions": [
       "agriculture",
       "fisheries"
@@ -11043,6 +12954,10 @@
     ],
     "eId": "/member/Neil-TC-Blaney.D.1948-12-07",
     "end": "1970-05-07",
+    "function": [
+      "agriculture",
+      "fisheries"
+    ],
     "functions": [
       "agriculture",
       "fisheries"
@@ -11062,6 +12977,10 @@
     ],
     "eId": "/member/James-M-Gibbons.D.1957-03-20",
     "end": "1973-03-14",
+    "function": [
+      "agriculture",
+      "fisheries"
+    ],
     "functions": [
       "agriculture",
       "fisheries"
@@ -11081,6 +13000,10 @@
     ],
     "eId": "/member/Mark-A-Clinton.D.1961-10-11",
     "end": "1977-02-09",
+    "function": [
+      "agriculture",
+      "fisheries"
+    ],
     "functions": [
       "agriculture",
       "fisheries"
@@ -11100,6 +13023,9 @@
     ],
     "eId": "/member/Mark-A-Clinton.D.1961-10-11",
     "end": "1977-07-05",
+    "function": [
+      "agriculture"
+    ],
     "functions": [
       "agriculture"
     ],
@@ -11118,6 +13044,9 @@
     ],
     "eId": "/member/James-M-Gibbons.D.1957-03-20",
     "end": "1979-12-11",
+    "function": [
+      "agriculture"
+    ],
     "functions": [
       "agriculture"
     ],
@@ -11136,6 +13065,9 @@
     ],
     "eId": "/member/Raymond-MacSharry.D.1969-07-02",
     "end": "1981-06-30",
+    "function": [
+      "agriculture"
+    ],
     "functions": [
       "agriculture"
     ],
@@ -11154,6 +13086,9 @@
     ],
     "eId": "/member/Alan-M-Dukes.D.1981-06-30",
     "end": "1982-03-09",
+    "function": [
+      "agriculture"
+    ],
     "functions": [
       "agriculture"
     ],
@@ -11172,6 +13107,9 @@
     ],
     "eId": "/member/Brian-Lenihan-Snr.S.1957-05-22",
     "end": "1982-12-14",
+    "function": [
+      "agriculture"
+    ],
     "functions": [
       "agriculture"
     ],
@@ -11190,6 +13128,9 @@
     ],
     "eId": "/member/Austin-Deasy.S.1973-06-01",
     "end": "1987-03-10",
+    "function": [
+      "agriculture"
+    ],
     "functions": [
       "agriculture"
     ],
@@ -11208,6 +13149,9 @@
     ],
     "eId": "/member/Michael-O'Kennedy.S.1965-06-23",
     "end": "1987-03-31",
+    "function": [
+      "agriculture"
+    ],
     "functions": [
       "agriculture"
     ],
@@ -11231,6 +13175,10 @@
     ],
     "eId": "/member/Michael-O'Kennedy.S.1965-06-23",
     "end": "1991-11-14",
+    "function": [
+      "agriculture",
+      "food"
+    ],
     "functions": [
       "agriculture",
       "food"
@@ -11250,6 +13198,10 @@
     ],
     "eId": "/member/Michael-Woods.D.1977-07-05",
     "end": "1992-02-11",
+    "function": [
+      "agriculture",
+      "food"
+    ],
     "functions": [
       "agriculture",
       "food"
@@ -11274,6 +13226,10 @@
     ],
     "eId": "/member/Joe-Walsh.D.1977-07-05",
     "end": "1993-01-21",
+    "function": [
+      "agriculture",
+      "food"
+    ],
     "functions": [
       "agriculture",
       "food"
@@ -11293,6 +13249,11 @@
     ],
     "eId": "/member/Joe-Walsh.D.1977-07-05",
     "end": "1994-12-15",
+    "function": [
+      "agriculture",
+      "food",
+      "forestry"
+    ],
     "functions": [
       "agriculture",
       "food",
@@ -11313,6 +13274,11 @@
     ],
     "eId": "/member/Ivan-Yates.D.1981-06-30",
     "end": "1997-06-26",
+    "function": [
+      "agriculture",
+      "food",
+      "forestry"
+    ],
     "functions": [
       "agriculture",
       "food",
@@ -11333,6 +13299,11 @@
     ],
     "eId": "/member/Joe-Walsh.D.1977-07-05",
     "end": "1997-07-12",
+    "function": [
+      "agriculture",
+      "food",
+      "forestry"
+    ],
     "functions": [
       "agriculture",
       "food",
@@ -11353,6 +13324,10 @@
     ],
     "eId": "/member/Joe-Walsh.D.1977-07-05",
     "end": "1999-09-27",
+    "function": [
+      "agriculture",
+      "food"
+    ],
     "functions": [
       "agriculture",
       "food"
@@ -11372,6 +13347,11 @@
     ],
     "eId": "/member/Joe-Walsh.D.1977-07-05",
     "end": "2002-06-06",
+    "function": [
+      "agriculture",
+      "food",
+      "rural_development"
+    ],
     "functions": [
       "agriculture",
       "food",
@@ -11392,6 +13372,10 @@
     ],
     "eId": "/member/Joe-Walsh.D.1977-07-05",
     "end": "2004-09-29",
+    "function": [
+      "agriculture",
+      "food"
+    ],
     "functions": [
       "agriculture",
       "food"
@@ -11411,6 +13395,10 @@
     ],
     "eId": "/member/Mary-Coughlan.D.1987-03-10",
     "end": "2007-06-14",
+    "function": [
+      "agriculture",
+      "food"
+    ],
     "functions": [
       "agriculture",
       "food"
@@ -11430,6 +13418,11 @@
     ],
     "eId": "/member/Mary-Coughlan.D.1987-03-10",
     "end": "2008-05-07",
+    "function": [
+      "agriculture",
+      "fisheries",
+      "food"
+    ],
     "functions": [
       "agriculture",
       "fisheries",
@@ -11450,6 +13443,11 @@
     ],
     "eId": "/member/Brendan-Smith.D.1992-12-14",
     "end": "2011-03-09",
+    "function": [
+      "agriculture",
+      "fisheries",
+      "food"
+    ],
     "functions": [
       "agriculture",
       "fisheries",
@@ -11464,12 +13462,17 @@
     "cabinets": [
       {
         "cabinet": "/cabinet/dail/31",
-        "end": null,
+        "end": "2016-05-06",
         "start": "2011-10-17"
       }
     ],
     "eId": "/member/Simon-Coveney.D.1998-10-23",
-    "end": null,
+    "end": "2016-05-06",
+    "function": [
+      "agriculture",
+      "food",
+      "marine"
+    ],
     "functions": [
       "agriculture",
       "food",
@@ -11480,24 +13483,31 @@
     "uri": "/minister/agriculture__food__marine",
     "wikiOffice": "Minister_for_Agriculture,_Food_and_the_Marine"
   },
-  {"cabinets": [
-    {
-      "cabinet": "/cabinet/dail/31",
-      "start": "2011-03-09",
-      "end": "2011-10-17"
-    }],
+  {
+    "cabinets": [
+      {
+        "cabinet": "/cabinet/dail/31",
+        "end": "2011-10-17",
+        "start": "2011-03-09"
+      }
+    ],
     "eId": "/member/Simon-Coveney.D.1998-10-23",
-  "end": "2011-10-17",
-  "functions": [
-    "agriculture",
-    "food",
-    "fisheries"
-  ],
-  "office": "Minister for Agriculture, Fisheries and Food",
-  "start": "2011-03-09",
-  "uri": "/minister/agriculture__fisheries__food",
-  "wikiOffice": "Minister_for_Agriculture,_Food_and_the_Marine"
-},
+    "end": "2011-10-17",
+    "function": [
+      "agriculture",
+      "fisheries",
+      "food"
+    ],
+    "functions": [
+      "agriculture",
+      "food",
+      "fisheries"
+    ],
+    "office": "Minister for Agriculture, Fisheries and Food",
+    "start": "2011-03-09",
+    "uri": "/minister/agriculture__fisheries__food",
+    "wikiOffice": "Minister_for_Agriculture,_Food_and_the_Marine"
+  },
   {
     "cabinets": [
       {
@@ -11508,6 +13518,9 @@
     ],
     "eId": "/member/James-Ryan.D.1919-01-21",
     "end": "1948-02-18",
+    "function": [
+      "social_welfare"
+    ],
     "functions": [
       "social"
     ],
@@ -11531,6 +13544,9 @@
     ],
     "eId": "/member/William-Norton.D.1926-02-18",
     "end": "1951-06-14",
+    "function": [
+      "social_welfare"
+    ],
     "functions": [
       "social"
     ],
@@ -11549,6 +13565,9 @@
     ],
     "eId": "/member/James-Ryan.D.1919-01-21",
     "end": "1954-06-02",
+    "function": [
+      "social_welfare"
+    ],
     "functions": [
       "social"
     ],
@@ -11567,6 +13586,9 @@
     ],
     "eId": "/member/Brendan-Corish.D.1945-12-04",
     "end": "1957-03-20",
+    "function": [
+      "social_welfare"
+    ],
     "functions": [
       "social"
     ],
@@ -11585,6 +13607,9 @@
     ],
     "eId": "/member/Patrick-Smith.D.1923-09-19",
     "end": "1957-11-27",
+    "function": [
+      "social_welfare"
+    ],
     "functions": [
       "social"
     ],
@@ -11608,6 +13633,9 @@
     ],
     "eId": "/member/Se\u00e1n-MacEntee.D.1919-01-21",
     "end": "1961-10-12",
+    "function": [
+      "social_welfare"
+    ],
     "functions": [
       "social"
     ],
@@ -11631,6 +13659,9 @@
     ],
     "eId": "/member/Kevin-Boland.D.1957-03-20",
     "end": "1966-11-16",
+    "function": [
+      "social_welfare"
+    ],
     "functions": [
       "social"
     ],
@@ -11649,6 +13680,9 @@
     ],
     "eId": "/member/Joseph-Brennan.D.1951-06-13",
     "end": "1969-07-02",
+    "function": [
+      "social_welfare"
+    ],
     "functions": [
       "social"
     ],
@@ -11667,6 +13701,9 @@
     ],
     "eId": "/member/Kevin-Boland.D.1957-03-20",
     "end": "1970-05-06",
+    "function": [
+      "social_welfare"
+    ],
     "functions": [
       "social"
     ],
@@ -11685,6 +13722,9 @@
     ],
     "eId": "/member/Joseph-Brennan.D.1951-06-13",
     "end": "1973-03-14",
+    "function": [
+      "social_welfare"
+    ],
     "functions": [
       "social"
     ],
@@ -11703,6 +13743,9 @@
     ],
     "eId": "/member/Brendan-Corish.D.1945-12-04",
     "end": "1977-07-05",
+    "function": [
+      "social_welfare"
+    ],
     "functions": [
       "social"
     ],
@@ -11721,6 +13764,9 @@
     ],
     "eId": "/member/Charles-J-Haughey.D.1957-03-20",
     "end": "1979-12-12",
+    "function": [
+      "social_welfare"
+    ],
     "functions": [
       "social"
     ],
@@ -11739,6 +13785,9 @@
     ],
     "eId": "/member/Michael-Woods.D.1977-07-05",
     "end": "1981-06-30",
+    "function": [
+      "social_welfare"
+    ],
     "functions": [
       "social"
     ],
@@ -11757,6 +13806,9 @@
     ],
     "eId": "/member/Eileen-Desmond.D.1965-03-10",
     "end": "1982-03-09",
+    "function": [
+      "social_welfare"
+    ],
     "functions": [
       "social"
     ],
@@ -11775,6 +13827,9 @@
     ],
     "eId": "/member/Michael-Woods.D.1977-07-05",
     "end": "1982-12-14",
+    "function": [
+      "social_welfare"
+    ],
     "functions": [
       "social"
     ],
@@ -11793,6 +13848,9 @@
     ],
     "eId": "/member/Barry-Desmond.D.1969-07-02",
     "end": "1986-02-14",
+    "function": [
+      "social_welfare"
+    ],
     "functions": [
       "social"
     ],
@@ -11811,6 +13869,9 @@
     ],
     "eId": "/member/Gemma-Hussey.S.1977-10-27",
     "end": "1987-03-10",
+    "function": [
+      "social_welfare"
+    ],
     "functions": [
       "social"
     ],
@@ -11834,6 +13895,9 @@
     ],
     "eId": "/member/Michael-Woods.D.1977-07-05",
     "end": "1991-11-13",
+    "function": [
+      "social_welfare"
+    ],
     "functions": [
       "social"
     ],
@@ -11852,6 +13916,9 @@
     ],
     "eId": "/member/Brendan-Daly.D.1973-03-14",
     "end": "1992-02-11",
+    "function": [
+      "social_welfare"
+    ],
     "functions": [
       "social"
     ],
@@ -11875,6 +13942,9 @@
     ],
     "eId": "/member/Charlie-McCreevy.D.1977-07-05",
     "end": "1993-01-12",
+    "function": [
+      "social_welfare"
+    ],
     "functions": [
       "social"
     ],
@@ -11893,6 +13963,9 @@
     ],
     "eId": "/member/Michael-Woods.D.1977-07-05",
     "end": "1994-12-15",
+    "function": [
+      "social_welfare"
+    ],
     "functions": [
       "social"
     ],
@@ -11911,6 +13984,9 @@
     ],
     "eId": "/member/Prionsias-De-Rossa.D.1982-03-09",
     "end": "1997-06-26",
+    "function": [
+      "social_welfare"
+    ],
     "functions": [
       "social"
     ],
@@ -11929,6 +14005,9 @@
     ],
     "eId": "/member/Dermot-Ahern.D.1987-03-10",
     "end": "1997-07-12",
+    "function": [
+      "social_welfare"
+    ],
     "functions": [
       "social"
     ],
@@ -11952,6 +14031,11 @@
     ],
     "eId": "/member/Dermot-Ahern.D.1987-03-10",
     "end": "2002-06-17",
+    "function": [
+      "social",
+      "community",
+      "family_affairs"
+    ],
     "functions": [
       "social",
       "community",
@@ -11972,6 +14056,10 @@
     ],
     "eId": "/member/Mary-Coughlan.D.1987-03-10",
     "end": "2004-09-29",
+    "function": [
+      "social",
+      "family_affairs"
+    ],
     "functions": [
       "social",
       "family_affairs"
@@ -11991,6 +14079,10 @@
     ],
     "eId": "/member/Seamus-Brennan.S.1977-10-27",
     "end": "2007-06-14",
+    "function": [
+      "social",
+      "family_affairs"
+    ],
     "functions": [
       "social",
       "family_affairs"
@@ -12010,6 +14102,10 @@
     ],
     "eId": "/member/Martin-Cullen.D.1987-03-10",
     "end": "2008-05-07",
+    "function": [
+      "social",
+      "family_affairs"
+    ],
     "functions": [
       "social",
       "family_affairs"
@@ -12029,6 +14125,10 @@
     ],
     "eId": "/member/Mary-Hanafin.D.1997-06-26",
     "end": "2010-03-23",
+    "function": [
+      "social",
+      "family_affairs"
+    ],
     "functions": [
       "social",
       "family_affairs"
@@ -12048,6 +14148,9 @@
     ],
     "eId": "/member/\u00c9amon-\u00d3-Cu\u00edv.S.1989-10-01",
     "end": "2011-03-09",
+    "function": [
+      "social_protection"
+    ],
     "functions": [
       "social"
     ],
@@ -12060,12 +14163,15 @@
     "cabinets": [
       {
         "cabinet": "/cabinet/dail/31",
-        "end": null,
+        "end": "2016-05-06",
         "start": "2011-03-09"
       }
     ],
     "eId": "/member/Joan-Burton.D.1992-12-14",
-    "end": null,
+    "end": "2016-05-06",
+    "function": [
+      "social_protection"
+    ],
     "functions": [
       "social"
     ],
@@ -12084,6 +14190,9 @@
     ],
     "eId": "/member/Richard-James-Mulcahy.D.1919-01-21",
     "end": "1956-10-24",
+    "function": [
+      "gaeltacht"
+    ],
     "functions": [
       "gaeltacht"
     ],
@@ -12102,6 +14211,9 @@
     ],
     "eId": "/member/Patrick-James-Lindsay.D.1954-06-02",
     "end": "1957-03-20",
+    "function": [
+      "gaeltacht"
+    ],
     "functions": [
       "gaeltacht"
     ],
@@ -12120,6 +14232,9 @@
     ],
     "eId": "/member/John-Lynch.D.1948-02-18",
     "end": "1957-06-26",
+    "function": [
+      "gaeltacht"
+    ],
     "functions": [
       "gaeltacht"
     ],
@@ -12138,6 +14253,9 @@
     ],
     "eId": "/member/Michael-Moran.D.1938-06-30",
     "end": "1959-07-23",
+    "function": [
+      "gaeltacht"
+    ],
     "functions": [
       "gaeltacht"
     ],
@@ -12156,6 +14274,9 @@
     ],
     "eId": "/member/Gerald-Bartley.D.1932-03-09",
     "end": "1961-10-11",
+    "function": [
+      "gaeltacht"
+    ],
     "functions": [
       "gaeltacht"
     ],
@@ -12179,6 +14300,9 @@
     ],
     "eId": "/member/Michael-Moran.D.1938-06-30",
     "end": "1968-03-26",
+    "function": [
+      "gaeltacht"
+    ],
     "functions": [
       "gaeltacht"
     ],
@@ -12197,6 +14321,9 @@
     ],
     "eId": "/member/Padraig-Faulkner.D.1957-03-20",
     "end": "1969-07-02",
+    "function": [
+      "gaeltacht"
+    ],
     "functions": [
       "gaeltacht"
     ],
@@ -12215,6 +14342,9 @@
     ],
     "eId": "/member/George-Colley.D.1961-10-11",
     "end": "1973-03-14",
+    "function": [
+      "gaeltacht"
+    ],
     "functions": [
       "gaeltacht"
     ],
@@ -12233,6 +14363,9 @@
     ],
     "eId": "/member/Thomas-G-O'Donnell.D.1961-10-11",
     "end": "1977-07-05",
+    "function": [
+      "gaeltacht"
+    ],
     "functions": [
       "gaeltacht"
     ],
@@ -12251,6 +14384,9 @@
     ],
     "eId": "/member/Denis-Gallagher.D.1973-03-14",
     "end": "1979-12-11",
+    "function": [
+      "gaeltacht"
+    ],
     "functions": [
       "gaeltacht"
     ],
@@ -12269,6 +14405,9 @@
     ],
     "eId": "/member/M\u00e1ire-Geoghegan-Quinn.D.1975-03-04",
     "end": "1981-06-30",
+    "function": [
+      "gaeltacht"
+    ],
     "functions": [
       "gaeltacht"
     ],
@@ -12287,6 +14426,9 @@
     ],
     "eId": "/member/Patrick-O'Toole.S.1973-06-01",
     "end": "1982-03-09",
+    "function": [
+      "gaeltacht"
+    ],
     "functions": [
       "gaeltacht"
     ],
@@ -12305,6 +14447,9 @@
     ],
     "eId": "/member/P\u00e1draig-Flynn.D.1977-07-05",
     "end": "1982-10-27",
+    "function": [
+      "gaeltacht"
+    ],
     "functions": [
       "gaeltacht"
     ],
@@ -12323,6 +14468,9 @@
     ],
     "eId": "/member/Denis-Gallagher.D.1973-03-14",
     "end": "1982-12-14",
+    "function": [
+      "gaeltacht"
+    ],
     "functions": [
       "gaeltacht"
     ],
@@ -12341,6 +14489,9 @@
     ],
     "eId": "/member/Patrick-O'Toole.S.1973-06-01",
     "end": "1987-03-10",
+    "function": [
+      "gaeltacht"
+    ],
     "functions": [
       "gaeltacht"
     ],
@@ -12364,6 +14515,9 @@
     ],
     "eId": "/member/Charles-J-Haughey.D.1957-03-20",
     "end": "1992-02-11",
+    "function": [
+      "gaeltacht"
+    ],
     "functions": [
       "gaeltacht"
     ],
@@ -12387,6 +14541,9 @@
     ],
     "eId": "/member/John-P-Wilson.D.1973-03-14",
     "end": "1993-01-12",
+    "function": [
+      "gaeltacht"
+    ],
     "functions": [
       "gaeltacht"
     ],
@@ -12405,6 +14562,9 @@
     ],
     "eId": "/member/Michael-D-Higgins.S.1973-06-01",
     "end": "1993-01-21",
+    "function": [
+      "gaeltacht"
+    ],
     "functions": [
       "gaeltacht"
     ],
@@ -12423,6 +14583,11 @@
     ],
     "eId": "/member/Michael-D-Higgins.S.1973-06-01",
     "end": "1994-11-17",
+    "function": [
+      "arts",
+      "culture",
+      "gaeltacht"
+    ],
     "functions": [
       "arts",
       "culture",
@@ -12443,6 +14608,11 @@
     ],
     "eId": "/member/Bertie-Ahern.D.1977-07-05",
     "end": "1994-12-15",
+    "function": [
+      "arts",
+      "culture",
+      "gaeltacht"
+    ],
     "functions": [
       "arts",
       "culture",
@@ -12463,6 +14633,11 @@
     ],
     "eId": "/member/Michael-D-Higgins.S.1973-06-01",
     "end": "1997-06-26",
+    "function": [
+      "arts",
+      "culture",
+      "gaeltacht"
+    ],
     "functions": [
       "arts",
       "culture",
@@ -12483,6 +14658,11 @@
     ],
     "eId": "/member/S\u00edle-de-Valera.D.1977-07-05",
     "end": "1997-07-12",
+    "function": [
+      "arts",
+      "culture",
+      "gaeltacht"
+    ],
     "functions": [
       "arts",
       "culture",
@@ -12503,6 +14683,12 @@
     ],
     "eId": "/member/S\u00edle-de-Valera.D.1977-07-05",
     "end": "2002-06-06",
+    "function": [
+      "arts",
+      "heritage",
+      "gaeltacht",
+      "islands"
+    ],
     "functions": [
       "arts",
       "heritage",
@@ -12529,6 +14715,11 @@
     ],
     "eId": "/member/\u00c9amon-\u00d3-Cu\u00edv.S.1989-10-01",
     "end": "2010-03-23",
+    "function": [
+      "community",
+      "rural",
+      "gaeltacht_affairs"
+    ],
     "functions": [
       "community",
       "rural",
@@ -12549,6 +14740,11 @@
     ],
     "eId": "/member/Pat-Carey.D.1997-06-26",
     "end": "2011-03-09",
+    "function": [
+      "community",
+      "equality",
+      "gaeltacht_affairs"
+    ],
     "functions": [
       "community",
       "equality",
@@ -12574,6 +14770,9 @@
     ],
     "eId": "/member/Se\u00e1n-T-O'Kelly.D.1919-01-21",
     "end": "1921-08-26",
+    "function": [
+      "irish"
+    ],
     "functions": [
       "gaeltacht"
     ],
@@ -12602,6 +14801,9 @@
     ],
     "eId": "/member/Frank-Aiken.D.1923-09-19",
     "end": "1945-06-18",
+    "function": [
+      "co-ordination_of_defensive_measures"
+    ],
     "functions": [
       "co-ordination_of_defensive_measures"
     ],
@@ -12614,12 +14816,16 @@
     "cabinets": [
       {
         "cabinet": "/cabinet/dail/31",
-        "end": null,
+        "end": "2016-05-06",
         "start": "2014-07-11"
       }
     ],
     "eId": "/member/James-Reilly.D.2007-06-14",
-    "end": null,
+    "end": "2016-05-06",
+    "function": [
+      "children",
+      "youth_affairs"
+    ],
     "functions": [
       "children",
       "youth_affairs"
@@ -12639,6 +14845,10 @@
     ],
     "eId": "/member/Charles-Flanagan.D.1987-03-10",
     "end": "2014-07-11",
+    "function": [
+      "children",
+      "youth_affairs"
+    ],
     "functions": [
       "children",
       "youth_affairs"
@@ -12658,6 +14868,10 @@
     ],
     "eId": "/member/Frances-Fitzgerald.D.1992-12-14",
     "end": "2014-05-08",
+    "function": [
+      "children",
+      "youth_affairs"
+    ],
     "functions": [
       "children",
       "youth_affairs"
