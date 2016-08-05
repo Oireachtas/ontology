@@ -280,18 +280,18 @@
 <TLCPerson eId="TonyMcLoughlin" href="/ie/oireachtas/member/Tony-McLoughlin.D.2011-03-09/dail/31" showAs="Mr. Tony McLoughlin"/>
 <TLCPerson eId="WilliamPenrose" href="/ie/oireachtas/member/Willie-Penrose.D.1992-12-14/dail/31" showAs="Mr. Willie Penrose"/>
 <TLCRole eId="Acting_Chairman" href="/ie/oireachtas/role/acting_chairman" showAs="Acting Chairman"/>
-<TLCRole eId="Ceann_Comhairle" href="/ie/oireachtas/role/ceann_comhairle" showAs="Ceann Comhairle"/>
-<TLCRole eId="Leas-Cheann_Comhairle" href="/ie/oireachtas/role/leas-cheann_comhairle" showAs="Leas-Cheann Comhairle"/>
+<TLCRole eId="Ceann_Comhairle" href="/ie/oireachtas/member/Seán-Barrett.D.1981-06-30/dail/31/role/ceann_comhairle" showAs="Ceann Comhairle"/>
+<TLCRole eId="Leas-Cheann_Comhairle" href="/ie/oireachtas/member/Michael-P-Kitt.D.1975-03-04/dail/31/role/leas-cheann_comhairle" showAs="Leas-Cheann Comhairle"/>
 <TLCRole eId="Minister_for_Arts" href="/ie/oireachtas/minister/arts" showAs="Minister for Arts"/>
-<TLCRole eId="Minister_for_Arts,_Heritage_and_the_Gaeltacht" href="/ie/oireachtas/minister/arts__heritage__gaeltacht" showAs="Minister for Arts, Heritage and the Gaeltacht"/>
-<TLCRole eId="Minister_of_State_at_the_Department_of_Arts,_Heritage_and_the_Gaeltacht" href="/ie/oireachtas/minister_state/arts__heritage__gaeltacht" showAs="Minister of State at the Department of Arts, Heritage and the Gaeltacht"/>
-<TLCRole eId="Minister_of_State_at_the_Department_of_Education_and_Skills" href="/ie/oireachtas/minister_state/education__skills" showAs="Minister of State at the Department of Education and Skills"/>
-<TLCRole eId="Minister_of_State_at_the_Department_of_Justice_and_Equality" href="/ie/oireachtas/minister_state/justice__equality" showAs="Minister of State at the Department of Justice and Equality"/>
-<TLCRole eId="Minister_of_State_at_the_Department_of_Transport,_Tourism_and_Sport" href="/ie/oireachtas/minister_state/transport__tourism__sport" showAs="Minister of State at the Department of Transport, Tourism and Sport"/>
-<TLCRole eId="Minister_of_State_at_the_Department_of_the_Environment,_Community_and_Local_Government" href="/ie/oireachtas/minister_state/environment__community__local_government" showAs="Minister of State at the Department of the Environment, Community and Local Government"/>
-<TLCRole eId="Minister_of_State_at_the_Department_of_the_Taoiseach" href="/ie/oireachtas/minister_state/taoiseach" showAs="Minister of State at the Department of the Taoiseach"/>
-<TLCRole eId="Tánaiste" href="/ie/oireachtas/role/tánaiste" showAs="Tánaiste"/>
-<TLCRole eId="Tánaiste_and_Minister_for_Social_Protection" href="/ie/oireachtas/role/tánaiste_and_minister_for_social_protection" showAs="Tánaiste and Minister for Social Protection"/>
+<TLCRole eId="Minister_for_Arts,_Heritage_and_the_Gaeltacht" href="/ie/oireachtas/member/Heather-Humphreys.D.2011-03-09/dail/31/minister/arts__heritage__gaeltacht" showAs="Minister for Arts, Heritage and the Gaeltacht"/>
+<TLCRole eId="Minister_of_State_at_the_Department_of_Arts,_Heritage_and_the_Gaeltacht" href="/ie/oireachtas/member/Joe-McHugh.S.2002-09-12/dail/31/minister_state/arts__heritage__gaeltacht" showAs="Minister of State at the Department of Arts, Heritage and the Gaeltacht"/>
+<TLCRole eId="Minister_of_State_at_the_Department_of_Education_and_Skills" href="/ie/oireachtas/member/Damien-English.D.2002-06-06/dail/31/minister_state/education__skills" showAs="Minister of State at the Department of Education and Skills"/>
+<TLCRole eId="Minister_of_State_at_the_Department_of_Justice_and_Equality" href="/ie/oireachtas/member/Dara-Murphy.D.2011-03-09/dail/31/minister_state/justice__equality" showAs="Minister of State at the Department of Justice and Equality"/>
+<TLCRole eId="Minister_of_State_at_the_Department_of_Transport,_Tourism_and_Sport" href="/ie/oireachtas/member/Ann-Phelan.D.2011-03-09/dail/31/minister_state/transport__tourism__sport" showAs="Minister of State at the Department of Transport, Tourism and Sport"/>
+<TLCRole eId="Minister_of_State_at_the_Department_of_the_Environment,_Community_and_Local_Government" href="/ie/oireachtas/member/Ann-Phelan.D.2011-03-09/dail/31/minister_state/environment__community__local_government" showAs="Minister of State at the Department of the Environment, Community and Local Government"/>
+<TLCRole eId="Minister_of_State_at_the_Department_of_the_Taoiseach" href="/ie/oireachtas/member/Dara-Murphy.D.2011-03-09/dail/31/minister_state/taoiseach" showAs="Minister of State at the Department of the Taoiseach"/>
+<TLCRole eId="Tánaiste" href="/ie/oireachtas/member/Joan-Burton.D.1992-12-14/dail/31/role/tánaiste" showAs="Tánaiste"/>
+<TLCRole eId="Tánaiste_and_Minister_for_Social_Protection" href="/ie/oireachtas/member/Joan-Burton.D.1992-12-14/dail/31/role/tánaiste_and_minister_for_social_protection" showAs="Tánaiste and Minister for Social Protection"/>
 <TLCRole eId="author" href="/ie/oireachtas/role/author" showAs="author"/>
 <TLCRole eId="editor" href="/ie/oireachtas/role/editor" showAs="editor"/>
 </references>
@@ -321,10 +321,10 @@
         </preface>
         <debateBody>
             <debateSection name="prelude" eId="dbsect_1">
-                <summary class="Center" eId="sum_1">Chuaigh an Ceann Comhairle i gceannas ar 09.30 a.m.</summary>
+                <heading>Prelude</heading><summary class="Center" eId="sum_1">Chuaigh an Ceann Comhairle i gceannas ar 09.30 a.m.</summary>
                 <summary class="Center" eId="sum_2">Paidir.</summary>
                 <summary class="Center" eId="sum_3">Prayer.</summary>
-            <heading>Prelude</heading></debateSection>
+            </debateSection>
             <debateSection name="questions" eId="dbsect_2">
                 <heading>Ceisteanna - Questions</heading>
             </debateSection>
