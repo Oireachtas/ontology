@@ -215,5 +215,12 @@
     "houseNum": "31",
     "houseURI": "/house/dail/31",
     "start": "2011-03-09"
+  },
+  {
+    "end": null,
+    "houseName": "32nd D\u00e1il",
+    "houseNum": "32",
+    "houseURI": "/house/dail/32",
+    "start": "2016-03-10"
   }
 ]
