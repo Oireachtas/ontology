@@ -12930,17 +12930,17 @@
   {
     "date_of_birth": "1947-10-14",
     "date_of_death": null,
-    "details": "Elected in a bye-election on 19 January 2010 caused by the death of Senator Peter Callanan in October 2009",
-    "eId": "/member/Paschal-Mooney.S.1961-12-14",
+    "details": null,
+    "eId": "/member/Joe-Mooney.S.1961-12-14",
     "electionsId": null,
-    "firstName": "Paschal",
-    "fullName": "Paschal Mooney",
-    "image": "/MembersImages/1990u.jpg",
+    "firstName": "Joe",
+    "fullName": "Joe Mooney",
+    "image": null,
     "lastName": "Mooney",
     "memberid": "1990",
-    "pId": "PaschalMooney",
-    "profession": "Journalist, Broadcaster",
-    "showAs": "Mr. Paschal Mooney",
+    "pId": null,
+    "profession": null,
+    "showAs": "Mr. Joe Mooney",
     "wikiTitle": "Joe Mooney (politician)"
   },
   {
@@ -27129,4 +27129,3 @@
     "wikiTitle": "M\u00e1ir\u00eda Cahill"
   }
 ]
-

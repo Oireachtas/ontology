@@ -13,7 +13,7 @@
   },
   {
     "constURI": [
-      "house/dail/3/constituency/Cork-Mid-North-South--South\u2013East-and-West"
+      "house/dail/3/constituency/Cork-Mid-North-South-South-East-and-West"
     ],
     "eId": "/member/Daniel-Corkery.D.1921-08-16",
     "elected": "1922-06-16",
@@ -6870,7 +6870,7 @@
   },
   {
     "constURI": [
-      "house/dail/3/constituency/Cork-Mid-North-South--South\u2013East-and-West"
+      "house/dail/3/constituency/Cork-Mid-North-South-South-East-and-West"
     ],
     "eId": "/member/Thomas-Alexander-Nagle.D.1922-09-09",
     "elected": "1922-06-16",
@@ -6969,7 +6969,7 @@
   },
   {
     "constURI": [
-      "house/dail/3/constituency/Cork-Mid-North-South--South\u2013East-and-West"
+      "house/dail/3/constituency/Cork-Mid-North-South-South-East-and-West"
     ],
     "eId": "/member/Michael-Collins.D.1919-01-21",
     "elected": "1922-06-16",
@@ -7013,7 +7013,7 @@
   },
   {
     "constURI": [
-      "house/dail/3/constituency/Cork-Mid-North-South--South\u2013East-and-West"
+      "house/dail/3/constituency/Cork-Mid-North-South-South-East-and-West"
     ],
     "eId": "/member/Se\u00e1n-Hales.D.1921-08-16",
     "elected": "1922-06-16",
@@ -7068,7 +7068,7 @@
   },
   {
     "constURI": [
-      "house/dail/3/constituency/Cork-Mid-North-South--South\u2013East-and-West"
+      "house/dail/3/constituency/Cork-Mid-North-South-South-East-and-West"
     ],
     "eId": "/member/Se\u00e1n-Moylan.D.1921-08-16",
     "elected": "1922-06-16",
@@ -7167,7 +7167,7 @@
   },
   {
     "constURI": [
-      "house/dail/3/constituency/Cork-Mid-North-South--South\u2013East-and-West"
+      "house/dail/3/constituency/Cork-Mid-North-South-South-East-and-West"
     ],
     "eId": "/member/Daniel-Vaughan.D.1922-09-09",
     "elected": "1922-06-16",
@@ -7244,7 +7244,7 @@
   },
   {
     "constURI": [
-      "house/dail/3/constituency/Cork-Mid-North-South--South\u2013East-and-West"
+      "house/dail/3/constituency/Cork-Mid-North-South-South-East-and-West"
     ],
     "eId": "/member/Se\u00e1n-Hayes.D.1919-01-21",
     "elected": "1922-06-16",
@@ -7255,7 +7255,7 @@
   },
   {
     "constURI": [
-      "house/dail/3/constituency/Cork-Mid-North-South--South\u2013East-and-West"
+      "house/dail/3/constituency/Cork-Mid-North-South-South-East-and-West"
     ],
     "eId": "/member/Michael-Bradley.D.1922-09-09",
     "elected": "1922-06-16",
@@ -62534,12 +62534,12 @@
     "constURI": [
       "house/seanad/10/panel/Nominated-by-the-Taoiseach"
     ],
-    "eId": "/member/Paschal-Mooney.S.1961-12-14",
+    "eId": "/member/Joe-Mooney.S.1961-12-14",
     "elected": null,
     "houseURI": "/house/seanad/10",
     "periodEnd": "1965-04-28",
     "periodStart": "1961-12-14",
-    "serviceURI": "/member/Paschal-Mooney.S.1961-12-14/seanad.10"
+    "serviceURI": "/member/Joe-Mooney.S.1961-12-14/seanad.10"
   },
   {
     "constURI": [
@@ -71860,7 +71860,7 @@
   },
   {
     "constURI": [
-      "house/dail/2/constituency/Cork-Mid-North-South--South\u2013East-and-West",
+      "house/dail/2/constituency/Cork-Mid-North-South-South-East-and-West",
       "house/dail/2/constituency/Armagh"
     ],
     "eId": "/member/Michael-Collins.D.1919-01-21",
