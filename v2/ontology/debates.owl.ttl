@@ -1,0 +1,698 @@
+@prefix : <https://data.oireachtas.ie/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix eli-dl: <http://data.europa.eu/eli/eli-draft-legislation-ontology#> .
+@prefix eli: <http://data.europa.eu/eli/ontology#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix members: <https://data.oireachtas.ie/ontology/members#> .
+@base <https://data.oireachtas.ie/ontology/debates> .
+
+<https://data.oireachtas.ie/ontology/debates> rdf:type owl:Ontology ;
+
+    rdfs:comment """Debates ontology for the Houses of the Oireachtas.
+
+Models the Official Report of Debates (Akoma Ntoso XML) as an OWL ontology,
+covering the structural and semantic elements of parliamentary debates in the
+Dáil, Seanad and committees.
+
+Key design decisions:
+- :DebateRecord (foaf:Document) represents the FRBRWork for a source record; not
+  a subclass of eli-dl:LegislativeProcessWork because debates are not always
+  legislative in nature.
+- :DebateSitting (eli-dl:Activity) is always broad; never typed
+  eli-dl:LegislativeActivity because a sitting may mix legislation,
+  questions, statements and other business.
+- :DebateSection instances that carry :refersToEvent are additionally typed
+  eli-dl:LegislativeActivity at the instance level (multiple typing). The
+  ELI-DL properties eli-dl:occured_at_stage and eli-dl:forms_part_of then
+  apply to those sections.
+- Divisions are subclassed from eli-dl:Vote; outcomes and vote categories
+  are named individuals aligned to the TLCConcept IRIs in the AKN XML.
+- AKN rollCall attendance remains source-only; it does not imply a Division,
+  vote or Speech participation in this RDF model."""@en ;
+
+    owl:imports <https://data.oireachtas.ie/ontology/events> ,
+                <https://data.oireachtas.ie/ontology/agents> ,
+                <https://data.oireachtas.ie/ontology/members> ,
+                <http://data.europa.eu/eli/eli-draft-legislation-ontology#> .
+
+
+#################################################################
+#
+#    Object Properties
+#
+#################################################################
+
+
+###  https://data.oireachtas.ie/ontology#hasSection
+
+:hasSection rdf:type owl:ObjectProperty ;
+
+            rdfs:domain :DebateRecord ;
+
+            rdfs:range :DebateSection ;
+
+            skos:prefLabel "has section"@en ;
+
+            rdfs:comment "A top-level debateSection within a DebateRecord. Nested sections are linked via :hasSubSection on the parent DebateSection."@en .
+
+
+###  https://data.oireachtas.ie/ontology#hasExpression
+
+:hasExpression rdf:type owl:ObjectProperty ;
+
+               rdfs:domain :DebateRecord ;
+
+               rdfs:range :DebateExpression ;
+
+               skos:prefLabel "has expression"@en ;
+
+               rdfs:comment "Links a DebateRecord (AKN FRBRWork) to a language-specific DebateExpression (AKN FRBRExpression)."@en .
+
+
+###  https://data.oireachtas.ie/ontology#expressionHasSection
+
+:expressionHasSection rdf:type owl:ObjectProperty ;
+
+                       rdfs:domain :DebateExpression ;
+
+                       rdfs:range :DebateSection ;
+
+                       skos:prefLabel "expression has section"@en ;
+
+                       rdfs:comment "Links an AKN FRBRExpression to its immediate top-level debateSection resources. This is the containing scope for source ordinals of those sections."@en .
+
+
+###  https://data.oireachtas.ie/ontology#recordOfBody
+
+:recordOfBody rdf:type owl:ObjectProperty ;
+
+               rdfs:domain :DebateRecord ;
+
+               rdfs:range org:Organization ;
+
+               skos:prefLabel "record of body"@en ;
+
+               rdfs:comment "Links a DebateRecord to its resolved existing House or Committee organization. This relation does not describe or mint the target organization."@en .
+
+
+###  https://data.oireachtas.ie/ontology#recordOfHouseTerm
+
+:recordOfHouseTerm rdf:type owl:ObjectProperty ;
+
+                    rdfs:domain :DebateRecord ;
+
+                    rdfs:range :HouseTerm ;
+
+                    skos:prefLabel "record of House term"@en ;
+
+                    rdfs:comment "Links a DebateRecord to its resolved existing numbered HouseTerm. The term is distinct from the enduring host House."@en .
+
+
+###  https://data.oireachtas.ie/ontology#hasSubSection
+
+:hasSubSection rdf:type owl:ObjectProperty ;
+
+               rdfs:domain :DebateSection ;
+
+               rdfs:range :DebateSection ;
+
+               skos:prefLabel "has sub-section"@en ;
+
+               rdfs:comment "A child debateSection nested within a parent DebateSection. Used for amendment sub-sections, division ta/nil/staon groups, and question threads."@en .
+
+
+###  https://data.oireachtas.ie/ontology#hasSpeech
+
+:hasSpeech rdf:type owl:ObjectProperty ;
+
+           rdfs:domain :DebateSection ;
+
+           rdfs:range :Speech ;
+
+           skos:prefLabel "has speech"@en ;
+
+           rdfs:comment "Links a DebateSection to an AKN speech contribution it contains, including written-response speech elements in writtenAnswer sections. This records containment, not a one-to-one answer relation with a ParliamentaryQuestion."@en .
+
+
+###  https://data.oireachtas.ie/ontology#hasQuestion
+
+:hasQuestion rdf:type owl:ObjectProperty ;
+
+             rdfs:domain :DebateSection ;
+
+             rdfs:range :ParliamentaryQuestion ;
+
+             skos:prefLabel "has question"@en ;
+
+             rdfs:comment "Links a DebateSection to a ParliamentaryQuestion it immediately contains. Containment does not assert a one-to-one correspondence between a question and any written-response Speech."@en .
+
+
+###  https://data.oireachtas.ie/ontology#hasSummary
+
+:hasSummary rdf:type owl:ObjectProperty ;
+
+            rdfs:domain :DebateSection ;
+
+            rdfs:range :Summary ;
+
+            skos:prefLabel "has summary"@en ;
+
+            rdfs:comment "Links a DebateSection to a Summary element (narrative or procedural text not attributed to a speaker)."@en .
+
+
+###  https://data.oireachtas.ie/ontology#hasDivision
+
+:hasDivision rdf:type owl:ObjectProperty ;
+
+             rdfs:domain :DebateSection ;
+
+             rdfs:range :Division ;
+
+             skos:prefLabel "has division"@en ;
+
+             rdfs:comment "Links a DebateSection to a Division (vote) it contains."@en .
+
+
+###  https://data.oireachtas.ie/ontology#producedRecord
+
+:producedRecord rdf:type owl:ObjectProperty ;
+
+                rdfs:domain :DebateSitting ;
+
+                rdfs:range :DebateRecord ;
+
+                skos:prefLabel "produced record"@en ;
+
+                rdfs:comment "Links a DebateSitting activity to the DebateRecord (FRBRWork) it produced."@en .
+
+
+###  https://data.oireachtas.ie/ontology#relatedProcess
+
+:relatedProcess rdf:type owl:ObjectProperty ;
+
+                rdfs:domain :DebateSitting ;
+
+                rdfs:range eli-dl:LegislativeProcess ;
+
+                skos:prefLabel "related process"@en ;
+
+                rdfs:comment "Convenience link from a DebateSitting to a LegislativeProcess when the sitting contains at least one legislative DebateSection (i.e. a section additionally typed eli-dl:LegislativeActivity). Not asserted on purely non-legislative sittings. For fine-grained process links, use eli-dl:forms_part_of on the DebateSection directly."@en .
+
+
+###  https://data.oireachtas.ie/ontology#refersToEvent
+
+:refersToEvent rdf:type owl:ObjectProperty ;
+
+               rdfs:domain :DebateSection ;
+
+               skos:prefLabel "refers to event"@en ;
+
+               rdfs:comment """Corresponds to debateSection/@refersTo in the AKN XML. Range covers:
+  - :BillEvent (TLCEvent in AKN) — a specific bill stage activity
+  - eli:LegalResource (TLCReference in AKN) — the bill as a work, used when the stage could not be identified
+
+When this property is present on a DebateSection instance, that instance should also be typed eli-dl:LegislativeActivity, and eli-dl:forms_part_of and eli-dl:occured_at_stage become applicable."""@en .
+
+
+###  https://data.oireachtas.ie/ontology#speaker
+
+:speaker rdf:type owl:ObjectProperty ;
+
+         rdfs:domain :Speech ;
+
+         rdfs:range :Member ;
+
+         skos:prefLabel "speaker"@en ;
+
+         rdfs:comment "Direct shortcut from a Speech to the :Member who delivered it. Corresponds to speech/@by in AKN. Where a resolved participant or reviewed role is available, the canonical participation path is :hasSpeechParticipation followed by eli-dl:had_participant_person and/or eli-dl:participation_role; this property is provided for simpler Member queries."@en .
+
+
+###  https://data.oireachtas.ie/ontology#hasSpeechParticipation
+
+:hasSpeechParticipation rdf:type owl:ObjectProperty ;
+
+                        rdfs:domain :Speech ;
+
+                        rdfs:range eli-dl:Participation ;
+
+                        skos:prefLabel "has speech participation"@en ;
+
+                        rdfs:comment "Links an AKN Speech contribution to its ELI-DL Participation metadata without making Speech an eli-dl:Activity. Use eli-dl:had_participant_person and eli-dl:participation_role on that Participation when the person or role resolves."@en .
+
+
+###  https://data.oireachtas.ie/ontology#askedBy
+
+:askedBy rdf:type owl:ObjectProperty ;
+
+         rdfs:domain :ParliamentaryQuestion ;
+
+         rdfs:range :Member ;
+
+         skos:prefLabel "asked by"@en ;
+
+         rdfs:comment "The :Member who submitted the parliamentary question. Corresponds to question/@by in AKN (→ TLCPerson)."@en .
+
+
+###  https://data.oireachtas.ie/ontology#directedTo
+
+:directedTo rdf:type owl:ObjectProperty ;
+
+            rdfs:domain :ParliamentaryQuestion ;
+
+            rdfs:range eli-dl:ParticipationRole ;
+
+            skos:prefLabel "directed to"@en ;
+
+            rdfs:comment "The ministerial ParticipationRole to whom the parliamentary question is addressed. Corresponds to question/@to in AKN (→ TLCRole)."@en .
+
+
+###  https://data.oireachtas.ie/ontology#directedToOffice
+
+:directedToOffice rdf:type owl:ObjectProperty ;
+
+                   rdfs:domain :ParliamentaryQuestion ;
+
+                   rdfs:range members:NamedOffice ;
+
+                   skos:prefLabel "directed to office"@en ;
+
+                   rdfs:comment "Links a ParliamentaryQuestion to an existing members:NamedOffice only when the AKN recipient role is uniquely and reviewably reconciled to that office. It is distinct from :directedTo and does not mint an office from a label."@en .
+
+
+###  https://data.oireachtas.ie/ontology#divisionOutcome
+
+:divisionOutcome rdf:type owl:ObjectProperty ;
+
+                 rdfs:domain :Division ;
+
+                 rdfs:range eli-dl:DecisionOutcome ;
+
+                 skos:prefLabel "division outcome"@en ;
+
+                 rdfs:comment "The outcome of a division. Range is eli-dl:DecisionOutcome; use :DeclaredCarried or :DeclaredLost only when the source provides those recognized outcomes. The AKN #declared marker alone does not entail either outcome, regardless of aggregate vote counts."@en .
+
+
+###  https://data.oireachtas.ie/ontology#refersToProposal
+
+:refersToProposal rdf:type owl:ObjectProperty ;
+
+                  rdfs:domain :Division ;
+
+                  skos:prefLabel "refers to proposal"@en ;
+
+                  rdfs:comment "The subject of the division — what was voted on. Corresponds to voting/@refersTo in the AKN analysis block. Range: :DebateSection (for procedural questions) or :BillEvent (for amendment or stage votes)."@en .
+
+
+###  https://data.oireachtas.ie/ontology#votedFor
+
+:votedFor rdf:type owl:ObjectProperty ;
+
+          rdfs:domain :Division ;
+
+          rdfs:range :Member ;
+
+          skos:prefLabel "voted for"@en ;
+
+          rdfs:comment "A :Member who voted Tá in the division. Corresponds to debateSection[@name='ta']/p/person in AKN."@en .
+
+
+###  https://data.oireachtas.ie/ontology#votedAgainst
+
+:votedAgainst rdf:type owl:ObjectProperty ;
+
+              rdfs:domain :Division ;
+
+              rdfs:range :Member ;
+
+              skos:prefLabel "voted against"@en ;
+
+              rdfs:comment "A :Member who voted Níl in the division. Corresponds to debateSection[@name='nil']/p/person in AKN."@en .
+
+
+###  https://data.oireachtas.ie/ontology#abstained
+
+:abstained rdf:type owl:ObjectProperty ;
+
+           rdfs:domain :Division ;
+
+           rdfs:range :Member ;
+
+           skos:prefLabel "abstained"@en ;
+
+           rdfs:comment "A :Member who voted Staon in the division. Corresponds to debateSection[@name='staon']/p/person in AKN, when supplied."@en .
+
+
+#################################################################
+#
+#    Datatype Properties
+#
+#################################################################
+
+
+###  https://data.oireachtas.ie/ontology#debateDate
+
+:debateDate rdf:type owl:DatatypeProperty ;
+
+            rdfs:domain :DebateRecord ;
+
+            rdfs:range xsd:dateTime ;
+
+            skos:prefLabel "debate date"@en ;
+
+            rdfs:comment "The date associated with the DebateRecord. Corresponds to FRBRWork/FRBRdate/@date in AKN; it is not by itself evidence of a DebateSitting. xsd:dateTime is used for OWL 2 DL compatibility (HermiT does not support xsd:date)."@en .
+
+
+###  https://data.oireachtas.ie/ontology#sourceOrdinal
+
+:sourceOrdinal rdf:type owl:DatatypeProperty ;
+
+               rdfs:range xsd:integer ;
+
+               skos:prefLabel "source ordinal"@en ;
+
+               rdfs:comment "Integer source-order metadata within the immediate containing AKN resource. It is not an identifier and has no class-specific domain in this ontology."@en .
+
+
+###  https://data.oireachtas.ie/ontology#expressionLanguageCode
+
+:expressionLanguageCode rdf:type owl:DatatypeProperty ;
+
+                         rdfs:domain :DebateExpression ;
+
+                         rdfs:range xsd:string ;
+
+                         skos:prefLabel "expression language code"@en ;
+
+                         rdfs:comment "The exact lexical language code supplied by AKN FRBRExpression/FRBRlanguage/@language. No language is inferred from the Expression IRI."@en .
+
+
+###  https://data.oireachtas.ie/ontology#debateType
+
+:debateType rdf:type owl:DatatypeProperty ;
+
+            rdfs:domain :DebateRecord ;
+
+            rdfs:range xsd:string ;
+
+            skos:prefLabel "debate type"@en ;
+
+            rdfs:comment "Sub-type of the debate record where a FRBRname sub-part is present in the AKN XML (e.g. \"debate\" or \"writtens\" for the Dáil). Absent for records that are not split into named sub-parts."@en .
+
+
+###  https://data.oireachtas.ie/ontology#sectionName
+
+:sectionName rdf:type owl:DatatypeProperty ;
+
+             rdfs:domain :DebateSection ;
+
+             rdfs:range xsd:string ;
+
+             skos:prefLabel "section name"@en ;
+
+             rdfs:comment """The AKN debateSection/@name value. Values observed in Oireachtas data include:
+  debate, question, questions, amendment, division, ta, nil, staon,
+  prelude, topical, statement, motion."""@en .
+
+
+###  https://data.oireachtas.ie/ontology#recordedTime
+
+:recordedTime rdf:type owl:DatatypeProperty ;
+
+              rdfs:domain :Speech ;
+
+              rdfs:range xsd:dateTime ;
+
+              skos:prefLabel "recorded time"@en ;
+
+              rdfs:comment "The timestamp recorded on the AKN from/recordedTime/@time element. Accurate to approximately 5–10 minutes. Recorded as xsd:dateTime."@en .
+
+
+###  https://data.oireachtas.ie/ontology#taCount
+
+:taCount rdf:type owl:DatatypeProperty , owl:FunctionalProperty ;
+
+         rdfs:domain :Division ;
+
+         rdfs:range xsd:integer ;
+
+         skos:prefLabel "Tá count"@en ;
+
+         rdfs:comment "Number of Members who voted Tá (in favour) in the division. Corresponds to count[@refersTo='#ta']/@value in the AKN analysis block."@en .
+
+
+###  https://data.oireachtas.ie/ontology#nilCount
+
+:nilCount rdf:type owl:DatatypeProperty , owl:FunctionalProperty ;
+
+          rdfs:domain :Division ;
+
+          rdfs:range xsd:integer ;
+
+          skos:prefLabel "Níl count"@en ;
+
+          rdfs:comment "Number of Members who voted Níl (against) in the division. Corresponds to count[@refersTo='#nil']/@value in the AKN analysis block."@en .
+
+
+###  https://data.oireachtas.ie/ontology#staonCount
+
+:staonCount rdf:type owl:DatatypeProperty , owl:FunctionalProperty ;
+
+            rdfs:domain :Division ;
+
+            rdfs:range xsd:integer ;
+
+            skos:prefLabel "Staon count"@en ;
+
+            rdfs:comment "Number of Members who abstained (Staon) in the division, when supplied. Corresponds to count[@refersTo='#staon']/@value in the AKN analysis block."@en .
+
+
+#################################################################
+#
+#    Classes
+#
+#################################################################
+
+
+###  https://data.oireachtas.ie/ontology#DebateRecord
+
+:DebateRecord rdf:type owl:Class ;
+
+              rdfs:subClassOf foaf:Document ;
+
+              skos:prefLabel "Debate Record"@en ;
+
+              rdfs:comment """An Official Report source record for a particular date and House or committee, treated as an intellectual work (FRBRWork in Akoma Ntoso). A DebateSitting is represented only when the source establishes an actual sitting; a written-answer record does not itself establish one.
+
+Not a subclass of eli-dl:LegislativeProcessWork because debates are not always legislative in nature; the legislative connection is expressed at the section level via :refersToEvent and eli-dl:forms_part_of.
+
+IRI pattern: /akn/ie/debateRecord/{house}/{date}[/{sub-type}]
+Where {house} is 'dail', 'seanad' or a committee slug, and {sub-type} is an optional FRBRname value such as 'debate' or 'writtens'."""@en .
+
+
+###  https://data.oireachtas.ie/ontology#DebateExpression
+
+:DebateExpression rdf:type owl:Class ;
+
+                  skos:prefLabel "Debate Expression"@en ;
+
+                  rdfs:comment """A language-specific expression of a DebateRecord — the same source work expressed in a particular language (e.g. eng, gle, mul). Corresponds to FRBRExpression in Akoma Ntoso.
+
+Intentionally bare OWL class with no superclass, to avoid importing the FRBR ontology as a dependency. If FRBR is imported in future, rdfs:subClassOf frbr:Expression can be added. The FRBR correspondence is documented in this comment only.
+
+IRI pattern: /akn/ie/debateRecord/{house}/{date}[/{sub-type}]/{lang}@"""@en .
+
+
+###  https://data.oireachtas.ie/ontology#DebateSitting
+
+:DebateSitting rdf:type owl:Class ;
+
+               rdfs:subClassOf eli-dl:Activity ;
+
+               skos:prefLabel "Debate Sitting"@en ;
+
+               rdfs:comment """A parliamentary sitting — the activity that produces a DebateRecord.
+
+Always typed eli-dl:Activity and no more specific ELI-DL activity class, because a sitting may contain a mix of legislative business, oral questions, statements, topical debates and motions. The legislative connection is expressed at the section level.
+
+Use eli-dl:activity_date for the sitting date. Use :relatedProcess as a convenience flag when the sitting contains at least one legislative section. Use :producedRecord to link the sitting to its DebateRecord."""@en .
+
+
+###  https://data.oireachtas.ie/ontology#DebateSection
+
+:DebateSection rdf:type owl:Class ;
+
+               skos:prefLabel "Debate Section"@en ;
+
+               rdfs:comment """A topic-bounded section of a DebateRecord, corresponding to AKN debateSection. Sections nest recursively via :hasSubSection.
+
+The :sectionName property captures the AKN @name value. Values observed in Oireachtas data:
+  debate, question, questions, amendment, division, ta, nil, staon,
+  prelude, topical, statement, motion.
+
+Typing convention: when an instance carries :refersToEvent (i.e. it concerns a specific bill stage or bill work), it should additionally be typed eli-dl:LegislativeActivity. When so typed, the following ELI-DL properties apply on that instance:
+  - eli-dl:occured_at_stage → the bill stage (e.g. Second Stage)
+  - eli-dl:forms_part_of    → the eli-dl:LegislativeProcess for the bill
+  - eli-dl:had_participation → mover / rapporteur roles at that stage"""@en .
+
+
+###  https://data.oireachtas.ie/ontology#Speech
+
+:Speech rdf:type owl:Class ;
+
+        skos:prefLabel "Speech"@en ;
+
+        rdfs:comment """An AKN speech contribution by a Member, a witness to a committee, or on occasion a visiting Head of State. This includes oral contributions and written responses encoded as speech elements inside writtenAnswer sections; the transcript text is not represented here.
+
+Where a resolved participant or reviewed role is available, link the contribution to an eli-dl:Participation with :hasSpeechParticipation, then use eli-dl:had_participant_person and/or eli-dl:participation_role on that Participation. :speaker is a resolved-Member shortcut. Speech is not thereby an eli-dl:Activity.
+
+Use :recordedTime for the timestamp from AKN from/recordedTime/@time (accurate to ~5–10 min)."""@en .
+
+
+###  https://data.oireachtas.ie/ontology#Summary
+
+:Summary rdf:type owl:Class ;
+
+         skos:prefLabel "Summary"@en ;
+
+         rdfs:comment "Narrative or procedural text that was not directly reported as spoken. Corresponds to AKN summary element. Includes procedural outcomes (\"Question put declared carried.\"), descriptions of unattributed events (\"Interruptions.\") and formal procedural records."@en .
+
+
+###  https://data.oireachtas.ie/ontology#ParliamentaryQuestion
+
+:ParliamentaryQuestion rdf:type owl:Class ;
+
+                       skos:prefLabel "Parliamentary Question"@en ;
+
+                       rdfs:comment """A parliamentary question submitted in advance of a debate and responded to during oral question time or separately as a written answer. Corresponds to AKN question element.
+
+Questions are uniquely identified by a combination of sitting date and sequential question number (AKN question/@eId). Use :askedBy for the Member asking and :directedTo or :directedToOffice for a resolved recipient. Section containment via :hasQuestion does not identify which question a written-response Speech answers."""@en .
+
+
+###  https://data.oireachtas.ie/ontology#Division
+
+:Division rdf:type owl:Class ;
+
+          rdfs:subClassOf eli-dl:Vote ;
+
+          skos:prefLabel "Division"@en ;
+
+          rdfs:comment """A division (vote) in the chamber. Corresponds to AKN debateSection[@name='division'].
+
+A division has up to three sub-sections linked via :hasDivision → :hasSubSection:
+  - debateSection[@name='ta']   — Members voting Tá (in favour)
+  - debateSection[@name='nil']  — Members voting Níl (against)
+  - debateSection[@name='staon']— Members abstaining (when supplied)
+
+Aggregate vote counts are expressed via :taCount, :nilCount and :staonCount. Individual Member votes via :votedFor, :votedAgainst and :abstained. The outcome is linked via :divisionOutcome to :DeclaredCarried or :DeclaredLost only for recognized source outcomes. A source #declared outcome is not interpreted as carried or lost from the vote counts."""@en .
+
+
+#################################################################
+#
+#    Annotations on imported properties
+#
+#################################################################
+
+
+###  Annotate eli-dl:had_participation — use on legislative :DebateSection
+
+eli-dl:had_participation rdfs:comment "In debates.owl: use on :DebateSection instances additionally typed eli-dl:LegislativeActivity, for mover / rapporteur participation at that stage. Do not use on :Speech, which is not an eli-dl:Activity; link Speech to participation metadata with :hasSpeechParticipation."@en .
+
+
+###  Annotate eli-dl:occured_at_stage — apply on legislative DebateSections only
+
+eli-dl:occured_at_stage rdfs:comment "In debates.owl: apply on :DebateSection instances additionally typed eli-dl:LegislativeActivity (i.e. sections with :refersToEvent). Records the bill stage (e.g. Second Stage, Report Stage) as an eli-dl:ProcessStage individual."@en .
+
+
+###  Annotate eli-dl:forms_part_of — apply on legislative DebateSections only
+
+eli-dl:forms_part_of rdfs:comment "In debates.owl: apply on :DebateSection instances additionally typed eli-dl:LegislativeActivity. Links that section-level activity to the eli-dl:LegislativeProcess for the bill being debated."@en .
+
+
+#################################################################
+#
+#    Individuals — Decision outcomes (eli-dl:DecisionOutcome)
+#
+#################################################################
+
+
+###  https://data.oireachtas.ie/ontology#DeclaredCarried
+
+:DeclaredCarried rdf:type owl:NamedIndividual , eli-dl:DecisionOutcome ;
+
+                 skos:prefLabel "Declared Carried"@en ;
+
+                 rdfs:comment "The division was carried. Corresponds to AKN TLCConcept eId '#carried'; IRI oireachtas#DeclaredCarried in 2026 data."@en .
+
+
+###  https://data.oireachtas.ie/ontology#DeclaredLost
+
+:DeclaredLost rdf:type owl:NamedIndividual , eli-dl:DecisionOutcome ;
+
+              skos:prefLabel "Declared Lost"@en ;
+
+              rdfs:comment "The division was lost. Corresponds to AKN TLCConcept eId '#lost'; IRI oireachtas#DeclaredLost in 2026 data."@en .
+
+
+#################################################################
+#
+#    Individuals — Vote categories (skos:Concept)
+#
+#################################################################
+
+
+###  https://data.oireachtas.ie/ontology#TáVote
+
+:TáVote rdf:type owl:NamedIndividual , skos:Concept ;
+
+        skos:prefLabel "Tá"@en ;
+
+        rdfs:comment "Vote category for Members voting in favour. Corresponds to AKN TLCConcept eId '#ta' and count/@refersTo='#ta'."@en .
+
+
+###  https://data.oireachtas.ie/ontology#NílVote
+
+:NílVote rdf:type owl:NamedIndividual , skos:Concept ;
+
+         skos:prefLabel "Níl"@en ;
+
+         rdfs:comment "Vote category for Members voting against. Corresponds to AKN TLCConcept eId '#nil' and count/@refersTo='#nil'."@en .
+
+
+###  https://data.oireachtas.ie/ontology#StaonVote
+
+:StaonVote rdf:type owl:NamedIndividual , skos:Concept ;
+
+           skos:prefLabel "Staon"@en ;
+
+           rdfs:comment "Vote category for Members abstaining. Corresponds to AKN TLCConcept eId '#staon' and count/@refersTo='#staon', when supplied."@en .
+
+
+#################################################################
+#
+#    Individuals — Participation roles (eli-dl:ParticipationRole)
+#
+#################################################################
+
+
+###  https://data.oireachtas.ie/ontology#ChairRole
+
+:ChairRole rdf:type owl:NamedIndividual , eli-dl:ParticipationRole ;
+
+           skos:prefLabel "Chair"@en ;
+
+           rdfs:comment "The presiding officer role: Ceann Comhairle in the Dáil, Cathaoirleach in the Seanad, Leas-Cheann Comhairle / Leas-Cathaoirleach or Acting Chair in committees. Corresponds to AKN TLCRole values ceann_comhairle, cathaoirleach, acting_chairman and equivalents."@en .
+
+
+###  https://data.oireachtas.ie/ontology#WitnessRole
+
+:WitnessRole rdf:type owl:NamedIndividual , eli-dl:ParticipationRole ;
+
+             skos:prefLabel "Witness"@en ;
+
+             rdfs:comment "A non-member witness giving evidence to a committee. Not a :Member of either House. Used as eli-dl:participation_role on an eli-dl:Participation linked from :Speech via :hasSpeechParticipation, when the role is evidenced and resolved."@en .

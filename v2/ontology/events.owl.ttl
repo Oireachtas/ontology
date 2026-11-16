@@ -1,0 +1,872 @@
+@prefix : <https://data.oireachtas.ie/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix eli-dl: <http://data.europa.eu/eli/eli-draft-legislation-ontology#> .
+@base <https://data.oireachtas.ie/ontology/events> .
+
+<https://data.oireachtas.ie/ontology/events> rdf:type owl:Ontology ;
+
+    rdfs:comment "Events ontology for the Houses of the Oireachtas: journal events, bill stages, procedural outcomes and delivery."@en ;
+
+    owl:imports <https://data.oireachtas.ie/ontology/agents> ,
+                <http://data.europa.eu/eli/eli-draft-legislation-ontology#> .
+
+
+#################################################################
+#
+#    Auxiliary class declarations (from imported vocabularies)
+#
+#################################################################
+
+
+###  http://www.w3.org/2006/time#TemporalEntity
+
+time:TemporalEntity rdf:type owl:Class .
+
+
+###  http://www.w3.org/2006/time#Interval
+
+time:Interval rdf:type owl:Class ;
+
+              rdfs:subClassOf time:TemporalEntity .
+
+
+###  http://www.w3.org/2006/time#ProperInterval
+
+time:ProperInterval rdf:type owl:Class ;
+
+                    rdfs:subClassOf time:Interval .
+
+
+#################################################################
+#
+#    Object Properties
+#
+#################################################################
+
+
+###  https://data.oireachtas.ie/ontology#inHouse
+
+:inHouse rdf:type owl:ObjectProperty ;
+
+         rdfs:comment "The House (Dáil, Seanad or committee) in which a concrete Bill event occurrence takes place. Controlled stage, event and delivery values are ELI-DL concepts, not :BillEvent instances."@en ;
+
+         rdfs:domain :BillEvent ;
+
+         rdfs:range :House ;
+
+         skos:prefLabel "in house"@en .
+
+
+###  https://data.oireachtas.ie/ontology#commenced
+
+:commenced rdf:type owl:ObjectProperty ;
+
+           rdfs:domain time:TemporalEntity ;
+
+           rdfs:range :EventDate .
+
+
+###  https://data.oireachtas.ie/ontology#elected
+
+:elected rdf:type owl:ObjectProperty ;
+
+         rdfs:domain time:TemporalEntity ;
+
+         rdfs:range :EventDate .
+
+
+###  https://data.oireachtas.ie/ontology#ended
+
+:ended rdf:type owl:ObjectProperty ;
+
+       rdfs:domain time:TemporalEntity ;
+
+       rdfs:range :EventDate .
+
+
+#################################################################
+#
+#    Datatype Properties
+#
+#################################################################
+
+
+###  https://data.oireachtas.ie/ontology#progressStage
+
+:progressStage rdf:type owl:DatatypeProperty ;
+
+               rdfs:domain eli-dl:LegislativeActivity ;
+
+               rdfs:range xsd:positiveInteger ;
+
+                rdfs:comment "A source-supplied integer giving the sequential order of a Bill stage across both houses. It orders stage occurrences irrespective of house and does not identify the controlled stage; that identity is determined by the source stage definition URI."@en ;
+
+               skos:prefLabel "Progress stage"@en .
+
+
+###  https://data.oireachtas.ie/ontology#stageNo
+
+:stageNo rdf:type owl:DatatypeProperty ;
+
+         rdfs:domain eli-dl:AmendmentToDraftLegislationWork ;
+
+         rdfs:range xsd:positiveInteger ;
+
+         rdfs:comment "The stage number within a single house at which an amendment list was tabled (e.g., 3 = Committee Stage, 4 = Report Stage)."@en ;
+
+         skos:prefLabel "Stage number"@en .
+
+
+#################################################################
+#
+#    Classes
+#
+#################################################################
+
+
+###  https://data.oireachtas.ie/ontology#EventDate
+
+:EventDate rdf:type owl:Class ;
+
+           rdfs:subClassOf time:TemporalEntity .
+
+
+###  https://data.oireachtas.ie/ontology#JournalEvent
+
+:JournalEvent rdf:type owl:Class ;
+
+              rdfs:subClassOf eli-dl:LegislativeActivity ;
+
+              rdfs:comment "An event which takes place in a House (Dáil, Seanad or a committee), which is scheduled in the Order Paper and/or recorded in the Journal and Official Report, that is part of the process of enacting legislation (or moving motions)"@en .
+
+
+###  https://data.oireachtas.ie/ontology#BillEvent
+
+:BillEvent rdf:type owl:Class ;
+
+           rdfs:subClassOf :JournalEvent ;
+
+           rdfs:comment "A procedural event that occurs during the lifecycle of a Bill"@en ;
+
+           skos:prefLabel "Bill Event"@en .
+
+
+###  https://data.oireachtas.ie/ontology#BillStage
+
+:BillStage rdf:type owl:Class ;
+
+           rdfs:subClassOf :JournalEvent ;
+
+           skos:prefLabel "Stage of Bill"@en .
+
+
+###  https://data.oireachtas.ie/ontology#AmendingStage
+
+:AmendingStage rdf:type owl:Class ;
+
+               rdfs:subClassOf eli-dl:LegislativeActivity ,
+                               :BillStage ;
+
+               rdfs:comment "A stage on which it is possible to make amendments which modify a Bill (ie, result in a new version)"@en ;
+
+               skos:prefLabel "Amending Stage"@en .
+
+
+###  https://data.oireachtas.ie/ontology#BillDelivery
+
+:BillDelivery rdf:type owl:Class ;
+
+              rdfs:subClassOf eli-dl:LegislativeActivity ;
+
+              skos:prefLabel "Bill Delivery"@en ;
+
+              rdfs:comment "The means by which the Bill was initiated in the Houses of the Oireachtas"@en .
+
+
+###  https://data.oireachtas.ie/ontology#BillDeliveryOutcome
+
+:BillDeliveryOutcome rdf:type owl:Class ;
+
+                     rdfs:subClassOf eli-dl:DecisionOutcome ;
+
+                     skos:prefLabel "Bill Delivery Outcome"@en ;
+
+                     rdfs:comment "The outcome of a Bill's delivery (introduction) to the Houses of the Oireachtas"@en .
+
+
+###  https://data.oireachtas.ie/ontology#BillEventOutcome
+
+:BillEventOutcome rdf:type owl:Class ;
+
+                  rdfs:subClassOf eli-dl:DecisionOutcome ;
+
+                  skos:prefLabel "Bill Event Outcome"@en ;
+
+                  rdfs:comment "The outcome of a motion, question or amendment put to a House pertaining to a Bill"@en .
+
+
+#################################################################
+#
+#    Individuals — Bill Stages
+#
+#################################################################
+
+
+###  https://data.oireachtas.ie/ontology#FirstStage
+
+:FirstStage rdf:type eli-dl:ProcessStage ,
+                      eli-dl:ActivityType ,
+                      skos:Concept ,
+                     owl:NamedIndividual ;
+
+            skos:prefLabel "First stage"@en ;
+
+            skos:topConceptOf :BillEventTable ;
+
+            skos:inScheme :BillEventTable .
+
+
+###  https://data.oireachtas.ie/ontology#SecondStage
+
+:SecondStage rdf:type eli-dl:ProcessStage ,
+                       eli-dl:ActivityType ,
+                       skos:Concept ,
+                      owl:NamedIndividual ;
+
+             skos:prefLabel "Second stage"@en ;
+
+             skos:inScheme :BillEventTable ;
+
+             skos:topConceptOf :BillEventTable .
+
+
+###  https://data.oireachtas.ie/ontology#OrderSecondStage
+
+:OrderSecondStage rdf:type eli-dl:ProcessStage , eli-dl:ActivityType , skos:Concept ,
+                           owl:NamedIndividual ;
+
+                  skos:prefLabel "Order for second stage"@en ;
+
+                  skos:topConceptOf :BillEventTable ;
+
+                  skos:inScheme :BillEventTable .
+
+
+###  https://data.oireachtas.ie/ontology#SecondSubStages
+
+:SecondSubStages rdf:type eli-dl:ProcessStage , eli-dl:ActivityType , skos:Concept ,
+                          owl:NamedIndividual ;
+
+                 skos:prefLabel "Second and subsequent stages"@en ;
+
+                 skos:inScheme :BillEventTable ;
+
+                 skos:topConceptOf :BillEventTable .
+
+
+###  https://data.oireachtas.ie/ontology#CommitteeStage
+
+:CommitteeStage rdf:type eli-dl:ProcessStage ,
+                          eli-dl:ActivityType ,
+                          skos:Concept ,
+                         owl:NamedIndividual ;
+
+                skos:prefLabel "Committee stage"@en ;
+
+                skos:topConceptOf :BillEventTable ;
+
+                skos:inScheme :BillEventTable .
+
+
+###  https://data.oireachtas.ie/ontology#OrderCommitteeStage
+
+:OrderCommitteeStage rdf:type eli-dl:ProcessStage , eli-dl:ActivityType , skos:Concept ,
+                              owl:NamedIndividual ;
+
+                     skos:prefLabel "Order for committee stage"@en ;
+
+                     skos:inScheme :BillEventTable ;
+
+                     skos:topConceptOf :BillEventTable .
+
+
+###  https://data.oireachtas.ie/ontology#CommitteeSubStages
+
+:CommitteeSubStages rdf:type eli-dl:ProcessStage , eli-dl:ActivityType , skos:Concept ,
+                             owl:NamedIndividual ;
+
+                    skos:prefLabel "Committee and remaining stages"@en ;
+
+                    skos:topConceptOf :BillEventTable ;
+
+                    skos:inScheme :BillEventTable .
+
+
+###  https://data.oireachtas.ie/ontology#ReportStage
+
+:ReportStage rdf:type eli-dl:ProcessStage ,
+                       eli-dl:ActivityType ,
+                       skos:Concept ,
+                      owl:NamedIndividual ;
+
+             skos:prefLabel "Report stage"@en ;
+
+             skos:topConceptOf :BillEventTable ;
+
+             skos:inScheme :BillEventTable .
+
+
+###  https://data.oireachtas.ie/ontology#OrderReportStage
+
+:OrderReportStage rdf:type eli-dl:ProcessStage , eli-dl:ActivityType , skos:Concept ,
+                           owl:NamedIndividual ;
+
+                  skos:prefLabel "Order for report stage"@en ;
+
+                  skos:topConceptOf :BillEventTable ;
+
+                  skos:inScheme :BillEventTable .
+
+
+###  https://data.oireachtas.ie/ontology#ReportSubStages
+
+:ReportSubStages rdf:type eli-dl:ProcessStage , eli-dl:ActivityType , skos:Concept ,
+                          owl:NamedIndividual ;
+
+                 skos:prefLabel "Report and final stages"@en ;
+
+                 skos:inScheme :BillEventTable ;
+
+                 skos:topConceptOf :BillEventTable .
+
+
+###  https://data.oireachtas.ie/ontology#FifthStage
+
+:FifthStage rdf:type eli-dl:ProcessStage ,
+                      eli-dl:ActivityType ,
+                      skos:Concept ,
+                     owl:NamedIndividual ;
+
+            skos:prefLabel "Fifth stage"@en ;
+
+            skos:inScheme :BillEventTable ;
+
+             skos:topConceptOf :BillEventTable .
+
+
+###  https://data.oireachtas.ie/ontology#CreamListStage
+
+:CreamListStage rdf:type eli-dl:ProcessStage ,
+                         eli-dl:ActivityType ,
+                         skos:Concept ,
+                         owl:NamedIndividual ;
+
+                 skos:prefLabel "Cream List stage"@en ;
+
+                 rdfs:comment "The Bill process stage identified by the source bill-stage/6 definition; distinct from :CreamList, which is an amendment-list type."@en ;
+
+                 skos:inScheme :BillEventTable ;
+
+                 skos:topConceptOf :BillEventTable .
+
+
+###  https://data.oireachtas.ie/ontology#AllStages
+
+:AllStages rdf:type eli-dl:ProcessStage , eli-dl:ActivityType , skos:Concept ,
+                    owl:NamedIndividual ;
+
+           skos:prefLabel "All stages"@en ;
+
+           skos:topConceptOf :BillEventTable ;
+
+           skos:inScheme :BillEventTable .
+
+
+#################################################################
+#
+#    Individuals — Other Bill Events
+#
+#################################################################
+
+
+###  https://data.oireachtas.ie/ontology#BallotOrder
+
+:BallotOrder rdf:type eli-dl:ActivityType , skos:Concept ,
+                      owl:NamedIndividual ;
+
+             skos:prefLabel "Ballot paper motion"@en ;
+
+             skos:topConceptOf :BillEventTable ;
+
+             skos:inScheme :BillEventTable .
+
+
+###  https://data.oireachtas.ie/ontology#BillAmend
+
+:BillAmend rdf:type eli-dl:ActivityType , skos:Concept ,
+                    owl:NamedIndividual ;
+
+           skos:prefLabel "Bill amendment"@en ;
+
+           skos:topConceptOf :BillEventTable ;
+
+           skos:inScheme :BillEventTable .
+
+
+###  https://data.oireachtas.ie/ontology#BillAmend2Amend
+
+:BillAmend2Amend rdf:type eli-dl:ActivityType , skos:Concept ,
+                          owl:NamedIndividual ;
+
+                 skos:prefLabel "Amendment to Bill amendment"@en ;
+
+                 skos:topConceptOf :BillEventTable ;
+
+                 skos:inScheme :BillEventTable .
+
+
+###  https://data.oireachtas.ie/ontology#BillRecommendation
+
+:BillRecommendation rdf:type eli-dl:ActivityType , skos:Concept ,
+                             owl:NamedIndividual ;
+
+                    skos:prefLabel "Bill recommendation"@en ;
+
+                    skos:topConceptOf :BillEventTable ;
+
+                    skos:inScheme :BillEventTable .
+
+
+###  https://data.oireachtas.ie/ontology#BillDefeatedEvent
+
+:BillDefeatedEvent rdf:type eli-dl:ActivityType , skos:Concept ,
+                             owl:NamedIndividual ;
+
+                   skos:prefLabel "Bill defeated"@en ;
+
+                   rdfs:comment "Activity type for a Bill-defeat event occurrence; distinct from :DefeatedBill, which is a Bill process status."@en ;
+
+                   skos:topConceptOf :BillEventTable ;
+
+                   skos:inScheme :BillEventTable .
+
+
+###  https://data.oireachtas.ie/ontology#BillLapsedEvent
+
+:BillLapsedEvent rdf:type eli-dl:ActivityType , skos:Concept ,
+                          owl:NamedIndividual ;
+
+                 skos:prefLabel "Bill lapsed"@en ;
+
+                 rdfs:comment "Activity type for a Bill-lapsing event occurrence; distinct from :LapsedBill, which is a Bill process status."@en ;
+
+                 skos:topConceptOf :BillEventTable ;
+
+                 skos:inScheme :BillEventTable .
+
+
+###  https://data.oireachtas.ie/ontology#BillWithdrawnEvent
+
+:BillWithdrawnEvent rdf:type eli-dl:ActivityType , skos:Concept ,
+                             owl:NamedIndividual ;
+
+                    skos:prefLabel "Bill withdrawn"@en ;
+
+                    rdfs:comment "Activity type for a Bill-withdrawal event occurrence; distinct from :Withdrawn, which is a Bill event outcome, and :WithdrawnBill, which is a Bill process status."@en ;
+
+                    skos:topConceptOf :BillEventTable ;
+
+                    skos:inScheme :BillEventTable .
+
+
+###  https://data.oireachtas.ie/ontology#Referendum
+
+:Referendum rdf:type eli-dl:ProcessStage , eli-dl:ActivityType , skos:Concept ,
+                     owl:NamedIndividual ;
+
+              skos:prefLabel "Referendum"@en ;
+
+              rdfs:comment "Controlled process stage and activity type for a Bill referendum stage or lifecycle event; one individual represents both uses and is distinct from Bill process statuses concerning a referendum."@en ;
+
+             skos:topConceptOf :BillEventTable ;
+
+             skos:inScheme :BillEventTable .
+
+
+###  https://data.oireachtas.ie/ontology#ReferralToSupremeCourtArt26
+
+:ReferralToSupremeCourtArt26 rdf:type eli-dl:ProcessStage ,
+                                      eli-dl:ActivityType ,
+                                      skos:Concept ,
+                                      owl:NamedIndividual ;
+
+                              skos:prefLabel "Referral to Supreme Court under Article 26 of the Constitution"@en ;
+
+                              rdfs:comment "The constitutional procedure under Article 26 by which the President refers a Bill to the Supreme Court; used as the controlled stage and activity type for the referral."@en ;
+
+                              skos:topConceptOf :BillEventTable ;
+
+                             skos:inScheme :BillEventTable .
+
+
+###  https://data.oireachtas.ie/ontology#DailAmdSeanad
+
+:DailAmdSeanad rdf:type eli-dl:ActivityType , skos:Concept ,
+                        owl:NamedIndividual ;
+
+               skos:prefLabel "Dáil amendments in the Seanad"@en ;
+
+               skos:topConceptOf :BillEventTable ;
+
+               skos:inScheme :BillEventTable .
+
+
+###  https://data.oireachtas.ie/ontology#DischargeOrderSecondStage
+
+:DischargeOrderSecondStage rdf:type eli-dl:ActivityType , skos:Concept ,
+                                    owl:NamedIndividual ;
+
+                           skos:prefLabel "Motion for discharge order for second stage"@en ;
+
+                           skos:inScheme :BillEventTable ;
+
+                           skos:topConceptOf :BillEventTable .
+
+
+###  https://data.oireachtas.ie/ontology#DischargeSecondStage
+
+:DischargeSecondStage rdf:type eli-dl:ActivityType , skos:Concept ,
+                               owl:NamedIndividual ;
+
+                      skos:prefLabel "Motion for discharge order for second stage"@en ;
+
+                      skos:inScheme :BillEventTable ;
+
+                      skos:topConceptOf :BillEventTable .
+
+
+###  https://data.oireachtas.ie/ontology#EarlySign
+
+:EarlySign rdf:type eli-dl:ActivityType , skos:Concept ,
+                    owl:NamedIndividual ;
+
+           skos:prefLabel "Motion for early signature"@en ;
+
+           skos:inScheme :BillEventTable ;
+
+           skos:topConceptOf :BillEventTable .
+
+
+###  https://data.oireachtas.ie/ontology#FinancialResolution
+
+:FinancialResolution rdf:type eli-dl:ActivityType , skos:Concept ,
+                              owl:NamedIndividual ;
+
+                     skos:prefLabel "Financial resolution"@en .
+
+
+###  https://data.oireachtas.ie/ontology#InstrCommittee
+
+:InstrCommittee rdf:type eli-dl:ActivityType , skos:Concept ,
+                         owl:NamedIndividual ;
+
+                skos:prefLabel "Instruction to committee"@en ;
+
+                skos:inScheme :BillEventTable ;
+
+                skos:topConceptOf :BillEventTable .
+
+
+###  https://data.oireachtas.ie/ontology#LeaveToWithdraw
+
+:LeaveToWithdraw rdf:type eli-dl:ActivityType , skos:Concept ,
+                          owl:NamedIndividual ;
+
+                 skos:prefLabel "Leave to withdraw"@en ;
+
+                 skos:topConceptOf :BillEventTable ;
+
+                 skos:inScheme :BillEventTable .
+
+
+###  https://data.oireachtas.ie/ontology#RecommitBill
+
+:RecommitBill rdf:type eli-dl:ActivityType , skos:Concept ,
+                       owl:NamedIndividual ;
+
+              skos:prefLabel "Motion to recommit"@en ;
+
+              skos:topConceptOf :BillEventTable ;
+
+              skos:inScheme :BillEventTable .
+
+
+###  https://data.oireachtas.ie/ontology#RefCommittee
+
+:RefCommittee rdf:type eli-dl:ActivityType , skos:Concept ,
+                       owl:NamedIndividual ;
+
+              skos:prefLabel "Referral to select committee"@en ;
+
+              skos:topConceptOf :BillEventTable ;
+
+              skos:inScheme :BillEventTable .
+
+
+###  https://data.oireachtas.ie/ontology#RestoreBill
+
+:RestoreBill rdf:type eli-dl:ActivityType , skos:Concept ,
+                      owl:NamedIndividual ;
+
+             skos:prefLabel "Restoration of Bill"@en ;
+
+             skos:topConceptOf :BillEventTable ;
+
+             skos:inScheme :BillEventTable .
+
+
+###  https://data.oireachtas.ie/ontology#SeanadAmdDail
+
+:SeanadAmdDail rdf:type eli-dl:ActivityType , skos:Concept ,
+                        owl:NamedIndividual ;
+
+               skos:prefLabel "Seanad amendments in the Dáil"@en ;
+
+               skos:topConceptOf :BillEventTable ;
+
+               skos:inScheme :BillEventTable .
+
+
+###  https://data.oireachtas.ie/ontology#VoterInfo
+
+:VoterInfo rdf:type eli-dl:ActivityType , skos:Concept ,
+                    owl:NamedIndividual ;
+
+           skos:prefLabel "Motion on statement of information for voters"@en ;
+
+           skos:topConceptOf :BillEventTable ;
+
+           skos:inScheme :BillEventTable .
+
+
+###  https://data.oireachtas.ie/ontology#Published
+
+:Published rdf:type eli-dl:ActivityType ,
+                     skos:Concept ,
+                    owl:NamedIndividual ;
+
+           skos:prefLabel "Published"@en ;
+
+           rdfs:comment "The event of a Bill being published and made available. A single Bill may carry multiple publication dates (e.g., as initiated and as enacted Act)."@en ;
+
+           skos:inScheme :BillEventTable ;
+
+           skos:topConceptOf :BillEventTable .
+
+
+###  https://data.oireachtas.ie/ontology#Enacted
+
+:Enacted rdf:type eli-dl:ProcessStage ,
+                   eli-dl:ActivityType ,
+                   skos:Concept ,
+                  owl:NamedIndividual ;
+
+         skos:prefLabel "Enacted"@en ;
+
+         rdfs:comment "The event of a Bill being signed into law by the President, creating an Act."@en ;
+
+         skos:inScheme :BillEventTable ;
+
+         skos:topConceptOf :BillEventTable .
+
+
+#################################################################
+#
+#    Individuals — Bill Event Outcomes
+#
+#################################################################
+
+
+###  https://data.oireachtas.ie/ontology#Agreed
+
+:Agreed rdf:type :BillEventOutcome ,
+                 owl:NamedIndividual ;
+
+        skos:prefLabel "Agreed to"@en ;
+
+        skos:inScheme :BillEventResultTable ;
+
+        skos:topConceptOf :BillEventResultTable .
+
+
+###  https://data.oireachtas.ie/ontology#DeclaredCarried
+
+:DeclaredCarried rdf:type :BillEventOutcome ,
+                          owl:NamedIndividual ;
+
+                 skos:prefLabel "Declared carried"@en ;
+
+                 skos:inScheme :BillEventResultTable ;
+
+                 skos:topConceptOf :BillEventResultTable .
+
+
+###  https://data.oireachtas.ie/ontology#DeclaredLost
+
+:DeclaredLost rdf:type :BillEventOutcome ,
+                       owl:NamedIndividual ;
+
+              skos:prefLabel "Declared lost"@en ;
+
+              skos:topConceptOf :BillEventResultTable ;
+
+              skos:inScheme :BillEventResultTable .
+
+
+###  https://data.oireachtas.ie/ontology#NotMoved
+
+:NotMoved rdf:type :BillEventOutcome ,
+                   owl:NamedIndividual ;
+
+          skos:prefLabel "Not moved"@en ;
+
+          skos:inScheme :BillEventResultTable ;
+
+          skos:topConceptOf :BillEventResultTable .
+
+
+###  https://data.oireachtas.ie/ontology#Withdrawn
+
+:Withdrawn rdf:type :BillEventOutcome ,
+                    owl:NamedIndividual ;
+
+           skos:prefLabel "Withdrawn"@en ;
+
+           skos:topConceptOf :BillEventResultTable ;
+
+           skos:inScheme :BillEventResultTable .
+
+
+#################################################################
+#
+#    Individuals — Bill Delivery Methods
+#
+#################################################################
+
+
+###  https://data.oireachtas.ie/ontology#Application
+
+:Application rdf:type eli-dl:ActivityType ,
+                       skos:Concept ,
+                      owl:NamedIndividual ;
+
+             skos:topConceptOf :BillDeliveryTable ;
+
+             skos:inScheme :BillDeliveryTable .
+
+
+###  https://data.oireachtas.ie/ontology#Introduction
+
+:Introduction rdf:type eli-dl:ActivityType ,
+                        skos:Concept ,
+                       owl:NamedIndividual ;
+
+              skos:topConceptOf :BillDeliveryTable ;
+
+              skos:inScheme :BillDeliveryTable .
+
+
+###  https://data.oireachtas.ie/ontology#Presentation
+
+:Presentation rdf:type eli-dl:ActivityType ,
+                        skos:Concept ,
+                       owl:NamedIndividual ;
+
+              skos:inScheme :BillDeliveryTable ;
+
+              skos:topConceptOf :BillDeliveryTable .
+
+
+#################################################################
+#
+#    Individuals — Bill Delivery Outcomes
+#
+#################################################################
+
+
+###  https://data.oireachtas.ie/ontology#Examiner
+
+:Examiner rdf:type :BillDeliveryOutcome ,
+                   owl:NamedIndividual ;
+
+          skos:prefLabel "Report of the Examiner of Private Bills"@en .
+
+
+###  https://data.oireachtas.ie/ontology#Introduced
+
+:Introduced rdf:type :BillDeliveryOutcome ,
+                     owl:NamedIndividual ;
+
+            skos:prefLabel "Introduced"@en .
+
+
+###  https://data.oireachtas.ie/ontology#Presented
+
+:Presented rdf:type :BillDeliveryOutcome ,
+                    owl:NamedIndividual ;
+
+           skos:prefLabel "Presented"@en .
+
+
+###  https://data.oireachtas.ie/ontology#Refused
+
+:Refused rdf:type :BillDeliveryOutcome ,
+                  owl:NamedIndividual ;
+
+         skos:prefLabel "Refused Introduction"@en .
+
+
+#################################################################
+#
+#    Individuals — ELI-DL Activity Types
+#
+#################################################################
+
+
+###  https://data.oireachtas.ie/ontology#LegislativeCreationActivity
+###  Replaces metalex:LegislativeCreation distinction
+
+:LegislativeCreationActivity rdf:type eli-dl:ActivityType ,
+                                      owl:NamedIndividual ;
+
+                             skos:prefLabel "Legislative creation activity"@en ;
+
+                             rdfs:comment "Activity type for general journal/legislative events (used via eli-dl:had_activity_type on JournalEvent instances)"@en .
+
+
+###  https://data.oireachtas.ie/ontology#LegislativeDeliveryActivity
+###  Replaces metalex:LegislativeDelivery distinction
+
+:LegislativeDeliveryActivity rdf:type eli-dl:ActivityType ,
+                                      owl:NamedIndividual ;
+
+                             skos:prefLabel "Legislative delivery activity"@en ;
+
+                             rdfs:comment "Activity type for bill delivery/initiation activities (used via eli-dl:had_activity_type on BillDelivery instances)"@en .
+
+
+###  https://data.oireachtas.ie/ontology#LegislativeModificationActivity
+###  Replaces metalex:LegislativeModification distinction
+
+:LegislativeModificationActivity rdf:type eli-dl:ActivityType ,
+                                          owl:NamedIndividual ;
+
+                                 skos:prefLabel "Legislative modification activity"@en ;
+
+                                 rdfs:comment "Activity type for amending activities (used via eli-dl:had_activity_type on AmendingStage instances and amendment-related LegislativeActivity instances)"@en .
