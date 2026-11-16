@@ -1,0 +1,634 @@
+@prefix : <https://data.oireachtas.ie/ontology/members#> .
+@prefix agents: <https://data.oireachtas.ie/ontology#> .
+@prefix eli-dl: <http://data.europa.eu/eli/eli-draft-legislation-ontology#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://data.oireachtas.ie/ontology/members> a owl:Ontology ;
+    owl:imports <http://data.europa.eu/eli/eli-draft-legislation-ontology#>,
+        <https://data.oireachtas.ie/ontology/agents>,
+        org:,
+        foaf: .
+
+
+### Auxiliary class declarations (from imported vocabularies)
+
+eli-dl:Participation a owl:Class .
+
+eli-dl:ParticipationRole a owl:Class .
+
+eli-dl:ParliamentaryTerm a owl:Class .
+
+
+### Annotation on imported ELI-DL property
+
+<http://data.europa.eu/eli/eli-draft-legislation-ontology#was_submitted_by>
+    rdfs:comment "Use eli-dl:was_submitted_by on eli-dl:LegislativeProcess instances to link a process to its submitter. For the Oireachtas, the mapped submitters include agents:GovernmentBillSource, agents:PrivateMember and agents:PrivateSponsor. GovernmentBillSource is distinct from the constitutional Government institution."@en .
+
+:ChiefWhip a owl:Class ;
+    rdfs:subClassOf :Whip .
+
+:DailConstituency a owl:Class ;
+    rdfs:subClassOf :Constituencies,
+        <http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing> ;
+    owl:disjointWith :SeanadPanel ;
+    rdfs:comment "A geographically bounded Dáil constituency. Instances correspond to 'constituency' records in the Oireachtas API (representType = 'constituency'). URI pattern: <https://data.oireachtas.ie/ie/oireachtas/house/dail/{houseNo}/constituency/{representCode}>. The API 'showAs' display name maps to skos:prefLabel. Disjoint with :SeanadPanel."@en .
+
+:DailSelectCommitteeMembership a owl:Class ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty :hasCommitteeMember ;
+            owl:someValuesFrom [ a owl:Class ;
+                    owl:intersectionOf ( agents:Member [ a owl:Restriction ;
+                                owl:onProperty :hasMembersMembership ;
+                                owl:someValuesFrom :DailMembership ] ) ] ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom :DailSelectCommittee ;
+            owl:onProperty :isCommitteeMembershipOf ],
+        :CommitteeMembership .
+
+:DeputyTitle a owl:DatatypeProperty ;
+    rdfs:domain :Deputy ;
+    rdfs:range rdfs:Literal ;
+    rdfs:subPropertyOf foaf:title ;
+    owl:propertyDisjointWith :SenatorTitle ;
+    foaf:name "Deputy"^^rdfs:Literal .
+
+:EndDate a owl:DatatypeProperty ;
+    rdfs:domain :DateRange ;
+    rdfs:range xsd:dateTime ;
+    owl:propertyDisjointWith :StartDate .
+
+:JointCommittee a owl:Class ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty :hasCommitteeMember ;
+            owl:someValuesFrom [ a owl:Class ;
+                    owl:intersectionOf ( agents:Member [ a owl:Restriction ;
+                                owl:onProperty :hasMembersMembership ;
+                                owl:someValuesFrom :OireachtasMembership ] [ a owl:Restriction ;
+                                owl:allValuesFrom agents:House ;
+                                owl:onProperty :isOireachtasMembershipOf ] ) ] ],
+        :Committee .
+
+:MinisterialTitle a owl:DatatypeProperty ;
+    rdfs:subPropertyOf foaf:title .
+
+:SeanadPanel a owl:Class ;
+    rdfs:subClassOf :Constituencies ;
+    owl:disjointWith :DailConstituency ;
+    rdfs:comment "A Seanad vocational or appointment panel (no geographic extent). Instances correspond to 'panel' records in the Oireachtas API (representType = 'panel'). URI pattern: <https://data.oireachtas.ie/ie/oireachtas/house/seanad/{houseNo}/panel/{representCode}>. The API 'showAs' display name maps to skos:prefLabel. Disjoint with :DailConstituency."@en .
+
+:SeanadSelectCommitteeMembership a owl:Class ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:allValuesFrom :SeanadSelectCommittee ;
+            owl:onProperty :isCommitteeMembershipOf ],
+        [ a owl:Restriction ;
+            owl:onProperty :hasCommitteeMember ;
+            owl:someValuesFrom [ a owl:Class ;
+                    owl:intersectionOf ( agents:Member [ a owl:Restriction ;
+                                owl:onProperty :hasMembersMembership ;
+                                owl:someValuesFrom :SeanadMembership ] ) ] ],
+        :CommitteeMembership .
+
+:SpecialCommittee a owl:Class ;
+    rdfs:subClassOf :Committee .
+
+:StandingCommittee a owl:Class ;
+    rdfs:subClassOf :Committee .
+
+:hasCabinetRole a owl:ObjectProperty ;
+    rdfs:domain :CabinetMembership ;
+    rdfs:range :CabinetMember .
+
+:hasRoleType a owl:ObjectProperty ;
+    rdfs:domain :NamedOffice ;
+    rdfs:range :OfficeType ;
+    skos:prefLabel "has office type"@en ;
+    rdfs:comment "Links a NamedOffice to its controlled OfficeType concept. Despite the property name, the object is a SKOS concept, not an OWL role class or role individual."@en .
+
+:heldOffice a owl:ObjectProperty ;
+    rdfs:domain :OfficeHolding ;
+    rdfs:range :NamedOffice ;
+    rdfs:comment "Links an OfficeHolding record to the one enduring NamedOffice it records. Exactly one target is checked during ETL validation."@en .
+
+:officeHolder a owl:ObjectProperty ;
+    rdfs:domain :OfficeHolding ;
+    rdfs:range foaf:Person ;
+    owl:inverseOf :hasOfficeHolding ;
+    rdfs:comment "Links an OfficeHolding record to its person holder. Member ETL emits both this and the inverse hasOfficeHolding assertion explicitly."@en .
+
+:hasOfficeHolding a owl:ObjectProperty ;
+    rdfs:domain foaf:Person ;
+    rdfs:range :OfficeHolding ;
+    owl:inverseOf :officeHolder .
+
+:headsAdministrativeUnit a owl:ObjectProperty ;
+    rdfs:domain :NamedOffice ;
+    rdfs:range :AdministrativeUnit ;
+    rdfs:comment "Links a NamedOffice to an AdministrativeUnit it heads where that departmental headship is evidenced."@en .
+
+:assignedToAdministrativeUnit a owl:ObjectProperty ;
+    rdfs:domain :NamedOffice ;
+    rdfs:range :AdministrativeUnit ;
+    rdfs:comment "Links a Minister-of-State NamedOffice to an AdministrativeUnit to which it is assigned where that relationship is evidenced. This is not a subproperty of headship."@en .
+
+:predecessorOffice a owl:ObjectProperty ;
+    rdfs:domain :NamedOffice ;
+    rdfs:range :NamedOffice ;
+    owl:inverseOf :successorOffice ;
+    rdfs:comment "Links an office to a positively reviewed predecessor identity. No succession is inferred from chronology, labels, functions, or unit succession."@en .
+
+:successorOffice a owl:ObjectProperty ;
+    rdfs:domain :NamedOffice ;
+    rdfs:range :NamedOffice ;
+    owl:inverseOf :predecessorOffice .
+
+:reconciledSponsorOffice a owl:ObjectProperty ;
+    rdfs:domain eli-dl:Participation ;
+    rdfs:range :NamedOffice ;
+    rdfs:comment "Bill-local reconciliation link from a source Participation to a uniquely justified NamedOffice. It is owned by the separate per-Bill local reconciliation graph."@en .
+
+:reconciledSponsorHolding a owl:ObjectProperty ;
+    rdfs:domain eli-dl:Participation ;
+    rdfs:range :OfficeHolding ;
+    rdfs:comment "Bill-local reconciliation link from a source Participation to a positively evidenced, time-applicable OfficeHolding. It is owned by the separate per-Bill local reconciliation graph."@en .
+
+:supportedByOfficeHolding a owl:ObjectProperty ;
+    rdfs:domain :CabinetMembership ;
+    rdfs:range :OfficeHolding ;
+    rdfs:comment "Links a derived CabinetMembership episode to a qualifying OfficeHolding that supports it. Individual support need not span the entire merged Cabinet period."@en .
+
+:isCabinetMembershipOf a owl:ObjectProperty ;
+    rdfs:domain :CabinetMembership ;
+    rdfs:range agents:Government ;
+    rdfs:comment "Links a CabinetMembership record to the enduring constitutional Government institution. It deliberately does not identify a numbered Government administration."@en .
+
+:hasMembers a owl:ObjectProperty ;
+    rdfs:domain org:Organization ;
+    rdfs:range agents:Member .
+
+:isMembershipOfMember a owl:ObjectProperty ;
+    owl:inverseOf :hasMembersMembership ;
+    rdfs:domain :MembersMembership ;
+    rdfs:range agents:Member ;
+    rdfs:comment "Inverse of :hasMembersMembership. It makes the member recorded by an existing membership record explicit without changing ETL ownership or requiring a duplicate emitted triple."@en .
+
+:hasOireachtasMemberRole a owl:ObjectProperty ;
+    rdfs:domain :OireachtasMembership ;
+    rdfs:range :OireachtasMember .
+
+:hasOireachtasMembers a owl:ObjectProperty .
+
+:isChairOf a owl:ObjectProperty ;
+    rdfs:domain :Chair ;
+    rdfs:range :House,
+        :Committee .
+
+:isExOfficioMemberOf a owl:ObjectProperty ;
+    rdfs:domain :MinisterRole ;
+    rdfs:range :DailSelectCommittee .
+
+:isHeadOf a owl:ObjectProperty ;
+    rdfs:domain :TaoiseachRole ;
+    rdfs:range agents:Government ;
+    rdfs:comment "Links a :Taoiseach role to the constitutional Government (agents:Government) of which the Taoiseach is the head. :isHeadOfExecutive and :isHeadOfBenches are separate properties because their targets must not be inferred to be the constitutional Government."@en .
+
+:isHeadOfExecutive a owl:ObjectProperty ;
+    rdfs:domain :TaoiseachRole ;
+    rdfs:range :GovernmentExecutive ;
+    rdfs:comment "The Taoiseach is the head of the GovernmentExecutive (agents:Government plus Ministers of State). Deliberately not a sub-property of :isHeadOf, whose Government range would collapse the distinct executive tier."@en .
+
+:isHeadOfBenches a owl:ObjectProperty ;
+    rdfs:domain :TaoiseachRole ;
+    rdfs:range :GovernmentBenches ;
+    rdfs:comment "The Taoiseach is the head of the GovernmentBenches (the full parliamentary whip bloc). Deliberately not a sub-property of :isHeadOf, whose Government range would collapse the distinct whip tier."@en .
+
+:isDeputyHeadOf a owl:FunctionalProperty,
+        owl:ObjectProperty ;
+    rdfs:domain :TanaisteRole ;
+    rdfs:range agents:Government ;
+    rdfs:comment "Links a :Tanaiste role to the constitutional Government (agents:Government) of which the Tánaiste is the deputy head. The Executive and Benches deputy-head properties are separate so their targets are not inferred to be the constitutional Government."@en .
+
+:isDeputyHeadOfExecutive a owl:ObjectProperty ;
+    rdfs:domain :TanaisteRole ;
+    rdfs:range :GovernmentExecutive ;
+    rdfs:comment "The Tánaiste is the deputy head of the GovernmentExecutive (agents:Government plus Ministers of State). Deliberately not a sub-property of :isDeputyHeadOf."@en .
+
+:isDeputyHeadOfBenches a owl:ObjectProperty ;
+    rdfs:domain :TanaisteRole ;
+    rdfs:range :GovernmentBenches ;
+    rdfs:comment "The Tánaiste is the deputy head of the GovernmentBenches (the full parliamentary whip bloc). Deliberately not a sub-property of :isDeputyHeadOf."@en .
+
+:isPartyMembershipOf a owl:ObjectProperty ;
+    rdfs:domain :PartyMembership ;
+    rdfs:range :ParliamentaryParty ;
+    rdfs:subPropertyOf :memberOfCollection ;
+    rdfs:comment "Party-specific relationship from a PartyMembership record to its ParliamentaryParty collection. The general collection relationship is also explicitly emitted as :memberOfCollection."@en .
+
+:isRepresentativeFrom a owl:FunctionalProperty,
+        owl:ObjectProperty ;
+    rdfs:domain :OireachtasMembership ;
+    rdfs:range :Constituencies .
+
+:partyCode a owl:DatatypeProperty ;
+    rdfs:domain :ParliamentaryMemberCollection ;
+    rdfs:range xsd:string ;
+    skos:prefLabel "Party code"@en ;
+    rdfs:comment "Short code identifying the party as used in the Oireachtas API (e.g. 'Fianna_F\u00e1il')."@en .
+
+:representCode a owl:DatatypeProperty ;
+    rdfs:domain :Constituencies ;
+    rdfs:range xsd:string ;
+    skos:prefLabel "Represent code"@en ;
+    rdfs:comment "Short code identifying the constituency or panel as used in the Oireachtas API (e.g. 'Clare', 'Administrative-Panel')."@en .
+
+:committeeCode a owl:DatatypeProperty ;
+    rdfs:domain :Committee ;
+    rdfs:range xsd:string ;
+    skos:prefLabel "Committee code"@en ;
+    rdfs:comment "Short alphanumeric code identifying the committee as used in the Oireachtas API (e.g. 'CAJ', 'CC2')."@en .
+
+:committeeID a owl:DatatypeProperty ;
+    rdfs:domain :Committee ;
+    rdfs:range xsd:integer ;
+    skos:prefLabel "Committee ID"@en ;
+    rdfs:comment "Numeric identifier for the committee as used in the Oireachtas API."@en .
+
+:CabinetMembership a owl:Class ;
+    rdfs:subClassOf :MembersMembership,
+        [ a owl:Restriction ; owl:onProperty :hasCabinetRole ; owl:someValuesFrom :CabinetMember ],
+        [ a owl:Restriction ; owl:onProperty :hasCabinetRole ; owl:allValuesFrom :CabinetMember ],
+        [ a owl:Restriction ; owl:onProperty :isCabinetMembershipOf ; owl:hasValue <https://data.oireachtas.ie/government> ],
+        [ a owl:Restriction ; owl:onProperty :isMembershipOfMember ; owl:someValuesFrom agents:Member ],
+        [ a owl:Restriction ; owl:onProperty :isMembershipOfMember ; owl:allValuesFrom [ a owl:Class ; owl:intersectionOf ( agents:Member [ a owl:Restriction ; owl:onProperty :hasMembersMembership ; owl:someValuesFrom :OireachtasMembership ] ) ] ] ;
+    rdfs:comment "A record of an agents:Member holding a :CabinetMember role (:TaoiseachRole, :TanaisteRole or :MinisterRole) in the formal constitutional Government (agents:Government). Linked to its person through the inverse :isMembershipOfMember / :hasMembersMembership pair and to its role via :hasCabinetRole. Each recorded Cabinet member must also have an OireachtasMembership; temporal overlap and office-specific constitutional constraints remain quality-validation concerns."@en .
+
+:Chair a owl:Class ;
+    rdfs:subClassOf org:Role .
+
+:DeputyChair a owl:Class ;
+    rdfs:subClassOf org:Role ;
+    rdfs:comment "The role of Deputy Chair (Vice-Chair) of a committee. Used via :hasCommitteeRole on :CommitteeMembership records."@en ;
+    skos:prefLabel "Deputy Chair"@en .
+
+:MinisterRole a owl:Class ;
+    rdfs:subClassOf :CabinetMember ;
+    skos:prefLabel "Minister"@en ;
+    rdfs:comment "The ministerial office role (org:Role subclass of :CabinetMember) in the formal constitutional Government (agents:Government). The corresponding person class is agents:Minister (subclass of agents:Member). Linked via org:holds / org:heldBy bridge axioms."@en .
+
+### org:holds / org:heldBy bridge axioms — agents:Minister (person) ↔ members:MinisterRole (role)
+
+agents:Minister rdfs:subClassOf
+    [ a owl:Restriction ;
+        owl:onProperty org:holds ;
+        owl:someValuesFrom :MinisterRole ] .
+
+:MinisterRole rdfs:subClassOf
+    [ a owl:Restriction ;
+        owl:onProperty org:heldBy ;
+        owl:someValuesFrom agents:Minister ] .
+
+:PartyMembership a owl:Class ;
+    rdfs:subClassOf :ParliamentaryCollectionMembership .
+
+:SenatorTitle a owl:DatatypeProperty ;
+    rdfs:domain :Senator ;
+    rdfs:range rdfs:Literal ;
+    rdfs:subPropertyOf foaf:title ;
+    foaf:name "Senator"^^rdfs:Literal .
+
+:StartDate a owl:DatatypeProperty ;
+    rdfs:domain :DateRange ;
+    rdfs:range xsd:dateTime .
+
+:TanaisteRole a owl:Class ;
+    rdfs:subClassOf :CabinetMember ;
+    owl:disjointWith :TaoiseachRole ;
+    skos:prefLabel "Tánaiste"@en ;
+    rdfs:comment "The role of Tánaiste (Deputy Head of Government) in the formal constitutional Government (agents:Government). An org:Role held by an agents:Member via org:holds / org:heldBy. Disjoint with :TaoiseachRole."@en .
+
+:Temporal a owl:Class .
+
+:hasMembershipDateRange a owl:ObjectProperty ;
+    rdfs:domain org:Membership ;
+    rdfs:range :DateRange .
+
+:DailSelectCommittee a owl:Class ;
+    rdfs:subClassOf :SelectCommittee ;
+    owl:disjointWith :SeanadSelectCommittee .
+
+:Deputy a owl:Class ;
+    rdfs:subClassOf [ a owl:Class ;
+            owl:intersectionOf ( agents:Member [ a owl:Restriction ;
+                        owl:onProperty :hasMembersMembership ;
+                        owl:someValuesFrom :DailMembership ] ) ],
+        :OireachtasMember ;
+    rdfs:comment "A Member of Dáil Éireann. Inferred for any agents:Member who has a :DailMembership record. A person may be both a Deputy and a Senator at different points in their career — disjointness is expressed at the membership level (:DailMembership owl:disjointWith :SeanadMembership), not at the person level."@en .
+
+:Opposition a owl:Class ;
+    rdfs:subClassOf :SidesOfHouse .
+
+:SeanadSelectCommittee a owl:Class ;
+    rdfs:subClassOf :SelectCommittee .
+
+:SelectCommittee a owl:Class ;
+    rdfs:subClassOf :Committee .
+
+:TaoiseachRole a owl:Class ;
+    rdfs:subClassOf :CabinetMember ;
+    skos:prefLabel "Taoiseach"@en ;
+    rdfs:comment "The role of Taoiseach (Head of Government) in the formal constitutional Government (agents:Government). An org:Role held by an agents:Member via org:holds / org:heldBy. Disjoint with :TanaisteRole."@en .
+
+:Whip a owl:Class ;
+    rdfs:subClassOf org:Role .
+
+:activeDuringTerm a owl:ObjectProperty ;
+    rdfs:domain :ParliamentaryMemberCollection ;
+    rdfs:range agents:HouseTerm ;
+    skos:prefLabel "active during term"@en ;
+    rdfs:comment "Links a :ParliamentaryMemberCollection to the :HouseTerm (agents:DailTerm or agents:SeanadTerm) during which it was active. For API-derived collections, this corresponds to the 'house' object paired with each party entry in the Oireachtas Parties response (house.uri)."@en .
+
+:isCommitteeMembershipOf a owl:ObjectProperty ;
+    rdfs:domain :CommitteeMembership ;
+    rdfs:range :Committee ;
+    rdfs:subPropertyOf owl:topObjectProperty .
+
+:hasCommitteeRole a owl:ObjectProperty ;
+    rdfs:domain :CommitteeMembership ;
+    rdfs:range org:Role ;
+    skos:prefLabel "has committee role"@en ;
+    rdfs:comment "The role held by the member within the committee (e.g. :Chair, :DeputyChair). Absent when the member holds no special role."@en .
+
+:CommitteeMembership a owl:Class ;
+    rdfs:subClassOf :MembersMembership .
+
+:Constituencies a owl:Class ;
+    rdfs:comment "A Dáil constituency or Seanad panel. The API scopes each instance to a specific :HouseTerm via :constituencyInHouseTerm. The API 'showAs' display name maps to skos:prefLabel or rdfs:label. Subclasses: :DailConstituency (geographically bounded) and :SeanadPanel (vocational/appointment panel). :representCode holds the short code used in IRIs and in the API (constituencyOrPanel.representCode). URI path segment type ('constituency' vs 'panel') is derivable from the subclass typing."@en .
+
+:Senator a owl:Class ;
+    rdfs:subClassOf :OireachtasMember .
+
+:SidesOfHouse a owl:Class .
+
+:hasCommitteeMember a owl:ObjectProperty .
+
+org:Membership rdfs:subClassOf [ a owl:Restriction ;
+            owl:allValuesFrom :DateRange ;
+            owl:onProperty :hasMembershipDateRange ] .
+
+:CabinetMember a owl:Class ;
+    rdfs:subClassOf org:Role,
+        [ a owl:Restriction ; owl:onProperty org:heldBy ; owl:allValuesFrom [ a owl:Class ; owl:intersectionOf ( agents:Member [ a owl:Restriction ; owl:onProperty :hasMembersMembership ; owl:someValuesFrom :OireachtasMembership ] ) ] ] ;
+    rdfs:comment "A role in the formal constitutional Government (agents:Government). Subclasses: :TaoiseachRole (Head of Government), :TanaisteRole (Deputy Head) and :MinisterRole. Every person holding a :CabinetMember role must also be an :OireachtasMember. :CabinetMembership records link members to this role via :hasCabinetRole."@en .
+
+:MinisterOfStateRole a owl:Class ;
+    rdfs:subClassOf org:Role ;
+    owl:disjointWith :CabinetMember ;
+    skos:prefLabel "Minister of State"@en ;
+    rdfs:comment "The generic OWL role class for a Minister of State, distinct from a particular enduring NamedOffice. Its disjointness with :CabinetMember applies to role individuals; it does not prevent one person from holding distinct roles in both classes. The holder must be an :OireachtasMember, and such persons are part of the wider :GovernmentExecutive."@en .
+
+:MinisterOfStateMembership a owl:Class ;
+    rdfs:subClassOf :MembersMembership ;
+    owl:deprecated true ;
+    rdfs:comment "Deprecated legacy class retained only for migration compatibility. Do not use for new Member office observations; use :OfficeHolding linked to an enduring :NamedOffice."@en .
+
+:hasMinisterOfStateRole a owl:ObjectProperty ;
+    rdfs:domain :MinisterOfStateMembership ;
+    rdfs:range :MinisterOfStateRole ;
+    owl:deprecated true ;
+    rdfs:comment "Deprecated legacy property retained only for migration compatibility. Do not use for new Member office observations."@en .
+
+:officeNameUri a owl:ObjectProperty ;
+    rdfs:domain :MinisterOfStateMembership ;
+    owl:deprecated true ;
+    skos:prefLabel "Office name URI"@en ;
+    rdfs:comment "Deprecated legacy property retained only for migration compatibility. Source office URI values do not establish local NamedOffice identity."@en .
+
+:NamedOffice a owl:Class ;
+    rdfs:comment "A particular enduring institutional office, independent of its holder, display label, associated AdministrativeUnit, or responsibilities. Similar names or functions do not prove continuity; their change alone does not prove discontinuity."@en .
+
+:AdministrativeUnit a owl:Class ;
+    rdfs:subClassOf org:Organization ;
+    rdfs:comment "A distinct, locally determined enduring administrative institution. Historical-unit identifiers or events are evidence, not automatic local identities."@en .
+
+:OfficeHolding a owl:Class ;
+    rdfs:subClassOf org:Membership ;
+    rdfs:comment "A dated relationship between a person and one particular NamedOffice, separate from CabinetMembership."@en .
+
+:OfficeType a owl:Class ;
+    rdfs:subClassOf skos:Concept ;
+    rdfs:comment "A controlled concept identifying the category of a NamedOffice. OfficeType concepts are not OWL role classes and do not classify NamedOffice individuals as members of role classes."@en .
+
+:OfficeTypeTable a owl:NamedIndividual, skos:ConceptScheme ;
+    skos:prefLabel "Ministerial and parliamentary office types"@en ;
+    rdfs:comment "Controlled OfficeType concepts used by NamedOffice individuals through :hasRoleType."@en .
+
+:TaoiseachOfficeType a owl:NamedIndividual, :OfficeType ;
+    skos:prefLabel "Taoiseach"@en ;
+    skos:inScheme :OfficeTypeTable ;
+    skos:topConceptOf :OfficeTypeTable .
+
+:TanaisteOfficeType a owl:NamedIndividual, :OfficeType ;
+    skos:prefLabel "Tánaiste"@en ;
+    skos:inScheme :OfficeTypeTable ;
+    skos:topConceptOf :OfficeTypeTable .
+
+:MinisterOfficeType a owl:NamedIndividual, :OfficeType ;
+    skos:prefLabel "Minister"@en ;
+    skos:inScheme :OfficeTypeTable ;
+    skos:topConceptOf :OfficeTypeTable .
+
+:MinisterOfStateOfficeType a owl:NamedIndividual, :OfficeType ;
+    skos:prefLabel "Minister of State"@en ;
+    skos:inScheme :OfficeTypeTable ;
+    skos:topConceptOf :OfficeTypeTable .
+
+:CeannComhairleOfficeType a owl:NamedIndividual, :OfficeType ;
+    skos:prefLabel "Ceann Comhairle"@en ;
+    skos:inScheme :OfficeTypeTable ;
+    skos:topConceptOf :OfficeTypeTable .
+
+:CathaoirleachOfficeType a owl:NamedIndividual, :OfficeType ;
+    skos:prefLabel "Cathaoirleach"@en ;
+    skos:inScheme :OfficeTypeTable ;
+    skos:topConceptOf :OfficeTypeTable .
+
+:AttorneyGeneralOfficeType a owl:NamedIndividual, :OfficeType ;
+    skos:prefLabel "Attorney General"@en ;
+    skos:inScheme :OfficeTypeTable ;
+    skos:topConceptOf :OfficeTypeTable .
+
+:GovernmentExecutive a owl:Class ;
+    rdfs:subClassOf org:FormalOrganization ;
+    owl:disjointWith agents:Government ;
+    skos:prefLabel "Government Executive"@en ;
+    rdfs:comment "The wider executive tier comprises the constitutional Government and Ministers of State, and is distinct from the constitutional Government organization and the wider parliamentary whip bloc. This class does not require the deprecated :MinisterOfStateMembership record; asserted executive membership is validated against office holdings where such membership is populated."@en .
+
+:DateRange a owl:Class ;
+    rdfs:subClassOf :Temporal ;
+    rdfs:comment "A date range for a membership, role, or Committee operational interval, providing start and optional end date extents. Membership tenure uses :hasMembershipDateRange; Committee operational lifespan uses :hasCommitteeDateRange. ELI-DL alignment: eli-dl:LegislativeActivity uses eli-dl:activity_start_date / eli-dl:activity_end_date (xsd:date) directly on activities. Note: :StartDate and :EndDate use xsd:dateTime rather than xsd:date for OWL 2 DL compatibility — xsd:date is not in the OWL 2 datatype map and is not supported by the HermiT reasoner."@en .
+
+:GovernmentBenches a owl:Class ;
+    rdfs:subClassOf :SidesOfHouse ;
+    owl:disjointWith :Opposition , agents:Government ;
+    rdfs:comment "The government side of the House — the parliamentary whip bloc that supports the Government. Comprises members of :GovernmentExecutive (:TaoiseachRole, :TanaisteRole, :MinisterRole and :MinisterOfStateRole holders) together with other :OireachtasMembers who have committed to supporting the Government under the party whip. Disjoint with :Opposition."@en .
+
+:OireachtasMember a owl:Class ;
+    rdfs:subClassOf [ a owl:Class ;
+            owl:intersectionOf ( agents:Member [ a owl:Restriction ;
+                        owl:onProperty :hasMembersMembership ;
+                        owl:someValuesFrom :OireachtasMembership ] ) ],
+        org:Role ;
+    owl:equivalentClass [ a owl:Class ;
+            owl:unionOf ( :Deputy :Senator ) ],
+        [ a owl:Class ;
+            owl:intersectionOf ( agents:Member [ a owl:Restriction ;
+                        owl:onProperty :hasMembersMembership ;
+                        owl:someValuesFrom [ a owl:Class ;
+                                owl:intersectionOf ( :OireachtasMembership [ a owl:Restriction ;
+                                            owl:allValuesFrom agents:House ;
+                                            owl:onProperty :isOireachtasMembershipOf ] ) ] ] ) ] .
+
+:ParliamentaryMemberCollection a owl:Class ;
+    rdfs:subClassOf foaf:Group ;
+    skos:prefLabel "Parliamentary member collection"@en ;
+    rdfs:comment "A collection of Oireachtas Members defined by a parliamentary relationship or status. This includes ParliamentaryParties, source-backed IndependentMemberCollections, and formally recognised ParliamentaryGroups."@en .
+
+:ParliamentaryParty a owl:Class ;
+    rdfs:subClassOf :ParliamentaryMemberCollection ;
+    skos:prefLabel "Parliamentary party"@en ;
+    rdfs:comment "A parliamentary collection of Members represented as belonging to the same registered political party for parliamentary purposes. It is distinct from the enduring political-party organisation and is not by itself evidence of ParliamentaryGroup recognition."@en .
+
+:PoliticalAffiliationIdentity a owl:Class ;
+    skos:prefLabel "Political affiliation identity"@en ;
+    rdfs:comment "A locally curated enduring identity for a recognised political affiliation represented in Oireachtas member records. It may denote a party, alliance, combined affiliation or other recognised affiliation; it does not assert legal registration, succession, or identity with any term-scoped collection."@en .
+
+:IndependentMemberCollection a owl:Class ;
+    rdfs:subClassOf :ParliamentaryMemberCollection ;
+    skos:prefLabel "Independent member collection"@en ;
+    rdfs:comment "A term-scoped collection of Members represented by the Oireachtas API as Independent or non-party. It does not imply that those Members act together or are a formally recognised parliamentary group."@en .
+
+:ParliamentaryGroup a owl:Class ;
+    rdfs:subClassOf :ParliamentaryMemberCollection ;
+    skos:prefLabel "Parliamentary group"@en ;
+    rdfs:comment "A ParliamentaryMemberCollection formally recognised as a group under the Standing Orders of the relevant House. Recognition is distinct from ParliamentaryParty identity and is not inferred from the current Parties or Members API."@en .
+
+:TechnicalGroup a owl:Class ;
+    rdfs:subClassOf :ParliamentaryGroup ;
+    skos:prefLabel "Technical group"@en ;
+    rdfs:comment "A ParliamentaryGroup recognised as a technical group under the Standing Orders of the relevant House. No instances are populated from current API data without explicit source evidence."@en .
+
+:recognisedAsParty a owl:ObjectProperty ;
+    rdfs:domain :ParliamentaryParty ;
+    rdfs:comment "Links a term-scoped ParliamentaryParty to the externally identified enduring registered political-party identity on which that collection is based. This does not identify the two resources or assert ParliamentaryGroup recognition. External target facts are not imported into the authoritative Oireachtas ontology graph."@en .
+
+:hasPoliticalAffiliationIdentity a owl:ObjectProperty ;
+    rdfs:domain :ParliamentaryParty ;
+    rdfs:range :PoliticalAffiliationIdentity ;
+    rdfs:comment "Links a term-scoped ParliamentaryParty to a reviewed local political-affiliation identity for user-oriented grouping. This curated assertion is distinct from recognisedAsParty, which links to an externally identified registered political party. It does not imply identity, legal registration, succession, or constituent membership and is never inferred from labels."@en .
+
+:Dail a owl:Class ;
+    rdfs:subClassOf :House ;
+    owl:disjointWith :Seanad .
+
+:MembersMembership a owl:Class ;
+    rdfs:subClassOf org:Membership .
+
+:ParliamentaryCollectionMembership a owl:Class ;
+    rdfs:subClassOf :MembersMembership ;
+    skos:prefLabel "Parliamentary collection membership"@en ;
+    rdfs:comment "A dated record of a Member's membership in a ParliamentaryMemberCollection, contextualised by the OireachtasMembership under which the API reports it."@en .
+
+:Seanad a owl:Class ;
+    rdfs:subClassOf :House .
+
+:House a owl:Class ;
+    rdfs:subClassOf agents:House ;
+    owl:equivalentClass [ a owl:Class ;
+            owl:unionOf ( :Dail :Seanad ) ] ;
+    rdfs:comment "The plenary Houses of the Oireachtas (Dáil or Seanad) as membership containers. Equivalent to the union of :Dail and :Seanad. The one-way rdfs:subClassOf bridge to agents:House expresses that every plenary house is a continuous agents:House instance; committee chambers (agents:House instances outside the members:House extension) are excluded."@en .
+
+:Committee a owl:Class ;
+    rdfs:subClassOf org:Organization ;
+    rdfs:comment "An Oireachtas committee individual whose source IRI identifies its own HouseTerm. Committee descriptions are owned by the shared Committee graph; Member graphs contain only CommitteeMembership records and references."@en .
+
+:committeeInHouseTerm a owl:ObjectProperty ;
+    rdfs:domain :Committee ;
+    rdfs:range agents:HouseTerm ;
+    skos:prefLabel "committee in HouseTerm"@en ;
+    rdfs:comment "Links a Committee to the HouseTerm encoded by the Committee's own Oireachtas source IRI. This is independent of :inHouseTerm, whose domain is OireachtasMembership."@en .
+
+:hasCommitteeDateRange a owl:ObjectProperty ;
+    rdfs:domain :Committee ;
+    rdfs:range :DateRange ;
+    skos:prefLabel "has Committee operational date range"@en ;
+    rdfs:comment "Links a Committee to its own operational DateRange. This is distinct from :hasMembershipDateRange, which applies to org:Membership records and carries a Member's relationship tenure."@en .
+
+:isOireachtasMembershipOf a owl:ObjectProperty ;
+    rdfs:domain :OireachtasMembership ;
+    rdfs:range agents:House .
+
+:inHouseTerm a owl:ObjectProperty ;
+    rdfs:domain :OireachtasMembership ;
+    rdfs:range agents:HouseTerm ;
+    skos:prefLabel "in house term"@en ;
+    rdfs:comment "The specific parliamentary term of this membership record. The individual in the range is the same resource that eli-dl:parliamentary_term references on associated eli-dl:LegislativeActivity instances."@en .
+
+:constituencyInHouseTerm a owl:ObjectProperty ;
+    rdfs:subPropertyOf :inHouseTerm ;
+    rdfs:domain :Constituencies ;
+    rdfs:range agents:HouseTerm ;
+    skos:prefLabel "constituency in house term"@en ;
+    rdfs:comment "Links a :Constituencies instance (:DailConstituency or :SeanadPanel) to the specific parliamentary term (:HouseTerm) for which it exists. Reflects the term-scoped URI structure of the Oireachtas API (constituencyOrPanel.uri embeds the houseNo). Sub-property of :inHouseTerm."@en .
+
+:hasMembersMembership a owl:ObjectProperty ;
+    rdfs:domain agents:Member ;
+    rdfs:range :MembersMembership .
+
+:OireachtasMembership a owl:Class ;
+    rdfs:subClassOf :MembersMembership .
+
+:DailMembership a owl:Class ;
+    rdfs:subClassOf :OireachtasMembership ,
+                    [ a owl:Restriction ;
+                        owl:onProperty :inHouseTerm ;
+                        owl:someValuesFrom agents:DailTerm ] ;
+    owl:disjointWith :SeanadMembership ;
+    rdfs:comment "A membership record of a specific term of Dáil Éireann. The term is identified via :inHouseTerm (range agents:DailTerm)."@en .
+
+:SeanadMembership a owl:Class ;
+    rdfs:subClassOf :OireachtasMembership ,
+                    [ a owl:Restriction ;
+                        owl:onProperty :inHouseTerm ;
+                        owl:someValuesFrom agents:SeanadTerm ] ;
+    rdfs:comment "A membership record of a specific term of Seanad Éireann. The term is identified via :inHouseTerm (range agents:SeanadTerm)."@en .
+
+
+### Individuals — ELI-DL Participation Roles
+
+:MoverRole a eli-dl:ParticipationRole,
+        owl:NamedIndividual ;
+    skos:prefLabel "Mover"@en ;
+    rdfs:comment "The role of a Member who moves a Bill, amendment or motion in a chamber. Used via eli-dl:participation_role on eli-dl:Participation instances associated with eli-dl:LegislativeActivity events. Replaces the former :Mover class."@en .
+
+:RapporteurRole a eli-dl:ParticipationRole,
+        owl:NamedIndividual ;
+    skos:prefLabel "Rapporteur"@en ;
+    rdfs:comment "The role of a Member appointed as rapporteur for a Bill or committee report. Used via eli-dl:participation_role on eli-dl:Participation instances. See also eli-dl:had_responsible_person for the shorthand property."@en .
+
+
+### Object properties — parliamentary collection membership
+
+:inOireachtasMembership a owl:ObjectProperty ;
+    rdfs:domain :ParliamentaryCollectionMembership ;
+    rdfs:range :OireachtasMembership ;
+    rdfs:comment "Links a ParliamentaryCollectionMembership record to the OireachtasMembership context in which the source reports that collection membership."@en .
+
+:memberOfCollection a owl:ObjectProperty ;
+    rdfs:domain :ParliamentaryCollectionMembership ;
+    rdfs:range :ParliamentaryMemberCollection ;
+    rdfs:comment "Links a ParliamentaryCollectionMembership record to the ParliamentaryMemberCollection it records membership in."@en .

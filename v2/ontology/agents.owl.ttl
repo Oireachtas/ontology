@@ -1,0 +1,603 @@
+@prefix : <https://data.oireachtas.ie/ontology#> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix eli-dl: <http://data.europa.eu/eli/eli-draft-legislation-ontology#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@base <https://data.oireachtas.ie/ontology/agents> .
+
+<https://data.oireachtas.ie/ontology/agents> rdf:type owl:Ontology ;
+
+    rdfs:comment "Agents ontology for the Houses of the Oireachtas: persons, roles and organisations involved in the legislative process."@en ;
+
+    owl:imports <http://data.europa.eu/eli/ontology#> ,
+                <http://data.europa.eu/eli/eli-draft-legislation-ontology#> ,
+                org: .
+
+
+#################################################################
+#
+#    Object Properties
+#
+#################################################################
+
+
+###  https://data.oireachtas.ie/ontology#hasTerm
+###  A House has a term (a specific HouseTerm sitting for a bounded period)
+
+:hasTerm rdf:type owl:ObjectProperty ;
+
+         rdfs:domain :House ;
+
+         rdfs:range :HouseTerm ;
+
+         owl:inverseOf :termOf .
+
+
+###  https://data.oireachtas.ie/ontology#termOf
+
+:termOf rdf:type owl:ObjectProperty ;
+
+        skos:prefLabel "term of"@en ;
+
+        rdfs:domain :HouseTerm ;
+
+         rdfs:range :House .
+
+
+###  https://data.oireachtas.ie/ontology#responsibleTo
+
+:responsibleTo rdf:type owl:ObjectProperty ;
+
+               rdfs:subPropertyOf org:reportsTo ;
+
+               rdfs:domain :Government ;
+
+               rdfs:range :House ;
+
+               rdfs:comment "Links the constitutional Government to the enduring Dáil institution to which it is collectively responsible. org:reportsTo is a valid broader interoperability relation: constitutional accountability is a form of organisational reporting, while this property preserves the stronger constitutional meaning."@en .
+
+
+###  https://data.oireachtas.ie/ontology#hasCommitteeType
+
+:hasCommitteeType rdf:type owl:ObjectProperty ;
+
+                  rdfs:domain <https://data.oireachtas.ie/ontology/members#Committee> ;
+
+                  rdfs:range skos:Concept ;
+
+                  rdfs:comment "The type of parliamentary committee (e.g. Select, Joint, Special). Range drawn from the :CommitteeTypeTable concept scheme defined in vocabulary.owl."@en ;
+
+                  skos:prefLabel "Has committee type"@en .
+
+
+###  https://data.oireachtas.ie/ontology#hasCommitteePurpose
+
+:hasCommitteePurpose rdf:type owl:ObjectProperty ;
+
+                     rdfs:domain <https://data.oireachtas.ie/ontology/members#Committee> ;
+
+                     rdfs:range skos:Concept ;
+
+                     rdfs:comment "The functional purpose/category of a committee as used in the Oireachtas API (e.g. Policy, Shadow Department). Range drawn from the :CommitteePurposeTable concept scheme defined in vocabulary.owl. Distinct from :hasCommitteeType (Select/Joint/Special)."@en ;
+
+                     skos:prefLabel "Has committee purpose"@en .
+
+
+#################################################################
+##    Datatype Properties
+#
+#################################################################
+
+
+###  https://data.oireachtas.ie/ontology#isPrimarySponsor
+
+:isPrimarySponsor rdf:type owl:DatatypeProperty ,
+                           owl:FunctionalProperty ;
+
+                  rdfs:domain eli-dl:Participation ;
+
+                  rdfs:range xsd:boolean ;
+
+                  rdfs:comment "Optional Boolean indicating whether this participation represents the primary sponsor of a Bill (the minister or member in whose name the Bill was presented). When the source value is unknown, the property is absent; at most one value may be stated. False identifies a secondary/co-sponsor."@en ;
+
+                  skos:prefLabel "Is primary sponsor"@en .
+
+
+###  https://data.oireachtas.ie/ontology#memberCode
+
+:memberCode rdf:type owl:DatatypeProperty ;
+
+            rdfs:domain :Member ;
+
+            rdfs:range xsd:string ;
+
+            rdfs:comment "The unique member code as used in the Oireachtas API (e.g. 'Timmy-Dooley.S.2002-09-12'). Typically derivable from the member IRI but stored explicitly for data alignment."@en ;
+
+            skos:prefLabel "Member code"@en .
+
+
+###  https://data.oireachtas.ie/ontology#pId
+
+:pId rdf:type owl:DatatypeProperty ;
+
+     rdfs:domain :Member ;
+
+     rdfs:range xsd:string ;
+
+     rdfs:comment "Short parliamentary identifier slug used internally in the Oireachtas system (e.g. 'TimDooley'). Distinct from :memberCode."@en ;
+
+     skos:prefLabel "Parliamentary identifier"@en .
+
+
+###  https://data.oireachtas.ie/ontology#gender
+
+:gender rdf:type owl:DatatypeProperty ;
+
+        rdfs:domain :Member ;
+
+        rdfs:range xsd:string ;
+
+        rdfs:comment "Gender of the member as reported by the Oireachtas API. Plain string literal; no controlled vocabulary enforced."@en ;
+
+        skos:prefLabel "Gender"@en .
+
+
+###  https://data.oireachtas.ie/ontology#dateOfDeath
+
+:dateOfDeath rdf:type owl:DatatypeProperty ;
+
+             rdfs:domain :Member ;
+
+             rdfs:range xsd:dateTime ;
+
+             rdfs:comment "Date of death of the member, where known. Uses xsd:dateTime for OWL 2 DL compatibility (xsd:date is not in the OWL 2 datatype map)."@en ;
+
+             skos:prefLabel "Date of death"@en .
+
+
+###  https://data.oireachtas.ie/ontology#wikiTitle
+
+:wikiTitle rdf:type owl:DatatypeProperty ;
+
+           rdfs:domain :Member ;
+
+           rdfs:range xsd:string ;
+
+           rdfs:comment "The Wikipedia article title for this member (e.g. 'Timmy Dooley'), as returned by the Oireachtas API. Can be used to construct a Wikipedia or DBpedia URI."@en ;
+
+           skos:prefLabel "Wikipedia title"@en .
+
+
+###  https://data.oireachtas.ie/ontology#hasImage
+
+:hasImage rdf:type owl:DatatypeProperty ;
+
+          rdfs:domain :Member ;
+
+          rdfs:range xsd:boolean ;
+
+          rdfs:comment "True if the Oireachtas API has an image available for this member; false otherwise. This is a presence flag, not a link to the image resource."@en ;
+
+          skos:prefLabel "Has image"@en .
+
+
+###  https://data.oireachtas.ie/ontology#termNo
+
+:termNo rdf:type owl:DatatypeProperty ;
+
+        rdfs:domain :HouseTerm ;
+
+        rdfs:range xsd:integer ;
+
+        rdfs:comment "The ordinal number of a parliamentary term as used in the Oireachtas API (e.g. 31 for the 31st Dáil). Corresponds to the 'houseNo' field in the API response."@en ;
+
+        skos:prefLabel "Term number"@en .
+
+
+###  https://data.oireachtas.ie/ontology#houseCode
+
+:houseCode rdf:type owl:DatatypeProperty ;
+
+           rdfs:domain :HouseTerm ;
+
+           rdfs:range xsd:string ;
+
+           rdfs:comment "Short code identifying the house as used in the Oireachtas API (e.g. 'dail', 'seanad'). Corresponds to the 'houseCode' field in the API response. Note: the API also returns 'chamberCode' and 'houseType' fields with identical values — these are duplicates of 'houseCode' and should be ignored during conversion."@en ;
+
+           skos:prefLabel "House code"@en .
+
+
+###  https://data.oireachtas.ie/ontology#seats
+
+:seats rdf:type owl:DatatypeProperty ;
+
+       rdfs:domain :HouseTerm ;
+
+       rdfs:range xsd:integer ;
+
+       rdfs:comment "The number of seats in this parliamentary term. Seat count may vary between terms (e.g. the 33rd Dáil had 160 seats; the 34th Dáil has 174). Belongs on :HouseTerm rather than :House because it is term-specific. Corresponds to the 'seats' field in the Oireachtas houses API."@en ;
+
+       skos:prefLabel "Seats"@en .
+
+
+#################################################################
+##    Annotations and restrictions on imported properties
+#
+#################################################################
+
+
+###  Restrict the range of eli:passed_by to :ParliamentaryBody
+
+<http://data.europa.eu/eli/ontology#passed_by> rdfs:range :ParliamentaryBody .
+
+
+###  eli-dl:was_submitted_by — use to link a LegislativeProcess to its Oireachtas submitter
+
+<http://data.europa.eu/eli/eli-draft-legislation-ontology#was_submitted_by>
+    rdfs:comment "Use eli-dl:was_submitted_by on eli-dl:LegislativeProcess instances to link a process to its submitter. The Oireachtas mappings use :GovernmentBillSource, :PrivateMember and :PrivateSponsor submitters. :GovernmentBillSource is a controlled concept, distinct from the constitutional :Government institution. This property replaces the former :BillSource class hierarchy."@en .
+
+
+###  eli-dl:had_participation — use to record activity-level agent participation
+
+<http://data.europa.eu/eli/eli-draft-legislation-ontology#had_participation>
+    rdfs:comment "Use eli-dl:had_participation on eli-dl:LegislativeActivity instances (including :JournalEvent subclasses) to record agent participation. Set eli-dl:participation_role to :MoverRole or :RapporteurRole (defined in members.owl) to distinguish the role. This replaces the former :Mover class."@en .
+
+
+###  dct:temporal — use to link a HouseTerm to its sitting date range
+
+dct:temporal
+    rdfs:comment "Use dct:temporal on :HouseTerm instances to link to a dct:PeriodOfTime blank node or named individual representing the term's operational date range. On the dct:PeriodOfTime node use dcat:startDate (xsd:dateTime) for the commencement date and dcat:endDate (xsd:dateTime) for the dissolution date. dcat:endDate is absent when the term is the current sitting term (corresponds to a null 'dateRange.end' in the Oireachtas API). Corresponds to the 'dateRange.start' / 'dateRange.end' fields in the Oireachtas houses API."@en .
+
+
+###  members:Committee — URI pattern for individual committee instances
+
+<https://data.oireachtas.ie/ontology/members#Committee>
+    rdfs:comment "Individual committee instances use the Members API URI pattern <https://data.oireachtas.ie/ie/oireachtas/committee/{houseCode}/{houseNo}/{slug}>, e.g. <https://data.oireachtas.ie/ie/oireachtas/committee/dail/33/select_committee_on_finance>. The HouseTerm is derived from the Committee's own source IRI. Committee structural type (Select/Joint/Special) is expressed via :hasCommitteeType with members from :CommitteeTypeTable. Functional purpose (Policy/Shadow Department) is expressed via :hasCommitteePurpose with members from :CommitteePurposeTable."@en .
+
+
+#################################################################
+#
+#    Auxiliary class declarations (from imported vocabularies)
+#
+#################################################################
+
+
+###  http://www.w3.org/ns/org#FormalOrganization
+
+org:FormalOrganization rdf:type owl:Class .
+
+
+###  http://data.europa.eu/eli/eli-draft-legislation-ontology#ParliamentaryTerm
+
+eli-dl:ParliamentaryTerm rdf:type owl:Class .
+
+
+###  http://data.europa.eu/eli/eli-draft-legislation-ontology#Participation
+
+eli-dl:Participation rdf:type owl:Class .
+
+
+###  http://purl.org/dc/terms/PeriodOfTime
+
+dct:PeriodOfTime rdf:type owl:Class ;
+
+                 rdfs:comment "A temporal interval or instant, used here to represent the operational date range of a :HouseTerm. Linked from a :HouseTerm instance via dct:temporal. Start and end dates are expressed using dcat:startDate and dcat:endDate."@en .
+
+
+###  http://www.w3.org/ns/dcat#startDate
+
+dcat:startDate rdf:type owl:DatatypeProperty ;
+
+               rdfs:domain dct:PeriodOfTime ;
+
+               rdfs:range xsd:dateTime ;
+
+               rdfs:comment "The start (commencement) date of a dct:PeriodOfTime. Used on HouseTerm date-range nodes to record the date from which the term sat. Typed xsd:dateTime for OWL 2 DL compatibility (xsd:date is not in the OWL 2 DL datatype map). Corresponds to the 'dateRange.start' field in the Oireachtas houses API."@en ;
+
+               skos:prefLabel "Start date"@en .
+
+
+###  http://www.w3.org/ns/dcat#endDate
+
+dcat:endDate rdf:type owl:DatatypeProperty ;
+
+             rdfs:domain dct:PeriodOfTime ;
+
+             rdfs:range xsd:dateTime ;
+
+             rdfs:comment "The end (dissolution) date of a dct:PeriodOfTime. Used on HouseTerm date-range nodes to record when the term ended. Absent when the term is the current sitting term (corresponds to a null 'dateRange.end' in the Oireachtas API). Typed xsd:dateTime for OWL 2 DL compatibility."@en ;
+
+             skos:prefLabel "End date"@en .
+
+
+#################################################################
+#
+#    Classes
+#
+#################################################################
+
+
+###  https://data.oireachtas.ie/ontology#ParliamentaryBody
+
+:ParliamentaryBody rdf:type owl:Class ;
+
+                    rdfs:subClassOf org:FormalOrganization ;
+
+                    owl:disjointWith :Government ;
+
+                    rdfs:comment "An enduring formal parliamentary institution, including a parliament and its Houses. This is a class of organisations, not the Oireachtas institution itself. It excludes temporally bounded HouseTerms and the constitutional Government."@en .
+
+
+###  https://data.oireachtas.ie/ontology#House
+
+:House rdf:type owl:Class ;
+
+       rdfs:subClassOf :ParliamentaryBody ;
+
+       rdfs:comment "Dáil Éireann or Seanad Éireann as a continuous legal institution. A House is the enduring constitutional entity — it persists across successive parliamentary terms. Named individuals <https://data.oireachtas.ie/house/dail> and <https://data.oireachtas.ie/house/seanad> are instances. Committee chambers are also instances of :House. The bounded sitting periods of a House are represented by :HouseTerm subclass instances (:DailTerm, :SeanadTerm), reached via :hasTerm."@en .
+
+
+###  https://data.oireachtas.ie/ontology#HouseTerm
+
+:HouseTerm rdf:type owl:Class ;
+
+             owl:disjointWith :ParliamentaryBody ;
+
+            rdfs:comment "A bounded parliamentary term — the sitting of the Dáil or Seanad between its commencement and dissolution. Subclasses :DailTerm and :SeanadTerm type each term by house. A HouseTerm is temporal and is explicitly not an enduring ParliamentaryBody or formal organisation. Instances should additionally be typed as eli-dl:ParliamentaryTerm so they can be referenced via eli-dl:parliamentary_term on activities and works."@en ;
+
+           skos:scopeNote "Use skos:prefLabel for the display name of a house term (corresponds to the 'showAs' field in the Oireachtas API, e.g. '31st Dáil'). Use :termNo for the ordinal integer, :houseCode for the house slug (e.g. 'dail'), :seats for the seat count, and dct:temporal (pointing to a dct:PeriodOfTime node) for the term's sitting date range (dcat:startDate / dcat:endDate)."@en .
+
+
+###  https://data.oireachtas.ie/ontology#DailTerm
+
+:DailTerm rdf:type owl:Class ;
+
+          rdfs:subClassOf :HouseTerm ;
+
+          owl:disjointWith :SeanadTerm ;
+
+          skos:prefLabel "Term of Dáil Éireann"@en ;
+
+          rdfs:comment "A specific numbered term of Dáil Éireann, bounded by a general election and dissolution. Example: the 33rd Dáil (2020–2025). Instances should additionally be typed as eli-dl:ParliamentaryTerm to satisfy the range of eli-dl:parliamentary_term."@en .
+
+
+###  https://data.oireachtas.ie/ontology#SeanadTerm
+
+:SeanadTerm rdf:type owl:Class ;
+
+            rdfs:subClassOf :HouseTerm ;
+
+            skos:prefLabel "Term of Seanad Éireann"@en ;
+
+            rdfs:comment "A specific numbered term of Seanad Éireann, bounded by its commencement after a general election and its dissolution. Instances should additionally be typed as eli-dl:ParliamentaryTerm."@en .
+
+
+###  https://data.oireachtas.ie/ontology#Government
+
+:Government rdf:type owl:Class ;
+
+             rdfs:subClassOf org:FormalOrganization ;
+
+             owl:disjointWith :ParliamentaryBody ;
+
+            skos:prefLabel "The Government"@en ;
+            skos:altLabel "Cabinet"@en ;
+
+             rdfs:comment "The Government as defined by Article 28 of the Constitution — the collective executive body with legal personality, also informally known as the Cabinet. Membership is confined to persons holding a members:CabinetMember role (members:TaoiseachRole, members:TanaisteRole or members:MinisterRole), each of whom must also be an agents:Member. See also: members:GovernmentExecutive (Government plus Ministers of State) and members:GovernmentBenches (the broader parliamentary whip bloc)."@en .
+
+
+###  https://data.oireachtas.ie/ontology#GovernmentBillSource
+
+:GovernmentBillSource rdf:type owl:Class ;
+
+                      rdfs:subClassOf foaf:Agent ,
+                                      skos:Concept ;
+
+                      rdfs:comment "A controlled bill-submitter concept denoting Government-originated legislation. It is not an individual constitutional Government or a numbered Government administration."@en .
+
+
+###  https://data.oireachtas.ie/ontology#Member
+
+:Member rdf:type owl:Class ;
+
+        rdfs:subClassOf foaf:Person ;
+
+        owl:disjointWith :PrivateSponsor ;
+
+        rdfs:comment "A Member of one of the Houses of the Oireachtas"@en ;
+
+        skos:prefLabel "Member"@en .
+
+
+###  https://data.oireachtas.ie/ontology#Minister
+
+:Minister rdf:type owl:Class ;
+
+          rdfs:subClassOf :Member ;
+
+          skos:prefLabel "Minister"@en ;
+
+          rdfs:comment "A Member of the Oireachtas who holds a ministerial office. The corresponding role class is members:MinisterRole (an org:Role subclass of members:CabinetMember). Linked at class level via org:holds / org:heldBy bridge axioms defined in members.owl: any agents:Minister person holds someValuesFrom members:MinisterRole, and any holder of members:MinisterRole is someValuesFrom agents:Minister."@en .
+
+
+###  https://data.oireachtas.ie/ontology#PrivateMember
+
+:PrivateMember rdf:type owl:Class ;
+
+               rdfs:subClassOf :Member ;
+
+               rdfs:comment "A Member of the Oireachtas who is not also a Member of Government"@en ;
+
+               skos:prefLabel "Private Member"@en .
+
+
+###  https://data.oireachtas.ie/ontology#PrivateSponsor
+
+:PrivateSponsor rdf:type owl:Class ;
+
+                rdfs:subClassOf foaf:Agent ;
+
+                rdfs:comment "A person or collective entity which introduces legislation to the Oireachtas. Typed as foaf:Agent — the common FOAF supertype of foaf:Person (individual sponsors) and foaf:Organization (corporate bodies such as professional associations). RDA superclasses rda:C10004 / rda:C10005 removed (2026): the RDA namespace is not imported and foaf:Agent is already in the import chain via ELI-DL."@en ;
+
+                skos:prefLabel "Private Sponsor"@en .
+
+
+#################################################################
+#
+#    Individuals
+#
+#################################################################
+
+
+###  https://data.oireachtas.ie/oireachtas
+
+<https://data.oireachtas.ie/oireachtas> rdf:type :ParliamentaryBody ,
+                                                  owl:NamedIndividual ;
+
+                                         dct:title "Houses of the Oireachtas"@en ,
+                                                   "Tithe an Oireachtais"@ga ;
+
+                                         skos:prefLabel "Houses of the Oireachtas"@en ,
+                                                        "Tithe an Oireachtais"@ga ;
+
+                                         org:hasSubOrganization <https://data.oireachtas.ie/house/dail> ,
+                                                                <https://data.oireachtas.ie/house/seanad> ;
+
+                                         rdfs:comment "The enduring Oireachtas institution. This named individual is distinct from all ontology classes. Its organisational structure includes Dáil Éireann and Seanad Éireann. The Constitution also comprises the President, whose identity and ETL representation are deliberately deferred rather than fabricated here."@en .
+
+
+###  https://data.oireachtas.ie/house/dail
+
+<https://data.oireachtas.ie/house/dail> rdf:type :House ,
+                                               owl:NamedIndividual ;
+
+                                      dct:title "Dáil Éireann"@ga ;
+
+                                       skos:prefLabel "Dáil Éireann"@ga ;
+
+                                       org:subOrganizationOf <https://data.oireachtas.ie/oireachtas> .
+
+
+###  https://data.oireachtas.ie/house/seanad
+
+<https://data.oireachtas.ie/house/seanad> rdf:type :House ,
+                                                 owl:NamedIndividual ;
+
+                                        dct:title "Seanad Éireann"@ga ;
+
+                                         skos:prefLabel "Seanad Éireann"@ga ;
+
+                                         org:subOrganizationOf <https://data.oireachtas.ie/oireachtas> .
+
+
+###  https://data.oireachtas.ie/government
+
+<https://data.oireachtas.ie/government> rdf:type :Government ,
+                                                  owl:NamedIndividual ;
+
+                                         skos:prefLabel "The Government"@en ;
+
+                                         :responsibleTo <https://data.oireachtas.ie/house/dail> ;
+
+                                         rdfs:comment "The enduring constitutional Government institution. This resource does not identify a particular Government administration; numbered administrations remain outside this tranche."@en .
+
+
+#################################################################
+#
+#    Individuals — Bill source submitters (eli-dl:was_submitted_by targets)
+#
+#################################################################
+
+
+###  https://data.oireachtas.ie/ie/oireachtas/def/bill-source/government
+
+<https://data.oireachtas.ie/ie/oireachtas/def/bill-source/government>
+    rdf:type :GovernmentBillSource , owl:NamedIndividual ;
+    skos:prefLabel "The Government"@en ;
+    skos:altLabel "Cabinet"@en ;
+    rdfs:comment "Controlled concept for the Government bill source. Use as the target of eli-dl:was_submitted_by when bill.sourceURI = 'https://data.oireachtas.ie/ie/oireachtas/def/bill-source/government'. It is deliberately distinct from <https://data.oireachtas.ie/government> and does not identify a particular Government administration."@en .
+
+
+###  https://data.oireachtas.ie/ie/oireachtas/def/bill-source/private-member
+
+<https://data.oireachtas.ie/ie/oireachtas/def/bill-source/private-member>
+    rdf:type :PrivateMember , owl:NamedIndividual ;
+    skos:prefLabel "Private Member"@en ;
+    rdfs:comment "Named individual for a Private Member as a bill source. Use as the target of eli-dl:was_submitted_by when bill.sourceURI = 'https://data.oireachtas.ie/ie/oireachtas/def/bill-source/private-member'."@en .
+
+
+#################################################################
+#
+#    Individuals — Committee types (members of :CommitteeTypeTable)
+#
+#################################################################
+
+
+###  https://data.oireachtas.ie/ontology#SelectCommitteeType
+
+:SelectCommitteeType rdf:type owl:NamedIndividual , skos:Concept ;
+
+                     skos:prefLabel "Select Committee"@en ;
+
+                     skos:inScheme :CommitteeTypeTable ;
+
+                     skos:topConceptOf :CommitteeTypeTable .
+
+
+###  https://data.oireachtas.ie/ontology#JointCommitteeType
+
+:JointCommitteeType rdf:type owl:NamedIndividual , skos:Concept ;
+
+                    skos:prefLabel "Joint Committee"@en ;
+
+                    skos:inScheme :CommitteeTypeTable ;
+
+                    skos:topConceptOf :CommitteeTypeTable .
+
+
+###  https://data.oireachtas.ie/ontology#SpecialCommitteeType
+
+:SpecialCommitteeType rdf:type owl:NamedIndividual , skos:Concept ;
+
+                      skos:prefLabel "Special Committee"@en ;
+
+                      skos:inScheme :CommitteeTypeTable ;
+
+                      skos:topConceptOf :CommitteeTypeTable .
+
+
+#################################################################
+#
+#    Individuals — Committee purpose types (members of :CommitteePurposeTable)
+#
+#################################################################
+
+
+###  https://data.oireachtas.ie/ontology#PolicyPurpose
+
+:PolicyPurpose rdf:type owl:NamedIndividual , skos:Concept ;
+
+               skos:prefLabel "Policy"@en ;
+
+               skos:inScheme :CommitteePurposeTable ;
+
+               skos:topConceptOf :CommitteePurposeTable .
+
+
+###  https://data.oireachtas.ie/ontology#ShadowDepartmentPurpose
+
+:ShadowDepartmentPurpose rdf:type owl:NamedIndividual , skos:Concept ;
+
+                         skos:prefLabel "Shadow Department"@en ;
+
+                         skos:inScheme :CommitteePurposeTable ;
+
+                         skos:topConceptOf :CommitteePurposeTable .

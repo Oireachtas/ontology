@@ -1,0 +1,25 @@
+@prefix : <https://data.oireachtas.ie/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <https://data.oireachtas.ie/ontology> .
+
+<https://data.oireachtas.ie/ontology> rdf:type owl:Ontology ;
+
+    rdfs:comment """The Oireachtas ontology comprises four related areas:
+1. Legislative documents
+2. Events
+3. Debates
+4. Agents
+
+This is the root umbrella ontology. All classes, properties and individuals
+are defined in the imported sub-ontologies below."""@en ;
+
+    owl:imports <https://data.oireachtas.ie/ontology/agents> ,
+                <https://data.oireachtas.ie/ontology/events> ,
+                <https://data.oireachtas.ie/ontology/legislation> ,
+                <https://data.oireachtas.ie/ontology/vocabulary> ,
+                <https://data.oireachtas.ie/ontology/debates> ,
+                <https://data.oireachtas.ie/ontology/members>.

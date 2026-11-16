@@ -1,0 +1,104 @@
+@prefix : <https://data.oireachtas.ie/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@base <https://data.oireachtas.ie/ontology/vocabulary> .
+
+<https://data.oireachtas.ie/ontology/vocabulary> rdf:type owl:Ontology ;
+
+    rdfs:comment "Controlled vocabularies (SKOS concept schemes) for the Houses of the Oireachtas ontology."@en ;
+
+    owl:imports <https://data.oireachtas.ie/ontology/events> ,
+                <https://data.oireachtas.ie/ontology/legislation> .
+
+
+#################################################################
+#
+#    Individuals — SKOS Concept Schemes
+#
+#################################################################
+
+
+###  https://data.oireachtas.ie/ontology#BillEventTable
+
+:BillEventTable rdf:type owl:NamedIndividual ,
+                         skos:ConceptScheme ;
+
+                skos:prefLabel "Bill event table"@en ;
+
+                rdfs:comment "The procedural events that occur during a Bill's lifecycle."@en .
+
+
+###  https://data.oireachtas.ie/ontology#BillEventResultTable
+
+:BillEventResultTable rdf:type owl:NamedIndividual ,
+                               skos:ConceptScheme ;
+
+                      skos:prefLabel "Bill event outcome table"@en .
+
+
+###  https://data.oireachtas.ie/ontology#BillDeliveryTable
+
+:BillDeliveryTable rdf:type owl:NamedIndividual ,
+                            skos:ConceptScheme ;
+
+                   skos:prefLabel "Bill delivery table"@en .
+
+
+###  https://data.oireachtas.ie/ontology#BillDeliveryOutcomeTable
+
+:BillDeliveryOutcomeTable rdf:type owl:NamedIndividual ,
+                                   skos:ConceptScheme ;
+
+                          skos:prefLabel "Bill delivery outcome table"@en .
+
+
+###  https://data.oireachtas.ie/ontology#BillStatusTable
+
+:BillStatusTable rdf:type owl:NamedIndividual ,
+                          skos:ConceptScheme ;
+
+                 skos:prefLabel "Bill status table"@en .
+
+
+###  https://data.oireachtas.ie/ontology#BillTypeTable
+
+:BillTypeTable rdf:type owl:NamedIndividual ,
+                        skos:ConceptScheme ;
+
+               skos:prefLabel "Bill type table"@en ;
+
+                rdfs:comment "The controlled Bill process type. Members: :PublicBill, :PrivateBill, :HybridBill (defined in legislation.owl)."@en .
+
+
+###  https://data.oireachtas.ie/ontology#AmendmentListTypeTable
+
+:AmendmentListTypeTable rdf:type owl:NamedIndividual ,
+                                 skos:ConceptScheme ;
+
+                        skos:prefLabel "Amendment list type table"@en ;
+
+                         rdfs:comment "The format/type of an amendment list. Members: :NumberedAmendmentList, :UnnumberedAmendmentList, :CreamList (defined in legislation.owl)."@en .
+
+
+###  https://data.oireachtas.ie/ontology#CommitteeTypeTable
+
+:CommitteeTypeTable rdf:type owl:NamedIndividual ,
+                             skos:ConceptScheme ;
+
+                    skos:prefLabel "Committee type table"@en ;
+
+                    rdfs:comment "The type of parliamentary committee. Members: :SelectCommitteeType, :JointCommitteeType, :SpecialCommitteeType (defined in agents.owl). Used via :hasCommitteeType on members:Committee instances."@en .
+
+
+###  https://data.oireachtas.ie/ontology#CommitteePurposeTable
+
+:CommitteePurposeTable rdf:type owl:NamedIndividual ,
+                                skos:ConceptScheme ;
+
+                       skos:prefLabel "Committee purpose table"@en ;
+
+                       rdfs:comment "The functional purpose/category of a committee as used in the Oireachtas API. Distinct from CommitteeTypeTable (Select/Joint/Special). Members: :PolicyPurpose, :ShadowDepartmentPurpose (defined in agents.owl). Used via :hasCommitteePurpose on members:Committee instances."@en .
